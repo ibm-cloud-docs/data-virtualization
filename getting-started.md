@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-09-15"
+lastupdated: "2021-03-31"
 
 keywords: 
 
@@ -27,16 +27,14 @@ subcollection: data-virtualization
 {:pre: .pre}
 {:video: .video}
 
-# Getting started with {{site.data.keyword.Db2_on_Cloud_short}}
+# Getting started with Data Virtualization
 {: #getting-started}
 
-{{site.data.keyword.Db2_on_Cloud_long}} is an SQL database that is provisioned for you in the cloud. You can use {{site.data.keyword.Db2_on_Cloud_short}} just as you would use any database software, but without the time and expense of hardware setup or software installation and maintenance. 
+Use IBM® Data Virtualization to break data silos across hybrid data sources and build a Data Fabric for easy Data Management. You can use Data Virtualization just as you would any data source, but without the time and expense of hardware setup or software installation and maintenance.
 {: shortdesc}
 
-Create credentials. After creating the {{site.data.keyword.Db2_on_Cloud_short}} service on {{site.data.keyword.cloud}}, you must create a user name and password by clicking the **Service credentials** tab on your service page and selecting **New credential**. Technically, you can log in to the web console without credentials, but you need the user name and password to use many of the Db2 tools. To retrieve your service credentials, select the **Service credentials** tab from your service page and expand the credentials that you want to view.
+Create credentials. After creating the Data Virtualization service on {{site.data.keyword.cloud}}, you must create IAM service credentials by clicking the **Service credentials** tab on your service page and selecting **New credential**. Technically, you can log in to the web console without credentials, but you need the service credentials to use many of the Data Virtualization tools. To retrieve your **service credentials**, select the Service credentials tab from your service page and expand the credentials that you want to view.
 {: important}
-
-You can also install a local Db2 database by using the [free Db2 Developer Edition download](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions){:external}. It rapidly installs a ready-to-go developer edition of Db2 with tools inside a Docker container (Docker not required; it automatically installs any necessary components). 
 
 <!--
 ## Video: Introducing Db2 on Cloud
