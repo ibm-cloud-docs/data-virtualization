@@ -42,6 +42,8 @@ data-virtualization
         sec_comp_sum.md
         key_protect.md
         key_protect_2.md
+        {: .navgroup id="how-to"}
+            arch_workload_iso.md    
 
     communities.md    
 
