@@ -42,8 +42,7 @@ data-virtualization
         sec_comp_sum.md
         key_protect.md
         key_protect_2.md
-        {: .navgroup id="how-to"}
-            arch_workload_iso.md    
+            
 
     communities.md    
 
@@ -54,6 +53,8 @@ data-virtualization
     {: .navgroup id="howto"}
     provision.md
     [IBM Demos: Tutorials, videos, and hands-on labs](https://www.ibm.com/demos/collection/Db2-on-Cloud/)
+    arch_workload_iso.md
+    [Learning about Data Virtualization architecture and workload isolation]
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
