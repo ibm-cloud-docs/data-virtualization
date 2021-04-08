@@ -24,7 +24,7 @@ subcollection: data-virtualization
 # About
 {: #about}
 
-{{site.data.keyword.Db2_on_Cloud_long}} is a fully managed public cloud service on {{site.data.keyword.cloud_notm}}. As a relational database, it delivers fast query processing with enterprise-level performance and capabilities for online transactional processing (OLTP). The new Enterprise High Availability plan runs the powerful Db2 11.5 engine, and also provides multizone region support in a three HA node configuration to ensure ultimate redundancy.
+Data Virtualization is a fully managed public cloud service on {{site.data.keyword.cloud_notm}}. As a relational database, it delivers fast query processing with enterprise-level performance and capabilities for online transactional processing (OLTP). The new Enterprise High Availability plan runs the powerful Db2 11.5 engine, and also provides multizone region support in a three HA node configuration to ensure ultimate redundancy.
 {: shortdesc}
 
 ## Key features
@@ -32,11 +32,11 @@ subcollection: data-virtualization
 
 ### Scalable and elastic cloud service
 
-{{site.data.keyword.Db2_on_Cloud_short}} is an elastic service, and allows you to independently scale compute and storage through an intuitive UI or REST API.
+Data Virtualization is an elastic service, and allows you to independently scale compute and storage through an intuitive UI or REST API.
 
 ### Expertly managed and highly secure
 
-Day-to-day operations for {{site.data.keyword.Db2_on_Cloud_short}}, including database monitoring, uptime checks and failovers, are fully automated. Operations are supplemented by a DevOps team that are on call to handle unexpected system failures. Data is encrypted at rest and in motion by default. Administrators can also restrict access to sensitive data through data masking, row permissions, and role-based security, and can utilize database audit utilities to maintain audit trails for their database. IBM Key Protect and {{site.data.keyword.cloud_notm}} service endpoint are also supported.
+Day-to-day operations for Data Virtualization, including database monitoring, uptime checks and failovers, are fully automated. Operations are supplemented by a DevOps team that are on call to handle unexpected system failures. Data is encrypted at rest and in motion by default. Administrators can also restrict access to sensitive data through data masking, row permissions, and role-based security, and can utilize database audit utilities to maintain audit trails for their database. IBM Key Protect and {{site.data.keyword.cloud_notm}} service endpoint are also supported.
 
 ### Run your own apps
 
@@ -111,7 +111,7 @@ SZRs support 3 node HA in a single data center in that region
 ## Plans and configurations
 {: #plans_cfgs}
 
-You can choose a {{site.data.keyword.Db2_on_Cloud_short}} plan that is configured and optimized for the work that you need to do:
+You can choose a Data Virtualization plan that is configured and optimized for the work that you need to do:
 {: shortdesc}
 
    * A Flex plan (recommended) in which you can independently scale RAM, storage, and compute resources

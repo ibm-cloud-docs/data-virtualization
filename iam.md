@@ -27,13 +27,13 @@ subcollection: data-virtualization
 Identity and access management (IAM) enables you to securely authenticate users for platform services and control access to resources consistently across the {{site.data.keyword.Bluemix_notm}} platform. For example, with only a single login to {{site.data.keyword.Bluemix_notm}} with your IBMid, you have access to any of your service consoles and their applications without having to log in to each of them separately.
 {: shortdesc}
 
-IAM is enabled for all {{site.data.keyword.Db2_on_Cloud_short}} plans except for **Lite** plan instances.
+IAM is enabled for all Data Virtualization plans except for **Lite** plan instances.
 
 <!--
 ## Is IAM enabled on your instance?
 {: #enabled}
 
-Over a period of time, the {{site.data.keyword.Db2_on_Cloud_long}} managed database instances on {{site.data.keyword.Bluemix_notm}} will be enabled to use IAM for access control. To check that IAM is enabled on your instance, run the following query:
+Over a period of time, the Data Virtualization managed database instances on {{site.data.keyword.Bluemix_notm}} will be enabled to use IAM for access control. To check that IAM is enabled on your instance, run the following query:
 
 ```
 SELECT CASE WHEN VALUE = 'IBMIAMauth' THEN 1 ELSE 0 END AS IAM_ENABLED FROM SYSIBMADM.DBMCFG WHERE NAME = 'srvcon_gssplugin_list'
@@ -46,7 +46,7 @@ If the returned value of **IAM_ENABLED** is 1, then IAM is enabled on your insta
 ## Features of {{site.data.keyword.Bluemix_notm}} IAM
 {: #features}
 
-The following IAM features are implemented for the {{site.data.keyword.Db2_on_Cloud_short}} managed service with two types of supported identities:
+The following IAM features are implemented for the Data Virtualization managed service with two types of supported identities:
 
 ### IBMid
 {: #iam_ibmid}
@@ -61,7 +61,7 @@ A service ID identifies a service or application similar to how a user ID identi
 ## Roles and actions
 {: #iam_roles_actions}
 
-Every user that accesses the {{site.data.keyword.Db2_on_Cloud_short}} service in your account must be assigned an access policy with an IAM role. The access policy that you assign to users in your account determines what actions a user can perform within the context of the service or specific instance that you select. The allowable actions are customized and defined by {{site.data.keyword.Db2_on_Cloud_short}} as operations that are allowed to be performed on the service. Each action is mapped to an IAM platform or service role that you can assign to a user. If a specific role and its actions don't fit the use case that you're looking to address, you can [create a custom role](/docs/account?topic=account-custom-roles#custom-access-roles){: external} and pick the actions to include.
+Every user that accesses the Data Virtualization service in your account must be assigned an access policy with an IAM role. The access policy that you assign to users in your account determines what actions a user can perform within the context of the service or specific instance that you select. The allowable actions are customized and defined by Data Virtualization as operations that are allowed to be performed on the service. Each action is mapped to an IAM platform or service role that you can assign to a user. If a specific role and its actions don't fit the use case that you're looking to address, you can [create a custom role](/docs/account?topic=account-custom-roles#custom-access-roles){: external} and pick the actions to include.
 
 For information about the exact actions mapped to each role, see [IAM roles and actions](/docs/account?topic=account-iam-service-roles-actions){: external} and [Db2](/docs/account?topic=account-iam-service-roles-actions#db2){: external}. 
 {: tip}
@@ -319,7 +319,7 @@ To add a user with either an IBMid or a service ID by using the web console, com
 ## REST API experience
 {: #api}
 
-The {{site.data.keyword.Db2_on_Cloud_short}} REST API was enhanced to also accept an IAM access token for the functions that previously accepted a database service-generated access token.
+The Data Virtualization REST API was enhanced to also accept an IAM access token for the functions that previously accepted a database service-generated access token.
 
 * To add a new IBMid user, run the following example API call:
 
@@ -358,7 +358,7 @@ The {{site.data.keyword.Db2_on_Cloud_short}} REST API was enhanced to also accep
   ```
   {: codeblock}
 
-For more details about your service's API, see: [{{site.data.keyword.Db2_on_Cloud_short}} REST API](https://cloud.ibm.com/apidocs/db2-on-cloud){:external}.
+For more details about your service's API, see: [Data Virtualization REST API](https://cloud.ibm.com/apidocs/db2-on-cloud){:external}.
 
 ## IBMid federation
 {: #fed_ibmid}

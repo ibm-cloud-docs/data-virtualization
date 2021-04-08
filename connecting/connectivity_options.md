@@ -24,7 +24,7 @@ subcollection: data-virtualization
 # Connectivity options
 {: #connect_options}
 
-{{site.data.keyword.Db2_on_Cloud_long}} offers multiple secure connectivity options that depend on your application connection requirements.  
+Data Virtualization offers multiple secure connectivity options that depend on your application connection requirements.  
 {: shortdesc}
 
 ## Connecting to a public endpoint (default option)
@@ -40,7 +40,7 @@ The easiest way to connect to your data is by way of the public host name that w
 #### From the console
 {: #pub_console}
 
-1. Log in to {{site.data.keyword.Db2_on_Cloud_short}} and click your service instance.
+1. Log in to Data Virtualization and click your service instance.
 2. Click **Manage**.
 3. Click **Open Console**, then click **Administration**.
 4. Select **Connections**.
@@ -49,7 +49,7 @@ The easiest way to connect to your data is by way of the public host name that w
 #### From service credentials
 {: #pub_sc}
 
-1. Log in to {{site.data.keyword.Db2_on_Cloud_short}} and click your service instance.
+1. Log in to Data Virtualization and click your service instance.
 2. Click **Service credentials**.
 3. Click **New credential**, then click **Add**.
 4. After the credentials are created, click the down arrow beside the credential names to view the credentials.
@@ -61,7 +61,7 @@ The easiest way to connect to your data is by way of the public host name that w
 ##### Db2 on Cloud section
 {: #pub_db2oc}
 
-The "db2" section contains information that is suited to applications that make connections to {{site.data.keyword.Db2_on_Cloud_short}}.
+The "db2" section contains information that is suited to applications that make connections to Data Virtualization.
 
 | Field Name | Index | Description |
 |----------|--------|-----------|
@@ -176,12 +176,12 @@ The following VCAP Services json file can be used to make connections to your En
 ## Connecting to a private endpoint: IBM Cloud service endpoint
 {: #priv_endpt}
 
-{{site.data.keyword.Db2_on_Cloud_short}} supports private connectivity through an [{{site.data.keyword.cloud_notm}} service endpoint](/docs/account?topic=account-service-endpoints-overview). {{site.data.keyword.cloud_notm}} service endpoints securely route network traffic between different {{site.data.keyword.cloud_notm}} services through the {{site.data.keyword.cloud_notm}} private backplane network. When you configure your {{site.data.keyword.Db2_on_Cloud_short}} instance with {{site.data.keyword.cloud_notm}} service endpoint connectivity, traffic between your cloud database and applications deployed on your {{site.data.keyword.cloud_notm}} account will not traverse any public networks.
+Data Virtualization supports private connectivity through an [{{site.data.keyword.cloud_notm}} service endpoint](/docs/account?topic=account-service-endpoints-overview). {{site.data.keyword.cloud_notm}} service endpoints securely route network traffic between different {{site.data.keyword.cloud_notm}} services through the {{site.data.keyword.cloud_notm}} private backplane network. When you configure your Data Virtualization instance with {{site.data.keyword.cloud_notm}} service endpoint connectivity, traffic between your cloud database and applications deployed on your {{site.data.keyword.cloud_notm}} account will not traverse any public networks.
 
 ### How to configure IBM Cloud private endpoint connectivity
 {: #cfg_priv_endpt}
 
-Complete the following steps to enable {{site.data.keyword.cloud_notm}} private endpoint connectivity for your {{site.data.keyword.Db2_on_Cloud_short}} instance:
+Complete the following steps to enable {{site.data.keyword.cloud_notm}} private endpoint connectivity for your Data Virtualization instance:
 
 Enable your {{site.data.keyword.cloud_notm}} account to use virtual routing and forwarding (VRF) and {{site.data.keyword.cloud_notm}} service endpoints. To enable both of these items, see [Enabling VRF and service endpoints](/docs/account?topic=account-vrf-service-endpoint).
 
@@ -190,7 +190,7 @@ Enable your {{site.data.keyword.cloud_notm}} account to use virtual routing and 
   2. Click **Access restriction**.
   3. Select **Private endpoints** or **Public-and-private endpoints** and click **Update** to enable private endpoints.
 
-     ![Configuring private endpionts {{site.data.keyword.cloud_notm}}](images/private_endpoints.png "Graphical view of configuring private end points"){: caption="Figure 2. Configuring private endpoints on {{site.data.keyword.Db2_on_Cloud_long}}" caption-side="bottom"}
+     ![Configuring private endpionts {{site.data.keyword.cloud_notm}}](images/private_endpoints.png "Graphical view of configuring private end points"){: caption="Figure 2. Configuring private endpoints on Data Virtualization" caption-side="bottom"}
 
 ## Connecting to a virtual private network (VPN) endpoint
 {: #priv_endpt_vpn}
@@ -204,7 +204,7 @@ To establish a VPN connection to your cloud database behind a public endpoint, [
 
 * **Type of support**: Technical 
 * **Category**: Databases 
-* **Offering**: select your {{site.data.keyword.Db2_on_Cloud_short}} instance 
+* **Offering**: select your Data Virtualization instance 
 * **Subject**: VPN Connection Request 
 * **Description**: provide the following required information
   * **Customer-side VPN Peer Address** (your VPN endpoint): `<IP Address>`

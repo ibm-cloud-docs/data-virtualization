@@ -24,7 +24,7 @@ subcollection: data-virtualization
 # Maintenance and notification policies
 {: #maint_note_pol}
 
-The maintenance and notification policies for the {{site.data.keyword.Db2_on_Cloud_long}} service can be found in the [{{site.data.keyword.Bluemix_notm}} service descriptions](http://www.ibm.com/software/sla/sladb.nsf/sla/bm?OpenDocument){:external}. Additional terms of service specifically for {{site.data.keyword.Db2_on_Cloud_short}} can be found by looking under the **Chargeable additional SDs** category. 
+The maintenance and notification policies for the Data Virtualization service can be found in the [{{site.data.keyword.Bluemix_notm}} service descriptions](http://www.ibm.com/software/sla/sladb.nsf/sla/bm?OpenDocument){:external}. Additional terms of service specifically for Data Virtualization can be found by looking under the **Chargeable additional SDs** category. 
 
 Being acquainted with our policies can better help you plan and schedule your workloads to be resilient to system maintenance.
 {: shortdesc}
@@ -32,7 +32,7 @@ Being acquainted with our policies can better help you plan and schedule your wo
 ## Maintenance policy
 {: #maintenance}
 
-Effective as of 27 March 27 2018, when scheduled system maintenance must be done for the {{site.data.keyword.Db2_on_Cloud_short}} service, the major data centers (London, Dallas, and Sydney) are updated on separate days of the business week. All of the other data centers are simultaneously updated on a day of the week that doesn't coincide with the major data centers. Table 1 shows an example of a {{site.data.keyword.Db2_on_Cloud_short}} system maintenance schedule.
+Effective as of 27 March 27 2018, when scheduled system maintenance must be done for the Data Virtualization service, the major data centers (London, Dallas, and Sydney) are updated on separate days of the business week. All of the other data centers are simultaneously updated on a day of the week that doesn't coincide with the major data centers. Table 1 shows an example of a Data Virtualization system maintenance schedule.
 
 | Data center | Example of a possible maintenance schedule |
 |-------------|-----------------------------|
@@ -48,6 +48,6 @@ The table is not an official system maintenance schedule, but an example of a po
 ## Notification policy
 {: #notification}
 
-Effective as of March 27, 2018, notification is sent to you two business days in advance of any scheduled system maintenance that can impact your {{site.data.keyword.Db2_on_Cloud_short}} service. 
+Effective as of March 27, 2018, notification is sent to you two business days in advance of any scheduled system maintenance that can impact your Data Virtualization service. 
 
-The {{site.data.keyword.Db2_on_Cloud_short}} notification policy excludes the case in which we must address, in a timely manner, any security vulnerability that we deem to be an emergency-grade, time-sensitive issue. In that case, at least 24 hours advance notice is given as stipulated in the {{site.data.keyword.Bluemix_notm}} service descriptions.
+The Data Virtualization notification policy excludes the case in which we must address, in a timely manner, any security vulnerability that we deem to be an emergency-grade, time-sensitive issue. In that case, at least 24 hours advance notice is given as stipulated in the {{site.data.keyword.Bluemix_notm}} service descriptions.

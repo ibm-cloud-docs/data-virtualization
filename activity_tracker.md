@@ -24,9 +24,9 @@ subcollection: data-virtualization
 # Activity Tracker integration
 {: #activity-tracker}
 
-{{site.data.keyword.Db2_on_Cloud_long}} deployments are integrated with Activity Tracker events in [IBM Cloud Activity Tracker with LogDNA](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-getting-started), so you can view service-level events.
+Data Virtualization deployments are integrated with Activity Tracker events in [IBM Cloud Activity Tracker with LogDNA](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-getting-started), so you can view service-level events.
 
-Currently, Activity Tracker with LogDNA integration is available for {{site.data.keyword.Db2_on_Cloud_short}} deployments in the regions according to the following table: 
+Currently, Activity Tracker with LogDNA integration is available for Data Virtualization deployments in the regions according to the following table: 
 
 | Deployment region | Activity Tracker region |
 |----------|-----------|
@@ -42,7 +42,7 @@ Currently, Activity Tracker with LogDNA integration is available for {{site.data
 ## Activity Tracker through LogDNA
 {: #at_logdna}
 
-After you provision the service, events are automatically forwarded from all of your {{site.data.keyword.Db2_on_Cloud_short}} deployments in the same region.
+After you provision the service, events are automatically forwarded from all of your Data Virtualization deployments in the same region.
 
 The service can be provisioned from its [catalog page](https://cloud.ibm.com/catalog/services/ibm-cloud-activity-tracker-with-logdna?callback=%2Fobserve%2Factivitytracker%2Fcreate){: external} or from an existing [Observability Dashboard](https://cloud.ibm.com/observe/activitytracker){: external}.
 
@@ -65,7 +65,7 @@ A description of the common fields for an Activity Tracker event is on the [Even
 ## List of events
 {: #at_list_ev}
 
-The following table lists the events that get sent to Activity Tracker from {{site.data.keyword.Db2_on_Cloud_short}} deployments:
+The following table lists the events that get sent to Activity Tracker from Data Virtualization deployments:
 
 | Action | Description |
 |-------|-------|

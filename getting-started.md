@@ -40,25 +40,25 @@ Create credentials. After creating the Data Virtualization service on {{site.dat
 ## Video: Introducing Db2 on Cloud
 {: #intro_vid}
 
-Watch this video to see an introductory tutorial about {{site.data.keyword.Db2_on_Cloud_short}}. -->
+Watch this video to see an introductory tutorial about Data Virtualization. -->
 
-<!-- <iframe id="youtubeplayer1" title="Introduction to {{site.data.keyword.Db2_on_Cloud_short}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/k1Wj2Sc5Ing?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe> -->
+<!-- <iframe id="youtubeplayer1" title="Introduction to Data Virtualization" type="text/html" width="640" height="390" src="//www.youtube.com/embed/k1Wj2Sc5Ing?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe> -->
 
-<!-- ![Introduction to {{site.data.keyword.Db2_on_Cloud_short}}](https://www.youtube.com/embed/k1Wj2Sc5Ing?rel=0){: video output="iframe" data-script="none" id="youtubeplayer1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen} -->
+<!-- ![Introduction to Data Virtualization](https://www.youtube.com/embed/k1Wj2Sc5Ing?rel=0){: video output="iframe" data-script="none" id="youtubeplayer1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen} -->
 
 
 <!--
 ## Video: Using REST API to communicate with Db2 on Cloud
 {: #vid_api}
 
-Watch this video to see the steps required to use a RESTful API to communicate with {{site.data.keyword.Db2_on_Cloud_short}}.
+Watch this video to see the steps required to use a RESTful API to communicate with Data Virtualization.
 
-<iframe class="embed-responsive-item" id="youtubeplayer2" title="Using RESTful API to communicate with {{site.data.keyword.Db2_on_Cloud_short}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/PSNBDwgf9ts?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+<iframe class="embed-responsive-item" id="youtubeplayer2" title="Using RESTful API to communicate with Data Virtualization" type="text/html" width="640" height="390" src="//www.youtube.com/embed/PSNBDwgf9ts?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
 ## Video: Integrating Jupyter Notebooks
 {: #cognos_vid}
 
-Watch this video to see how to integrate Jupyter Notebooks with {{site.data.keyword.Db2_on_Cloud_short}}.
+Watch this video to see how to integrate Jupyter Notebooks with Data Virtualization.
 
 <iframe class="embed-responsive-item" id="youtubeplayer3" title="Integrating Jupyter notebooks" type="text/html" width="640" height="390" src="//www.youtube.com/embed/bNfH0Wzx3is?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 -->

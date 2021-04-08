@@ -24,7 +24,7 @@ subcollection: data-virtualization
 # High availability (HA)
 {: #ha}
 
-{{site.data.keyword.Db2_on_Cloud_short}} high availability plans have excellent availability characteristics with a 99.99% SLA. 
+Data Virtualization high availability plans have excellent availability characteristics with a 99.99% SLA. 
 {: shortdesc}
 
 <!--
@@ -32,7 +32,7 @@ subcollection: data-virtualization
 {: #ha_v2_ha}
 -->
 
-High availability disaster recovery (HADR) on {{site.data.keyword.Db2_on_Cloud_short}} Enterprise and Standard plans is provided by leveraging the support of native Db2 HADR. 
+High availability disaster recovery (HADR) on Data Virtualization Enterprise and Standard plans is provided by leveraging the support of native Db2 HADR. 
 
 - Each HADR system consists of 3 nodes located in different independent availability zones.  
 
@@ -53,7 +53,7 @@ For Enterprise and Standard HADR plans, the failover is managed for you by IBM. 
 ## Legacy Flex plans
 {: #ha_legacy}
 
-High availability on {{site.data.keyword.Db2_on_Cloud_short}} Legacy Flex plans is provided by leveraging the support of native Db2 HADR.
+High availability on Data Virtualization Legacy Flex plans is provided by leveraging the support of native Db2 HADR.
 
 - Each HA system consists of 2 nodes. 
 

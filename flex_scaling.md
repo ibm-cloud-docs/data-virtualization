@@ -57,7 +57,7 @@ To scale memory and storage from within the console, complete the following step
 ## Enterprise plan
 {: #fs_enterprise_plan}
 
-Your Enterprise plan initially deploys with 4 cores, 16 GB of RAM, and 20 GB of disk space. You can then scale your plan up or down with slider bars in the {{site.data.keyword.Db2_on_Cloud_short}} console by up to 56 virtual cores and 4 TB of storage. 
+Your Enterprise plan initially deploys with 4 cores, 16 GB of RAM, and 20 GB of disk space. You can then scale your plan up or down with slider bars in the Data Virtualization console by up to 56 virtual cores and 4 TB of storage. 
 
 Dedicated cores can be scaled up or down in the following increments with memory changing accordingly:
 

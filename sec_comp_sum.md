@@ -24,7 +24,7 @@ subcollection: data-virtualization
 # Security compliances
 {: #sec_comp}
 
-{{site.data.keyword.Db2_on_Cloud_long}} is provided on secure {{site.data.keyword.cloud}} and Amazon Web Services platforms. Db2 managed services comply with the specific security standards and auditing processes that are listed here and do not automatically inherit general {{site.data.keyword.cloud_notm}} security compliances that are documented for IaaS, PaaS, and SaaS cloud offerings. 
+Data Virtualization is provided on secure {{site.data.keyword.cloud}} and Amazon Web Services platforms. Db2 managed services comply with the specific security standards and auditing processes that are listed here and do not automatically inherit general {{site.data.keyword.cloud_notm}} security compliances that are documented for IaaS, PaaS, and SaaS cloud offerings. 
 {: shortdesc}
 
 <!--
@@ -34,7 +34,7 @@ Any plan deployed under the Hybrid Data Management Platform (HDMP) possesses the
 
 For details about each of the security compliances, see [Details about security compliance](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){: external}.
 
-| {{site.data.keyword.Db2_on_Cloud_long}} offering plans | HIPAA | ISO | SOC 2 Type 2 | GDPR | Privacy shield |
+| Data Virtualization offering plans | HIPAA | ISO | SOC 2 Type 2 | GDPR | Privacy shield |
 |-------------------------------------------------|-------|-----|--------------|------|----------------|
 | Enterprise | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) | In Progress | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) |
 | Standard | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) | In Progress | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) |

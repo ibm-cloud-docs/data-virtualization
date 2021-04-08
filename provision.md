@@ -25,14 +25,14 @@ subcollection: data-virtualization
 # Provision a service instance
 {: #provisioning}
 
-To deploy an {{site.data.keyword.Db2_on_Cloud_long}} service, you need to create a {{site.data.keyword.Db2_on_Cloud_short}} service instance. 
+To deploy an Data Virtualization service, you need to create a Data Virtualization service instance. 
 {: shortdesc}
 
-You can provision a deployment by visiting the service's catalog page or by specifying the service ID to the command line, to the API, or to Terraform. The deployment type is determined by the service ID, which you must specify when you create a {{site.data.keyword.Db2_on_Cloud_short}} deployment by using the command line, API, or Terraform. 
+You can provision a deployment by visiting the service's catalog page or by specifying the service ID to the command line, to the API, or to Terraform. The deployment type is determined by the service ID, which you must specify when you create a Data Virtualization deployment by using the command line, API, or Terraform. 
 
 | Deployment Type | Catalog Page | Service ID | Plan IDs |
 |-----------------|--------------|------------|----------|
-| {{site.data.keyword.Db2_on_Cloud_short}} |[Link](https://cloud.ibm.com/catalog/services/db2){: external} | dashdb-for-transactions | dashDBNebula, standard |
+| Data Virtualization |[Link](https://cloud.ibm.com/catalog/services/db2){: external} | dashdb-for-transactions | dashDBNebula, standard |
 
 ## Using the catalog
 {: #prov_catalog}
@@ -146,6 +146,6 @@ If you use Terraform to manage your infrastructure, the [{{site.data.keyword.clo
 - `members_disk_allocation_mb` - Total amount of disk to be shared between the database members within the database. For example, if the value is "30720", and there are three members, then the deployment gets 30 GB of disk total, giving 10 GB of disk per member. If omitted, the default value for the database type is used.
 - `members_cpu_allocation_count` - Enables and allocates the number of specified dedicated cores to your deployment. For example, to use two dedicated cores per member, use `"members_cpu_allocation_count":"2"`. If omitted, the default value "Shared CPU" uses compute resources on shared hosts.
 - `service-endpoints` - Selects the types [Service Endpoints]() supported on your deployment. Options are `public`, `private`, or `public-and-private`. If omitted, the default is `public`. Note that in the CLI, `service-endpoints` is a flag, and not a parameter.
-- `{"remote_leader_id": "crn:v1:..."}` - parameter only for {{site.data.keyword.Db2_on_Cloud_long}}.
+- `{"remote_leader_id": "crn:v1:..."}` - parameter only for Data Virtualization.
 
 

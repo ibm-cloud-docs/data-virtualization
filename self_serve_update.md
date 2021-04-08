@@ -40,7 +40,7 @@ You are notified of an instance system update through the **Notifications** icon
 
 ![Update notification](images/ss_notification.png "Self-serve update notification"){: caption="Figure 1. Self-serve update notification" caption-side="bottom"}
 
-Clicking **View details** brings up the **System update** information window that displays the new Db2 version of {{site.data.keyword.Db2_on_Cloud_short}}.  
+Clicking **View details** brings up the **System update** information window that displays the new Db2 version of Data Virtualization.  
 
 ![System update](images/ss_system_update.png "System update information"){: caption="Figure 2. System update information" caption-side="bottom"}
 
