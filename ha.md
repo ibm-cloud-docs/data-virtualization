@@ -2,9 +2,9 @@
 
 copyright:
   years: 2014, 2021
-lastupdated: "2021-01-19"
+lastupdated: "2021-04-08"
 
-keywords: HADR, Legacy Flex, legacy, Flex, high availability disaster recovery
+keywords: HADR, Flex, high availability disaster recovery
 
 subcollection: data-virtualization
 

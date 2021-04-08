@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2020
-lastupdated: "2020-02-03"
+  years: 2014, 2021
+lastupdated: "2021-04-08"
 
 keywords:
 
@@ -603,7 +603,7 @@ For more information, see [Connecting Cognos Analytics](https://www.ibm.com/supp
 After you create a project in IBM Watson Studio (formerly Data Science Experience), you add data assets to it so that you can work with data. All the collaborators in the project are automatically authorized to access the data in the project.
 {: shortdesc}
 
-How you add data and from where you can add data differs between legacy and IBM Watson projects. IBM Watson projects use {{site.data.keyword.Bluemix_notm}} Object Storage. The project is a legacy project if it uses Object Storage OpenStack Swift. 
+IBM Watson projects use {{site.data.keyword.Bluemix_notm}} Object Storage. 
 
 #### To create a new connection in an IBM Watson project:
 
@@ -622,34 +622,6 @@ Watch this video to see how to create a connection and add connected data to a p
 ![Create a connection and add connected data to a project](https://www.youtube.com/embed/YV-5zSczhH4?rel=0){: video output="iframe" data-script="none" id="youtubeplayer1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen}
 
 <!-- <iframe class="embed-responsive-item" id="youtubeplayer" title="Create a connection and add connected data to a project" type="text/html" width="640" height="390" src="//www.youtube.com/embed/YV-5zSczhH4?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe> -->
-
-#### To create a new connection in a legacy project:
-
-1. From your project's **Assets** page, click the **Find and add data** icon.
-    
-2. On the **Connections** pane, click **Create Connection**.
-
-3. Enter a name and description and choose a Service Category:
-
-   **Data Service** = {{site.data.keyword.Bluemix_notm}} data service
-
-   When you choose **Data Service**, your existing {{site.data.keyword.Bluemix_notm}} data services appear in the **Service Instance** list.
-
-4. Choose the service or database server from the list.
-
-5. Enter the connection information:
-
-   When you choose **Data Service**, your existing {{site.data.keyword.Bluemix_notm}} data services appear in the **Service Instance** list.
-    
-6. Click **Create**. The connection is available to all legacy projects.
-    
-7. On the **Connections** pane, select the connection and click **Apply**.
-
-To add an existing connection to a legacy project:
-
-1. From your project's **Assets** page, click the **Find and add data** icon.
-    
-2. On the **Connections** pane, select the connection and click **Apply**.
 
 ### SPSS Statistics
 {: #spss_stats}

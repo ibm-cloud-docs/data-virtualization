@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2020
-lastupdated: "2020-11-25"
+  years: 2014, 2021
+lastupdated: "2021-04-08"
 
 keywords:
 
@@ -28,7 +28,6 @@ subcollection: data-virtualization
 {: shortdesc}
 
 - To access data, view and create database objects, administer, and monitor your {{site.data.keyword.Db2_on_Cloud_short}} service, use the following APIs:
-  - [Database management API (Legacy)](https://cloud.ibm.com/apidocs/db2-on-cloud){: external}.
   - [Database management API (Standard and Enterprise)](https://cloud.ibm.com/apidocs/db2-on-cloud/db2-on-cloud-v4){: external}.
 - To scale the storage and compute for your {{site.data.keyword.Db2_on_Cloud_short}} instance, use the [Database resource scaling API](https://cloud.ibm.com/apidocs/db2-on-cloud/db2oc_scale_exp){: external}.
 

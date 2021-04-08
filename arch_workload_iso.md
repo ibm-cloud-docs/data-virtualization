@@ -20,7 +20,7 @@ keywords: public isolation for _servicename_, compute isolation for _servicename
 
 _The short description should be a single, concise paragraph that contains one or two sentences and no more than 50 words. Summarize your offering's architecture and support for isolating one tenants' workload from another._
 
-Review the following sample architecture for Data Virtualzation, and learn more about different isolation levels so that you can choose the solution that best meets the requirements of the workloads that you want to run in the cloud.
+Review the following sample architecture for Data Virtualation, and learn more about different isolation levels so that you can choose the solution that best meets the requirements of the workloads that you want to run in the cloud.
 {: shortdesc}
 
 ## _servicename_ architecture

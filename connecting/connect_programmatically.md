@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2020
-lastupdated: "2020-10-29"
+  years: 2014, 2021
+lastupdated: "2021-04-08"
 
 keywords:
 
@@ -55,19 +55,6 @@ In each Java application, specify the user ID and password by including the **Dr
 
   `jdbc:db2://<host_name>:<port>/bludb:user=<userid>;password=<your_password>;sslConnection=true;`
 
-#### Legacy plans
-{: #conxn_legacy}
-
-In each Java application, specify the user ID and password by including the **DriverManager.getConnection** method, and then include one of the following JDBC URL strings:
-
-- For a connection with SSL:
-
-  `jdbc:db2://<host_name>:50001/BLUDB:sslConnection=true;`
-
-- For a connection without SSL:
-
-  `jdbc:db2://<host_name>:50000/BLUDB`
-
 ## .NET
 {: #con_prog_net}
 
@@ -109,27 +96,6 @@ The following steps show you how to connect your application to the database wit
 
        `<alias>`: The name for a DSN alias that you want to use to establish the .NET connection. Choose a name that is meaningful to you; for example, `analytics`.
 
-   - Legacy plans
-
-     - For a connection with SSL:
-
-       `db2cli writecfg add -database BLUDB -host <hostname> -port 50001`
-
-       `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50001`
-
-       `db2cli writecfg add -database BLUDB -host <hostname> -port 50001 -parameter "SecurityTransportMode=SSL"`
-
-       where:
-
-       `<hostname>`: The host name of the server
-
-       `<alias>`: The name for a DSN alias that you want to use to establish the .NET connection. Choose a name that is meaningful to you; for example, `analytics`. 
-
-     - For a connection without SSL:
-
-       `db2cli writecfg add -database BLUDB -host <hostname> -port 50000`
-
-       `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50000`
 
 2. (*Optional*): To verify the .NET connection to the database, enter the following command at a command prompt:
 
@@ -240,26 +206,6 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
        `<hostname>`: The host name of the server
 
        `<port>`: The port number of the server
-
-       `<alias>`: The DSN alias that you choose
-
-   - Legacy plans
-
-     - For a connection with SSL:
-
-       `db2cli writecfg add -database BLUDB -host <hostname> -port 50001 -parameter "SecurityTransportMode=SSL"`
-
-       `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50001`
-
-     - For a connection without SSL:
-
-       `db2cli writecfg add -database BLUDB -host <hostname> -port 50000`
-
-       `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50000`
-
-       where:
-
-       `<hostname>`: The host name of the server
 
        `<alias>`: The DSN alias that you choose
     
