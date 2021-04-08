@@ -142,14 +142,3 @@ You can also connect external applications and tools to Data Virtualization and 
 - [SPSS Statistics](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ibm#spss_stats)
 - [SAS](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_3rd_party#sas)
 <!-- - [Local R development environment](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_3rd_party#r_dev_env) -->
-
-## Connecting to another Db2 database
-{: #fed}
-
-Db2 data virtualization (also known as federation) is supported by Data Virtualization. Data virtualization gives you single-query access to all of your data that is on multiple distributed databases anywhere in your organization. You can access data that is on any of your Db2 or Informix data sources, both in the cloud and on premises. 
-
-This function is supported on all versions of Data Virtualization, except for the free Lite plan. However, you can use the Lite plan as a target from which you can pull data.
-
-- [Data virtualization (federation)](/docs/Db2onCloud?topic=Db2onCloud-fed_v2)
-
-
