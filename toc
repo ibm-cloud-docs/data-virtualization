@@ -15,6 +15,7 @@ data-virtualization
         connecting/connectivity_options.md
         connecting/credentials.md
         connecting/ssl.md
+        connecting/service-connection.md
         connecting/driver_pkg.md
         connecting/connect_programmatically.md
         connecting/connect_ibm_tools.md
