@@ -27,7 +27,6 @@ data-virtualization
         interfaces.md
         endpoints.md
         flex_scaling.md
-        <!--deleting_db.md-->
         ha.md
         dr.md
         log_mon.md
