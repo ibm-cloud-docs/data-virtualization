@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2014, 2019
-lastupdated: "2019-10-25"
+  years: 2014, 2021
+lastupdated: "2021-04-12"
 
-keywords: db2, Db2 on Cloud, bring your own key, byok, cryptoshredding
+keywords: Data Virtualization, Data Virtualization on Cloud, bring your own key, byok, cryptoshredding
 
 subcollection: data-virtualization
 
@@ -128,45 +128,12 @@ After creating the key in the Key Protect service instance, you can proceed with
 
    ![Screen capture of the Grant a Service Authorization page where the Reader role is assigned.](images/kp_9.png "Assigning the Reader role on the Grant a Service Authorization page"){: caption="Figure 9. Assigning the Reader role on the Grant a Service Authorization page" caption-side="bottom"}
 
-### Configuring a Db2 service instance to use Key Protect root key
-{: #kp_cfg_key}
-
-#### Procedure
-{: #kp_proc_4}
-
-1. Log in to the Data Virtualization web console and select **SETTINGS > Manage Keys** from the hamburger menu.
-
-   ![Screen capture of the hamburger menu.](images/kp_10.png "Navigating to the MANAGE KEYS page in Data Virtualization web console"){: caption="Figure 10. Navigating to the MANAGE KEYS page" caption-side="bottom"}
-
-2. Select the Key Protect instance and the key that you want to use. Click **Migrate**.
-
-   ![Screen capture of the MANAGE KEYS page where key migration settings are made.](images/kp_11.png "Selecting the Key Protect service instance and key to migrate"){: caption="Figure 11. Key migration" caption-side="bottom"}
-
-3. Review the settings.
-
-   You will not be able to revert the change. Be certain your migration settings are correct for the selected key.
-   {: important}
-
-   To migrate the key from Key Protect to your Data Virtualization service, click **Continue**.
-
-   ![Screen capture of the key migration confirmation window.](images/kp_12.png "Review the key migration settings before confirming the migration"){: caption="Figure 12. Confirming the key migration" caption-side="bottom"}
-   
-4. After the key migration request is received, it takes a few minutes to complete. You can check the status of the key migration on this page.
-
-   ![Screen capture of the MANAGE KEYS page now showing the migration status.](images/kp_13.png "Monitor key migration status on the MANAGE KEYS page"){: caption="Figure 13. Migration status is shown on MANAGE KEYS page" caption-side="bottom"}
-
-5. After the key migration is complete, you now have control over the encryption and decryption of the data in your Data Virtualization database.
-
-   ![Screen capture of the MANAGE KEYS page after the completion of the key migration.](images/kp_14.png "MANAGE KEYS page after the key migration shows the Key type as Key Protect"){: caption="Figure 14. Key migration is completed" caption-side="bottom"}
-
-If you face any issues, contact {{site.data.keyword.Bluemix_notm}} Customer Support. 
-
 ## Rotating the key in Key Protect
 {: #kp_rotate}
 
 If you want to rotate the key in IBM Key Protect, you can do it either from the {{site.data.keyword.Bluemix_notm}} console or by using the [IBM Key Protect API: Invoke an action on a key](https://cloud.ibm.com/apidocs/key-protect#invoke-an-action-on-a-key){:external}. 
 
-## Removing the authorization of Db2 on Cloud service to access Key Protect
+## Removing the authorization of Data Virtualization on Cloud service to access Key Protect
 {: #kp_rm_auth}
 
 You can remove the authorization of a Data Virtualization service to access the Key Protect service instance by using the {{site.data.keyword.Bluemix_notm}} console. In such a case, your database instance can no longer be started after it is stopped because any attempt to access the keystore will fail. Certain operations within the database require access to the keystore and they will begin to fail as well. In addition, any database backups cannot be restored. The access to the database and its backups can be regained after the service-to-service authorization is granted again.

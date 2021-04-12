@@ -2,9 +2,9 @@
 
 copyright:
   years: 2014, 2021
-lastupdated: "2021-04-08"
+lastupdated: "2021-04-12"
 
-keywords: db2, Db2 on Cloud, bring your own key, byok, crypto-shredding
+keywords: Data Virtualization, Data Virtualization on Cloud, bring your own key, byok, crypto-shredding
 
 subcollection: data-virtualization
 
@@ -24,7 +24,7 @@ subcollection: data-virtualization
 # Key Protect integration
 {: #key-protect-v2}
 
-The data that you store in Db2 when using the Enterprise plan is encrypted by default by using randomly generated keys. If you need to control the encryption keys, you can use [{{site.data.keyword.keymanagementservicelong_notm}}](/docs/key-protect?topic=key-protect-integrate-services) to create, add, and manage encryption keys. Then, you can associate those keys with your {{site.data.keyword.databases-for}} deployment to encrypt your Db2 databases.
+The data that you store in Data Virtualization when using the Enterprise plan is encrypted by default by using randomly generated keys. If you need to control the encryption keys, you can use [{{site.data.keyword.keymanagementservicelong_notm}}](/docs/key-protect?topic=key-protect-integrate-services) to create, add, and manage encryption keys. Then, you can associate those keys with your {{site.data.keyword.databases-for}} deployment to encrypt your Data Virtualization databases.
 
 To get started, you need [{{site.data.keyword.keymanagementserviceshort}}](https://cloud.ibm.com/catalog/services/key-protect){: external} provisioned on your {{site.data.keyword.cloud_notm}} account.
 
@@ -41,7 +41,7 @@ Authorize {{site.data.keyword.keymanagementserviceshort}} for use with {{site.da
 1. Open your {{site.data.keyword.cloud_notm}} dashboard.
 1. From the menu bar, select **Manage > Access (IAM)**.
 1. In the side navigation, select **Authorizations**. Click **Create**.
-1. In the _Source service_ menu, select the service of the deployment. For example, **Db2**.
+1. In the _Source service_ menu, select the service of the deployment. For example, **Data Virtualization**.
 1. In the _Source service instance_ menu, select **All service instances**.
 1. In the _Target service_ menu, select **Key Protect**.
 1. In the _Target service instance_ menu, select the service instance to authorize.
