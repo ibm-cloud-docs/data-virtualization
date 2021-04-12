@@ -18,7 +18,7 @@ subcollection: _your-subcollection_
 {:codeblock: .codeblock}
 {:tip: .tip}
 
-# Securing your connection to _servicename_
+# Securing your connection to Data Virtualization
 {: #service-connection}
 
 _The short description should be a single, concise paragraph that contains one or two sentences and no more than 50 words. Summarize your offering's support for non-public service endpoints. You can use the following example for a service supporting the use of IBM Cloud service endpoints for network isolation:_
