@@ -24,19 +24,19 @@ subcollection: data-virtualization
 # Connecting programmatically by using the driver package
 {: #con_program}
 
-The Data Virtualization driver package contains software for connecting client applications to a Data Virtualization database. 
+The Data Virtualization driver package contains software for connecting client applications to a Data Virtualization instance. 
 {: shortdesc}
 
 ## JDBC
 {: #con_prog_jdbc}
 
-Define a connection between a Java™ application and the Data Virtualization database.
+Define a connection between a Java™ application and the Data Virtualization instance.
 {: shortdesc}
 
 ### Prerequisites
 {: #prereq61}
 
-Before attempting to connect to your Data Virtualization database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your Data Virtualization instance, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -58,13 +58,13 @@ In each Java application, specify the user ID and password by including the **Dr
 ## .NET
 {: #con_prog_net}
 
-Define a connection between a .NET application and your Data Virtualization database. 
+Define a connection between a .NET application and your Data Virtualization instance. 
 {: shortdesc}
 
 ### Prerequisites
 {: #prereq71}
 
-Before attempting to connect to your Data Virtualization database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your Data Virtualization instance, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -107,7 +107,7 @@ The following steps show you how to connect your application to the database wit
     
    `<user_id>`: Your Data Virtualization user ID. 
     
-   `<password>`: The password that you use to connect to your Data Virtualization database. 
+   `<password>`: The password that you use to connect to your Data Virtualization instance. 
 
 ### Example
 {: #ex71}
@@ -173,13 +173,13 @@ namespace dotNetSSLTest
 ## ODBC or CLI
 {: #con_prog_odbc_cli}
 
-Define a connection between a Microsoft Windows ODBC or CLI application and a Data Virtualization database.
+Define a connection between a Microsoft Windows ODBC or CLI application and a Data Virtualization instance.
 {: shortdesc}
 
 ### Prerequisites
 {: #prereq81}
 
-Before attempting to connect to your Data Virtualization database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your Data Virtualization instance, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -232,13 +232,13 @@ Before attempting to connect to your Data Virtualization database, verify that y
 ## ODBC Data Source Administrator
 {: #con_prog_odbc_dsa}
 
-Use the Microsoft ODBC Data Source Administrator tool to define a connection between an ODBC or CLI application and a Data Virtualization database.
+Use the Microsoft ODBC Data Source Administrator tool to define a connection between an ODBC or CLI application and a Data Virtualization instance.
 {: shortdesc}
 
 ### Prerequisites
 {: #prereq91}
 
-Before attempting to connect to your Data Virtualization database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your Data Virtualization instance, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -263,13 +263,13 @@ Before attempting to connect to your Data Virtualization database, verify that y
 ## PHP
 {: #con_prog_php}
 
-Define a connection between a PHP application and a Data Virtualization database.
+Define a connection between a PHP application and a Data Virtualization instance.
 {: shortdesc}
 
 ### Prerequisites
 {: #prereq101}
 
-Before attempting to connect to your Data Virtualization database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your Data Virtualization instance, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 <!-- Before you can connect to your database, you must perform the following steps:
 

@@ -24,7 +24,7 @@ subcollection: data-virtualization
 # IBM Key Protect
 {: #key-protect}
 
-With integration of the [IBM Key Protect](/docs/key-protect?topic=key-protect-getting-started-tutorial) service, you can have direct control over the data in your database and backups. You can manage your own keys in the Key Protect service on {{site.data.keyword.Bluemix_notm}} and you can use your key to control the encryption and decryption of the data in your Data Virtualization database. 
+With integration of the [IBM Key Protect](/docs/key-protect?topic=key-protect-getting-started-tutorial) service, you can have direct control over the data in your database and backups. You can manage your own keys in the Key Protect service on {{site.data.keyword.Bluemix_notm}} and you can use your key to control the encryption and decryption of the data in your Data Virtualization instance. 
 {: shortdesc}
 
 Upon instance creation, your database instance is set to encrypt its data at rest by using the Advanced Encryption Standard (AES) in Cipher-Block Chaining (CBC) mode with a 256-bit data encryption key (DEK). This DEK is then encrypted by a master key that is stored in a PKCS#12 keystore. A password is required to open the keystore. With Key Protect integration, the password is encrypted by a Key Protect root key. You must create a root key in Key Protect and grant your specific Data Virtualization instance (resource) `Reader` access to that root key. In the Data Virtualization web console, you specify the Key Protect instance and the root key to be used. After the association is complete, the specified root key is then used by Data Virtualization to encrypt and decrypt the keystore password. The root key never leaves Key Protect.
@@ -44,7 +44,7 @@ To integrate the Key Protect feature into the Data Virtualization service, the D
 ## Getting started
 {: #kp_gs}
 
-Complete the steps in the following sections to get started with using IBM Key Protect to control the encryption and decryption of the data in your Data Virtualization database.
+Complete the steps in the following sections to get started with using IBM Key Protect to control the encryption and decryption of the data in your Data Virtualization instance.
 
 ### Creating an IBM Key Protect instance
 {: #kp_instance}

@@ -24,13 +24,13 @@ subcollection: data-virtualization
 # Connecting overview
 {: #connect_ov}
 
-You can connect command-line interfaces, IBM® or third-party applications and tools, or apps that you create to your Data Virtualization database. 
+You can connect command-line interfaces, IBM® or third-party applications and tools, or apps that you create to your Data Virtualization instance. 
 {: shortdesc}
 
 ## Prerequisites
 {: #prereqs}
 
-Before attempting to connect to your Data Virtualization database, verify that you have the prerequisites. 
+Before attempting to connect to your Data Virtualization instance, verify that you have the prerequisites. 
 
 - Collect database details and credentials
 
@@ -38,7 +38,7 @@ Before attempting to connect to your Data Virtualization database, verify that y
 
 - Verify that a supported driver is installed
 
-   - If your application or tool already contains the Db2 v11.5 IBM Data Server Driver Package, then your application or tool is able to connect to your Data Virtualization database by using that driver.
+   - If your application or tool already contains the Db2 v11.5 IBM Data Server Driver Package, then your application or tool is able to connect to your Data Virtualization instance by using that driver.
    - Otherwise, install the Db2 driver package, which you can download from [here](https://www.ibm.com/support/pages/node/387577){: external}.
 
 - Configure your environment
@@ -58,7 +58,7 @@ Before attempting to connect to your Data Virtualization database, verify that y
 
    If your network is behind a firewall, confirm that communications are permitted on the port that is needed to connect to the Data Virtualization service. The port number can be found in the connection information from the **Service credentials** table of the Data Virtualization service instance or from the Data Virtualization web console.
 
-<!-- Before you can connect to your Data Virtualization database, verify that you completed downloading and installing the necessary components on the prerequisites checklist: 
+<!-- Before you can connect to your Data Virtualization instance, verify that you completed downloading and installing the necessary components on the prerequisites checklist: 
 
 - [Prerequisites checklist](prereqs.html) -->
 
@@ -92,7 +92,7 @@ See [Connectivity options](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_
 ## Connecting programmatically
 {: #conx_prgrm}
 
-You can use common programming languages to create applications that connect to a Data Virtualization database.
+You can use common programming languages to create applications that connect to a Data Virtualization instance.
 {: shortdesc}
 
 - [JDBC](/docs/Db2onCloud/connecting?topic=Db2onCloud-con_program#con_prog_jdbc)

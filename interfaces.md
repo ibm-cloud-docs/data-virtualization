@@ -56,7 +56,7 @@ With Data Virtualization service plans, you can do tasks that are related to fil
 ## Connect applications or your favorite tools from your local computer
 {: #connect_apps}
 
-Configure your local environment to connect to your Data Virtualization database by completing the following steps:
+Configure your local environment to connect to your Data Virtualization instance by completing the following steps:
 {: shortdesc}
 
 1. Download the [driver package](/docs/Db2onCloud/connecting?topic=Db2onCloud-drvr_pkg) from the Data Virtualization web console.
@@ -64,17 +64,17 @@ Configure your local environment to connect to your Data Virtualization database
    - [Installing on Linux or PowerLinux](/docs/Db2onCloud/connecting?topic=Db2onCloud-drvr_pkg#drvr_install_linux)
    - [Installing on Mac OS X](/docs/Db2onCloud/connecting?topic=Db2onCloud-drvr_pkg#drvr_install_mac)
    - [Installing on Windows](/docs/Db2onCloud/connecting?topic=Db2onCloud-drvr_pkg#drvr_install_windows)
-3. [Configure the driver files](/docs/Db2onCloud/connecting?topic=Db2onCloud-drvr_pkg#drvr_cfg_loc_env) for your Data Virtualization database.
+3. [Configure the driver files](/docs/Db2onCloud/connecting?topic=Db2onCloud-drvr_pkg#drvr_cfg_loc_env) for your Data Virtualization instance.
 
 ## Use Db2 Warehouse on Cloud as a data source for your {{site.data.keyword.Bluemix_notm}} apps or services
 {: #data_src}
 
-Apps that are hosted on {{site.data.keyword.Bluemix_notm}} can connect to your Data Virtualization database the same way as your local applications connect to your Data Virtualization database.
+Apps that are hosted on {{site.data.keyword.Bluemix_notm}} can connect to your Data Virtualization instance the same way as your local applications connect to your Data Virtualization instance.
 {: shortdesc}
 
 When your apps use the {{site.data.keyword.Bluemix_notm}} platform, you can take advantage of the `VCAP _SERVICES` environment variable to simplify the task of specifying database details and credentials:
 1. On your {{site.data.keyword.Bluemix_notm}} dashboard, in the **Connections** tab of the Service Details page for your Data Virtualization service, click the **Create connection** button.
-2. Select the {{site.data.keyword.cloud_notm}} app to use with your Data Virtualization database as a data source, and then click the **Connect** button.
+2. Select the {{site.data.keyword.cloud_notm}} app to use with your Data Virtualization instance as a data source, and then click the **Connect** button.
 3. Update your application code to retrieve database details and credentials from the `VCAP_SERVICES` environment variable:
 
     **Example without `VCAP_SERVICES`**

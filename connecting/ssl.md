@@ -24,7 +24,7 @@ subcollection: data-virtualization
 # SSL connectivity
 {: #ssl_support}
 
-The Data Virtualization database uses a certificate for SSL connections that is issued by a third-party digital certificate authority (CA). 
+The Data Virtualization instance uses a certificate for SSL connections that is issued by a third-party digital certificate authority (CA). 
 {: shortdesc}
 
 The CA certificate is part of the Db2 driver package. If your application connects with a driver from the Db2 driver package, you do not need to download the certificate separately. You can download the Db2 driver package from the web console.
@@ -33,7 +33,7 @@ However, if your application has its own driver, you might need to download the 
 
 Secure Sockets Layer (SSL) is a security protocol that provides communication privacy. SSL enables client and server applications to communicate in a way that is designed to prevent eavesdropping, tampering, and message forgery. SSL-enabled client applications use standard encryption techniques to help ensure secure communication.
 
-<!-- Configuring your applications to connect to your Data Virtualization database with SSL is strongly recommended. You should use only non-SSL connections if your are using legacy applications that cannot connect using an SSL connection.
+<!-- Configuring your applications to connect to your Data Virtualization instance with SSL is strongly recommended. You should use only non-SSL connections if your are using legacy applications that cannot connect using an SSL connection.
 
 To enforce SSL connections, log in to the Data Virtualization web console as an administrator, navigate to the **About** page, and select the **Enforce SSL connections** setting.
 {: important} -->

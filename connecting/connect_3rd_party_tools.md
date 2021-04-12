@@ -25,7 +25,7 @@ subcollection: data-virtualization
 # Connecting with third-party tools
 {: #connect_3rd_party}
 
-You can connect third-party command-line interfaces, applications, and tools to your Data Virtualization database. 
+You can connect third-party command-line interfaces, applications, and tools to your Data Virtualization instance. 
 {: shortdesc}
 
 ## Data integration
@@ -46,7 +46,7 @@ Watch this video to see how to integrate Data Virtualization with Informatica Cl
 ### Segment
 {: #segment}
 
-You can integrate Segment with a Data Virtualization database. Segment is a single platform that collects, stores, and routes your user data to hundreds of tools.
+You can integrate Segment with a Data Virtualization instance. Segment is a single platform that collects, stores, and routes your user data to hundreds of tools.
 {: shortdesc}
 
 [Segment](https://segment.com/docs/destinations/db2/){:external}
@@ -55,13 +55,13 @@ You can integrate Segment with a Data Virtualization database. Segment is a sing
 ### Aginity Workbench
 {: #aginity_wb}
 
-These instructions explain how to connect Aginity Workbench to a Data Virtualization database. You can use Aginity Workbench to migrate IBM PureData for Analytics (Netezza) data models and data to Data Virtualization.
+These instructions explain how to connect Aginity Workbench to a Data Virtualization instance. You can use Aginity Workbench to migrate IBM PureData for Analytics (Netezza) data models and data to Data Virtualization.
 {: shortdesc}
 
 #### Prerequisites
 {: #prereq6}
 
-Before attempting to connect to your Data Virtualization database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your Data Virtualization instance, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 #### Procedure
 {: #proc6}
@@ -78,7 +78,7 @@ Before attempting to connect to your Data Virtualization database, verify that y
 ### Looker
 {: #looker}
 
-You can connect Looker to a Data Virtualization database. Looker is a business intelligence app and big data analytics platform with which you can explore, analyze, and share real-time business analytics.
+You can connect Looker to a Data Virtualization instance. Looker is a business intelligence app and big data analytics platform with which you can explore, analyze, and share real-time business analytics.
 {: shortdesc}
 
 [Connecting Looker](https://docs.looker.com/setup-and-management/connecting-to-db){:external}
@@ -86,13 +86,13 @@ You can connect Looker to a Data Virtualization database. Looker is a business i
 ### Tableau
 {: #tableau}
 
-These instructions explain how to connect Tableau to a Data Virtualization database and apply to Tableau Desktop<!--version 8.x-->, but you can use similar steps for other Tableau tools.
+These instructions explain how to connect Tableau to a Data Virtualization instance and apply to Tableau Desktop<!--version 8.x-->, but you can use similar steps for other Tableau tools.
 {: shortdesc}
 
 #### Prerequisites
 {: #prereq_1}
 
-Before attempting to connect to your Data Virtualization database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your Data Virtualization instance, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 #### Procedure
 {: #procedure_1}
@@ -101,7 +101,7 @@ Before attempting to connect to your Data Virtualization database, verify that y
 2. From the start page, click **Connect to data**.
 3. From the **Data Sources** list, select the data source or driver to use for your database connection. In the **On a server** section of the list, select **IBM Db2**.
 4. From the **IBM DB2 Connection** window, enter the connection information by using the definitions in Table 1.
-5. Click **Connect** to establish the connection. Tableau offers several options for connecting to your data. To make full use of your Data Virtualization database, choose the **Connect Live** option.
+5. Click **Connect** to establish the connection. Tableau offers several options for connecting to your data. To make full use of your Data Virtualization instance, choose the **Connect Live** option.
 
 | Tableau field | Db2 connections information field |
 |---------------|-----------------------------------|
@@ -115,13 +115,13 @@ Before attempting to connect to your Data Virtualization database, verify that y
 ### Microsoft Excel
 {: #excel}
 
-These instructions explain how to connect Microsoft Excel <!--2010-->to a Data Virtualization database.
+These instructions explain how to connect Microsoft Excel <!--2010-->to a Data Virtualization instance.
 {: shortdesc}
 
 #### Prerequisites
 {: #prereq_2}
 
-Before attempting to connect to your Data Virtualization database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your Data Virtualization instance, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 You must have the Db2 driver package or the IBM® Data Server Driver Package installed on your local computer. 
 
@@ -135,7 +135,7 @@ You must have the Db2 driver package or the IBM® Data Server Driver Package ins
 3. Click one of the Run options.
 4. Click **Excel ODC File**.
 5. Download and open the `BLUExcel.odc` file in Excel. If a security notice is displayed, click **Enable**.
-6. Click **Open** to connect to the Data Virtualization database. The **Connect To DB2 Database** dialog box opens.
+6. Click **Open** to connect to the Data Virtualization instance. The **Connect To DB2 Database** dialog box opens.
 7. Type the user ID and password that you use to log in to Data Virtualization. To obtain the user ID and password, click **Connect** in the web console or **Connect > Connection Information** in the web console.
 8. Ensure that the connection mode is `Share`, and then click **OK**.
 
@@ -150,13 +150,13 @@ The query results are displayed in an Excel spreadsheet. These results are the s
 ### Esri ArcGIS for Desktop
 {: #esri_arcgis}
 
-You can connect Esri ArcGIS for Desktop to a Data Virtualization database and then use it to analyze and visualize geospatial data.
+You can connect Esri ArcGIS for Desktop to a Data Virtualization instance and then use it to analyze and visualize geospatial data.
 {: shortdesc}
 
 #### Prerequisites
 {: #prereq10}
 
-Before attempting to connect to your Data Virtualization database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your Data Virtualization instance, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 You must have the Db2 driver package or the IBM® Data Server Driver Package installed on your computer.
 
@@ -191,7 +191,7 @@ You must have the Db2 driver package or the IBM® Data Server Driver Package ins
 #### Results
 {: #results3}
 
-The ArcCatalog component of Esri ArcGIS for Desktop is now connected to your Data Virtualization database. 
+The ArcCatalog component of Esri ArcGIS for Desktop is now connected to your Data Virtualization instance. 
 -->
 
 ## Data science
@@ -200,31 +200,31 @@ The ArcCatalog component of Esri ArcGIS for Desktop is now connected to your Dat
 ### SAS
 {: #sas}
 
-These instructions explain how to create a connection from SAS to a Data Virtualization database.
+These instructions explain how to create a connection from SAS to a Data Virtualization instance.
 {: shortdesc}
 
 #### Prerequisites
 {: #prereq_3}
 
-Before attempting to connect to your Data Virtualization database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your Data Virtualization instance, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 #### Procedure
 {: #procedure_3}
 
-For steps on how to connect from SAS to a Data Virtualization database, see the SAS documentation:
+For steps on how to connect from SAS to a Data Virtualization instance, see the SAS documentation:
 - [SAS/ACCESS Interface to DB2 under UNIX and PC Hosts](https://documentation.sas.com/?docsetId=acreldb&docsetTarget=p1dzq4zjg1iycgn16l4xj9nnvibt.htm&docsetVersion=9.4&locale=en){:external}
 
 <!--
 ### R development environment
 {: #r_dev_env}
 
-Instead of using the RStudio® environment that is integrated within IBM Watson Studio, you might prefer to use your own, locally installed R development environment. For example, you might have your own RStudio installation, or you might prefer to use some other development tool such as Rcmdr or Rattle. These instructions explain how to connect an R development environment to a Data Virtualization database.
+Instead of using the RStudio® environment that is integrated within IBM Watson Studio, you might prefer to use your own, locally installed R development environment. For example, you might have your own RStudio installation, or you might prefer to use some other development tool such as Rcmdr or Rattle. These instructions explain how to connect an R development environment to a Data Virtualization instance.
 {: shortdesc}
 
 #### Prerequisites
 {: #prereq13}
 
-Before attempting to connect to your Data Virtualization database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your Data Virtualization instance, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 #### Procedure
 {: #proc13}
@@ -235,7 +235,7 @@ Before attempting to connect to your Data Virtualization database, verify that y
 
    Your local R environment accesses the Comprehensive R Archive Network (CRAN) and automatically downloads and installs the `ibmdbR` package and any prerequisite packages that are not already installed.
     
-2. Create an ODBC driver connection between your R development environment and your Data Virtualization database:
+2. Create an ODBC driver connection between your R development environment and your Data Virtualization instance:
         
    a. [Set up your database as an ODBC data source](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_cli_and_odbc_applications.html){:external}.
         
@@ -243,7 +243,7 @@ Before attempting to connect to your Data Virtualization database, verify that y
         
    c. At the R prompt, enter the following statements to create the connection. Replace the placeholders with the [connection information](/docs/Db2onCloud/connecting?topic=Db2onCloud-db_details_cxn_creds#db_details_cxn_creds) that you collected beforehand.
 
-   - If your locally installed R development environment runs in the Data Virtualization database:
+   - If your locally installed R development environment runs in the Data Virtualization instance:
 
      ```
      library(ibmdbR)
@@ -262,7 +262,7 @@ Before attempting to connect to your Data Virtualization database, verify that y
      con <- idaConnect(con.text)
      ```
 
-   - If your locally installed R development environment does not run in the Data Virtualization database:
+   - If your locally installed R development environment does not run in the Data Virtualization instance:
 
      ```
      library(ibmdbR)

@@ -24,7 +24,7 @@ subcollection: data-virtualization
 # Database details and connection credentials
 {: #db_details_cxn_creds}
 
-To configure your local development environment and to connect applications and tools to your Data Virtualization database, you need to know the database details and connection credentials.
+To configure your local development environment and to connect applications and tools to your Data Virtualization instance, you need to know the database details and connection credentials.
 {: shortdesc}
 
 ## Database details
@@ -43,7 +43,7 @@ There are important database details that are needed for connecting applications
 
 There are three types of credentials:
 
-- *IBMid* - If you use {{site.data.keyword.Bluemix_notm}}, this is the ID that you would use to log in to {{site.data.keyword.Bluemix_notm}}. Only the IBMID can be used to manage users by accessing **User Management** in the web console. This is not what you use to connect applications or tools to your Data Virtualization database.
+- *IBMid* - If you use {{site.data.keyword.Bluemix_notm}}, this is the ID that you would use to log in to {{site.data.keyword.Bluemix_notm}}. Only the IBMID can be used to manage users by accessing **User Management** in the web console. This is not what you use to connect applications or tools to your Data Virtualization instance.
 - *Db2 database credentials* - These credentials are generated when you create **New credential** under **Service credentials** for the service in {{site.data.keyword.Bluemix_notm}}.
 - *IBMid-created users* - These IBMid-created user IDs and passwords can be used to log directly into the web console URL and to connect to the Db2 database from applications or tools.
 

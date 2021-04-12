@@ -25,7 +25,7 @@ subcollection: data-virtualization
 # Connecting to IBM tools
 {: #connect_ibm}
 
-You can connect IBM command-line interfaces, applications, and tools to your Data Virtualization database. 
+You can connect IBM command-line interfaces, applications, and tools to your Data Virtualization instance. 
 {: shortdesc}
 
 ## Data integration
@@ -34,7 +34,7 @@ You can connect IBM command-line interfaces, applications, and tools to your Dat
 ### InfoSphere DataStage
 {: #datastage}
 
-These instructions explain how to define a connection without SSL between IBM® InfoSphere® DataStage® <!--version 9.1 and later -->and a Data Virtualization database by cataloging the database and defining a connection object, or how to create a connection with SSL by using a digital certificate that is issued by a third party.
+These instructions explain how to define a connection without SSL between IBM® InfoSphere® DataStage® <!--version 9.1 and later -->and a Data Virtualization instance by cataloging the database and defining a connection object, or how to create a connection with SSL by using a digital certificate that is issued by a third party.
 {: shortdesc}
 
 #### Prerequisites
@@ -57,7 +57,7 @@ To make connections with the SSL protocol, download and install the 32-bit GSKit
     - `<installation_directory>\gsk8\bin`
     - `<installation_directory>\gsk8\lib`
 
-Before attempting to connect to your Data Virtualization database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your Data Virtualization instance, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 #### Procedure
 {: #procedure_4}
@@ -110,7 +110,7 @@ Before attempting to connect to your Data Virtualization database, verify that y
 
      `# /home/db2inst2> db2 catalog db BLUDB as <db_alias> at node <node_name>`
 
-     where `<db_alias>` is your name for the Data Virtualization database.
+     where `<db_alias>` is your name for the Data Virtualization instance.
 
   6. Add read and execute permissions on the files in the SSL directory for everyone. The DataStage user who runs the jobs needs to access these files to make SSL connections to the Db2 database.
 
@@ -118,19 +118,19 @@ Before attempting to connect to your Data Virtualization database, verify that y
 
   7. Test the SSL connection in one of the following ways:
 
-     - Test the connection by using CLP. Issue the following command to connect to the Data Virtualization database:
+     - Test the connection by using CLP. Issue the following command to connect to the Data Virtualization instance:
 
        `db2 connect to <db_alias> user <user_id>`
 
-       where `<db_alias>` is your name for the Data Virtualization database and `<user_id>` is your Data Virtualization user ID. You are prompted to enter your password.
+       where `<db_alias>` is your name for the Data Virtualization instance and `<user_id>` is your Data Virtualization user ID. You are prompted to enter your password.
     
-     - Test the connection by using CLI. Issue the following command to connect to the Data Virtualization database:
+     - Test the connection by using CLI. Issue the following command to connect to the Data Virtualization instance:
 
        `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
 
         where `<alias>` is an alias that you created by using the **db2cli writecfg** command, `<user_id>` is your Data Virtualization user ID, and `<password>` is your Data Virtualization password.
 
-- To create a connection without SSL, catalog the target Data Virtualization database by completing the following steps:
+- To create a connection without SSL, catalog the target Data Virtualization instance by completing the following steps:
 
   1. Catalog the target Data Virtualization node so that client applications can connect to it. Run the following CLP commands:
 
@@ -138,23 +138,23 @@ Before attempting to connect to your Data Virtualization database, verify that y
 
      where `<node_name>` represents your name for the node, `<IP_address_of_BLUDB_database_server>` represents the IP address of the BLUDB database server, and `<port_number_of_BLUDB_database>` represents the port number of the BLUDB database.
 
-  2. Catalog the remote Data Virtualization database so that client applications can connect to it. Run the following command:
+  2. Catalog the remote Data Virtualization instance so that client applications can connect to it. Run the following command:
 
      `db2 catalog db BLUDB as <db_alias> at node <node_name>`
 
-     where `<db_alias>` represents your name for the Data Virtualization database and `<node_name>` represents your name for the node.
+     where `<db_alias>` represents your name for the Data Virtualization instance and `<node_name>` represents your name for the node.
 
   3. Test the non-SSL connection in one of the following ways:
 
-      - Test the connection by using CLP. Issue the following command to connect to the Data Virtualization database:
+      - Test the connection by using CLP. Issue the following command to connect to the Data Virtualization instance:
 
         `db2 connect to <db_alias> user <user_id>`
 
-        where `<db_alias>` is your name for the Data Virtualization database and `<user_id>` is your Data Virtualization user ID. You are prompted to enter your password.
+        where `<db_alias>` is your name for the Data Virtualization instance and `<user_id>` is your Data Virtualization user ID. You are prompted to enter your password.
 
         `db2 list tables`
 
-      - Test the connection by using CLI. Issue the following command to connect to the Data Virtualization database:
+      - Test the connection by using CLI. Issue the following command to connect to the Data Virtualization instance:
 
         `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
 
@@ -177,7 +177,7 @@ Use Lift to migrate your data into Data Virtualization.
 ### InfoSphere Data Replication
 {: #idr}
 
-You can connect IBM® InfoSphere® Data Replication <!--version 11.3.3.3-36 or later -->to a Data Virtualization database. <!-- This capability applies to both SMP and MPP environments. --> 
+You can connect IBM® InfoSphere® Data Replication <!--version 11.3.3.3-36 or later -->to a Data Virtualization instance. <!-- This capability applies to both SMP and MPP environments. --> 
 {: shortdesc}
 
 #### Overview
@@ -192,7 +192,7 @@ When you use Data Virtualization as a connection target, the performance of IBM 
 
 If you intend to connect by using the SSL protocol, download and install GSKit V8. See [GSKit V8 - Install, Uninstall and Upgrade instructions](http://www.ibm.com/support/docview.wss?uid=swg21631462){:external}. Click the operating system tab that applies to your client machine’s operating system. If you are installing the GSKit on a Windows computer, ensure that you specify the GSKit installation directory path (`<installation_directory>\gsk8\bin`) for the **`PATH`** environment variable.
 
-Before attempting to connect to your Data Virtualization database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your Data Virtualization instance, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 If you intend to connect by using the SSL protocol, download the `DigiCertGlobalRootCA.crt` SSL certificate from the web console to a directory on the client machine. To download the certificate, click **Connection > Connection Information** and then click the **Connection with SSL** tab.
 
@@ -237,25 +237,25 @@ If you intend to connect by using the SSL protocol, download the `DigiCertGlobal
 
      `<port_number>` is the port that is used to connect to Db2 Warehouse by using an SSL connection. If you are using the default port, specify `50001`.
             
-     f. Catalog the remote Data Virtualization database so that client applications can connect to it. Issue the following command:
+     f. Catalog the remote Data Virtualization instance so that client applications can connect to it. Issue the following command:
 
      `db2 catalog database bludb as <db_alias> at node <node_name>`
 
-     where `db_alias` is your name for the Data Virtualization database.
+     where `db_alias` is your name for the Data Virtualization instance.
             
      g. Test the SSL connection in one of the following ways:
                 
-     - Test the connection by using CLP by issuing the following command to connect to the Data Virtualization database:
+     - Test the connection by using CLP by issuing the following command to connect to the Data Virtualization instance:
 
        `db2 connect to <db_alias> user <user_id>`
 
        where `<user_id>` is your Data Virtualization user ID. You are prompted to enter your password.
                 
-     - Test the connection by using CLI by issuing the following command to connect to the Data Virtualization database:
+     - Test the connection by using CLI by issuing the following command to connect to the Data Virtualization instance:
 
        `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
 
-       where `<alias>` is a DSN alias that you created by using the **db2cli writecfg** command, `<user_id>` is your Data Virtualization user ID, and `<password>` is your Data Virtualization database password.
+       where `<alias>` is a DSN alias that you created by using the **db2cli writecfg** command, `<user_id>` is your Data Virtualization user ID, and `<password>` is your Data Virtualization instance password.
         
    - To create a connection without SSL, complete the following steps:
 
@@ -271,21 +271,21 @@ If you intend to connect by using the SSL protocol, download the `DigiCertGlobal
 
      `<port_number>` is the port that is used to connect to Data Virtualization without using an SSL connection. If you are using the default port, specify `50000`.
             
-     b. Catalog the remote Data Virtualization database so that client applications can connect to it. Issue the following command:
+     b. Catalog the remote Data Virtualization instance so that client applications can connect to it. Issue the following command:
 
      `db2 catalog database bludb as <db_alias> at node <node_name>`
 
-     where `<db_alias>` is your name for the Data Virtualization database.
+     where `<db_alias>` is your name for the Data Virtualization instance.
 
      c. Test the non-SSL connection in one of the following ways:
 
-     - Test the connection by using CLP by issuing the following command to connect to the Data Virtualization database:
+     - Test the connection by using CLP by issuing the following command to connect to the Data Virtualization instance:
 
        `db2 connect to <db_alias> user <user_id>`
 
        where `<user_id>` is your Data Virtualization user ID. You are prompted to enter your password.
                 
-     - Test the connection by using CLI by issuing the following command to connect to the Data Virtualization database:
+     - Test the connection by using CLI by issuing the following command to connect to the Data Virtualization instance:
 
        `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
 
@@ -335,13 +335,13 @@ Define a subscription and perform data replication. For information, see:
 ### Data Studio
 {: #data_studio}
 
-These instructions explain how to create a connection from IBM® Data Studio <!--version 4.1.x -->to a Data Virtualization database.
+These instructions explain how to create a connection from IBM® Data Studio <!--version 4.1.x -->to a Data Virtualization instance.
 {: shortdesc}
 
 #### Prerequisites
 {: #prereq_6}
 
-Before attempting to connect to your Data Virtualization database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your Data Virtualization instance, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 #### Procedure
 {: #procedure_6}
@@ -364,13 +364,13 @@ Before attempting to connect to your Data Virtualization database, verify that y
 ### Data Server Manager (DSM)
 {: #dsm}
 
-A connection between your IBM® Data Server Manager and your Data Virtualization database enables you to monitor and manage the database from the Data Server Manager web console. 
+A connection between your IBM® Data Server Manager and your Data Virtualization instance enables you to monitor and manage the database from the Data Server Manager web console. 
 {: shortdesc}
 
 #### Prerequisites
 {: #prereq_7}
 
-Before attempting to connect to your Data Virtualization database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your Data Virtualization instance, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 #### Procedure
 {: #procedure_7}
@@ -406,13 +406,13 @@ To create a connection, complete the following steps:
 ### InfoSphere Data Architect
 {: #ida}
 
-These instructions explain how to create a connection from InfoSphere® Data Architect <!--version 9.1.x -->to a Data Virtualization database.
+These instructions explain how to create a connection from InfoSphere® Data Architect <!--version 9.1.x -->to a Data Virtualization instance.
 {: shortdesc}
 
 #### Prerequisites
 {: #prereq_8}
 
-Before attempting to connect to your Data Virtualization database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your Data Virtualization instance, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 #### Procedure
 {: #procedure_8}
@@ -436,13 +436,13 @@ Before attempting to connect to your Data Virtualization database, verify that y
 ### CLPPlus
 {: #clpplus}
 
-Command line processor plus (CLPPlus) is included in the Db2 driver package. CLPPlus provides a command-line interface that you can use to connect to a Data Virtualization database. You can use CLPPlus to define, edit, and run statements, scripts, and commands.
+Command line processor plus (CLPPlus) is included in the Db2 driver package. CLPPlus provides a command-line interface that you can use to connect to a Data Virtualization instance. You can use CLPPlus to define, edit, and run statements, scripts, and commands.
 {: shortdesc}
 
 #### Prerequisites
 {: #prereq_9}
 
-Before attempting to connect to your Data Virtualization database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your Data Virtualization instance, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 To use CLPPlus, ensure that a software development kit (SDK) or a Java runtime environment (JRE) for Java Version 1.5.0 or later is installed on your computer and that environment variables are set as follows:
 
@@ -473,7 +473,7 @@ To use CLPPlus, ensure that a software development kit (SDK) or a Java runtime e
 
      `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50000`
 
-2. To start CLPPlus with a connection to a Data Virtualization database that uses the entries in the `db2dsdriver.cfg` file, run the following command:
+2. To start CLPPlus with a connection to a Data Virtualization instance that uses the entries in the `db2dsdriver.cfg` file, run the following command:
 
    - Windows environments: 
 
@@ -584,7 +584,7 @@ BRANCH_CODE CITY
 ### Cognos Analytics
 {: #cognos}
 
-You can run your IBM Cognos® reports against data in the cloud rather than the data in an on-premises database. After you load your data to a Data Virtualization database, you set up the JDBC driver, and then use the Cognos administration tools to create the database connection. These instructions explain how to connect to the database from Cognos version 10.2.1.
+You can run your IBM Cognos® reports against data in the cloud rather than the data in an on-premises database. After you load your data to a Data Virtualization instance, you set up the JDBC driver, and then use the Cognos administration tools to create the database connection. These instructions explain how to connect to the database from Cognos version 10.2.1.
 {: shortdesc}
 
 Watch this video to see how to create a connection.
@@ -626,13 +626,13 @@ Watch this video to see how to create a connection and add connected data to a p
 ### SPSS Statistics
 {: #spss_stats}
 
-These instructions explain how to create a connection from IBM® SPSS® Statistics to a Data Virtualization database.
+These instructions explain how to create a connection from IBM® SPSS® Statistics to a Data Virtualization instance.
 {: shortdesc}
 
 #### Prerequisites
 {: #prereq_10}
 
-Before attempting to connect to your Data Virtualization database, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your Data Virtualization instance, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 #### Procedure
 {: #procedure_10}
@@ -641,7 +641,7 @@ Before attempting to connect to your Data Virtualization database, verify that y
     
 2. In the Database Wizard, click **Add ODBC data source**.
     
-3. Use the ODBC Data Source Administrator window to add an ODBC data source name (DSN) for the Data Virtualization database:
+3. Use the ODBC Data Source Administrator window to add an ODBC data source name (DSN) for the Data Virtualization instance:
         
    a. On the **User DSN** tab, click **Add**.
 
