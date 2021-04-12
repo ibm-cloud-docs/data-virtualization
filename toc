@@ -29,6 +29,7 @@ data-virtualization
         flex_scaling.md
         <!--deleting_db.md-->
         ha.md
+        dr.md
         log_mon.md
         maintenance.md
         self_serve_update.md
