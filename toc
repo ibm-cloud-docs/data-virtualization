@@ -73,6 +73,5 @@ data-virtualization
     {: .navgroup id="help"}
     faqs.md
     help.md
-    troubleshoot.md
     {: .navgroup-end}
 	
