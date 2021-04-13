@@ -34,7 +34,10 @@ Data Virtualization high availability plans have excellent availability characte
 
 High availability disaster recovery (HADR) on Data Virtualization Enterprise and Standard plans is provided by leveraging the support of native Db2 HADR. 
 
-- Each HADR system consists of 3 nodes located in different independent availability zones.  
+- Each HADR system consists of 3 nodes located in different independent availability zones.
+
+Currently, the Data Virtualization beta consists of 1 node. 
+{: important}
 
 ![Schematic view of the 3 nodes in different availability zones](images/ha_AZ_small.png "Schematic view of the 3 nodes in different availability zones"){: caption="Figure 1. Schematic view of the 3 nodes in different availability zones" caption-side="bottom"}
 
