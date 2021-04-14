@@ -51,7 +51,7 @@ To verify that the driver package is already on your computer so that you can sk
 
 You can download the driver package for your operating system from the Data Virtualization web console. From your {{site.data.keyword.Bluemix_notm}} dashboard, open your Data Virtualization service. Log in to your Data Virtualization web console.
 
-In the Data Virtualization web console, select **Connect > Connection info**. Select the tile that represents your operating system to download the appropriate driver.
+In the Data Virtualization web console, select Connect details. Select the tile that represents your operating system to download the appropriate driver.
 
 ## Installing
 {: #drvr_instlng}

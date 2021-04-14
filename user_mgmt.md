@@ -27,24 +27,17 @@ subcollection: data-virtualization
 ## Current plans
 {: #um_current_plans}
 
-Access to {{site.data.keyword.Db2_on_Cloud_long}} service instances for users in your account is controlled by [Identity and access management (IAM) on IBM Cloud](/docs/Db2onCloud?topic=Db2onCloud-iam) and database access is provided by standard access controls provided by the database. 
+Access to Data Virtualization service instances for users in your account is controlled by [Identity and access management (IAM) on IBM Cloud](/docs/data-virtualization?topic=data-virtualization-iam) and database access is provided by standard access controls provided by the database. 
 
 For more information about IAM, see [What is IBM Cloud Identity and Access Management?](/docs/account?topic=account-iamoverview).
 
 ### User types
-{: #um_user_types}
-
-#### Database users
-{: #um_db_users}
-
-These are the users that are used to access the database. Traditionally, these are the OS users in a typical Db2 deployment, although, in the cloud, a user registry is used. Db2 understands these users as native to the database. The database privileges for the users can be granted or revoked as can roles that are created by the user. 
-
-Database users are not granted any service-level functions. For example, a database administrator who has access to the data does not have the ability to change the configuration of the system outside of the database privileges that they were given.  
+{: #um_user_types} 
 
 #### IAM users
 {: #um_iam_users}
 
-IAM is only integrated with high-level service access, which governs privileges and operations available in the {{site.data.keyword.Db2_on_Cloud_short}} console and database. Access to the database by these IAM users is provided by allowing an IAM user or service ID access to a specific Db2 user, as mentioned earlier.
+IAM is only integrated with high-level service access, which governs privileges and operations available in the Data Virtualization console and database. Access to the database by these IAM users is provided by allowing an IAM user or service ID access to a specific Db2 user, as mentioned earlier.
 
 ### Roles and access
 {: #um_roles_access}

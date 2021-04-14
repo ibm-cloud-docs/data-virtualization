@@ -53,7 +53,7 @@ In each Java application, specify the user ID and password by including the **Dr
 
 - For a connection with SSL:
 
-  `jdbc:db2://<host_name>:<port>/bludb:user=<userid>;password=<your_password>;sslConnection=true;`
+  `jdbc:db2://Host_name_or_IP_address:DV_SSL_port/Database_name:user=User_name;password=Password;securityMechanism=Security_mechanism_id;sslConnection=true`
 
 ## .NET
 {: #con_prog_net}
