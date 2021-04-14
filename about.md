@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2021
-lastupdated: "2021-01-19"
+lastupdated: "2021-04-14"
 
 keywords: 
 
@@ -24,27 +24,19 @@ subcollection: data-virtualization
 # About
 {: #about}
 
-Data Virtualization is a fully managed public cloud service on {{site.data.keyword.cloud_notm}}. As a relational database, it delivers fast query processing with enterprise-level performance and capabilities for online transactional processing (OLTP). The new Enterprise High Availability plan runs the powerful Db2 11.5 engine, and also provides multizone region support in a three HA node configuration to ensure ultimate redundancy.
+Data Virtualization is a fully managed public cloud service on {{site.data.keyword.cloud_notm}}. It delivers the ability to view, access, manipulate, and analyze data without the need to know its physical format or location, and without having to move or copy it.
 {: shortdesc}
 
 ## Key features
 {: #ab_key_features}
 
-### Scalable and elastic cloud service
+Data Virtualization as a service is available as an on-demand licensing and delivery model with the following features:
 
-Data Virtualization is an elastic service, and allows you to independently scale compute and storage through an intuitive UI or REST API.
+- Data Virtualization as a service is a fully managed service on IBM Cloud that you can use to easily and securely access data across many data sources.
 
-### Expertly managed and highly secure
-
-Day-to-day operations for Data Virtualization, including database monitoring, uptime checks and failovers, are fully automated. Operations are supplemented by a DevOps team that are on call to handle unexpected system failures. Data is encrypted at rest and in motion by default. Administrators can also restrict access to sensitive data through data masking, row permissions, and role-based security, and can utilize database audit utilities to maintain audit trails for their database. IBM Key Protect and {{site.data.keyword.cloud_notm}} service endpoint are also supported.
-
-### Run your own apps
-
-In addition to the integrated tools, you can connect many popular third-party BI and visualization apps that you might already be using. For example, connect IBM InfoSphere Data Architect to design and deploy your database schema, or connect SQL-based tools such as Watson Analytics and Cognos Analytics to manipulate or analyze your data. For the managed service, you can connect other {{site.data.keyword.cloud_notm}} applications.
-
-### Graphical user interface or command line
-
-You can use the web console to perform many key tasks, such as loading data, working with tables, run SQL, and monitoring. Alternatively, you can use the command-line user interface CLPPlus to define, edit, and run statements, scripts, and commands.
+- You can create virtual objects, manage data source connections, virtualize data, and join virtual tables and views.
+- You can manage access to objects with defined Manager, Steward, Engineer, and User roles.
+- You can enable personal credentials on IBM Cloud so that they can be used when you create connections.
 
 ## Plans and configurations
 {: #ab_plans_cfgs}
@@ -84,33 +76,33 @@ You can use the web console to perform many key tasks, such as loading data, wor
 ## Supported data centers
 {: #ab_sup_dcs}
 
-The Standard and Enterprise plans are supported in the following data center geographies:
-
+The Standard plans are supported in the following data center geographies:
+<!-- 
 ### Multi-zone region (MZR) 
 - **Dallas** - (Dal10, Dal12, Dal13)
 - **Frankfurt** - (Fra02, Fra04, Fra05)
 - **London** - (Lon04, Lon05, Lon06)
 - **Sydney** - (Syd01, Syd04, Syd05)
 - **Tokyo** - (Tok02, Tok04, Tok05)
-- **Washington, DC** - (Wdc04, Wdc06, Wdc07)
+- **Washington, DC** - (Wdc04, Wdc06, Wdc07) -->
 
+<!-- 
 MZRs support 3 node HA in 3 different data centers in that region
-{: note}
+{: note} -->
 
 ### Single-zone region (SZR)
-- **Amsterdam** - (Ams03)
-- **Milan** - (Mil01)
-- **Montréal** - (Mon01)
-- **Sao Paulo** - (Sao01)
-- **Toronto** - (Tor01)
 
-SZRs support 3 node HA in a single data center in that region
-{: note}
+- **Dallas** - (us-south)
 
-<!--
+
+<!-- SZRs support 3 node HA in a single data center in that region
+{: note} -->
+
+<!-- 
 ## Plans and configurations
-{: #plans_cfgs}
 
+{: #plans_cfgs} -->
+<!--
 You can choose a Data Virtualization plan that is configured and optimized for the work that you need to do:
 {: shortdesc}
 
