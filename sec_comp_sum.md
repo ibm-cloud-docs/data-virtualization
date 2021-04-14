@@ -24,7 +24,7 @@ subcollection: data-virtualization
 # Security compliances
 {: #sec_comp}
 
-Data Virtualization is provided on secure {{site.data.keyword.cloud}} and Amazon Web Services platforms. Data Virtualization managed services comply with the specific security standards and auditing processes that are listed here and do not automatically inherit general {{site.data.keyword.cloud_notm}} security compliances that are documented for IaaS, PaaS, and SaaS cloud offerings. 
+Data Virtualization is provided on secure {{site.data.keyword.cloud}} and {{site.data.keyword.icp4dfull_notm}} as a Service platforms. Data Virtualization managed services comply with the specific security standards and auditing processes that are listed here and do not automatically inherit general {{site.data.keyword.cloud_notm}} security compliances that are documented for IaaS, PaaS, and SaaS cloud offerings. 
 {: shortdesc}
 
 <!--
