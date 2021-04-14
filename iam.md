@@ -63,7 +63,7 @@ A service ID identifies a service or application similar to how a user ID identi
 
 Every user that accesses the Data Virtualization service in your account must be assigned an access policy with an IAM role. The access policy that you assign to users in your account determines what actions a user can perform within the context of the service or specific instance that you select. The allowable actions are customized and defined by Data Virtualization as operations that are allowed to be performed on the service. Each action is mapped to an IAM platform or service role that you can assign to a user. If a specific role and its actions don't fit the use case that you're looking to address, you can [create a custom role](/docs/account?topic=account-custom-roles#custom-access-roles){: external} and pick the actions to include.
 
-For information about the exact actions mapped to each role, see IAM roles and actions and Data Virtualization, see [IAM roles and actions](docs/account?topic=account-iam-service-roles-actions#data-virtualization){: external}
+For information about the exact actions mapped to each role, see IAM roles and actions and Data Virtualization, see [IAM roles and actions](/account?topic=account-iam-service-roles-actions#data-virtualization){: external}
 {: tip}
 
 ## Prerequisites
