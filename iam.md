@@ -27,7 +27,7 @@ subcollection: data-virtualization
 Identity and access management (IAM) enables you to securely authenticate users for platform services and control access to resources consistently across the {{site.data.keyword.Bluemix_notm}} platform. For example, with only a single login to {{site.data.keyword.Bluemix_notm}} with your IBMid, you have access to any of your service consoles and their applications without having to log in to each of them separately.
 {: shortdesc}
 
-IAM is enabled for all Data Virtualization plans except for **Lite** plan instances.
+IAM is enabled for all Data Virtualization plans.
 
 <!--
 ## Is IAM enabled on your instance?
@@ -51,7 +51,7 @@ The following IAM features are implemented for the Data Virtualization managed s
 ### IBMid
 {: #iam_ibmid}
 
-Users with an IBMid must be added to each database service instance by the database administrator through the console or REST API before these users can connect to the particular database service instance. Just like for a non-IBMid user, a user ID for the database service instance must be entered at the same time that the IBMid user is added. This user ID needs to be unique within the database service instance. This user ID is also the authorization (AUTH) ID within the database. The database administrator can grant and revoke permissions based on the AUTH ID.
+Users with an IBMid must be added to each database service instance by the administrator through the console or REST API before these users can connect to the particular database service instance. Just like for a non-IBMid user, a user ID for the database service instance must be entered at the same time that the IBMid user is added. This user ID needs to be unique within the database service instance. This user ID is also the authorization (AUTH) ID within the database. The administrator can grant and revoke permissions based on the AUTH ID.
 
 ### Service IDs
 {: #iam_serviceid}
@@ -63,7 +63,7 @@ A service ID identifies a service or application similar to how a user ID identi
 
 Every user that accesses the Data Virtualization service in your account must be assigned an access policy with an IAM role. The access policy that you assign to users in your account determines what actions a user can perform within the context of the service or specific instance that you select. The allowable actions are customized and defined by Data Virtualization as operations that are allowed to be performed on the service. Each action is mapped to an IAM platform or service role that you can assign to a user. If a specific role and its actions don't fit the use case that you're looking to address, you can [create a custom role](/docs/account?topic=account-custom-roles#custom-access-roles){: external} and pick the actions to include.
 
-For information about the exact actions mapped to each role, see [IAM roles and actions](/docs/account?topic=account-iam-service-roles-actions){: external} and [Db2](/docs/account?topic=account-iam-service-roles-actions#db2){: external}. 
+For information about the exact actions mapped to each role, see IAM roles and actions and Data Virtualization, see [IAM roles and actions](docs/account?topic=account-iam-service-roles-actions#data-virtualization){: external}
 {: tip}
 
 ## Prerequisites
@@ -94,7 +94,7 @@ curl -k -X POST \
 ```
 {: codeblock}
 
-An access token identifies an IBMid user or a service ID to the database. The database server verifies the validity of the access token before accepting it. This is the best method if the application needs to connect to more than one database service instance or other {{site.data.keyword.Bluemix_notm}} service instances because it minimizes the communication to the IAM service to validate the access token.
+An access token identifies an IBMid user or a service ID to the database. The Data Virtualization instance verifies the validity of the access token before accepting it. This is the best method if the application needs to connect to more than one database service instance or other {{site.data.keyword.Bluemix_notm}} service instances because it minimizes the communication to the IAM service to validate the access token.
 
 ### API key
 {: #iam_apikey}
@@ -172,23 +172,23 @@ The CLP CONNECT statement can contain one of the following:
 
   - **Access token**
 
-    Connect to the database server `<database_server_name>` and pass the access token by running the following command at the CLP command prompt or script:
+    Connect to the Data Virtualization instance `<database_server_name>` and pass the access token by running the following command at the CLP command prompt or script:
 
     `CONNECT TO <database_server_name> ACCESSTOKEN <access_token_string>`
 
   - **API key**
 
-    Connect to the database server `<database_server_name>` with an API key by running the following command at the CLP command prompt or script:
+    Connect to the Data Virtualization instance `<database_server_name>` with an API key by running the following command at the CLP command prompt or script:
 
     `CONNECT TO <database_server_name> APIKEY <api-key-string>`
 
   - **IBMid/password**
 
-    Connect to the database server `<database_server_name>` with an IBMid/password by running the following command at the CLP command prompt or script:
+    Connect to the Data Virtualization instance `<database_server_name>` with an IBMid/password by running the following command at the CLP command prompt or script:
 
     `CONNECT TO <database_server_name> USER <IBMid> USING <password>`
 
-For more details about connecting to a database server with CLP, see: [CONNECT (type 2) statement](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:external}. 
+For more details about connecting to a Data Virtualization instance with CLP, see: [CONNECT (type 2) statement](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:external}. 
 
 #### CLPPLUS
 {: #iam_clpplus}
@@ -293,7 +293,7 @@ The following examples show connection snippets for the three methods:
 ## Console user experience
 {: #console-ux}
 
-The service console login page has the option to log in with your IBMid and password. After the **Sign In via IBMid** button is clicked, the user is directed to the IAM login page, on which the password is entered. When authentication is completed, the user is redirected back to the console. Before such login can be successful, the IBMid user must be added to each database service instance by the database administrator through the console or REST API. Just like for a non-IBMid user, a user ID for the database service instance must be entered at the same time that the IBMid user is added. The user ID needs to be unique within the database service instance. This user ID is also the authorization (AUTH) ID within the database.
+The service console login page has the option to log in with your IBMid and password. After the **Sign In via IBMid** button is clicked, the user is directed to the IAM login page, on which the password is entered. When authentication is completed, the user is redirected back to the console. Before such login can be successful, the IBMid user must be added to each database service instance by the administrator through the console or REST API.
 
 To add a user with either an IBMid or a service ID by using the web console, complete the following steps:
 
