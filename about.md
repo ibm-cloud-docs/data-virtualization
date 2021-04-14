@@ -74,11 +74,6 @@ Data Virtualization as a service is available as an on-demand licensing and deli
 
 <!-- ### Single-zone region (SZR)
 
-- **Dallas** - (us-south) -->
-
-
-<!-- 
-
 ### Standard non-High Availability Disaster Recovery (non-HADR) plan
 
 - Base instances start at 8 GB RAM x 20 GB storage on shared compute slices
