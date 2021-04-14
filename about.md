@@ -49,7 +49,7 @@ Data Virtualization as a service is available as an on-demand licensing and deli
 - 1 TB of free backup storage for up to 14 days of backups
 - Self-service managed backup with point-in-time restore
 
-### Enterprise non-High Availability Disaster Recovery (non-HADR) plan
+<!-- ### Enterprise non-High Availability Disaster Recovery (non-HADR) plan
 
 - Base instances start at 4 vCPU x 16 GB RAM x 20 GB storage on dedicated compute slices
 - Runs the latest release of Db2, version 11.5
@@ -63,7 +63,7 @@ Data Virtualization as a service is available as an on-demand licensing and deli
 - Runs the latest release of Db2, version 11.5
 - Three HADR nodes spanning multiple availability zones
 - 100 GB of free backup storage for up to 14 days of backups
-- Self-service managed backup with point-in-time restore
+- Self-service managed backup with point-in-time restore -->
 
 ## Supported data centers
 {: #ab_sup_dcs}
