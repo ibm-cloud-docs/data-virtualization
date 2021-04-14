@@ -41,17 +41,7 @@ Data Virtualization as a service is available as an on-demand licensing and deli
 ## Plans and configurations
 {: #ab_plans_cfgs}
 
-## Supported data centers
-{: #ab_sup_dcs}
-
-The Standard plans are supported in the following data center geographies:
-
-### Single-zone region (SZR)
-
-- **Dallas** - (us-south)
-
-
-<!-- ### Enterprise High Availability Disaster Recovery (HADR) plan
+### Enterprise High Availability Disaster Recovery (HADR) plan
 
 - Base instances start at 4 vCPU x 16 GB RAM x 20 GB storage on dedicated compute slices
 - Runs the latest release of Db2, version 11.5
@@ -74,6 +64,20 @@ The Standard plans are supported in the following data center geographies:
 - Three HADR nodes spanning multiple availability zones
 - 100 GB of free backup storage for up to 14 days of backups
 - Self-service managed backup with point-in-time restore
+
+## Supported data centers
+{: #ab_sup_dcs}
+
+### Multi-zone region (MZR) 
+
+- **Dallas** - (Dal10, Dal12, Dal13)
+
+<!-- ### Single-zone region (SZR)
+
+- **Dallas** - (us-south) -->
+
+
+<!-- 
 
 ### Standard non-High Availability Disaster Recovery (non-HADR) plan
 
