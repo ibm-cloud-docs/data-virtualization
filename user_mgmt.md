@@ -122,5 +122,5 @@ The following table summarizes the Data Virtualization menu functions that each 
 | Data Virtualization Engineer | Access connection details, Manage data sources, Create virtual tables and views, Create and manage private schema |
 | Data Virtualization User | Access connection details, Create virtual views over existing virtual tables and views, Create and manage private schema |
 | Data Virtualization Steward | Access connection details, Access data, Create virtual views over existing virtual tables and views, Create and manage private schema |
-
-{: caption="Table 2. Permissions associated with each Data Virtualization role." caption-side="top"}
+<!-- 
+{: caption="Table 2. Permissions associated with each Data Virtualization role." caption-side="top"} -->
