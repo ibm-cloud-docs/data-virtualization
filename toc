@@ -33,10 +33,6 @@ data-virtualization
         self_serve_update.md
 
     {: .topicgroup}
-    Upgrading
-        upgrade.md
-
-    {: .topicgroup}
     Security
         encryption.md
         iam.md
