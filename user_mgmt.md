@@ -48,21 +48,6 @@ Users can use JDBC or any Db2 client to connect to their database. There are two
 
 IAM authentication is performed as the authentication mechanism. Permissions are not controlled by IAM. Permissions are controlled by database level privileges of the associated user. 
 
-#### Console access
-{: #um_console_access}
-
-Console access is controlled by IAM. An IAM user can be assigned access by the IAM interface to all Db2 service instances, all Db2 service instances in a resource group, or a specific service instance. Within these parameters, IAM users can be assigned platform and service-level access.
-
-
-| Role         | User mgmt | SQL editor/tables | Monitoring info | Settings (includes scale, backup, etc.) | Info panels |
-|--------------|-----------|-------------------|-----------------|-----------------------------------------|-------------|
-| IAM - Platform - Viewer       | No | No (unless mapped to Db2 user) | Yes | No  | Yes |
-| IAM - Platform - Operator     | No | No (unless mapped to Db2 user) | Yes | Yes | Yes |
-| IAM - Platform - Editor       | No | No (unless mapped to Db2 user) | Yes | Yes | Yes |
-| IAM - Platform - Administrator | Yes | No (unless mapped to Db2 user) | Yes | Yes | Yes |
-| Non-IAM, but autheticate with JDBC | Only "Change password" | Yes | No | No | Yes |
-{: caption="Table 1. Roles and console permissions" caption-side="top"}
-
 ## Data Virtualization roles
 
 {: @dv_roles}
@@ -127,8 +112,6 @@ The following table summarizes the Data Virtualization menu functions that each 
 |        | Service settings->Scaling       |         |        |        |   | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)   |    |
 |        | Service settings->Maintenance update       |         |        |        |   | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)   |    |
 |        | Service settings->Access restriction       |         |        |        |   | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)   |    |
-|        |         |         |        |        |   |   |   |    |    |
-
 {: caption="Table 1. Data Virtualization menu functions that each of the Data Virtualization user roles is able to access" caption-side="top"}
 
 #### Data Virtualization permissions
@@ -140,12 +123,3 @@ The following table summarizes the Data Virtualization menu functions that each 
 | Data Virtualization User | Access connection details, Create virtual views over existing virtual tables and views, Create and manage private schema |
 | Data Virtualization Steward | Access connection details, Access data, Create virtual views over existing virtual tables and views, Create and manage private schema |
 {: caption="Table 2. Permissions associated with each Data Virtualization role." caption-side="top"}
-
-<!-- Management of users that were given access to the database is the sole responsibility of the user or users with the administrator role. The administrator has the responsibility to manage how other users in your organization access your database.
-{: shortdesc}
-
-The database administrator role manages the following types of user access: 
-* Web console. From the web console, users can run queries against the database.
-* Database. The administrator can grant granular access permissions to the database, including being able to access only certain tables, schemas, or even rows or columns. 
-
-For more information about user management, see [Database user management](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/user_mgmnt.html){:external} -->
