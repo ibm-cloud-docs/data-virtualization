@@ -63,7 +63,7 @@ Console access is controlled by IAM. An IAM user can be assigned access by the I
 | Non-IAM, but autheticate with JDBC | Only "Change password" | Yes | No | No | Yes |
 {: caption="Table 1. Roles and console permissions" caption-side="top"}
 
-#### Data Virtualization roles
+## Data Virtualization roles
 
 {: @dv_roles}
 
@@ -72,7 +72,6 @@ There are four roles in Data Virtualization: Manager (service administrator), En
 There are also Platform roles that apply to the user's **Platform access**, which affects scaling and monitoring of Data Virtualization.
 
 You must assign one of the following Data Virtualization roles for a user to have access to the service:
-
 
 ### Data Virtualization Manager
 
@@ -96,11 +95,9 @@ Users with this role can create views of virtual tables to which they have acces
 
 Data Virtualization Stewards can access data in all user tables and views. Additionally, Stewards hold the Db2® DATAACCESS authority on the database.
 
-
 The following table summarizes the Data Virtualization menu functions that each of the Data Virtualization user roles is able to access.
 
-
-| Menu | Xapabilities | Manager | Engineer | Steward | User | Platform administrator | Platform operator | Platform editor | Platform viewer |
+| Menu | Capabilities | Manager | Engineer | Steward | User | Platform administrator | Platform operator | Platform editor | Platform viewer |
 |--------|---------|---------|--------|--------|---|---|---|----|----|
 | Virtualization      | Data source	       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      |        |   |   |   |    |    |
 |        | Virtualize       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      |        |   |   |   |    |    |
@@ -132,7 +129,6 @@ The following table summarizes the Data Virtualization menu functions that each 
 |        | Service settings->Access restriction       |         |        |        |   | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)   |    |
 |        |         |         |        |        |   |   |   |    |    |
 
-
 {: caption="Table 1. Data Virtualization menu functions that each of the Data Virtualization user roles is able to access" caption-side="top"}
 
 #### Data Virtualization permissions
@@ -143,7 +139,6 @@ The following table summarizes the Data Virtualization menu functions that each 
 | Data Virtualization Engineer | Access connection details, Manage data sources, Create virtual tables and views, Create and manage private schema |
 | Data Virtualization User | Access connection details, Create virtual views over existing virtual tables and views, Create and manage private schema |
 | Data Virtualization Steward | Access connection details, Access data, Create virtual views over existing virtual tables and views, Create and manage private schema |
-
 {: caption="Table 2. Permissions associated with each Data Virtualization role." caption-side="top"}
 
 <!-- Management of users that were given access to the database is the sole responsibility of the user or users with the administrator role. The administrator has the responsibility to manage how other users in your organization access your database.
