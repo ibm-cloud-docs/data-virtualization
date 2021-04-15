@@ -52,7 +52,7 @@ There are three types of credentials:
 
 You can collect this information from the following places:
 
-- *The Service Owner* - If you are not the owner of your Db2 instance, you can get your database details and connect credentials from the owner.
+- *The Service Owner* - If you are not the owner of your Data Virtualization instance, you can get your database details and connect credentials from the owner.
 - *Db2 web console* - Database details and credentials are available in the web console.
 - If you are using {{site.data.keyword.Bluemix_notm}}: 
    
