@@ -33,6 +33,9 @@ subcollection: data-virtualization
 Use IBM® Data Virtualization to break data silos across hybrid data sources and build a Data Fabric for easy Data Management. You can use Data Virtualization just as you would any data source, but without the time and expense of hardware setup or software installation and maintenance.
 {: shortdesc}
 
+For information about using Data Virtualzation with 
+Cloud Pak for Data as a Service, see [IBM Docs](https://www-03preprod.ibm.com/support/knowledgecenter/icpdaas_test/dvaas/dvaas-overview.html)
+
 Create credentials. After creating the Data Virtualization service on {{site.data.keyword.cloud}}, you must create IAM service credentials by clicking the **Service credentials** tab on your service page and selecting **New credential**. Technically, you can log in to the web console without credentials, but you need the service credentials to use many of the Data Virtualization tools. To retrieve your **service credentials**, select the Service credentials tab from your service page and expand the credentials that you want to view.
 {: important}
 

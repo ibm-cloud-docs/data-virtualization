@@ -30,7 +30,7 @@ subcollection: data-virtualization
 This is a collection of frequently asked questions (FAQ) about the {{site.data.keyword.Db2_on_Cloud_long}} service.
 {: shortdesc}
 
-## How do I sign up for Db2 on Cloud?
+<!-- ## How do I sign up for Db2 on Cloud?
 {: #q_sign}
 {: faq}
 {: support}
@@ -46,7 +46,7 @@ Watch the following video that walks you through provisioning a free Lite instan
 {: faq}
 {: support}
 
-Data Virtualization offers several configurations to meet your workload requirements. The Flex plan is recommended because it allows you to dynamically scale RAM/CPU and storage as your requirements change. Other plans with fixed resources are also available. For more information, see [About](/docs/Db2onCloud?topic=Db2onCloud-about).
+Data Virtualization offers several configurations to meet your workload requirements. The Flex plan is recommended because it allows you to dynamically scale RAM/CPU and storage as your requirements change. Other plans with fixed resources are also available. For more information, see [About](/docs/Db2onCloud?topic=Db2onCloud-about). -->
 
 ## How do I generate credentials for my instance?
 {: #q_creds}
@@ -55,9 +55,8 @@ Data Virtualization offers several configurations to meet your workload requirem
 
 1. Log into [IBM Cloud](https://cloud.ibm.com){: external}.
 2. Open your [**Resource list**](https://cloud.ibm.com/resources){: external}.
-3. Under **Services** or **Cloud Foundry services**, locate your Data Virtualization instance and click on the service name.  
+3. Under **Services**, locate your Data Virtualization instance and click on the service name.  
    - Services - This list includes all instances that were created under a resource group or that were migrated into a resource group.
-   - Cloud Foundry services - This list includes all instances that were created under a Cloud Foundry organization and space, and were not migrated into a resource group.
 4. Select the **Service credentials tab > New credentials+ > Add** in order to generate your service admin credentials.
 5. Expand **View credentials**, which displays your service connectivity information including your admin credentials (username and password).
 6. The admin credentials can be used to connect to both Db2 and the web console.
@@ -70,7 +69,7 @@ Data Virtualization offers several configurations to meet your workload requirem
 
 You can access your Data Virtualization instance through several methods, including a dedicated web console and a REST API. For more information, see [Interfaces](/docs/Db2onCloud?topic=Db2onCloud-interfaces).
 
-## What's managed for me with Db2 on Cloud?
+<!-- ## What's managed for me with Db2 on Cloud?
 {: #q_managed}
 {: faq}
 {: support}
@@ -95,6 +94,4 @@ You can find pricing information and deploy a Data Virtualization instance throu
 
 For information about posting questions on a forum or opening a support ticket, see [Help & support](/docs/Db2onCloud?topic=Db2onCloud-help_support).
 
-Only community support is available for the free Lite plan.
-
-## 
+Only community support is available for the free Lite plan. -->

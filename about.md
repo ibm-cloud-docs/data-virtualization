@@ -30,9 +30,9 @@ Data Virtualization is a fully managed public cloud service on {{site.data.keywo
 ## Key features
 {: #ab_key_features}
 
-Data Virtualization as a service is available as an on-demand licensing and delivery model with the following features:
+Data Virtualization is available as an on-demand licensing and delivery model with the following features:
 
-- Data Virtualization as a service is a fully managed service on IBM Cloud that you can use to easily and securely access data across many data sources.
+- Data Virtualization is a fully managed service on IBM Cloud that you can use to easily and securely access data across many data sources.
 
 - You can create virtual objects, manage data source connections, virtualize data, and join virtual tables and views.
 - You can manage access to objects with defined Manager, Steward, Engineer, and User roles.
@@ -41,12 +41,21 @@ Data Virtualization as a service is available as an on-demand licensing and deli
 ## Plans and configurations
 {: #ab_plans_cfgs}
 
-### Enterprise High Availability Disaster Recovery (HADR) plan
+### Enterprise plan
 
-- Base instances start at 4 vCPU x 32 GB RAM on dedicated compute slices
-- Runs the latest release of Db2, version 11.5
-- Three HADR nodes spanning multiple availability zones
-- Self-service managed backup with point-in-time restore
+Some features are limited in the Data Virtualization beta. See [Beta limitations](#ab_plans_limits)
+{: note}
+
+- One highly available Data Virtualization instance with a minimum of 3 head and 3 worker nodes. 
+- Data Virtualization instances have a minimum of 4 vCPU and 32 GB RAM per node.
+- Three HADR nodes spanning multiple availability zones.
+
+ #### Beta limitations
+ {:#ab_plans_limits}
+
+- HADR is not supported in the Data Virtualization beta.
+- Only one head is availaible in the beta.
+
 
 <!-- ### Enterprise non-High Availability Disaster Recovery (non-HADR) plan
 
