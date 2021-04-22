@@ -56,7 +56,9 @@ Users with an IBMid must be added to each database service instance by the admin
 ### Service IDs
 {: #iam_serviceid}
 
-A service ID identifies a service or application similar to how a user ID identifies a user. The service IDs are IDs that can be used by applications to authenticate with an {{site.data.keyword.Bluemix_notm}} service. A service ID represents a separate entity from the owning IBMid. Therefore, different authorities and permissions can be granted specific to the service ID within the database. Service IDs do not have passwords. An API key must be created for each service ID for the service ID to connect to the database service instance. For more information about service IDs, see: [Introducing {{site.data.keyword.Bluemix_notm}} IAM Service IDs and API Keys](https://www.ibm.com/blogs/bluemix/2017/10/introducing-ibm-cloud-iam-service-ids-api-keys/){:external} and [Increase Information Security for Db2 on IBM Cloud](https://www.ibm.com/cloud/blog/increase-information-security-for-db2-on-ibm-cloud){:external}.
+A service ID identifies a service or application similar to how a user ID identifies a user. The service IDs are IDs that can be used by applications to authenticate with an {{site.data.keyword.Bluemix_notm}} service. A service ID represents a separate entity from the owning IBMid. Therefore, different authorities and permissions can be granted specific to the service ID within the database. Service IDs do not have passwords. An API key must be created for each service ID for the service ID to connect to the database service instance. 
+
+<!-- For more information about service IDs, see: [Introducing {{site.data.keyword.Bluemix_notm}} IAM Service IDs and API Keys](https://www.ibm.com/blogs/bluemix/2017/10/introducing-ibm-cloud-iam-service-ids-api-keys/){:external} and [Increase Information Security for Db2 on IBM Cloud](https://www.ibm.com/cloud/blog/increase-information-security-for-db2-on-ibm-cloud){:external}. -->
 
 ## Roles and actions
 {: #iam_roles_actions}
@@ -187,8 +189,7 @@ The CLP CONNECT statement can contain one of the following:
     Connect to the Data Virtualization instance `<database_server_name>` with an IBMid/password by running the following command at the CLP command prompt or script:
 
     `CONNECT TO <database_server_name> USER <IBMid> USING <password>`
-
-For more details about connecting to a Data Virtualization instance with CLP, see: [CONNECT (type 2) statement](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:external}. 
+<!-- For more details about connecting to a Data Virtualization instance with CLP, see: [CONNECT (type 2) statement](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:external}.  -->
 
 #### CLPPLUS
 {: #iam_clpplus}
@@ -213,7 +214,7 @@ The CLPPLUS CONNECT statement can contain one of the following:
 
     `connect <IBMid>/<password>@<data_source_name>`
 
-For more details about connecting to DSN aliases with CLPPLUS, see: [DSN aliases in CLPPlus](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.clpplus.doc/doc/c0057148.html){:external}.
+<!-- For more details about connecting to DSN aliases with CLPPLUS, see: [DSN aliases in CLPPlus](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.clpplus.doc/doc/c0057148.html){:external}. -->
 
 ### JDBC
 {: #jdbc}
@@ -358,7 +359,7 @@ The Data Virtualization REST API was enhanced to also accept an IAM access token
   ```
   {: codeblock}
 
-For more details about your service's API, see: [Data Virtualization REST API](https://cloud.ibm.com/apidocs/db2-on-cloud){:external}.
+For more details about Data Virtualization REST APIs, see[REST APIs](https://cloud.ibm.com/apidocs/data-virtualization){:external}.
 
 ## IBMid federation
 {: #fed_ibmid}

@@ -44,9 +44,9 @@ Currently, Activity Tracker with Log Analysis integration is available for Data 
 
 After you provision the service, events are automatically forwarded from all of your Data Virtualization deployments in the same region.
 
-The service can be provisioned from its [catalog page](https://cloud.ibm.com/catalog/services/ibm-cloud-activity-tracker-with-logdna?callback=%2Fobserve%2Factivitytracker%2Fcreate){: external} or from an existing [Observability Dashboard](https://cloud.ibm.com/observe/activitytracker){: external}.
+The service can be provisioned from its [catalog page](https://cloud.ibm.com/catalog/services/logdna?callback=%2Fobserve%2Flogging%2Fcreate){: external} or from an existing [Observability Dashboard](https://cloud.ibm.com/observe/activitytracker){: external}.
 
-The Activity Tracker with Log Analysis service has a Lite plan that is free to use, but it only offers streaming events. To take advantage of the tagging, export, retention, and other features, you need to use one of the [paid plans](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-service_plans)<!-- [paid plans](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-about#overview_pricing_plans) -->.
+The Activity Tracker with Log Analysis service has a Lite plan that is free to use, but it only offers streaming events. To take advantage of the tagging, export, retention, and other features, you need to use one of the [paid plans](/docs/log-analysis?topic=log-analysis-service_plans)<!-- [paid plans](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-about#overview_pricing_plans) -->.
 
 ### Using the Log Analysis Activity Tracker
 {: #at_use}

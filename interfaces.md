@@ -49,9 +49,9 @@ You can access your web console in the following ways:
 ## REST API
 {: #int_api}
 
-With Data Virtualization service plans, you can do tasks that are related to file management, loading data, and resource scaling by using one of the following REST APIs:
-- [Database management API (Standard and Enterprise)](https://cloud.ibm.com/apidocs/db2-on-cloud/db2-on-cloud-v4){: external}
-- [Database resource scaling API](https://cloud.ibm.com/apidocs/db2-on-cloud/db2oc_scale_exp){:external}
+With Data Virtualization service plans, you can do tasks that are related to file management, loading data, and resource scaling by using the REST API:
+- [REST API](#){: external}
+
 
 ## Connect applications or your favorite tools from your local computer
 {: #connect_apps}

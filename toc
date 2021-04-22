@@ -16,9 +16,9 @@ Data Virtualization (Beta)
         connecting/credentials.md
         connecting/ssl.md
         connecting/driver_pkg.md
-        connecting/connect_programmatically.md
-        connecting/connect_ibm_tools.md
-        connecting/connect_3rd_party_tools.md
+        <!--connecting/connect_programmatically.md-->
+        <!--connecting/connect_ibm_tools.md-->
+        <!--connecting/connect_3rd_party_tools.md-->
         connecting/rest_api.md
 
     {: .topicgroup}
@@ -40,7 +40,7 @@ Data Virtualization (Beta)
         key_protect_2.md
             
 
-    communities.md    
+    <!--communities.md-->  
 
     <!--[What's new](https://www.ibm.com/support/pages/whats-new-ibm-db2-cloud)-->
     [IBM Developer Answers](https://developer.ibm.com/answers/index.html)

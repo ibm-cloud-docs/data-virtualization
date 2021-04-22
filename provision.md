@@ -2,9 +2,9 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-09-01"
+lastupdated: "2021-04-22"
 
-keywords: provision cloud database, database with terraform, provisioning parameters, db2 on cloud, db2
+keywords: provision cloud database, database with terraform, provisioning parameters, data virtualization
 
 subcollection: data-virtualization
 
@@ -32,7 +32,7 @@ You can provision a deployment by visiting the service's catalog page or by spec
 
 | Deployment Type | Catalog Page | Service ID | Plan IDs |
 |-----------------|--------------|------------|----------|
-| Data Virtualization |[Link](https://cloud.ibm.com/catalog/services/db2){: external} | dashdb-for-transactions | dashDBNebula, standard |
+| Data Virtualization |[Link](https://cloud.ibm.com/catalog/services/data-virtualization){: external} | dashdb-for-transactions | dashDBNebula, standard |
 
 ## Using the catalog
 {: #prov_catalog}
