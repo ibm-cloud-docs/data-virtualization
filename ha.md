@@ -32,7 +32,7 @@ Data Virtualization high availability plans have excellent availability characte
 {: #ha_v2_ha}
 -->
 
-High availability disaster recovery (HADR) on Data Virtualization Enterprise and Standard plans is provided by leveraging the support of native Db2 HADR. 
+High availability disaster recovery (HADR) on the Data Virtualization Enterprise plan is provided by leveraging the support of native Db2 HADR. 
 
 - Each HADR system consists of 3 nodes located in different independent availability zones.
 
@@ -50,7 +50,7 @@ Currently, the Data Virtualization beta consists of 1 node.
 ### Managing HADR nodes
 {: #ha_v2_manage}
 
-For Enterprise and Standard HADR plans, the failover is managed for you by IBM. IBM monitors the health of your server, fail over and fail back as needed, including rolling updates and scaling to keep uptime as high as possible.
+The failover is managed for you by IBM. IBM monitors the health of your server, fail over and fail back as needed, including rolling updates and scaling to keep uptime as high as possible.
 
 <!--
 ## Legacy Flex plans

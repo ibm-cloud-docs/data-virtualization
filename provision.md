@@ -41,22 +41,23 @@ When you create the deployment from the catalog, you need to specify the followi
 
 1. **Service name** - The name can be any string and is the name that is used on the web and in the command line to identify the new deployment.
 
-1. **Region** - The region in which the deployment resides.
-    Users can optionally set:
+<!-- 1. **Region** - The region in which the deployment resides.
+    Users can optionally set: -->
 
 1. **Resource group** - If you are organizing your services into resource groups, you can specify the resource group in this field. Otherwise, you can leave it at default.
 
-1. **Key Protect instance** and **disk encryption key** - If you use Key Protect, an instance and key can be selected to encrypt the deployment's disk. If you do not use your own key, the deployment automatically creates and manages its own disk encryption key.
+1. **Node Size**
+Set an intial node size. In the Data Virtualzation beta, you can only select the **4 Cores/32GB Memory** option.
 
 1. **Initial resource allocation** - Specify initial memory and disk sizes for your databases. The minimum sizes of memory and disk are selected by default.
 
-1. **CPU allocation** - Choose dedicated compute resources for your deployment. With dedicated cores, your resource group is given a single-tenant host with a guaranteed minimum reserve of cpu shares. Your deployments are then allocated the number of CPUs you specify. This defaults to the minimum allocation if not specified in the provisioning request by using the API or CLI.
+1. **Worker Nodes** 
+Choose the initial number of worker nodes. In the Data Virtualzation beta, you can only select the **1** worker node option.
 
-1. **Endpoints** - You can configure the types Service Endpoints on your deployment. The default is that connections to your deployment can be made from the public network.
+1. **Service Endpoints** 
+Select the **Public** or **Private** endpoint option. Public endpoints provide a connection to your deployment on the public network and are the default selection. Private endpoints route traffic through the IBM Cloud Private network, avoiding expose to the public internet.
 
-1. **High Availability** - whether the services should be Highly Available
-
-1. **Oracle compatibility** - whether the service instance should have Oracle compatibility enabled
+1. **Key Protect instance** and **disk encryption key** - If you use Key Protect, an instance and key can be selected to encrypt the deployment's disk. If you do not use your own key, the deployment automatically creates and manages its own disk encryption key.
 
 After selecting the appropriate settings, click **Create** to start the provisioning process.
 

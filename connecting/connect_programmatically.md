@@ -46,7 +46,7 @@ Before attempting to connect to your Data Virtualization instance, verify that y
 ### Procedure
 {: #proc61}
 
-#### Enterprise and Standard plans
+#### Enterprise plan
 {: #conxn_ent_std}
 
 In each Java application, specify the user ID and password by including the **DriverManager.getConnection** method, and then include one of the following JDBC URL strings:
@@ -78,9 +78,7 @@ The following steps show you how to connect your application to the database wit
 
 1. From a command prompt, enter the following commands. These commands create new entries in the driver configuration file (`db2dsdriver.cfg`) on your computer and set the connection attributes. You need to do this step only one time.
 
-   - Enterprise and Standard plans
-
-     - For a connection with SSL:
+   - For a connection with SSL:
 
        `db2cli writecfg add -database BLUDB -host <hostname> -port <port>`
 
@@ -193,9 +191,7 @@ Before attempting to connect to your Data Virtualization instance, verify that y
 
    **Note**: These commands create new entries in the driver configuration file (`db2dsdriver.cfg`) on your computer and set the connection attributes. You need to do this step only one time.
 
-   - Enterprise and Standard plans
-
-     - For a connection with SSL:
+    - For a connection with SSL:
 
        `db2cli writecfg add -database BLUDB -host <hostname> -port <port> -parameter "SecurityTransportMode=SSL"`
 
@@ -208,6 +204,7 @@ Before attempting to connect to your Data Virtualization instance, verify that y
        `<port>`: The port number of the server
 
        `<alias>`: The DSN alias that you choose
+
     
 2. (*Optional*): To test the connection to the database, run this command from the command prompt:
 

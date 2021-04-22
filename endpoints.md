@@ -24,10 +24,10 @@ subcollection: data-virtualization
 # Endpoints
 {: #endpts}
 
-## Standard and Enterprise plans
+## Enterprise plan
 {: #ep_plans}
 
-The Standard and Enterprise plans offer the choice of Public, Private, or both Public and Private endpoints.
+The Enterprise plan offers the choice of Public, Private, or both Public and Private endpoints.
 
 - Public network service endpoint is accessible from anywhere on the internet. 
 - Private network service endpoint access traverses only the {{site.data.keyword.cloud_notm}} backbone network, not the public internet.

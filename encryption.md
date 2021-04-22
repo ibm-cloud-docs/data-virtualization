@@ -29,12 +29,8 @@ The Data Virtualization service has security built into all levels of its archit
 
 The following methods are used to secure your data:
 -  The default keys are managed by [Key Protect](/docs/key-protect?topic=key-protect-importing-keys). Bring-your-own-key [(BYOK)](/docs/Db2onCloud?topic=Db2onCloud-key-protect-v2) for encryption is also available through Key Protect integration.
-- Backups are encrypted. 
 - Data in motion is encrypted through SSL/TLS. The current supported version of this encryption is TLS 1.2.
 - All Data Virtualization storage is provided on storage encrypted by using AES-256 encryption.
 - Backplane network connectivity is supported through {{site.data.keyword.cloud}} Service Endpoints
-- Database-level security is supported through Role-Based Access Control (RBAC) and Row and Column Access Control (RCAC)
 
 Administrators can make encrypted connections mandatory. For more information, see [SSL connectivity](/docs/Db2onCloud?topic=Db2onCloud-ssl_support).
-
-

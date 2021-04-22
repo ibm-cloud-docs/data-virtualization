@@ -25,10 +25,10 @@ subcollection: data-virtualization
 # Self-serve system updates
 {: #self_serve_update}
 
-## Enterprise and Standard plans
+## Enterprise plan
 {: #ssu_plans}
 
-Enterprise and Standard plans give you the ability to apply system updates to your instances at a time of your choosing. 
+The enterprise plan gives you the ability to apply system updates to your instances at a time of your choosing. 
 
 The update process can be disruptive, especially for single node instances, so it's advisable to run the update during a maintenance window.
 {: important}

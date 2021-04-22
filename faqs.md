@@ -27,7 +27,7 @@ subcollection: data-virtualization
 # FAQs - General
 {: #faq_db2oc}
 
-This is a collection of frequently asked questions (FAQ) about the {{site.data.keyword.Db2_on_Cloud_long}} service.
+This is a collection of frequently asked questions (FAQ) about the Data Virtualization service.
 {: shortdesc}
 
 <!-- ## How do I sign up for Db2 on Cloud?
@@ -67,7 +67,7 @@ Data Virtualization offers several configurations to meet your workload requirem
 {: faq}
 {: support}
 
-You can access your Data Virtualization instance through several methods, including a dedicated web console and a REST API. For more information, see [Interfaces](/docs/Db2onCloud?topic=Db2onCloud-interfaces).
+You can access your Data Virtualization instance through several methods, including a dedicated web console and a REST API.
 
 <!-- ## What's managed for me with Db2 on Cloud?
 {: #q_managed}
