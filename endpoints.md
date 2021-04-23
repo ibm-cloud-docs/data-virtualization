@@ -43,10 +43,13 @@ At the time of instance creation, you can select your choice of endpoint from th
 {: #ep_view_endpoints}
 
 To view your endpoints:
-- Select your Db2 service from {{site.data.keyword.cloud_notm}}.
-- From the **Manage** tab, click **Open Console**.
-- Select **Administration** from the left side menu.
-- Select the **Connections** tab. Endpoint information will be displayed in **Connection configuration resources**.
+
+- Select your Data Virtualization service from {{site.data.keyword.cloud_notm}}.
+- Select the **Data sources** dropdown menu. 
+
+![View connection details](images/creation_endpoint.png "Endpoint choice"){: caption="Figure 2. Selecting the Connection details option" caption-side="bottom"}
+
+- Select **Connection details**. Endpoint information will be displayed in **Connection configuration resources**.
 
 ![Endpoint information](images/endpoint_info.png "Endpoint information"){: caption="Figure 3. Viewing endpoint information" caption-side="bottom"}
 
