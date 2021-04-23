@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2021
-lastupdated: "2021-04-08"
+lastupdated: "2021-04-23"
 
 keywords:
 
@@ -88,29 +88,6 @@ Data Virtualization offers multiple secure connectivity options depending on you
 {: shortdesc}
 
 See [Connectivity options](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_options).
-
-## Connecting programmatically
-{: #conx_prgrm}
-
-You can use common programming languages to create applications that connect to a Data Virtualization instance.
-{: shortdesc}
-
-- [JDBC](/docs/Db2onCloud/connecting?topic=Db2onCloud-con_program#con_prog_jdbc)
-- [Microsoft Windows ODBC or CLI](/docs/Db2onCloud/connecting?topic=Db2onCloud-con_program#con_prog_odbc_cli)
-- [.NET](/docs/Db2onCloud/connecting?topic=Db2onCloud-con_program#con_prog_net)
-- [ODBC Data Source Administrator](/docs/Db2onCloud/connecting?topic=Db2onCloud-con_program#con_prog_odbc_dsa)
-- [PHP](/docs/Db2onCloud/connecting?topic=Db2onCloud-con_program#con_prog_php)
-- [REST API](/docs/Db2onCloud/connecting?topic=Db2onCloud-con_rest_api)
-<!-- - [C++]() -->
-<!-- - [Java]() -->
-<!-- - [Node.js]() -->
-<!-- - [Perl]() -->
-<!-- - [Python]() -->
-
-## Integrating apps and tools
-{: #conx_apps_tools}
-
-You can also connect external applications and tools to Data Virtualization and use them to further manage or analyze your data. For example:
 
 ### Data integration
 {: #di}

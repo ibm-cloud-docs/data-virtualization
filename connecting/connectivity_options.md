@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2021
-lastupdated: "2021-04-08"
+lastupdated: "2021-04-23"
 
 keywords:
 
@@ -58,10 +58,10 @@ The easiest way to connect to your data is by way of the public host name that w
 #### Current plans connection string breakdown
 {: #pub_endpt_current}
 
-##### Db2 on Cloud section
+##### Data Virtualization section
 {: #pub_db2oc}
 
-The "db2" section contains information that is suited to applications that make connections to Data Virtualization.
+The "Data Virtualization" section contains information that is suited to applications that make connections to Data Virtualization.
 
 | Field Name | Index | Description |
 |----------|--------|-----------|
@@ -75,7 +75,6 @@ The "db2" section contains information that is suited to applications that make 
 | `Composed` | `0...` | A URI combining Scheme, Authentication, Host, and Path |
 | `Certificate` | `Name` | The allocated name for the self-signed certificate for database deployment |
 | `Certificate` | Base64 | A base64 encoded version of the certificate |
-| `Host_ROS` | | A host name and port to connect to read on standby |
 {: caption="Table 1. Db2 on Cloud / URI connection information" caption-side="top"}
 
 `0...` indicates that there might be one or more of these entries in an array.
@@ -83,11 +82,11 @@ The "db2" section contains information that is suited to applications that make 
 ##### CLI section
 {: #pub_cli}
 
-The "cli" section contains information that is suited for connecting with `db2`.
+The "cli" section contains information that is suited for connecting with `Data Virtualization`.
 
 | Field Name | Index | Description |
 |----------|--------|-----------|
-| `Bin` | | The recommended binary to create a connection; in this case it is `db2` |
+| `Bin` | | The recommended binary to create a connection; in this case it is `Data Virtualization` |
 | `Composed` | | A formatted command to establish a connection to your deployment. The command combines the `Bin` executable, `Environment` variable settings, and uses `Arguments` as command line parameters. |
 | `Environment` | | A list of key/values you set as environment variables |
 | `Arguments` | `0...` | The information that is passed as arguments to the command shown in the Bin field |
