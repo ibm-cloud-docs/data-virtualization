@@ -24,7 +24,7 @@ subcollection: data-virtualization
 # Driver package
 {: #drvr_pkg}
 
-The Data Virtualization driver package contains software for connecting client applications to a Data Virtualization instance. 
+The {{site.data.keyword.dv_short}} driver package contains software for connecting client applications to a Data Virtualization instance. 
 {: shortdesc}
 
 ## About
@@ -58,7 +58,7 @@ In the Data Virtualization web console, select Connect details. Select the tile 
 
 Install the driver package for your operating system:
 - [Installing on Linux or PowerLinux](#install_drvr_pkg_linux)
-- [Installing on Mac OS X](#install_drvr_pkg_mac)
+- [Installing on macOS](#install_drvr_pkg_mac)
 - [Installing on Windows](#install_drvr_pkg_windows)
 
 ### Installing the driver package on Linux or PowerLinux
