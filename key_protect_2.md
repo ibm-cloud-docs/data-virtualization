@@ -4,7 +4,7 @@ copyright:
   years: 2021, 2021
 lastupdated: "2021-04-26"
 
-keywords: {{site.data.keyword.dv_short}}, {{site.data.keyword.dv_short}} on Cloud, bring your own key, byok, crypto-shredding
+keywords:
 
 subcollection: data-virtualization
 
