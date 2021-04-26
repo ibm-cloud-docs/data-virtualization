@@ -54,7 +54,8 @@ Data Virtualization (Beta)
 
     {: .navgroup id="reference"}
     [Rest APIs](#)
-    [IBM Docs](https://ibm.com/docs/en/icpdaas?topic=icpdaas_test/dvaas/dvaas-beta.html)
+    [IBM Cloud Pak for Data
+Documentation](https://dataplatform.cloud.ibm.com/docs/content/dvaas/dvaas-overview.html?context=analytics)
     {: .navgroup-end}
 
     {: .navgroup id="help"}
