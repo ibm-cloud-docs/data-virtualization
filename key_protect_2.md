@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2021
-lastupdated: "2021-04-12"
+  years: 2021, 2021
+lastupdated: "2021-04-26"
 
 keywords: Data Virtualization, Data Virtualization on Cloud, bring your own key, byok, crypto-shredding
 

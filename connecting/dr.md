@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2021
-lastupdated: "2021-04-12"
+  years: 2021, 2021
+lastupdated: "2021-04-26"
 
 keywords: DR, HADR, disaster recovery, Enterprise, Standard, Db2 on Cloud, failover, failback
 
