@@ -27,7 +27,7 @@ subcollection: data-virtualization
 # FAQs - General
 {: #faq_db2oc}
 
-This is a collection of frequently asked questions (FAQ) about the Data Virtualization service.
+This is a collection of frequently asked questions (FAQ) about the {{site.data.keyword.dv_short}} service.
 {: shortdesc}
 
 <!-- ## How do I sign up for Db2 on Cloud?
@@ -35,9 +35,9 @@ This is a collection of frequently asked questions (FAQ) about the Data Virtuali
 {: faq}
 {: support}
 
-You can provision an instance of Data Virtualization directly through the {{site.data.keyword.cloud}} catalog. You can [create a free {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/registration?target=%2Fcatalog%2Fservices%2Fdb2-warehouse){: external} and get an {{site.data.keyword.cloud_notm}} credit of $200 that you can use towards an enterprise Data Virtualization plan. Or, you can sign up for a free Lite plan. 
+You can provision an instance of {{site.data.keyword.dv_short}} directly through the {{site.data.keyword.cloud}} catalog. You can [create a free {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/registration?target=%2Fcatalog%2Fservices%2Fdb2-warehouse){: external} and get an {{site.data.keyword.cloud_notm}} credit of $200 that you can use towards an enterprise {{site.data.keyword.dv_short}} plan. Or, you can sign up for a free Lite plan. 
 
-Watch the following video that walks you through provisioning a free Lite instance of Data Virtualization.
+Watch the following video that walks you through provisioning a free Lite instance of {{site.data.keyword.dv_short}}.
 
 ![Introducing {{site.data.keyword.Db2_on_Cloud_long}}](https://www.youtube.com/embed/F_ylk44_WOg?rel=0){: video output="iframe" data-script="none" id="youtubeplayer1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen}
 
@@ -46,7 +46,7 @@ Watch the following video that walks you through provisioning a free Lite instan
 {: faq}
 {: support}
 
-Data Virtualization offers several configurations to meet your workload requirements. The Flex plan is recommended because it allows you to dynamically scale RAM/CPU and storage as your requirements change. Other plans with fixed resources are also available. For more information, see [About](/docs/Db2onCloud?topic=Db2onCloud-about). -->
+{{site.data.keyword.dv_short}} offers several configurations to meet your workload requirements. The Flex plan is recommended because it allows you to dynamically scale RAM/CPU and storage as your requirements change. Other plans with fixed resources are also available. For more information, see [About](/docs/Db2onCloud?topic=Db2onCloud-about). -->
 
 ## How do I generate credentials for my instance?
 {: #q_creds}
@@ -55,7 +55,7 @@ Data Virtualization offers several configurations to meet your workload requirem
 
 1. Log into [IBM Cloud](https://cloud.ibm.com){: external}.
 2. Open your [**Resource list**](https://cloud.ibm.com/resources){: external}.
-3. Under **Services**, locate your Data Virtualization instance and click on the service name.  
+3. Under **Services**, locate your {{site.data.keyword.dv_short}} instance and click on the service name.  
    - Services - This list includes all instances that were created under a resource group or that were migrated into a resource group.
 4. Select the **Service credentials tab > New credentials+ > Add** in order to generate your service admin credentials.
 5. Expand **View credentials**, which displays your service connectivity information including your admin credentials (username and password).
@@ -67,16 +67,16 @@ Data Virtualization offers several configurations to meet your workload requirem
 {: faq}
 {: support}
 
-You can access your Data Virtualization instance through several methods, including a dedicated web console and a REST API.
+You can access your {{site.data.keyword.dv_short}} instance through several methods, including a dedicated web console and a REST API.
 
 <!-- ## What's managed for me with Db2 on Cloud?
 {: #q_managed}
 {: faq}
 {: support}
 
-IBM handles all of the software upgrades, operating system updates, and hardware maintenance for your Data Virtualization instance. IBM also preconfigures Db2 parameters for optimal performance across transactional workloads, and takes care of encryption and regular backups of your data. 
+IBM handles all of the software upgrades, operating system updates, and hardware maintenance for your {{site.data.keyword.dv_short}} instance. IBM also preconfigures Db2 parameters for optimal performance across transactional workloads, and takes care of encryption and regular backups of your data. 
 
-The service includes 24x7 health monitoring of the database and infrastructure. In the event of a hardware or software failure, the service is automatically restarted. Because Data Virtualization is a fully-managed SaaS offering, you do not get SSH access or root access to the underlying server hardware, and cannot install additional software.
+The service includes 24x7 health monitoring of the database and infrastructure. In the event of a hardware or software failure, the service is automatically restarted. Because {{site.data.keyword.dv_short}} is a fully-managed SaaS offering, you do not get SSH access or root access to the underlying server hardware, and cannot install additional software.
 
 ## Where can I find more information about Db2 on Cloud?
 {: #q_info}
@@ -85,7 +85,7 @@ The service includes 24x7 health monitoring of the database and infrastructure.�
 
 In addition to the {{site.data.keyword.cloud_notm}} documentation site, there is a wide range of information about the underlying Db2 engine functionality in the [Knowledge Center](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.kc.doc/welcome.html){: external}. Updates to the service are posted on our [What's New](https://www.ibm.com/support/pages/whats-new-ibm-db2-cloud){: external} page. 
 
-You can find pricing information and deploy a Data Virtualization instance through the {{site.data.keyword.cloud_notm}} [catalog](https://cloud.ibm.com/catalog/services/db2){: external} page for {{site.data.keyword.cloud_notm}}. To learn more, contact [IBM Sales](https://www.ibm.com/contact/us/en/){: external}.
+You can find pricing information and deploy a {{site.data.keyword.dv_short}} instance through the {{site.data.keyword.cloud_notm}} [catalog](https://cloud.ibm.com/catalog/services/db2){: external} page for {{site.data.keyword.cloud_notm}}. To learn more, contact [IBM Sales](https://www.ibm.com/contact/us/en/){: external}.
 
 ## Where can I find help for a problem that I'm having?
 {: #q_issues}

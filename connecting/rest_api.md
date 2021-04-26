@@ -24,9 +24,9 @@ subcollection: data-virtualization
 # REST API
 {: #con_rest_api}
 
-Data Virtualization provides two REST APIs that you can use to interact with your instance:
+{{site.data.keyword.dv_short}} provides two REST APIs that you can use to interact with your instance:
 {: shortdesc}
 
-- To access data, view and create database objects, administer, and monitor your Data Virtualization service, use the following API:
+- To access data, view and create database objects, administer, and monitor your {{site.data.keyword.dv_short}} service, use the following API:
   - [REST APIs](#){: external}.
 

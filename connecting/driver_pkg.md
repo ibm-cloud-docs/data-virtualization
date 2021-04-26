@@ -24,7 +24,7 @@ subcollection: data-virtualization
 # Driver package
 {: #drvr_pkg}
 
-The {{site.data.keyword.dv_short}} driver package contains software for connecting client applications to a Data Virtualization instance. 
+The {{site.data.keyword.dv_short}} driver package contains software for connecting client applications to a {{site.data.keyword.dv_short}} instance. 
 {: shortdesc}
 
 ## About
@@ -49,9 +49,9 @@ To verify that the driver package is already on your computer so that you can sk
 ## Downloading
 {: #drvr_dwnldng}
 
-You can download the driver package for your operating system from the Data Virtualization web console. From your {{site.data.keyword.Bluemix_notm}} dashboard, open your Data Virtualization service. Log in to your Data Virtualization web console.
+You can download the driver package for your operating system from the {{site.data.keyword.dv_short}} web console. From your {{site.data.keyword.Bluemix_notm}} dashboard, open your {{site.data.keyword.dv_short}} service. Log in to your {{site.data.keyword.dv_short}} web console.
 
-In the Data Virtualization web console, select Connect details. Select the tile that represents your operating system to download the appropriate driver.
+In the {{site.data.keyword.dv_short}} web console, select Connect details. Select the tile that represents your operating system to download the appropriate driver.
 
 ## Installing
 {: #drvr_instlng}
@@ -64,13 +64,13 @@ Install the driver package for your operating system:
 ### Installing the driver package on Linux or PowerLinux
 {: #drvr_install_linux}
 
-You can install the Data Virtualization driver package on Linux or PowerLinux by using `installDSDriver`. 
+You can install the {{site.data.keyword.dv_short}} driver package on Linux or PowerLinux by using `installDSDriver`. 
 {: shortdesc}
 
 #### Prerequisites
 {: #drvr_prereq31}
 
-Before attempting to connect to your Data Virtualization instance, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.dv_short}} instance, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 <!-- Download the Db2 driver package for your operating system from the web console and install it. -->
 
@@ -109,18 +109,18 @@ Before attempting to connect to your Data Virtualization instance, verify that y
 #### What's next?
 {: #drvr_wn}
 
-To be able to connect your local applications or client tools to your Data Virtualization instance, [configure your local environment](#cfg_loc_env).   
+To be able to connect your local applications or client tools to your {{site.data.keyword.dv_short}} instance, [configure your local environment](#cfg_loc_env).   
 
 ### Installing the driver package on Mac OS X
 {: #drvr_install_mac}
 
-You can install the Data Virtualization driver package on Mac OS X by using the `installDSDriver.sh` script. 
+You can install the {{site.data.keyword.dv_short}} driver package on Mac OS X by using the `installDSDriver.sh` script. 
 {: shortdesc}
 
 #### Prerequisites
 {: #drvr_prereq41}
 
-Before attempting to connect to your Data Virtualization instance, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.dv_short}} instance, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 <!-- Download the Db2 driver package for your operating system from the web console and install it. -->
 
@@ -161,18 +161,18 @@ Before attempting to connect to your Data Virtualization instance, verify that y
 #### What's next?
 {: #drvr_wn41}
 
-To be able to connect your local applications or client tools to your Data Virtualization instance, [configure your local environment](#cfg_loc_env).
+To be able to connect your local applications or client tools to your {{site.data.keyword.dv_short}} instance, [configure your local environment](#cfg_loc_env).
 
 ### Installing the driver package on Windows
 {: #drvr_install_windows}
 
-You can install the Data Virtualization driver package on Windows by using the installer. 
+You can install the {{site.data.keyword.dv_short}} driver package on Windows by using the installer. 
 {: shortdesc}
 
 #### Prerequisites
 {: #drvr_prereq51}
 
-Before attempting to connect to your Data Virtualization instance, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.dv_short}} instance, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 <!-- Download the driver package for your operating system from the web console and install it. -->
 
@@ -187,23 +187,23 @@ Before attempting to connect to your Data Virtualization instance, verify that y
 #### What's next?
 {: #drvr_wn51}
 
-To be able to connect your local applications or client tools to your Data Virtualization instance, [configure your local environment](#cfg_loc_env).
+To be able to connect your local applications or client tools to your {{site.data.keyword.dv_short}} instance, [configure your local environment](#cfg_loc_env).
 
 
 <!-- ## Configuring
 
-To connect local applications or client tools to your Data Virtualization instance, [configure your environment for your Db2 database](driver_pkg_cfg.html). -->
+To connect local applications or client tools to your {{site.data.keyword.dv_short}} instance, [configure your environment for your Db2 database](driver_pkg_cfg.html). -->
 
 ## Configuring your local environment
 {: #drvr_cfg_loc_env}
 
-To connect local applications and tools to your Data Virtualization instance, you need to configure your environment.  
+To connect local applications and tools to your {{site.data.keyword.dv_short}} instance, you need to configure your environment.  
 {: shortdesc}
 
 ### Prerequisites
 {: #drvr_prereq21}
 
-Before attempting to connect to your Data Virtualization instance, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.dv_short}} instance, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 <!-- 1. Install the Db2 driver package for your operating system.
 

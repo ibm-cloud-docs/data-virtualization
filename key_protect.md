@@ -4,7 +4,7 @@ copyright:
   years: 2021, 2021
 lastupdated: "2021-04-26"
 
-keywords: Data Virtualization, Data Virtualization on Cloud, bring your own key, byok, cryptoshredding
+keywords: {{site.data.keyword.dv_short}}, {{site.data.keyword.dv_short}} on Cloud, bring your own key, byok, cryptoshredding
 
 subcollection: data-virtualization
 
@@ -24,14 +24,14 @@ subcollection: data-virtualization
 # IBM Key Protect
 {: #key-protect}
 
-With integration of the [IBM Key Protect](/docs/key-protect?topic=key-protect-getting-started-tutorial) service, you can have direct control over the data in your database and backups. You can manage your own keys in the Key Protect service on {{site.data.keyword.Bluemix_notm}} and you can use your key to control the encryption and decryption of the data in your Data Virtualization instance. 
+With integration of the [IBM Key Protect](/docs/key-protect?topic=key-protect-getting-started-tutorial) service, you can have direct control over the data in your database and backups. You can manage your own keys in the Key Protect service on {{site.data.keyword.Bluemix_notm}} and you can use your key to control the encryption and decryption of the data in your {{site.data.keyword.dv_short}} instance. 
 {: shortdesc}
 
-Upon instance creation, your database instance is set to encrypt its data at rest by using the Advanced Encryption Standard (AES) in Cipher-Block Chaining (CBC) mode with a 256-bit data encryption key (DEK). This DEK is then encrypted by a master key that is stored in a PKCS#12 keystore. A password is required to open the keystore. With Key Protect integration, the password is encrypted by a Key Protect root key. You must create a root key in Key Protect and grant your specific Data Virtualization instance (resource) `Reader` access to that root key. In the Data Virtualization web console, you specify the Key Protect instance and the root key to be used. After the association is complete, the specified root key is then used by Data Virtualization to encrypt and decrypt the keystore password. The root key never leaves Key Protect.
+Upon instance creation, your database instance is set to encrypt its data at rest by using the Advanced Encryption Standard (AES) in Cipher-Block Chaining (CBC) mode with a 256-bit data encryption key (DEK). This DEK is then encrypted by a master key that is stored in a PKCS#12 keystore. A password is required to open the keystore. With Key Protect integration, the password is encrypted by a Key Protect root key. You must create a root key in Key Protect and grant your specific {{site.data.keyword.dv_short}} instance (resource) `Reader` access to that root key. In the {{site.data.keyword.dv_short}} web console, you specify the Key Protect instance and the root key to be used. After the association is complete, the specified root key is then used by {{site.data.keyword.dv_short}} to encrypt and decrypt the keystore password. The root key never leaves Key Protect.
 
 You can rotate the root key in Key Protect. The database instance periodically checks for any key rotation. When a key rotation is detected, a new keystore password and a new master key are correspondingly generated.
 
-When you revoke the root key authorization of the Data Virtualization service or delete the root key, your database instance can no longer be started after it is stopped because any attempt to access the keystore will fail. Certain operations within the database require access to the keystore and they will begin to fail as well. In addition, any database backups cannot be restored.
+When you revoke the root key authorization of the {{site.data.keyword.dv_short}} service or delete the root key, your database instance can no longer be started after it is stopped because any attempt to access the keystore will fail. Certain operations within the database require access to the keystore and they will begin to fail as well. In addition, any database backups cannot be restored.
 
 Key Protect provides regional support only. If the region that hosts your key becomes unavailable, you will not be able to manually fail over to your disaster recovery (DR) node, or access data on the DR node without failing over. For this reason, it is recommended that you not use Key Protect and the disaster recovery feature together on the same instance.
 {: important}
@@ -39,12 +39,12 @@ Key Protect provides regional support only. If the region that hosts your key be
 ## Prerequisites
 {: #kp_prereqs}
 
-To integrate the Key Protect feature into the Data Virtualization service, the Data Virtualization service instance must be in a resource group. If your Data Virtualization service instance is a Cloud Foundry service, see [Migrating Cloud Foundry service instances and apps to a resource group](/docs/account?topic=account-migrate) for information about the migration<!--, the advantages of migrating the instance to a resource group, and instructions to conduct the migration-->.
+To integrate the Key Protect feature into the {{site.data.keyword.dv_short}} service, the {{site.data.keyword.dv_short}} service instance must be in a resource group. If your {{site.data.keyword.dv_short}} service instance is a Cloud Foundry service, see [Migrating Cloud Foundry service instances and apps to a resource group](/docs/account?topic=account-migrate) for information about the migration<!--, the advantages of migrating the instance to a resource group, and instructions to conduct the migration-->.
 
 ## Getting started
 {: #kp_gs}
 
-Complete the steps in the following sections to get started with using IBM Key Protect to control the encryption and decryption of the data in your Data Virtualization instance.
+Complete the steps in the following sections to get started with using IBM Key Protect to control the encryption and decryption of the data in your {{site.data.keyword.dv_short}} instance.
 
 ### Creating an IBM Key Protect instance
 {: #kp_instance}
@@ -84,7 +84,7 @@ You can create keys or import existing keys by using the following methods:
      - [Root key](/docs/key-protect?topic=key-protect-create-root-keys#create-root-key-api)
      - [Standard key](/docs/key-protect?topic=key-protect-create-standard-keys#create-standard-key-api)
 
-For the Data Virtualization service, a root key is required. The following example shows how to create a root key by using the GUI:
+For the {{site.data.keyword.dv_short}} service, a root key is required. The following example shows how to create a root key by using the GUI:
 
 1. Click **Add Key** to create a key. In the **Add a new key** console, you can create a key or import an existing key. Select **Create a key**. 
 
@@ -96,12 +96,12 @@ For the Data Virtualization service, a root key is required. The following examp
 
    ![Screen capture of Key Protect dashboard.](images/kp_4.png "Key Protect dashboard shows a list of keys"){: caption="Figure 4. Key Protect service dashboard" caption-side="bottom"}
 
-After creating the key in the Key Protect service instance, you can proceed with granting authorization and to use that key in Data Virtualization.
+After creating the key in the Key Protect service instance, you can proceed with granting authorization and to use that key in {{site.data.keyword.dv_short}}.
 
 ### Granting service authorization
 {: #kp_grant}
 
-{{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) provides a feature that is called service-to-service authorization, where you can grant your Data Virtualization service instance `Reader` access to your IBM Key Protect service instance. 
+{{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) provides a feature that is called service-to-service authorization, where you can grant your {{site.data.keyword.dv_short}} service instance `Reader` access to your IBM Key Protect service instance. 
 
 #### Procedure
 {: #kp_proc_3}
@@ -116,7 +116,7 @@ After creating the key in the Key Protect service instance, you can proceed with
 
 3. To create an authorization, click **Create**.  
 
-4. On the **Grant a Service Authorization** page, select **Data Virtualization** as the source service. You can either select a specific instance, or you can authorize **All instances** in your account. 
+4. On the **Grant a Service Authorization** page, select **{{site.data.keyword.dv_short}}** as the source service. You can either select a specific instance, or you can authorize **All instances** in your account. 
 
    ![Screen capture of the Grant a Service Authorization page where source service is selected.](images/kp_7.png "Selecting a source service on the Grant a Service Authorization page"){: caption="Figure 7. Selecting a source service on the Grant a Service Authorization page" caption-side="bottom"}
 
@@ -133,10 +133,10 @@ After creating the key in the Key Protect service instance, you can proceed with
 
 If you want to rotate the key in IBM Key Protect, you can do it either from the {{site.data.keyword.Bluemix_notm}} console or by using the [IBM Key Protect API: Invoke an action on a key](https://cloud.ibm.com/apidocs/key-protect#invoke-an-action-on-a-key){:external}. 
 
-## Removing the authorization of Data Virtualization on Cloud service to access Key Protect
+## Removing the authorization of {{site.data.keyword.dv_short}} on Cloud service to access Key Protect
 {: #kp_rm_auth}
 
-You can remove the authorization of a Data Virtualization service to access the Key Protect service instance by using the {{site.data.keyword.Bluemix_notm}} console. In such a case, your database instance can no longer be started after it is stopped because any attempt to access the keystore will fail. Certain operations within the database require access to the keystore and they will begin to fail as well. In addition, any database backups cannot be restored. The access to the database and its backups can be regained after the service-to-service authorization is granted again.
+You can remove the authorization of a {{site.data.keyword.dv_short}} service to access the Key Protect service instance by using the {{site.data.keyword.Bluemix_notm}} console. In such a case, your database instance can no longer be started after it is stopped because any attempt to access the keystore will fail. Certain operations within the database require access to the keystore and they will begin to fail as well. In addition, any database backups cannot be restored. The access to the database and its backups can be regained after the service-to-service authorization is granted again.
 
 ## Deleting the root key in Key Protect
 {: #kp_del_root_key}

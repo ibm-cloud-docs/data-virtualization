@@ -27,7 +27,7 @@ subcollection: data-virtualization
 # Help and support
 {: #help_support}
 
-You can determine the status of the IBM® Data Virtualization service in {{site.data.keyword.Bluemix_notm}} by checking the [IBM Cloud: Status](https://cloud.ibm.com/status?selected=status){:external} page. 
+You can determine the status of the IBM® {{site.data.keyword.dv_short}} service in {{site.data.keyword.Bluemix_notm}} by checking the [IBM Cloud: Status](https://cloud.ibm.com/status?selected=status){:external} page. 
 {: tsResolve}
 
 <!--* Status monitoring:
@@ -36,7 +36,7 @@ You can determine the status of the IBM® Data Virtualization service in {{site.
 ## Getting help and support for Db2 on Cloud
 {: #gettinghelp}
 
-If you have problems or questions when using Data Virtualization, you can get help by searching for information or by asking questions through a forum. You can also open a support case.
+If you have problems or questions when using {{site.data.keyword.dv_short}}, you can get help by searching for information or by asking questions through a forum. You can also open a support case.
 {: shortdesc}
 
 You can review [Stack Overflow](https://stackoverflow.com/search?q=ibm-cloud){: external} to see whether other users ran into the same problem. When using the forum to ask a question, tag your question with `ibm-cloud` and `dv` so that it is seen by the {{site.data.keyword.Bluemix}} development teams.

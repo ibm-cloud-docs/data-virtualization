@@ -27,7 +27,7 @@ subcollection: data-virtualization
 ## Current plans
 {: #um_current_plans}
 
-Access to Data Virtualization service instances for users in your account is controlled by [Identity and access management (IAM) on IBM Cloud](/docs/data-virtualization?topic=data-virtualization-iam) and database access is provided by standard access controls provided by the database. 
+Access to {{site.data.keyword.dv_short}} service instances for users in your account is controlled by [Identity and access management (IAM) on IBM Cloud](/docs/data-virtualization?topic=data-virtualization-iam) and database access is provided by standard access controls provided by the database. 
 
 For more information about IAM, see [What is IBM Cloud Identity and Access Management?](/docs/account?topic=account-iamoverview).
 
@@ -37,7 +37,7 @@ For more information about IAM, see [What is IBM Cloud Identity and Access Manag
 #### IAM users
 {: #um_iam_users}
 
-IAM is only integrated with high-level service access, which governs privileges and operations available in the Data Virtualization console and database. Access to the database by these IAM users is provided by allowing an IAM user or service ID access to a specific Db2 user, as mentioned earlier.
+IAM is only integrated with high-level service access, which governs privileges and operations available in the {{site.data.keyword.dv_short}} console and database. Access to the database by these IAM users is provided by allowing an IAM user or service ID access to a specific Db2 user, as mentioned earlier.
 
 ### Roles and access
 {: #um_roles_access}
@@ -48,39 +48,39 @@ Users can use JDBC or any Db2 client to connect to their database. There are two
 
 IAM authentication is performed as the authentication mechanism. Permissions are not controlled by IAM. Permissions are controlled by database level privileges of the associated user. 
 
-## Data Virtualization roles
+## {{site.data.keyword.dv_short}} roles
 
 {: @dv_roles}
 
-There are four roles in Data Virtualization: Manager (service administrator), Engineer, Steward, and User. Each of these roles can take advantage of different capabilities. These roles apply to a user's access to a Data Virtualization as a service instance, which is also known as **Service access**. 
+There are four roles in {{site.data.keyword.dv_short}}: Manager (service administrator), Engineer, Steward, and User. Each of these roles can take advantage of different capabilities. These roles apply to a user's access to a {{site.data.keyword.dv_short}} as a service instance, which is also known as **Service access**. 
 
-There are also Platform roles that apply to the user's **Platform access**, which affects scaling and monitoring of Data Virtualization.
+There are also Platform roles that apply to the user's **Platform access**, which affects scaling and monitoring of {{site.data.keyword.dv_short}}.
 
-You must assign one of the following Data Virtualization roles for a user to have access to the service:
+You must assign one of the following {{site.data.keyword.dv_short}} roles for a user to have access to the service:
 
-### Data Virtualization Manager
+### {{site.data.keyword.dv_short}} Manager
 
-The Data Virtualization Manager role is automatically assigned to the user who provisions the Data Virtualization service. After the provisioning the service, the Data Virtualization Manager can grant other users access.
+The {{site.data.keyword.dv_short}} Manager role is automatically assigned to the user who provisions the {{site.data.keyword.dv_short}} service. After the provisioning the service, the {{site.data.keyword.dv_short}} Manager can grant other users access.
 
-The Data Virtualization Manager assigns appropriate Data Virtualization roles to Cloud Pak for Data users.
+The {{site.data.keyword.dv_short}} Manager assigns appropriate {{site.data.keyword.dv_short}} roles to Cloud Pak for Data users.
 
-### Data Virtualization Engineer
+### {{site.data.keyword.dv_short}} Engineer
 
-The Data Virtualization Engineer configures data sources, virtualizes data, and manages access to virtual objects. Users with this role can create or view a virtual table and grant any Data Virtualization user access to it. 
+The {{site.data.keyword.dv_short}} Engineer configures data sources, virtualizes data, and manages access to virtual objects. Users with this role can create or view a virtual table and grant any {{site.data.keyword.dv_short}} user access to it. 
 
-By default, every virtual object created in Data Virtualization is private. Access to private virtual objects must be granted to users other than its creator.
+By default, every virtual object created in {{site.data.keyword.dv_short}} is private. Access to private virtual objects must be granted to users other than its creator.
 
-Data source administrators are expected to provide access to a Data Virtualization Engineer to virtualize data.
+Data source administrators are expected to provide access to a {{site.data.keyword.dv_short}} Engineer to virtualize data.
 
-### Data Virtualization User
+### {{site.data.keyword.dv_short}} User
 
 Users with this role can create views of virtual tables to which they have access.
 
-### Data Virtualization Steward
+### {{site.data.keyword.dv_short}} Steward
 
-Data Virtualization Stewards can access data in all user tables and views. Additionally, Stewards hold the Db2® DATAACCESS authority on the database.
+{{site.data.keyword.dv_short}} Stewards can access data in all user tables and views. Additionally, Stewards hold the Db2® DATAACCESS authority on the database.
 
-The following table summarizes the Data Virtualization menu functions that each of the Data Virtualization user roles is able to access.
+The following table summarizes the {{site.data.keyword.dv_short}} menu functions that each of the {{site.data.keyword.dv_short}} user roles is able to access.
 
 | Menu | Capabilities | Manager | Engineer | Steward | User | Platform administrator | Platform operator | Platform editor | Platform viewer |
 |--------|---------|---------|--------|--------|---|---|---|----|----|
@@ -112,15 +112,15 @@ The following table summarizes the Data Virtualization menu functions that each 
 |        | Service settings->Scaling       |         |        |        |   | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)   |    |
 |        | Service settings->Maintenance update       |         |        |        |   | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)   |    |
 |        | Service settings->Access restriction       |         |        |        |   | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)   |    |
-{: caption="Table 1. Data Virtualization menu functions that each of the Data Virtualization user roles is able to access" caption-side="top"}
+{: caption="Table 1. {{site.data.keyword.dv_short}} menu functions that each of the {{site.data.keyword.dv_short}} user roles is able to access" caption-side="top"}
 
-#### Data Virtualization permissions
+#### {{site.data.keyword.dv_short}} permissions
 
 | Roles | Permissions   |
 |---|-----|
-| Data Virtualization Manager | Administer the service, Administer the database, Access data, Manage data sources, Manage users and assign Data Virtualization roles, Create and share any schema, Manage data caches, Manage data queries
-| Data Virtualization Engineer | Access connection details, Manage data sources, Create virtual tables and views, Create and manage private schema |
-| Data Virtualization User | Access connection details, Create virtual views over existing virtual tables and views, Create and manage private schema |
-| Data Virtualization Steward | Access connection details, Access data, Create virtual views over existing virtual tables and views, Create and manage private schema |
+| {{site.data.keyword.dv_short}} Manager | Administer the service, Administer the database, Access data, Manage data sources, Manage users and assign {{site.data.keyword.dv_short}} roles, Create and share any schema, Manage data caches, Manage data queries
+| {{site.data.keyword.dv_short}} Engineer | Access connection details, Manage data sources, Create virtual tables and views, Create and manage private schema |
+| {{site.data.keyword.dv_short}} User | Access connection details, Create virtual views over existing virtual tables and views, Create and manage private schema |
+| {{site.data.keyword.dv_short}} Steward | Access connection details, Access data, Create virtual views over existing virtual tables and views, Create and manage private schema |
 <!-- 
-{: caption="Table 2. Permissions associated with each Data Virtualization role." caption-side="top"} -->
+{: caption="Table 2. Permissions associated with each {{site.data.keyword.dv_short}} role." caption-side="top"} -->

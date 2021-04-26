@@ -4,7 +4,7 @@ copyright:
   years: 2021, 2021
 lastupdated: "2021-04-26"
 
-keywords: security compliances, security, compliance, Data Virtualization
+keywords: security compliances, security, compliance, {{site.data.keyword.dv_short}}
 
 subcollection: data-virtualization
 
@@ -24,7 +24,7 @@ subcollection: data-virtualization
 # Security compliances
 {: #sec_comp}
 
-Data Virtualization is provided on secure {{site.data.keyword.cloud}} and {{site.data.keyword.icp4dfull_notm}} as a Service platforms. Data Virtualization managed services comply with the specific security standards and auditing processes that are listed here and do not automatically inherit general {{site.data.keyword.cloud_notm}} security compliances that are documented for IaaS, PaaS, and SaaS cloud offerings. 
+{{site.data.keyword.dv_short}} is provided on secure {{site.data.keyword.cloud}} and {{site.data.keyword.icp4dfull_notm}} as a Service platforms. {{site.data.keyword.dv_short}} managed services comply with the specific security standards and auditing processes that are listed here and do not automatically inherit general {{site.data.keyword.cloud_notm}} security compliances that are documented for IaaS, PaaS, and SaaS cloud offerings. 
 {: shortdesc}
 
 <!--
@@ -34,7 +34,7 @@ Any plan deployed under the Hybrid Data Management Platform (HDMP) possesses the
 
 For details about each of the security compliances, see [Details about security compliance](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){: external}.
 
-| Data Virtualization offering plans | HIPAA | ISO | SOC 2 Type 2 | GDPR | Privacy shield |
+| {{site.data.keyword.dv_short}} offering plans | HIPAA | ISO | SOC 2 Type 2 | GDPR | Privacy shield |
 |-------------------------------------------------|-------|-----|--------------|------|----------------|
 | Enterprise | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) | In Progress | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) |
 

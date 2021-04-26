@@ -24,7 +24,7 @@ subcollection: data-virtualization
 # High availability (HA)
 {: #ha}
 
-Data Virtualization high availability plans have excellent availability characteristics with a 99.99% SLA. 
+{{site.data.keyword.dv_short}} high availability plans have excellent availability characteristics with a 99.99% SLA. 
 {: shortdesc}
 
 <!--
@@ -32,11 +32,11 @@ Data Virtualization high availability plans have excellent availability characte
 {: #ha_v2_ha}
 -->
 
-High availability disaster recovery (HADR) on the Data Virtualization Enterprise plan is provided by leveraging the support of native Db2 HADR. 
+High availability disaster recovery (HADR) on the {{site.data.keyword.dv_short}} Enterprise plan is provided by leveraging the support of native Db2 HADR. 
 
 - Each HADR system consists of 3 nodes located in different independent availability zones.
 
-Currently, the Data Virtualization beta consists of 1 node. 
+Currently, the {{site.data.keyword.dv_short}} beta consists of 1 node. 
 {: important}
 
 ![Schematic view of the 3 nodes in different availability zones](images/ha_AZ_small.png "Schematic view of the 3 nodes in different availability zones"){: caption="Figure 1. Schematic view of the 3 nodes in different availability zones" caption-side="bottom"}
@@ -56,7 +56,7 @@ The failover is managed for you by IBM. IBM monitors the health of your server, 
 ## Legacy Flex plans
 {: #ha_legacy}
 
-High availability on Data Virtualization Legacy Flex plans is provided by leveraging the support of native Db2 HADR.
+High availability on {{site.data.keyword.dv_short}} Legacy Flex plans is provided by leveraging the support of native Db2 HADR.
 
 - Each HA system consists of 2 nodes. 
 

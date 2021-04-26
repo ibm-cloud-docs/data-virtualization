@@ -15,7 +15,7 @@ keywords: public isolation for _servicename_, compute isolation for _servicename
 {:important: .important}
 {:note: .note}
 
-# Learning about Data Virtualization architecture and workload isolation
+# Learning about {{site.data.keyword.dv_short}} architecture and workload isolation
 {: #compute-isolation}
 
 _The short description should be a single, concise paragraph that contains one or two sentences and no more than 50 words. Summarize your offering's architecture and support for isolating one tenants' workload from another._

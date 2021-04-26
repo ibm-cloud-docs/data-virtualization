@@ -6,7 +6,7 @@ lastupdated: "2021-04-26"
 
 keywords: DR, HADR, disaster recovery, Enterprise, Standard, Db2 on Cloud, failover, failback
 
-subcollection: Data Virtualization
+subcollection: {{site.data.keyword.dv_short}}
 
 ---
 
@@ -25,7 +25,7 @@ subcollection: Data Virtualization
 # Geo-replicated disaster recovery (DR)
 {: #dr_gen}
 
-Data Virtualization leverages Db2 HADR technology and gives you the ability to add a DR node, on demand, in an offsite data center of your choice. In an unlikely event that the primary data server is affected by external circumstances such as a natural disaster, you can failover to your Geo-Replicated Disaster Recovery node with a few clicks. You can also fail back to your primary site just as easily.
+{{site.data.keyword.dv_short}} leverages Db2 HADR technology and gives you the ability to add a DR node, on demand, in an offsite data center of your choice. In an unlikely event that the primary data server is affected by external circumstances such as a natural disaster, you can failover to your Geo-Replicated Disaster Recovery node with a few clicks. You can also fail back to your primary site just as easily.
 {: shortdesc}
 
 Admin functionality is not available on the DR node. Any admin functions must be run on the primary instance while it's **Active**.
@@ -52,7 +52,7 @@ Deleting a DR configuration is currently not supported on the {{site.data.keywor
 ## High Availability vs. Disaster Recovery
 {: #dr_ha_vs_dr}
 
-Data Virtualization High Availability plan offers Db2 HADR SYNC and ASYNC nodes technology to deliver superior availability and reliability, within the same region. When required, failover to the HA nodes is managed seamlessly and automatically by IBM using automatic client reroute (ACR). HA plans reside within a single MZR or SZR region.
+{{site.data.keyword.dv_short}} High Availability plan offers Db2 HADR SYNC and ASYNC nodes technology to deliver superior availability and reliability, within the same region. When required, failover to the HA nodes is managed seamlessly and automatically by IBM using automatic client reroute (ACR). HA plans reside within a single MZR or SZR region.
 
 With the introduction of Geo-Replicated Disaster Recovery nodes, you are now able to extend that availability to an entirely different region by adding an on-demand Disaster Recovery node. This ability ensures that you can still access your data in the unlikely event of an outage in your primary region. For example, primary instance: Dallas; DR node: London.
 
@@ -110,7 +110,7 @@ DR nodes are now available for Enterprise and Standard HADR plans only. DR nodes
 ## Legacy Flex plans
 {: #dr_legacy}
 
-Data Virtualization Legacy Flex plans feature disaster recovery (DR) capabilities, where users can add a DR node, which resides in a different region, by using the Db2 High Availability Disaster Recovery (HADR) technology. Promoting to the recovery site gives users the ability to recover data affected by unpredictable circumstances. The Recovery site is always in a different region than the Primary site.
+{{site.data.keyword.dv_short}} Legacy Flex plans feature disaster recovery (DR) capabilities, where users can add a DR node, which resides in a different region, by using the Db2 High Availability Disaster Recovery (HADR) technology. Promoting to the recovery site gives users the ability to recover data affected by unpredictable circumstances. The Recovery site is always in a different region than the Primary site.
 
 In the case of a disaster, the failover to the recovery site will not be initiated by IBM. For the DR failover, you must initiate the takeover from the UI. In the case of a failure in the primary site, it is important to remember that you will not have access to the primary system to initiate the takeover. 
 

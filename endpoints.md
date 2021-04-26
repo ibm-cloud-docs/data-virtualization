@@ -44,7 +44,7 @@ At the time of instance creation, you can select your choice of endpoint from th
 
 To view your endpoints:
 
-- Select your Data Virtualization service from {{site.data.keyword.cloud_notm}}.
+- Select your {{site.data.keyword.dv_short}} service from {{site.data.keyword.cloud_notm}}.
 - Select the **Data sources** dropdown menu. 
 
 ![View connection details](images/view_endpoint.png "Endpoint choice"){: caption="Figure 2. Selecting the Connection details option" caption-side="bottom"}

@@ -24,21 +24,21 @@ subcollection: data-virtualization
 # Connecting overview
 {: #connect_ov}
 
-You can connect command-line interfaces, IBM® or third-party applications and tools, or apps that you create to your Data Virtualization instance. 
+You can connect command-line interfaces, IBM® or third-party applications and tools, or apps that you create to your {{site.data.keyword.dv_short}} instance. 
 {: shortdesc}
 
 ## Prerequisites
 {: #prereqs}
 
-Before attempting to connect to your Data Virtualization instance, verify that you have the prerequisites. 
+Before attempting to connect to your {{site.data.keyword.dv_short}} instance, verify that you have the prerequisites. 
 
 - Collect database details and credentials
 
-   To connect to your database, you need database details (such as the host name), and credentials (such as a user ID and password.) You can collect this connection information from the **Service credentials** table of the Data Virtualization service instance or from the Data Virtualization web console.
+   To connect to your database, you need database details (such as the host name), and credentials (such as a user ID and password.) You can collect this connection information from the **Service credentials** table of the {{site.data.keyword.dv_short}} service instance or from the {{site.data.keyword.dv_short}} web console.
 
 - Verify that a supported driver is installed
 
-   - If your application or tool already contains the Db2 v11.5 IBM Data Server Driver Package, then your application or tool is able to connect to your Data Virtualization instance by using that driver.
+   - If your application or tool already contains the Db2 v11.5 IBM Data Server Driver Package, then your application or tool is able to connect to your {{site.data.keyword.dv_short}} instance by using that driver.
    - Otherwise, install the Db2 driver package, which you can download from [here](https://www.ibm.com/support/pages/node/387577){: external}.
 
 - Configure your environment
@@ -51,14 +51,14 @@ Before attempting to connect to your Data Virtualization instance, verify that y
     <!-- You can choose to connect with or without SSL. Connection details, such as which port to use and the connection string, depend on whether you use SSL connections. -->
 
     To use SSL connections, you need a CA certificate:
-    - If you use the most recent Data Virtualization driver package, the certificate file is bundled with the package and is used for connections.
-    - If you use the IBM Data Server Driver Package, you can download the SSL certificate from the Data Virtualization web console.
+    - If you use the most recent {{site.data.keyword.dv_short}} driver package, the certificate file is bundled with the package and is used for connections.
+    - If you use the IBM Data Server Driver Package, you can download the SSL certificate from the {{site.data.keyword.dv_short}} web console.
 
 - Confirm that ports are available
 
-   If your network is behind a firewall, confirm that communications are permitted on the port that is needed to connect to the Data Virtualization service. The port number can be found in the connection information from the **Service credentials** table of the Data Virtualization service instance or from the Data Virtualization web console.
+   If your network is behind a firewall, confirm that communications are permitted on the port that is needed to connect to the {{site.data.keyword.dv_short}} service. The port number can be found in the connection information from the **Service credentials** table of the {{site.data.keyword.dv_short}} service instance or from the {{site.data.keyword.dv_short}} web console.
 
-<!-- Before you can connect to your Data Virtualization instance, verify that you completed downloading and installing the necessary components on the prerequisites checklist: 
+<!-- Before you can connect to your {{site.data.keyword.dv_short}} instance, verify that you completed downloading and installing the necessary components on the prerequisites checklist: 
 
 - [Prerequisites checklist](prereqs.html) -->
 
@@ -84,7 +84,7 @@ Before attempting to connect to your Data Virtualization instance, verify that y
 ## Connectivity options
 {: #connect_opts}
 
-Data Virtualization offers multiple secure connectivity options depending on your application connection requirements.  
+{{site.data.keyword.dv_short}} offers multiple secure connectivity options depending on your application connection requirements.  
 {: shortdesc}
 
 See [Connectivity options](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_options).
@@ -100,7 +100,7 @@ See [Connectivity options](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_
 - [Data Studio](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ibm#data_studio)
 - [Data Server Manager](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ibm#dsm)
 - [CLPPLUS](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ibm#clpplus)
-<!-- - [Aginity Workbench to migrate Netezza® data models and data to Data Virtualization](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_3rd_party#aginity_wb) -->
+<!-- - [Aginity Workbench to migrate Netezza® data models and data to {{site.data.keyword.dv_short}}](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_3rd_party#aginity_wb) -->
 - [InfoSphere Data Architect to design and deploy your database schema](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ibm#ida)
 
 ### Data visualization & BI

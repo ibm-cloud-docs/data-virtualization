@@ -24,15 +24,15 @@ subcollection: data-virtualization
 # About
 {: #about}
 
-Data Virtualization is a fully managed public cloud service on {{site.data.keyword.cloud_notm}}. It delivers the ability to view, access, manipulate, and analyze data without the need to know its physical format or location, and without having to move or copy it.
+{{site.data.keyword.dv_short}} is a fully managed public cloud service on {{site.data.keyword.cloud_notm}}. It delivers the ability to view, access, manipulate, and analyze data without the need to know its physical format or location, and without having to move or copy it.
 {: shortdesc}
 
 ## Key features
 {: #ab_key_features}
 
-Data Virtualization is available as an on-demand licensing and delivery model with the following features:
+{{site.data.keyword.dv_short}} is available as an on-demand licensing and delivery model with the following features:
 
-- Data Virtualization is a fully managed service on IBM Cloud that you can use to easily and securely access data across many data sources.
+- {{site.data.keyword.dv_short}} is a fully managed service on IBM Cloud that you can use to easily and securely access data across many data sources.
 
 - You can create virtual objects, manage data source connections, virtualize data, and join virtual tables and views.
 - You can manage access to objects with defined Manager, Steward, Engineer, and User roles.
@@ -43,17 +43,17 @@ Data Virtualization is available as an on-demand licensing and delivery model wi
 
 ### Enterprise plan
 
-Some features are limited in the Data Virtualization beta. See [Beta limitations](#ab_plans_limits)
+Some features are limited in the {{site.data.keyword.dv_short}} beta. See [Beta limitations](#ab_plans_limits)
 {: note}
 
-- One highly available Data Virtualization instance with a minimum of 3 head and 3 worker nodes. 
-- Data Virtualization instances have a minimum of 4 vCPU and 32 GB RAM per node.
+- One highly available {{site.data.keyword.dv_short}} instance with a minimum of 3 head and 3 worker nodes. 
+- {{site.data.keyword.dv_short}} instances have a minimum of 4 vCPU and 32 GB RAM per node.
 - Three HADR nodes spanning multiple availability zones.
 
  #### Beta limitations
  {:#ab_plans_limits}
 
-- HADR is not supported in the Data Virtualization beta.
+- HADR is not supported in the {{site.data.keyword.dv_short}} beta.
 - Only one head is availaible in the beta.
 
 
@@ -99,7 +99,7 @@ Some features are limited in the Data Virtualization beta. See [Beta limitations
 
 {: #plans_cfgs} -->
 <!--
-You can choose a Data Virtualization plan that is configured and optimized for the work that you need to do:
+You can choose a {{site.data.keyword.dv_short}} plan that is configured and optimized for the work that you need to do:
 {: shortdesc}
 
    * A Flex plan (recommended) in which you can independently scale RAM, storage, and compute resources
