@@ -54,8 +54,8 @@ Data Virtualization (Beta)
 
     {: .navgroup id="reference"}
     [Rest APIs](#)
-    [IBM Cloud Pak for Data
-Documentation](https://dataplatform.cloud.ibm.com/docs/content/dvaas/dvaas-overview.html?context=analytics)
+    [IBM Cloud Pak for Data as a Service
+documentation](https://dataplatform.cloud.ibm.com/docs/content/dvaas/dvaas-overview.html?context=analytics)
     {: .navgroup-end}
 
     {: .navgroup id="help"}
