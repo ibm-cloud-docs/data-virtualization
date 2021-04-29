@@ -294,8 +294,6 @@ The following examples show connection snippets for the three methods:
 ## Console user experience
 {: #console-ux}
 
-The service console login page has the option to log in with your IBMid and password. After the **Sign In via IBMid** button is clicked, the user is directed to the IAM login page, on which the password is entered. When authentication is completed, the user is redirected back to the console. Before such login can be successful, the IBMid user must be added to each database service instance by the administrator through the console or REST API.
-
 To add a user with either an IBMid or a service ID by using the web console, complete the following steps:
 
 1. Log in as a user who has administrator privileges.
