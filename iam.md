@@ -300,9 +300,9 @@ To add a user with either an IBMid or a service ID by using the web console, com
 
 1. Log in as a user who has administrator privileges.
 
-2. From the right drop-down menu, select **Manage Users**.
+2. From the dropdown menu, select **User Management**.
 
-   ![View of the web console dashboard page and drop-down menu](images/manage_users.png "Web console drop-down menu"){: caption="Figure 1. Selecting User management page from drop-down menu" caption-side="bottom"}
+   ![View of the web console dashboard page and dropdown menu](images/manage_users.png "Web console drop-down menu"){: caption="Figure 1. Selecting User management page from drop-down menu" caption-side="bottom"}
 
 3. With the **Users** tab selected, click **Add**.
 
@@ -312,7 +312,7 @@ To add a user with either an IBMid or a service ID by using the web console, com
 
    ![View of the web console Add IBMid user page](images/add_ibmid_user.png "Creating an IBMid user"){: caption="Figure 3. Creating an IBMid user" caption-side="bottom"}
 
-5. Enter a **User ID** and an **IBMid** in the provided fields. Click **Create**.
+5. Enter an **IBMid** in the provided fields and click **Create**.
 
    The **IBMid** field can be used to specify either an IBMid or a service ID for the user.
    {: note}
