@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2021
-lastupdated: "2021-04-26"
+lastupdated: "2021-05-27"
 
 keywords: provision cloud database, database with terraform, provisioning parameters, data virtualization
 
