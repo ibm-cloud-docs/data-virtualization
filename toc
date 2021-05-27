@@ -48,9 +48,7 @@ Data Virtualization (Beta)
 
     {: .navgroup id="howto"}
     provision.md
-    [Learning about Data Virtualization architecture and workload isolation]
     arch.md
-    [Learning about Data Virtualization architecture and workload isolation]
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
