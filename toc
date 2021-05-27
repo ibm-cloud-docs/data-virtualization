@@ -8,6 +8,7 @@ Data Virtualization (Beta)
     {: .navgroup id="learn"}
     about.md
     getting-started.md
+    {: .navgroup-end}
 
     {: .topicgroup}
     Connecting
@@ -47,8 +48,8 @@ Data Virtualization (Beta)
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
+    arch_workload_iso.md
     provision.md
-    arch.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
