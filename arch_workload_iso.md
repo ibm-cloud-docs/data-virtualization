@@ -19,7 +19,6 @@ subcollection: data-virtualization
 {:important: .important}
 {:note: .note}
 {:deprecated: .deprecated}
-{:pre: .pre}recated}
 {:pre: .pre}
 
 # Learning about Data Virtualization architecture and workload isolation

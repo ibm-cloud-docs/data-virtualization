@@ -17,9 +17,6 @@ Data Virtualization (Beta)
         connecting/credentials.md
         connecting/ssl.md
         connecting/driver_pkg.md
-        <!--connecting/connect_programmatically.md-->
-        <!--connecting/connect_ibm_tools.md-->
-        <!--connecting/connect_3rd_party_tools.md-->
         connecting/rest_api.md
 
     {: .topicgroup}
@@ -28,8 +25,6 @@ Data Virtualization (Beta)
         endpoints.md
         ha.md
         dr.md
-        <!--log_mon.md-->
-        <!--maintenance.md-->
 
     {: .topicgroup}
     Security
