@@ -24,13 +24,13 @@ Data Virtualization (Beta)
     {: .topicgroup}
     Administration
        <!--interfaces.md-->
-        endpoints.md
         ha.md
         dr.md
 
     {: .topicgroup}
     Security
         encryption.md
+        endpoints.md
         iam.md
         user_mgmt.md
         activity_tracker.md
