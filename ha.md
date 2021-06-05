@@ -32,9 +32,10 @@ subcollection: data-virtualization
 {: #ha_v2_ha}
 -->
 
-High availability disaster recovery (HADR) on the {{site.data.keyword.dv_short}} Enterprise plan is provided by leveraging the support of native Db2 HADR. 
+High availability disaster recovery (HADR) on the {{site.data.keyword.dv_short}} Enterprise plan is provided by leveraging the support of native Db2 HADR. Backups of the service are also taken every 24 hours and backed up to cross regional Cloud Object Storage for disaster recovery purposes.
 
-- Each HADR system consists of 3 nodes located in different independent availability zones.
+- Each HADR system consists of 3 nodes located in different independent availability zones within the same region.
+- {site.data.keyword.dv_short}} supports Dallas, Frankfurt, London and Tokyo regions.
 
 Currently, the {{site.data.keyword.dv_short}} beta consists of 1 node. 
 {: important}
