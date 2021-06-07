@@ -32,7 +32,6 @@ Data Virtualization (Beta)
         iam.md
         user_mgmt.md
         activity_tracker.md
-        key_protect.md
         key_protect_2.md
             
 
