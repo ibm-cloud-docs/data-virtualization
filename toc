@@ -45,6 +45,10 @@ Data Virtualization (Beta)
     {: .navgroup id="howto"}
     provision.md
     arch_workload_iso.md
+    {: .topicgroup}
+    Logging and monitoring
+        monitor.md
+
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
