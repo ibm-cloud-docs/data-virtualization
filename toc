@@ -24,6 +24,7 @@ Data Virtualization (Beta)
     {: .topicgroup}
     Administration
         ha.md
+        auditing.md
 
     {: .topicgroup}
     Security
