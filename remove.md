@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-06-06"
+lastupdated: "2021-06-08"
 
 subcollection: data-virtualization
 
@@ -61,4 +61,3 @@ You can then "undelete", recover, or reclaim an available soft-deleted instance 
 ```
 ibmcloud resource reclamation-restore resource_ID
 ```
-{: .pre}
