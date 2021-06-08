@@ -19,7 +19,6 @@ subcollection: data-virtualization
 {:important: .important}
 {:note: .note}
 {:deprecated: .deprecated}
-{:pre: .pre}
 
 # Deleting a database
 {: #del_db}
