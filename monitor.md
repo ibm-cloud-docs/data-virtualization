@@ -96,14 +96,14 @@ subcollection: data-virtualization
 # Monitoring for {{site.data.keyword.dv_short}}
 {: #monitor}
 
-Get insight into your Data Virtualization instance. Metrics can help you find bottlenecks or predict possible production problems.
+Get insight into your {{site.data.keyword.dv_short}} instance. Metrics can help you find bottlenecks or predict possible production problems.
 
-You can use the IBM Cloud® Monitoring service to monitor your Data Virtualization instance. Data Virtualization forwards selected information about your instance to Monitoring so that you can monitor specific metrics such as cpu and memory utilization.
+You can use the IBM Cloud® Monitoring service to monitor your {{site.data.keyword.dv_short}} instance. {{site.data.keyword.dv_short}} forwards selected information about your instance to Monitoring so that you can monitor specific metrics such as cpu and memory utilization.
 
 ## Set up your {{site.data.keyword.dv_short}} service instance
 {: #setup-monitor}
 
-To set up Monitoring for {{site.data.keyword.dv_short}}, you must create a service instance and then enable Platform Metrics in the same region as the Data Virtualization instance  that you want to monitor. If you have deployments in more than one region, you must provision Monitoring and enable platform metrics for each region.
+To set up Monitoring for {{site.data.keyword.dv_short}}, you must create a service instance and then enable Platform Metrics in the same region as the {{site.data.keyword.dv_short}} instance  that you want to monitor. If you have deployments in more than one region, you must provision Monitoring and enable platform metrics for each region.
 
 To set up {{site.data.keyword.mon_short}},
 
@@ -116,7 +116,7 @@ To set up {{site.data.keyword.mon_short}},
 ## Accessing your {{site.data.keyword.mon_full_notm}} metrics
 {: #access-monitor}
 
-To see your {{site.data.keyword.codeengineshort}} customer metrics dashboards in {{site.data.keyword.mon_short}}:
+To see your {{site.data.keyword.dv_short}} customer metrics dashboards in {{site.data.keyword.mon_short}}:
 
 1. From the {{site.data.keyword.cloud_notm}} navigation menu, select **Observability**.
 2. Select **Monitoring**.
