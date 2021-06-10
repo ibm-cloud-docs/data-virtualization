@@ -41,17 +41,13 @@ Data Virtualization (Beta)
     arch_workload_iso.md
     monitor.md
     remove.md
+    sdk.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
-sdk.md
-
-    {: .topicgroup}
-    Related links
-        [Rest APIs](https://test.cloud.ibm.com/apidocs/data-virtualization-on-cloud)
-        [IBM Cloud Pak for Data as a Service documentation](https://dataplatform.cloud.ibm.com/docs/content/dvaas/dvaas-overview.html?context=analytics)
+    [Rest APIs](https://test.cloud.ibm.com/apidocs/data-virtualization-on-cloud)
+    [IBM Cloud Pak for Data as a Service documentation](https://dataplatform.cloud.ibm.com/docs/content/dvaas/dvaas-overview.html?context=analytics)
     {: .navgroup-end}
-    
 
     {: .navgroup id="help"}
     faqs.md
