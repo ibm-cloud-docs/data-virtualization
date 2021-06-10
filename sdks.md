@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2021
-lastupdated: "2021-06-08"
+lastupdated: "2021-06-10"
 
 keywords: Data Virtualization,SDKs,SDK,software developer kit,programming interfaces,wrappers
 
