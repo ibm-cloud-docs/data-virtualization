@@ -41,6 +41,7 @@ Data Virtualization (Beta)
     arch_workload_iso.md
     monitor.md
     remove.md
+    remove2.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
