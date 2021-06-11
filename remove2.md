@@ -1,63 +1,32 @@
 ---
 
 copyright:
-  years: 2021
-lastupdated: "2021-06-08"
+  years: 2021, 2021
+lastupdated: "2021-06-10"
+
+keywords: Data Virtualization,SDKs,SDK,software developer kit,programming interfaces,wrappers
 
 subcollection: data-virtualization
-
-keywords: deprovision data-virtualization, deprovisioning parameters, delete
 
 ---
 
 {:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
-{:external .external}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
+{:external: target="_blank" .external}
 {:tip: .tip}
-{:important .important}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
+{:pre: .pre}
+{:codeblock: .codeblock}
+{:screen: .screen}
 
+## Supported SDKs
+{: #ibm-sdks}
 
-# Deleting your Deployment and Removing your Data
-{: #deprovisioning}
+The following {{site.data.keyword.watson}} SDKs are supported by {{site.data.keyword.IBM_notm}}:
 
-{{site.data.keyword.dv_short}} instances are soft-deleted in production whenever you delete or deprovision the instance in {{site.data.keyword.cloud_notm}}. 
+* [Go SDK](https://github.com/watson-developer-cloud/go-sdk){: external}
+* [Java SDK](https://github.com/IBM/data-virtualization-on-cloud-java-sdk/){: external}
 
-The deployment stays in the "soft-delete" state for up to 3 days before it's fully deleted {{site.data.keyword.cloud_notm}}.  If your instance has not yet been fully deleted, you can re-enable the existing soft-deleted instance.
-
-## Deleting your Deployment in the User Interface 
-To delete your deployment instance from the Resource list section dashboard of the IBM Cloud dashboard, select your deployment. Next, using the menu icon, choose `Delete` from the dropdown list. 
-
-## Deleting your Deployment by using the CLI
-You can delete your existing {{site.data.keyword.dv_short}} instance through the CLI with the [`ibmcloud resource service-instance-delete`](https://cloud.ibm.com/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instance_delete) command:
-```
-ibmcloud resource service-instance-delete my-service-instance
-```
-{: .pre}
-
-Using the `ibmcloud resource reclamation-delete` command deletes a reclaimed resource so that the resource can no longer be restored.
-{: .note}
-
-## Cryptoshredding keys
-
-{{site.data.keyword.keymanagementserviceshort}} provides for a [force delete](/docs/key-protect?topic=key-protect-delete-keys) of a key that is in use by {{site.data.keyword.cloud}} services, including your {{site.data.keyword.databases-for}} deployments. This action is called cryptoshredding. 
-
-Cryptoshredding is a destructive action. When the key is deleted, your data is unrecoverable, even from a soft-delete state.
-{: .important}
-
-## Backups Removal
-
-Backups cannot be manually deleted. However, if you delete your deployment, its backups are deleted automatically within 30 days. 
-
-## Reenabling from a soft-delete
-{: #reclamation}
-
-To discover available soft-deleted instances, use the {{site.data.keyword.cloud_notm}} CLI [`ibmcloud resource reclamations`](https://cloud.ibm.com/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_reclamations) command.
-
-You can then "undelete", recover, or reclaim an available soft-deleted instance by using the {{site.data.keyword.cloud_notm}} CLI [`ibmcloud resource reclamation-restore`](https://cloud.ibm.com/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_reclamation_restore) command.
-
-```
-ibmcloud resource reclamation-restore resource_ID
-```
+For more information, see [Rest APIs](https://{DomainName}/apidocs/data-virtualization-on-cloud){: external} for each service includes information and examples for many of the SDKs, including Java, Node.js, Python, Go, .Net, Ruby, and Swift.
+{:tip}
