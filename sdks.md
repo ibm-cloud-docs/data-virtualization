@@ -1,26 +1,26 @@
 ---
 
 copyright:
-  years: 2021, 2021
-lastupdated: "2021-06-10"
-
-keywords: Data Virtualization,SDKs,SDK,software developer kit,programming interfaces,wrappers
+  years: 2021
+lastupdated: "2021-06-08"
 
 subcollection: data-virtualization
+
+keywords: deprovision data-virtualization, deprovisioning parameters, delete
 
 ---
 
 {:shortdesc: .shortdesc}
-{:external: target="_blank" .external}
-{:tip: .tip}
-{:important: .important}
-{:note: .note}
-{:deprecated: .deprecated}
-{:pre: .pre}
+{:new_window: target="_blank"}
+{:external .external}
 {:codeblock: .codeblock}
+{:pre: .pre}
 {:screen: .screen}
+{:tip: .tip}
+{:important .important}
 
-## Supported SDKs
+
+# Supported SDKs
 {: #ibm-sdks}
 
 The following {{site.data.keyword.watson}} SDKs are supported by {{site.data.keyword.IBM_notm}}:
