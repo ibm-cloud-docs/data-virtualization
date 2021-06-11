@@ -35,7 +35,7 @@ subcollection: data-virtualization
 High availability disaster recovery (HADR) on the {{site.data.keyword.dv_short}} Enterprise plan is provided by leveraging the support of native HADR replication. In addition to HADR for further redundancy, backups of the service are replicated across regions by default and are taken every 24 hours and saved for a minimum of 14 days. 
 
 - Each HADR system consists of 3 nodes located in different independent availability zones within the same region.
-- {site.data.keyword.dv_short}} supports Dallas, Frankfurt, London and Tokyo regions.
+- {{site.data.keyword.dv_short}} supports Dallas, Frankfurt, London and Tokyo regions.
 
 ![Schematic view of the 3 nodes in different availability zones](images/ha_AZ_small.png "Schematic view of the 3 nodes in different availability zones"){: caption="Figure 1. Schematic view of the 3 nodes in different availability zones" caption-side="bottom"}
 
