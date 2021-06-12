@@ -34,7 +34,7 @@ Use IBM® {{site.data.keyword.dv_short}} to break data silos across hybrid data 
 {: shortdesc}
 
 For information about using Data Virtualzation with 
-Cloud Pak for Data as a Service, see [IBM Docs](https://dataplatform.cloud.ibm.com/docs/content/dvaas/dvaas-overview.html?context=cpdaas&audience=wdp).
+Cloud Pak for Data as a Service, see [IBM Docs](https://dataplatform.cloud.ibm.com/docs/content/dvaas/dvaas-overview.html).
 
 Create credentials. After creating the {{site.data.keyword.dv_short}} service on {{site.data.keyword.cloud}}, you must create IAM service credentials by clicking the **Service credentials** tab on your service page and selecting **New credential**. Technically, you can log in to the web console without credentials, but you need the service credentials to use many of the {{site.data.keyword.dv_short}} tools. To retrieve your **service credentials**, select the Service credentials tab from your service page and expand the credentials that you want to view.
 {: important}
