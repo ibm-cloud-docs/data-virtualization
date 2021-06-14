@@ -21,7 +21,7 @@ subcollection: data-virtualization
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-# High availability and Disaster Recovery(HA)
+# High availability and Disaster Recovery (HA)
 {: #ha}
 
 {{site.data.keyword.dv_short}} plans have excellent availability characteristics with a 99.99% SLA. 
