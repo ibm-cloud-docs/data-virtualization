@@ -1,24 +1,24 @@
 {
     "title": "Data Virtualization",
     "lastupdated": "2021-06-14",
-    "introduction": "Welcome to the {{site.data.keyword.dv_short}} product documentation.",
+    "introduction": "Welcome to the Data Virtualization product documentation.",
     "section_devtools": {
       "api": "/apidocs/data-virtualization-on-cloud"
     },
     "section_recommended": [
       {
         "title": "About Data Virtualization",
-        "description": "Get an overview of {{site.data.keyword.dv_short}} features, plans, and supported data centers.",
+        "description": "Get an overview of Data Virtualization features, plans, and supported data centers.",
         "href": "/docs/acme-test?topic=acme-test-create-project"
       },
       {
         "title": "Release notes",
-        "description": "Learn about the latest updates to {{site.data.keyword.dv_short}}.",
+        "description": "Learn about the latest updates to Data Virtualization.",
         "href": "/docs/data-virtualization?topic=data-virtualization-getting-started"
       },
       {
         "title": "Getting started",
-        "description": "Create service credentials to get started with {{site.data.keyword.dv_short}}.",
+        "description": "Create service credentials to get started with Data Virtualization.",
         "href": "/docs/data-virtualization?topic=data-virtualization-getting-started"
       }
     ],
