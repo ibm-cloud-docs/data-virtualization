@@ -1,72 +1,43 @@
 ---
 
 copyright:
-  years: 2014, 2020
-lastupdated: "2020-11-11"
+  years: 2019
+lastupdated: "2020-10-31"
 
-keywords: 
+keywords: data virtualization, release notes, data virtualization updates
 
 subcollection: data-virtualization
 
 ---
 
-<!-- Attribute definitions --> 
-{:external: target="_blank" .external}
+{:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:important: .important}
-{:note: .note}
-{:deprecated: .deprecated}
-{:pre: .pre}
 
-# Differences between legacy and current plans
-{: #plan_diffs}
+# Release notes for {{site.data.keyword.dv_short}}
+{: #dv-wn}
 
-There are many differences between legacy plans and the new Standard and Enterprise plans, as described across the product documentation. This topic describes the key changes you'll need to make in your applications when you upgrade to a Standard or Enterprise plan.
-{: shortdesc}
+Use these release notes to learn about the latest updates to {{site.data.keyword.dv_short}} that are ordered by date.
+{:shortdesc}
 
-## Connectivity
-{: #wn_connectivity}
+## 26 April 2021
+{: #april-update}
 
-1. The hostname of the Standard and Enterprise plan is different.
+A brief description of the change, fix, release details. If you include the latest feature updates, link to your blog post or post on the blog [announcements page](https://www.ibm.com/cloud/blog/announcements).
 
-2. The port number changes from port 50000 to a unique port number.
+The IBM Data Virtualization closed beta is now live.
 
-3. Connections to the database default to SSL.
+This offering provides the ability to query data across many systems without having to copy and replicate data. This helps to reduce costs and performance delays associated with duplicated data. Data Virtualization can also simplify your analytics with up to date and accurate data since you’re querying the latest data at its source.
 
-4. Console and REST API hostname is different from JDBC URL. 
+In late June, we will provide this capability as a managed service on IBM Cloud and IBM Cloud Pak for Data as a Service. Stay tuned for more details.
+<!-- 
+### Example 1
+{: #anchor1}
 
-For more information, see [Connectivity options](/docs/Db2onCloud?topic=Db2onCloud-connect_options){: external}.
+The classic toolkit is shut down as of 7 August 2020 and is replaced by Watson Studio.
 
-## Credentials
-{: #wn_creds}
+You can migrate the training data for classifiers created outside of Watson Studio until 30 September 2020. After you migrate, you can easily update the training data and create another classifier within Watson Studio.
 
-1. New credentials must be created in {{site.data.keyword.cloud_notm}} to access the database instance. 
+### Example 2
+{: #anchor2}
 
-2. Credentials on {{site.data.keyword.cloud_notm}} do not include `bluadmin`, but the user still exists to connect to the database.
-
-For more information about creating credentials, see [Connectivity options](/docs/Db2onCloud?topic=Db2onCloud-connect_options){: external}.
-
-## VCAP
-{: #wn_vcap}
-
-The current Standard and Enterprise plans **VCAP Services** json file is different from that of the legacy plans. Any of your applications that consume the legacy plan **VCAP Services** json file must be changed to handle the current Standard and Enterprise plans json file. 
-
-For more information about the Standard and Enterprise **VCAP Services** json file, see [Connectivity options](/docs/Db2onCloud?topic=Db2onCloud-connect_options){: external}.
-
-## Console
-{: #wn_console}
-
-Console user-management differences (including IAM-only access to certain features).
-
-For more information about user management and roles, see [Managing users](/docs/Db2onCloud?topic=Db2onCloud-user_mgmt){: external}.
-
-## Db2
-{: #wn_db2}
-
-Standard and Enterprise plans do not run with the `DB2_WORKLOAD=ANALYTICS` registry parameter, hence the behavior of the COUNT aggregate function has changed. COUNT now returns an **INTEGER**, not a DECIMAL value. 
-
-For more information, see [COUNT aggregate function](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000759.html){: external}.
-
+You can now create Key Protect resources in the US East region. -->
