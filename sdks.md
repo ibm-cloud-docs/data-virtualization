@@ -23,7 +23,7 @@ keywords: deprovision data-virtualization, deprovisioning parameters, delete
 # Supported SDKs
 {: #ibm-sdks}
 
-The following {{site.data.keyword.watson}} SDKs are supported by {{site.data.keyword.IBM_notm}}:
+The following {{site.data.keyword.dv_short}} SDKs are supported by {{site.data.keyword.IBM_notm}}:
 
 * [Go SDK](https://github.com/IBM/data-virtualization-on-cloud-go-sdk/){: external}
 * [Java SDK](https://github.com/IBM/data-virtualization-on-cloud-java-sdk/){: external}
