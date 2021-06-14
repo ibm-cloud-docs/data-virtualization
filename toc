@@ -7,7 +7,7 @@ Data Virtualization (Beta)
 
     {: .navgroup id="learn"}
     about.md
-    wn.md
+    [Release notes]wn.md
     getting-started.md
 
     {: .topicgroup}
