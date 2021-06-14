@@ -3,7 +3,8 @@
     "lastupdated": "2021-06-14",
     "introduction": "Welcome to the Data Virtualization product documentation.",
     "section_devtools": {
-      "api": "/apidocs/data-virtualization-on-cloud"
+      "api": "/apidocs/data-virtualization-on-cloud",
+      "sdk": "/docs/data-virtualization?topic=data-virtualization-ibm-sdks"
     },
     "section_recommended": [
       {
