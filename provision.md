@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2021
-lastupdated: "2021-04-26"
+lastupdated: "2021-06-15"
 
 keywords: provision cloud database, provisioning parameters, data virtualization
 
@@ -32,7 +32,7 @@ You can provision a deployment by visiting the service's catalog page or by spec
 
 | Deployment Type | Catalog Page | Service ID | Plan IDs |
 |-----------------|--------------|------------|----------|
-| {{site.data.keyword.dv_short}} |[Link](https://cloud.ibm.com/catalog/services/data-virtualization){: external} | dashdb-for-transactions | dashDBNebula, standard |
+| {{site.data.keyword.dv_short}} |[Link](https://cloud.ibm.com/catalog/services/data-virtualization){: external} | data-virtualization | data-virtualization-enterprise |
 
 ## Using the catalog
 {: #prov_catalog}
@@ -43,7 +43,7 @@ When you create the deployment from the catalog, you need to specify the followi
 
 1. **Resource group** - If you are organizing your services into resource groups, you can specify the resource group in this field. Otherwise, you can leave it at default.
 
-1. **Node Size** - Set an intial node size. In the Data Virtualzation beta, you can only select the **4 Cores/32GB Memory** option.
+1. **Node Size** - Set a node size. In Data Virtualzation, you can only select the **4 Cores/32GB Memory** option.
 
 1. **Initial resource allocation** - Specify initial memory and disk sizes for your databases. The minimum sizes of memory and disk are selected by default.
 
@@ -143,7 +143,6 @@ Follow these steps to provision {{site.data.keyword.dv_short}} for Cloud Pak for
    To use a key for your backups, you must first enable the [service-to-service delegation]().
    {: note}
 - `members_memory_allocation_mb` - Total amount of memory to be shared between the database members within the database. For example, if the value is "6144", and there are three database members, then the deployment gets 6 GB of RAM total, giving 2 GB of RAM per member. If omitted, the default value for the database type is used.
-- `members_disk_allocation_mb` - Total amount of disk to be shared between the database members within the database. For example, if the value is "30720", and there are three members, then the deployment gets 30 GB of disk total, giving 10 GB of disk per member. If omitted, the default value for the database type is used.
 - `members_cpu_allocation_count` - Enables and allocates the number of specified dedicated cores to your deployment. For example, to use two dedicated cores per member, use `"members_cpu_allocation_count":"2"`. If omitted, the default value "Shared CPU" uses compute resources on shared hosts.
 - `service-endpoints` - Selects the types [Service Endpoints]() supported on your deployment. Options are `public`, `private`, or `public-and-private`. If omitted, the default is `public`. Note that in the CLI, `service-endpoints` is a flag, and not a parameter.
 - `{"remote_leader_id": "crn:v1:..."}` - parameter only for {{site.data.keyword.dv_short}}.
