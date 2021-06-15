@@ -43,9 +43,9 @@ When you create the deployment from the catalog, you need to specify the followi
 
 1. **Resource group** - If you are organizing your services into resource groups, you can specify the resource group in this field. Otherwise, you can leave it at default.
 
-1. **Head Node** - Set a node size. You can only select the **8 Cores/32GB Memory** option.
+1. **Head Node** - You can only select the **8 Cores/32GB Memory** option.
 
-1. **Worker Node Size** - Set a worker node size. You can only select the **4 Cores/32GB Memory** option.
+1. **Worker Node Size** - You can only select the **4 Cores/32GB Memory** option.
 
 1. **Worker Nodes** - Choose the initial number of worker nodes. You can only select between 1 and 9 worker nodes.
 
