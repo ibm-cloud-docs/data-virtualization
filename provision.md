@@ -43,11 +43,11 @@ When you create the deployment from the catalog, you need to specify the followi
 
 1. **Resource group** - If you are organizing your services into resource groups, you can specify the resource group in this field. Otherwise, you can leave it at default.
 
-1. **Node Size** - Set a node size. In Data Virtualzation, you can only select the **4 Cores/32GB Memory** option.
+1. **Head Node** - Set a node size. You can only select the **8 Cores/32GB Memory** option.
 
-1. **Initial resource allocation** - Specify initial memory and disk sizes for your databases. The minimum sizes of memory and disk are selected by default.
+1. **Worker Node Size** - Set a worker node size. You can only select the **4 Cores/32GB Memory** option.
 
-1. **Worker Nodes** - Choose the initial number of worker nodes. In the Data Virtualzation beta, you can only select the **1** worker node option.
+1. **Worker Nodes** - Choose the initial number of worker nodes. You can only select between 1 and 9 worker nodes.
 
 1. **Service Endpoints**  - Select the **Public** or **Private** endpoint option. Public endpoints provide a connection to your deployment on the public network and are the default selection. Private endpoints route traffic through the IBM Cloud Private network, avoiding expose to the public internet.
 
