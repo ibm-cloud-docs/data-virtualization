@@ -4,7 +4,7 @@ copyright:
   years: 2021, 2021
 lastupdated: "2021-04-26"
 
-keywords: provision cloud database, database with terraform, provisioning parameters, data virtualization
+keywords: provision cloud database, provisioning parameters, data virtualization
 
 subcollection: data-virtualization
 
@@ -28,7 +28,7 @@ subcollection: data-virtualization
 To deploy an {{site.data.keyword.dv_short}} service, you need to create a {{site.data.keyword.dv_short}} service instance. 
 {: shortdesc}
 
-You can provision a deployment by visiting the service's catalog page or by specifying the service ID to the command line, to the API, or to Terraform. The deployment type is determined by the service ID, which you must specify when you create a {{site.data.keyword.dv_short}} deployment by using the command line, API, or Terraform. 
+You can provision a deployment by visiting the service's catalog page or by specifying the service ID to the command line or to the API. The deployment type is determined by the service ID, which you must specify when you create a {{site.data.keyword.dv_short}} deployment by using the command line or API.
 
 | Deployment Type | Catalog Page | Service ID | Plan IDs |
 |-----------------|--------------|------------|----------|
@@ -123,10 +123,15 @@ The parameters `name`, `target`, `resource_group`, and `resource_plan_id` are al
 
 More information on the Resource Controller API is found in its [API Reference]().
 
-## Provisioning with Terraform
-{: #prov_terraform}
+## Provisioning through Cloud Pak for Data as a Service
 
-If you use Terraform to manage your infrastructure, the [{{site.data.keyword.cloud_notm}} provider for Terraform]() supports provisioning {{site.data.keyword.databases-for}} deployments. A sample Terraform configuration file is on the [Cloud Databases resources]() documentation page.
+Follow these steps to provision {{site.data.keyword.dv_short}} for Cloud Pak for Data as a Service.
+
+1. If necessary, upgrade your IBM Cloud account to Pay-as-you-go. For more information, see [Upgrading your account
+](https://cloud.ibm.com/docs/account?topic=account-upgrading-account).
+1. From the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Billing and usage**, and select **Promotions** too apply your promo code for a $250 promotional credit toward {{site.data.keyword.dv_short}} usage.
+1. From the Cloud Pak for Data as a Service console, go to **Services** > **Services catalog**.
+1. Select **Data Virtualization** and choose a service plan.
 
 ## List of additional parameters
 {: #prov_add_parms}
