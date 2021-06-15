@@ -6,7 +6,6 @@
 Data Virtualization
 
     {: .navgroup id="learn"}
-    about.md
     wn.md
     getting-started.md
 
