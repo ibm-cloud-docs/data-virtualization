@@ -13,9 +13,9 @@
         "href": "/docs/data-virtualization?topic=data-virtualization-faq_db2oc"
       },
       {
-        "title": "Getting started",
-        "description": "Create service credentials to get started with Data Virtualization.",
-        "href": "/docs/data-virtualization?topic=data-virtualization-getting-started"
+        "title": "Provision a service instance",
+        "description": "Create and deploy a Data Virtualization service instance.",
+        "href": "/docs/data-virtualization?topic=data-virtualization-provisioning"
       }
     ],
     "section_updates": {
