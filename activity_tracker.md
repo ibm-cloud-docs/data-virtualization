@@ -70,7 +70,7 @@ The following table lists the events that get sent to Activity Tracker from {{si
 | Action | Description |
 |-------|-------|
 | `<service_id>.user.create`| A user was created. A "-failure" flag is included in the message if the attempt to create a user failed. |
-| `<service_id>.backup.create`| A backup was created. If the attempted restore failed, a "-failure" flag is included in the message. |
+| `<service_id>.backup-scheduled.create`| A scheduled backup was created. If the attempted backup failed, a "-failure" flag is included in the message. |
 | `<service_id>.user.delete`| A user was deleted. A "-failure" flag is included in the message if the attempt to delete a user failed. |
 | `<service_id>.user.modify`| A user was modified. A "-failure" flag is included in the message if the attempt to create a user failed. |
 | `<service_id>.resources.scale`| A scaling operation was performed. If the scaling operation failed, a "-failure" flag is included in the message. |
