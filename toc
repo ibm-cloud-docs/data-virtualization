@@ -3,7 +3,7 @@
 {:topicgroup: .topicgroup}
 
 {: .toc subcollection="data-virtualization" category="database" audience="service" href="/docs/data-virtualization?topic=data-virtualization-getting-started" path="data-virtualization"}
-Data Virtualization (Beta)
+Data Virtualization
 
     {: .navgroup id="learn"}
     about.md

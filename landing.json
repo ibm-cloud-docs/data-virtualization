@@ -8,14 +8,9 @@
     },
     "section_recommended": [
       {
-        "title": "About Data Virtualization",
-        "description": "Get an overview of Data Virtualization features, plans, and supported data centers.",
-        "href": "/docs/acme-test?topic=acme-test-create-project"
-      },
-      {
-        "title": "Release notes",
-        "description": "Learn about the latest updates to Data Virtualization.",
-        "href": "/docs/data-virtualization?topic=data-virtualization-getting-started"
+        "title": "FAQs",
+        "description": "Answers to frequently asked questions about the Data Virtualization service.",
+        "href": "/docs/data-virtualization?topic=data-virtualization-faq_db2oc"
       },
       {
         "title": "Getting started",
@@ -23,29 +18,6 @@
         "href": "/docs/data-virtualization?topic=data-virtualization-getting-started"
       }
     ],
-    "section_videos": [
-      {
-        "title": "Title of video",
-        "href": "/docs/account?topic=account-enterprise-video", 
-        "thumbnail": "/images/enterprise-video-thumbnail.png" 
-      },
-      {
-        "title": "Title of video",
-        "href": "/docs/account?topic=account-enterprise-video",
-        "thumbnail": "/images/enterprise-video-thumbnail.png"
-      },
-      {
-        "title": "Title of video",
-        "href": "/docs/account?topic=account-enterprise-video",
-        "thumbnail": "/images/enterprise-video-thumbnail.png"
-      }
-    ],
-    "section_learn": {
-      "developer": "https://developer.ibm.com/depmodels/cloud/",
-      "product": "https://www.ibm.com/analytics/data-virtualization",
-      "training": "https://www.ibm.com/training/cloud",
-      "community": "https://community.ibm.com/community/user/publiccloud/home"
-    },
     "section_updates": {
       "view_more": "/docs/data-virtualization?topic=data-virtualization-dv-wn",
       "tiles": [
