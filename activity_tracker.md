@@ -73,6 +73,7 @@ The following table lists the events that get sent to Activity Tracker from {{si
 | `<service_id>.backup-scheduled.create`| A scheduled backup was created. If the attempted backup failed, a "-failure" flag is included in the message. |
 | `<service_id>.user.delete`| A user was deleted. A "-failure" flag is included in the message if the attempt to delete a user failed. |
 | `<service_id>.user.modify`| A user was modified. A "-failure" flag is included in the message if the attempt to create a user failed. |
+| `<service_id>.db-update.update`| The service is updated. A "-failure" flag is included in the message if the attempt to update the service failed. |
 | `<service_id>.resources.scale`| A scaling operation was performed. If the scaling operation failed, a "-failure" flag is included in the message. |
 | `<service_id>.whitelisted-ips-list.update`| The allowlist was modified. A "-failure" flag is included in the message if the attempt to modify the allowlist failed. |
 {: caption="Table 2. List of events and event descriptions" caption-side="top"}
