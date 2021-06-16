@@ -43,7 +43,6 @@ Data Virtualization
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
-    [What's new](https://www.ibm.com/support/pages/node/6458247)
     ha.md
     sdks.md
     [Rest APIs](https://test.cloud.ibm.com/apidocs/data-virtualization-on-cloud)
