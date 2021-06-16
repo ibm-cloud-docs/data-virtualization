@@ -47,7 +47,7 @@ When you create the deployment from the catalog, you need to specify the followi
 
 1. **Worker Node Size** - You can only select the **4 Cores/32GB Memory** option.
 
-1. **Worker Nodes** - Choose the initial number of worker nodes. You can only select between 1 and 9 worker nodes.
+1. **Worker Nodes** - Choose the initial number of worker nodes. You can select between 3 and 9 worker nodes.
 
 1. **Service Endpoints**  - Select the **Public** or **Private** endpoint option. Public endpoints provide a connection to your deployment on the public network and are the default selection. Private endpoints route traffic through the IBM Cloud Private network, avoiding expose to the public internet.
 
@@ -136,15 +136,6 @@ Follow these steps to provision {{site.data.keyword.dv_short}} for Cloud Pak for
 ## List of additional parameters
 {: #prov_add_parms}
 
-- `backup_id` - A CRN of a backup resource to restore from. The backup must have been created by a database deployment with the same service ID. The backup is loaded after provisioning and the new deployment starts up that uses that data. A backup CRN is in the format `crn:v1:<...>:backup:<uuid>`. If omitted, the database is provisioned empty.
-- `version` - The version of the database to be provisioned. If omitted, the database is created with the most recent major and minor version.
-- `disk_encryption_key_crn` - The CRN of a [Key Protect key](), which is then used for disk encryption. A Key Protect CRN is in the format `crn:v1:<...>:key:<id>`.
-- `backup_encryption_key_crn` - The CRN of a [Key Protect key](), which is then used for backup encryption. A Key Protect CRN is in the format `crn:v1:<...>:key:<id>`. 
-   To use a key for your backups, you must first enable the [service-to-service delegation]().
-   {: note}
-- `members_memory_allocation_mb` - Total amount of memory to be shared between the database members within the database. For example, if the value is "6144", and there are three database members, then the deployment gets 6 GB of RAM total, giving 2 GB of RAM per member. If omitted, the default value for the database type is used.
-- `members_cpu_allocation_count` - Enables and allocates the number of specified dedicated cores to your deployment. For example, to use two dedicated cores per member, use `"members_cpu_allocation_count":"2"`. If omitted, the default value "Shared CPU" uses compute resources on shared hosts.
-- `service-endpoints` - Selects the types [Service Endpoints]() supported on your deployment. Options are `public`, `private`, or `public-and-private`. If omitted, the default is `public`. Note that in the CLI, `service-endpoints` is a flag, and not a parameter.
-- `{"remote_leader_id": "crn:v1:..."}` - parameter only for {{site.data.keyword.dv_short}}.
-
-
+- `disk_encryption_key_crn` - The CRN of a [Key Protect key](docs/data-virtualization?topic=data-virtualization-key-protect-v2), which is then used for disk encryption. A Key Protect CRN is in the format `crn:v1:<...>:key:<id>`.
+- `service-endpoints` - Selects the types [Service Endpoints](docs/data-virtualization?topic=data-virtualization-endpts) supported on your deployment. Options are `public`, `private`, or `public-and-private`. If omitted, the default is `public`. Note that in the CLI, `service-endpoints` is a flag, and not a parameter.
+- `worker_count` - Selects the number of worker nodes.
