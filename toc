@@ -22,16 +22,13 @@ Data Virtualization
         <!--connecting/connect_ibm_tools.md-->
         <!--connecting/connect_3rd_party_tools.md-->
         connecting/rest_api.md
-
-    {: .topicgroup}
-    Administration
-        auditing.md
-
+        
     {: .topicgroup}
     Security
         encryption.md
         endpoints.md
         iam.md
+        auditing.md
         user_mgmt.md
         activity_tracker.md
         key_protect_2.md       
