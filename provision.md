@@ -2,9 +2,9 @@
 
 copyright:
   years: 2021, 2021
-lastupdated: "2021-05-27"
+lastupdated: "2021-06-15"
 
-keywords: provision cloud database, database with terraform, provisioning parameters, data virtualization
+keywords: provision cloud database, provisioning parameters, data virtualization
 
 subcollection: data-virtualization
 
@@ -28,11 +28,11 @@ subcollection: data-virtualization
 To deploy an {{site.data.keyword.dv_short}} service, you need to create a {{site.data.keyword.dv_short}} service instance. 
 {: shortdesc}
 
-You can provision a deployment by visiting the service's catalog page or by specifying the service ID to the command line, to the API, or to Terraform. The deployment type is determined by the service ID, which you must specify when you create a {{site.data.keyword.dv_short}} deployment by using the command line, API, or Terraform. 
+You can provision a deployment by visiting the service's catalog page or by specifying the service ID to the command line or to the API. The deployment type is determined by the service ID, which you must specify when you create a {{site.data.keyword.dv_short}} deployment by using the command line or API.
 
 | Deployment Type | Catalog Page | Service ID | Plan IDs |
 |-----------------|--------------|------------|----------|
-| {{site.data.keyword.dv_short}} |[Link](https://cloud.ibm.com/catalog/services/data-virtualization){: external} | dashdb-for-transactions | dashDBNebula, standard |
+| {{site.data.keyword.dv_short}} |[Link](https://cloud.ibm.com/catalog/services/data-virtualization){: external} | data-virtualization | data-virtualization-enterprise |
 
 ## Using the catalog
 {: #prov_catalog}
@@ -43,11 +43,11 @@ When you create the deployment from the catalog, you need to specify the followi
 
 1. **Resource group** - If you are organizing your services into resource groups, you can specify the resource group in this field. Otherwise, you can leave it at default.
 
-1. **Node Size** - Set an intial node size. In the Data Virtualzation beta, you can only select the **4 Cores/32GB Memory** option.
+1. **Head Node** - You can only select the **8 Cores/32GB Memory** option.
 
-1. **Initial resource allocation** - Specify initial memory and disk sizes for your databases. The minimum sizes of memory and disk are selected by default.
+1. **Worker Node Size** - You can only select the **4 Cores/32GB Memory** option.
 
-1. **Worker Nodes** - Choose the initial number of worker nodes. In the Data Virtualzation beta, you can only select the **1** worker node option.
+1. **Worker Nodes** - Choose the initial number of worker nodes. You can select between 3 and 9 worker nodes.
 
 1. **Service Endpoints**  - Select the **Public** or **Private** endpoint option. Public endpoints provide a connection to your deployment on the public network and are the default selection. Private endpoints route traffic through the IBM Cloud Private network, avoiding expose to the public internet.
 
@@ -123,24 +123,19 @@ The parameters `name`, `target`, `resource_group`, and `resource_plan_id` are al
 
 More information on the Resource Controller API is found in its [API Reference]().
 
-## Provisioning with Terraform
-{: #prov_terraform}
+## Provisioning through Cloud Pak for Data as a Service
 
-If you use Terraform to manage your infrastructure, the [{{site.data.keyword.cloud_notm}} provider for Terraform]() supports provisioning {{site.data.keyword.databases-for}} deployments. A sample Terraform configuration file is on the [Cloud Databases resources]() documentation page.
+Follow these steps to provision {{site.data.keyword.dv_short}} for Cloud Pak for Data as a Service.
+
+1. If necessary, upgrade your IBM Cloud account to Pay-as-you-go. For more information, see [Upgrading your account
+](https://cloud.ibm.com/docs/account?topic=account-upgrading-account).
+1. From the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Billing and usage**, and select **Promotions** too apply your promo code for a $250 promotional credit toward {{site.data.keyword.dv_short}} usage.
+1. From the Cloud Pak for Data as a Service console, go to **Services** > **Services catalog**.
+1. Select **Data Virtualization** and choose a service plan.
 
 ## List of additional parameters
 {: #prov_add_parms}
 
-- `backup_id` - A CRN of a backup resource to restore from. The backup must have been created by a database deployment with the same service ID. The backup is loaded after provisioning and the new deployment starts up that uses that data. A backup CRN is in the format `crn:v1:<...>:backup:<uuid>`. If omitted, the database is provisioned empty.
-- `version` - The version of the database to be provisioned. If omitted, the database is created with the most recent major and minor version.
-- `disk_encryption_key_crn` - The CRN of a [Key Protect key](), which is then used for disk encryption. A Key Protect CRN is in the format `crn:v1:<...>:key:<id>`.
-- `backup_encryption_key_crn` - The CRN of a [Key Protect key](), which is then used for backup encryption. A Key Protect CRN is in the format `crn:v1:<...>:key:<id>`. 
-   To use a key for your backups, you must first enable the [service-to-service delegation]().
-   {: note}
-- `members_memory_allocation_mb` - Total amount of memory to be shared between the database members within the database. For example, if the value is "6144", and there are three database members, then the deployment gets 6 GB of RAM total, giving 2 GB of RAM per member. If omitted, the default value for the database type is used.
-- `members_disk_allocation_mb` - Total amount of disk to be shared between the database members within the database. For example, if the value is "30720", and there are three members, then the deployment gets 30 GB of disk total, giving 10 GB of disk per member. If omitted, the default value for the database type is used.
-- `members_cpu_allocation_count` - Enables and allocates the number of specified dedicated cores to your deployment. For example, to use two dedicated cores per member, use `"members_cpu_allocation_count":"2"`. If omitted, the default value "Shared CPU" uses compute resources on shared hosts.
-- `service-endpoints` - Selects the types [Service Endpoints]() supported on your deployment. Options are `public`, `private`, or `public-and-private`. If omitted, the default is `public`. Note that in the CLI, `service-endpoints` is a flag, and not a parameter.
-- `{"remote_leader_id": "crn:v1:..."}` - parameter only for {{site.data.keyword.dv_short}}.
-
-
+- `disk_encryption_key_crn` - The CRN of a [Key Protect key](docs/data-virtualization?topic=data-virtualization-key-protect-v2), which is then used for disk encryption. A Key Protect CRN is in the format `crn:v1:<...>:key:<id>`.
+- `service-endpoints` - Selects the types [Service Endpoints](docs/data-virtualization?topic=data-virtualization-endpts) supported on your deployment. Options are `public`, `private`, or `public-and-private`. If omitted, the default is `public`. Note that in the CLI, `service-endpoints` is a flag, and not a parameter.
+- `worker_count` - Selects the number of worker nodes.

@@ -1,72 +1,34 @@
 ---
 
 copyright:
-  years: 2014, 2020
-lastupdated: "2020-11-11"
+  years: 2019
+lastupdated: "2020-10-31"
 
-keywords: 
+keywords: data virtualization, release notes, data virtualization updates
 
 subcollection: data-virtualization
 
 ---
 
-<!-- Attribute definitions --> 
-{:external: target="_blank" .external}
+{:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:important: .important}
-{:note: .note}
-{:deprecated: .deprecated}
-{:pre: .pre}
 
-# Differences between legacy and current plans
-{: #plan_diffs}
+# Release notes for {{site.data.keyword.dv_short}}
+{: #dv-wn}
 
-There are many differences between legacy plans and the new Standard and Enterprise plans, as described across the product documentation. This topic describes the key changes you'll need to make in your applications when you upgrade to a Standard or Enterprise plan.
-{: shortdesc}
+Use these release notes to learn about the latest updates to {{site.data.keyword.dv_short}}, ordered by date.
+{:shortdesc}
 
-## Connectivity
-{: #wn_connectivity}
+## 24 June 2021
+{: #june-update}
 
-1. The hostname of the Standard and Enterprise plan is different.
+IBM Data Virtualization is now live!
 
-2. The port number changes from port 50000 to a unique port number.
+## 26 April 2021
+{: #april-update}
 
-3. Connections to the database default to SSL.
+The IBM Data Virtualization closed beta is now live.
 
-4. Console and REST API hostname is different from JDBC URL. 
+This offering provides the ability to query data across many systems without having to copy and replicate data. This helps to reduce costs and performance delays associated with duplicated data. Data Virtualization can also simplify your analytics with up to date and accurate data since you’re querying the latest data at its source.
 
-For more information, see [Connectivity options](/docs/Db2onCloud?topic=Db2onCloud-connect_options){: external}.
-
-## Credentials
-{: #wn_creds}
-
-1. New credentials must be created in {{site.data.keyword.cloud_notm}} to access the database instance. 
-
-2. Credentials on {{site.data.keyword.cloud_notm}} do not include `bluadmin`, but the user still exists to connect to the database.
-
-For more information about creating credentials, see [Connectivity options](/docs/Db2onCloud?topic=Db2onCloud-connect_options){: external}.
-
-## VCAP
-{: #wn_vcap}
-
-The current Standard and Enterprise plans **VCAP Services** json file is different from that of the legacy plans. Any of your applications that consume the legacy plan **VCAP Services** json file must be changed to handle the current Standard and Enterprise plans json file. 
-
-For more information about the Standard and Enterprise **VCAP Services** json file, see [Connectivity options](/docs/Db2onCloud?topic=Db2onCloud-connect_options){: external}.
-
-## Console
-{: #wn_console}
-
-Console user-management differences (including IAM-only access to certain features).
-
-For more information about user management and roles, see [Managing users](/docs/Db2onCloud?topic=Db2onCloud-user_mgmt){: external}.
-
-## Db2
-{: #wn_db2}
-
-Standard and Enterprise plans do not run with the `DB2_WORKLOAD=ANALYTICS` registry parameter, hence the behavior of the COUNT aggregate function has changed. COUNT now returns an **INTEGER**, not a DECIMAL value. 
-
-For more information, see [COUNT aggregate function](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000759.html){: external}.
-
+In late June, we will provide this capability as a managed service on IBM Cloud and IBM Cloud Pak for Data as a Service. Stay tuned for more details.
