@@ -43,7 +43,7 @@ Data Virtualization
     ha.md
     sdks.md
     [Rest APIs](https://{DomainName}/apidocs/data-virtualization-on-cloud)
-    [IBM Cloud Pak for Data as a Service documentation](https://dataplatform.cloud.ibm.com/docs/content/dvaas/dvaas-overview.html?context=analytics)
+    [IBM Cloud Pak for Data as a Service documentation](https://dataplatform.cloud.ibm.com/docs/content/dvaas/virtualizing_data.html)
     [Console](https://{DomainName}/catalog/services/data-virtualization)
     {: .navgroup-end}
 
