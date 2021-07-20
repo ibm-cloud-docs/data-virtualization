@@ -30,7 +30,7 @@ subcollection: data-virtualization
 You can determine the status of the IBM® {{site.data.keyword.dv_short}} service in {{site.data.keyword.Bluemix_notm}} by checking the [IBM Cloud: Status](https://cloud.ibm.com/status?selected=status){:external} page. 
 {: tsResolve}
 
-<!--* Status monitoring:
+<!--* Status monitoring: test
   * [All regions](https://cloud.ibm.com/status?selected=status){:external} -->
 
 ## Getting help and support for Db2 on Cloud
