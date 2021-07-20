@@ -1,36 +1,36 @@
 {
-    "title": "Data Virtualization",
-    "lastupdated": "2021-06-14",
-    "introduction": "Welcome to the Data Virtualization product documentation.",
-    "section_devtools": {
-      "api": "/apidocs/data-virtualization-on-cloud",
-      "sdk": "/docs/data-virtualization?topic=data-virtualization-ibm-sdks"
+  "title": "Data Virtualization",
+  "lastupdated": "2021-06-14",
+  "introduction": "Welcome to the Data Virtualization product documentation.",
+  "section_devtools": {
+    "api": "/apidocs/data-virtualization-on-cloud",
+    "sdk": "/docs/data-virtualization?topic=data-virtualization-ibm-sdks"
+  },
+  "section_recommended": [
+    {
+      "title": "FAQs",
+      "description": "Answers to frequently asked questions about the Data Virtualization service.",
+      "href": "/docs/data-virtualization?topic=data-virtualization-faq_dv"
     },
-    "section_recommended": [
+    {
+      "title": "Provision a service instance",
+      "description": "Create and deploy a Data Virtualization service instance.",
+      "href": "/docs/data-virtualization?topic=data-virtualization-provisioning"
+    }
+  ],
+  "section_updates": {
+    "view_more": "/docs/data-virtualization?topic=data-virtualization-dv-wn",
+    "tiles": [
       {
-        "title": "FAQs",
-        "description": "Answers to frequently asked questions about the Data Virtualization service.",
-        "href": "/docs/data-virtualization?topic=data-virtualization-faq_db2oc"
+        "date": "24 June 2021",
+        "title": "Data Virtualization GA",
+        "description": "Coming soon"
       },
       {
-        "title": "Provision a service instance",
-        "description": "Create and deploy a Data Virtualization service instance.",
-        "href": "/docs/data-virtualization?topic=data-virtualization-provisioning"
+        "date": "26 April 2021",
+        "title": "Data Virtualization beta",
+        "description": "The IBM Data Virtualization closed beta is now live."
       }
-    ],
-    "section_updates": {
-      "view_more": "/docs/data-virtualization?topic=data-virtualization-dv-wn",
-      "tiles": [
-        {
-          "date": "24 June 2021",
-          "title": "Data Virtualization GA",
-          "description": "IBM Data Virtualization is now live!"
-        },
-        {
-          "date": "26 April 2021",
-          "title": "Data Virtualization beta",
-          "description": "The IBM Data Virtualization closed beta is now live."
-        }
-      ]
-    }
+    ]
   }
+}
