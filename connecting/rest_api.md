@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2021
-lastupdated: "2021-06-24"
+lastupdated: "2021-10-20"
 
 keywords:
 
@@ -24,9 +24,9 @@ subcollection: data-virtualization
 # REST API
 {: #con_rest_api}
 
-{{site.data.keyword.dv_short}} provides two REST APIs that you can use to interact with your instance:
+{{site.data.keyword.dv_short}} provides REST APIs that you can use to interact with your instance:
 {: shortdesc}
 
 - To access data, view and create database objects, administer, and monitor your {{site.data.keyword.dv_short}} service, use the following API:
-  - [REST APIs](#){: external}.
+  - [REST APIs](https://cloud.ibm.com/apidocs/data-virtualization-on-cloud){: external}.
 
