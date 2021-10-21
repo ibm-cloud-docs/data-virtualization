@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021
-lastupdated: "2021-06-08"
+lastupdated: "2021-10-20"
 
 subcollection: data-virtualization
 
@@ -20,17 +20,17 @@ keywords: deprovision data-virtualization, deprovisioning parameters, delete
 {:important .important}
 
 
-# Deleting your Deployment and Removing your Data
+# Deleting your deployment and removing your data
 {: #deprovisioning}
 
 {{site.data.keyword.dv_short}} instances are soft-deleted in production whenever you delete or deprovision the instance in {{site.data.keyword.cloud_notm}}. 
 
 The deployment stays in the "soft-delete" state for up to 3 days before it's fully deleted {{site.data.keyword.cloud_notm}}.  If your instance has not yet been fully deleted, you can re-enable the existing soft-deleted instance.
 
-## Deleting your Deployment in the User Interface 
+## Deleting your deployment in the user interface 
 To delete your deployment instance from the Resource list section dashboard of the IBM Cloud dashboard, select your deployment. Next, using the menu icon, choose `Delete` from the dropdown list. 
 
-## Deleting your Deployment by using the CLI
+## Deleting your deployment by using the CLI
 You can delete your existing {{site.data.keyword.dv_short}} instance through the CLI with the [`ibmcloud resource service-instance-delete`](https://cloud.ibm.com/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instance_delete) command:
 ```
 ibmcloud resource service-instance-delete my-service-instance
@@ -47,7 +47,7 @@ Using the `ibmcloud resource reclamation-delete` command deletes a reclaimed res
 Cryptoshredding is a destructive action. When the key is deleted, your data is unrecoverable, even from a soft-delete state.
 {: .important}
 
-## Backups Removal
+## Removing backups
 
 Backups cannot be manually deleted. However, if you delete your deployment, its backups are deleted automatically within 30 days. 
 
