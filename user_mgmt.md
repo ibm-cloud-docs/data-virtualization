@@ -86,15 +86,18 @@ The following table summarizes the {{site.data.keyword.dv_short}} menu functions
 |--------|---------|---------|--------|--------|---|---|---|----|----|
 | Virtualization      | Data source	       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      |        |   |   |   |    |    |
 |        | Virtualize       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      |        |   |   |   |    |    |
-|        | My virtualized data	       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      |        |   |   |   |    |    |
-| Monitor dashboard      | Summary       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)   | ![checkmark](images/checkmark.png)   | ![checkmark](images/checkmark.png)
+|        | My virtualized data	       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)       |![checkmark](images/checkmark.png)   |   |   |    |    |
+| Monitor dashboard      | Summary       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)  | |   |    |    | 
 |        | Database partitions       | ![checkmark](images/checkmark.png)       |        |        |   |   |   |    |    |
-|        | Statement       | ![checkmark](images/checkmark.png)       |        |        |   |   |   |    |    |
-|        | Applications       | ![checkmark](images/checkmark.png)       |        |        |   |   |   |    |    |
+|        | Statement-> Inflight Executions       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)       |   ![checkmark](images/checkmark.png)     | ![checkmark](images/checkmark.png)  |   |   |    |    |
+|        | Statement-> Package Cache       | ![checkmark](images/checkmark.png)       |       |     |   |   |   |    |    |
+|        | Statement-> Stored Procedures     | ![checkmark](images/checkmark.png)       |       |     |   |   |   |    |    |
+|        | Applications-> Top Consumers      | ![checkmark](images/checkmark.png)       |        |        |   |   |   |    |    |
+|        | Applications-> Connections      | ![checkmark](images/checkmark.png)       |   ![checkmark](images/checkmark.png)     |   ![checkmark](images/checkmark.png)     | ![checkmark](images/checkmark.png)  |   |   |    |    |
 |        | Throughput       | ![checkmark](images/checkmark.png)       |        |        |   |   |   |    |    |
 |        | Buffer pools       | ![checkmark](images/checkmark.png)       |        |        |   |   |   |    |    |
-|        | Table performance       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      |        |   |   |   |    |    |
-|        | Storage       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      |        |   |   |   |    |    |
+|        | Table performance       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)  |   |   |    |    |
+|        | Storage       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)       |  ![checkmark](images/checkmark.png) |   |   |    |    |
 | Run SQL      | Run SQL       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)  |   |   |    |    |
 | Explorer      | Tables       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)  |   |   |    |    |
 |        | Views       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)  |   |   |    |    |
@@ -102,16 +105,16 @@ The following table summarizes the {{site.data.keyword.dv_short}} menu functions
 |        | Aliases       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)        | ![checkmark](images/checkmark.png)   |   |   |    |    |
 |        | MQTs       | ![checkmark](images/checkmark.png)       |       |        |   |   |   |    |    |
 |        | Schemas       | ![checkmark](images/checkmark.png)       |       |        |   |   |   |    |    |
-|        | Authorization       | ![checkmark](images/checkmark.png)       |        |        |   |   |   |    |    |
-|        | Sequences       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)   |   |   |    |    |
-|        | Application objects       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)  |   |   |    |    |
-| User management      | User management       |         |        |        |   | ![checkmark](images/checkmark.png)   |   |    |    | ![checkmark](images/checkmark.png)
+|        | Sequences       | ![checkmark](images/checkmark.png)       |  ![checkmark](images/checkmark.png)      |  ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)  |   |   |    |    |
+|        | Application Objects      | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)   |   |   |    |    |
+|        | Authorization       | ![checkmark](images/checkmark.png)       |       |       |  |   |   |    |    |
+| User management      | User management       | ![checkmark](images/checkmark.png)        |        |        |   | ![checkmark](images/checkmark.png)   |   |    |    | 
 | Connection details      | Connection details       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)  |   |   |    |    |
-| Service settings      | Service settings->General       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)   | ![checkmark](images/checkmark.png)   | ![checkmark](images/checkmark.png)   | ![checkmark](images/checkmark.png)   |
-|        | Service settings->Governance       | ![checkmark](images/checkmark.png)       |        |        |   |   |   |    |    |
+| Service settings      | Service settings->General       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)      |   |    |    |   |    |
+|        | Service settings->Governance       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)       |![checkmark](images/checkmark.png)   |   |   |    |    |
 |        | Service settings->Scaling       |         |        |        |   | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)   |    |
-|        | Service settings->Maintenance update       |         |        |        |   | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)   |    |
-|        | Service settings->Access restriction       |         |        |        |   | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)   |    |
+|        | Service settings->Scaling History       |         |        |        |   | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)   | ![checkmark](images/checkmark.png)   |
+|        | Service settings->Access restriction       |         |        |        |   | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)   | ![checkmark](images/checkmark.png)   |
 {: caption="Table 1. {{site.data.keyword.dv_short}} menu functions that each of the {{site.data.keyword.dv_short}} user roles is able to access" caption-side="top"}
 
 #### {{site.data.keyword.dv_short}} permissions
