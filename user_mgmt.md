@@ -111,12 +111,12 @@ The following table summarizes the {{site.data.keyword.dv_short}} menu functions
 | User management      | User management       | ![checkmark](images/checkmark.png)        |        |        |   | ![checkmark](images/checkmark.png)   |   |    |    | 
 | Connection details      | Connection details       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)  |   |   |    |    |
 | Service settings      | Service settings->General       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)      |   |    |    |   |    |
-|        | Service settings->Governance       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)       |![checkmark](images/checkmark.png)   |   |   |    |    |
+|        | Service settings->Governance       | ![checkmark](images/checkmark.png)<sup>1</sup>       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)       |![checkmark](images/checkmark.png)   |   |   |    |    |
 |        | Service settings->Scaling       |         |        |        |   | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)   |    |
 |        | Service settings->Scaling History       |         |        |        |   | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)   | ![checkmark](images/checkmark.png)   |
 |        | Service settings->Access restriction       |         |        |        |   | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)   | ![checkmark](images/checkmark.png)   |
 {: caption="Table 1. {{site.data.keyword.dv_short}} menu functions that each of the {{site.data.keyword.dv_short}} user roles is able to access" caption-side="top"}
-
+<sup>Only the Manager role can change the Governance setting.</sup>
 #### {{site.data.keyword.dv_short}} permissions
 
 | Roles | Permissions   |
