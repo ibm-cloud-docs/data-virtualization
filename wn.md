@@ -22,7 +22,7 @@ Use these release notes to learn about the latest updates to {{site.data.keyword
 ## 26 April 2021
 {: #april-update}
 
-The IBM Data Virtualization closed beta is now live.
+The IBM Watson Query closed beta is now live.
 
 This offering provides the ability to query data across many systems without having to copy and replicate data. This helps to reduce costs and performance delays associated with duplicated data. Data Virtualization can also simplify your analytics with up to date and accurate data since you’re querying the latest data at its source.
 
