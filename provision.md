@@ -32,9 +32,9 @@ You can provision a deployment by visiting the service's catalog page or by spec
 
 You can choose one of the following plans in {{site.data.keyword.data_virt}}.
 
-    **Enterprise:** Use this plan to create a dedicated and highly available {{site.data.keyword.dv_short}} instance with flexible scaling of worker nodes. Head nodes have 8 vCPU and 32 GB RAM per node. 4 vCPUs per head node are allocated to service management and monitoring and are not included in the Virtual Processor Core-Hour charge. Worker nodes have 4 vCPU and 32 GB RAM per node. Each month comes with 250 free Virtual Processor Core-Hours.
+  **Enterprise:** Use this plan to create a dedicated and highly available {{site.data.keyword.dv_short}} instance with flexible scaling of worker nodes. Head nodes have 8 vCPU and 32 GB RAM per node. 4 vCPUs per head node are allocated to service management and monitoring and are not included in the Virtual Processor Core-Hour charge. Worker nodes have 4 vCPU and 32 GB RAM per node. Each month comes with 250 free Virtual Processor Core-Hours.
 
-    **Lite:** Use this plan to create a single tenant {{site.data.keyword.dv_short}} instance. The {{site.data.keyword.dv_short}} instance includes one Head node with 4 vCPU and 16 GB RAM and one worker node with 4 vCPU and 16 GB RAM. You cannot take advantage of scaling and high availability. However, all other capabilities are available to use.
+  **Lite:** Use this plan to create a single tenant {{site.data.keyword.dv_short}} instance. The {{site.data.keyword.dv_short}} instance includes one Head node with 4 vCPU and 16 GB RAM and one worker node with 4 vCPU and 16 GB RAM. You cannot take advantage of scaling and high availability. However, all other capabilities are available to use.
 
 | Deployment Type | Catalog Page | Service ID | Plan IDs |
 |-----------------|--------------|------------|----------|
