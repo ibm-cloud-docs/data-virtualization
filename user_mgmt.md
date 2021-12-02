@@ -121,8 +121,8 @@ The following table summarizes the {{site.data.keyword.dv_short}} menu functions
 |        | Authorization       | ![checkmark](images/checkmark.png)       |       |       |  |   |   |    |    |
 | User management      | User management       | ![checkmark](images/checkmark.png)        |        |    |   | ![checkmark](images/checkmark.png)   |   |    |    | 
 | Connection details      | Connection details       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)  |   |   |    |    |
-|  Settings      | Event monitor profile       | ![checkmark](images/checkmark.png)<sup>1</sup>       |       |      |   |   |   |    |    |
-|       | Monitoring profile     | ![checkmark](images/checkmark.png)<sup>1</sup>       |       |      |   |   |   |    |    |
+|  Settings      | Event monitor profile       | ![checkmark](images/checkmark.png)      |       |      |   |   |   |    |    |
+|       | Monitoring profile     | ![checkmark](images/checkmark.png)      |       |      |   |   |   |    |    |
 |      | Service settings->General       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)      |   |    |    |   |    |
 |        | Service settings->Governance       | ![checkmark](images/checkmark.png)<sup>1</sup>       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)       |![checkmark](images/checkmark.png)   |   |   |    |    |
 |        | Service settings->Scaling       |         |        |        |   | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)   |    |
