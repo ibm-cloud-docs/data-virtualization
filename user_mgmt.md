@@ -128,10 +128,14 @@ The following table summarizes the {{site.data.keyword.dv_short}} menu functions
 |        | Service settings->Scaling       |         |        |        |   | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)   |    |
 |        | Service settings->Scaling History       |         |        |        |   | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)   | ![checkmark](images/checkmark.png)   |
 |        | Service settings->Access restriction       |         |        |        |   | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)   | ![checkmark](images/checkmark.png)   |
-{: caption="Table 1. {{site.data.keyword.dv_short}} menu functions that each of the {{site.data.keyword.dv_short}} user roles is able to access" caption-side="top"}
-<sup>Only the Manager role can change the Governance setting.</sup>
-<sup>For DV on premise (CP4D), Engineer, Steward, User can access Database parititions also.
-For DVaaS, only Manager can access it.</sup>
+<!- {: caption="Table 1. {{site.data.keyword.dv_short}} menu functions that each of the {{site.data.keyword.dv_short}} user roles is able to access" caption-side="top"} -->
+
+<sup>1</sup> Only the Manager role can change the Governance setting.</br>
+<sup>2</sup> For {{site.data.keyword.dv_short}}, only a Manager can access this item.
+
+
+
+
 #### {{site.data.keyword.dv_short}} permissions
 
 | Roles | Permissions   |
