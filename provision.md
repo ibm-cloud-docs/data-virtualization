@@ -30,9 +30,17 @@ To deploy an {{site.data.keyword.dv_short}} service, you need to create a {{site
 
 You can provision a deployment by visiting the service's catalog page or by specifying the service ID to the command line or to the API. The deployment type is determined by the service ID, which you must specify when you create a {{site.data.keyword.dv_short}} deployment by using the command line or API.
 
+<!--Updated to include description of Lite Plan and details related to it-->
+You can choose one of the following plans in {{site.data.keyword.dv_short}}.
+
+**Enterprise:** Use this plan to create a dedicated and highly available {{site.data.keyword.dv_short}} instance with flexible scaling of worker nodes. Head nodes have 8 vCPU and 32 GB RAM per node. 4 vCPUs per head node are allocated to service management and monitoring and are not included in the Virtual Processor Core-Hour charge. Worker nodes have 4 vCPU and 32 GB RAM per node. Each month comes with 250 free Virtual Processor Core-Hours.
+
+**Lite:** Use this plan to create a single tenant {{site.data.keyword.dv_short}} instance. The {{site.data.keyword.dv_short}} instance includes one Head node with 4 vCPU and 16 GB RAM and one worker node with 4 vCPU and 16 GB RAM. You cannot take advantage of scaling and high availability.
+
 | Deployment Type | Catalog Page | Service ID | Plan IDs |
 |-----------------|--------------|------------|----------|
-| {{site.data.keyword.dv_short}} |[Link](https://cloud.ibm.com/catalog/services/data-virtualization){: external} | data-virtualization | data-virtualization-enterprise |
+| {{site.data.keyword.dv_short}} (Enterprise) |[Link](https://cloud.ibm.com/catalog/services/data-virtualization){: external} | data-virtualization | data-virtualization-enterprise |
+| {{site.data.keyword.dv_short}} (Lite) |[Link](https://cloud.ibm.com/catalog/services/data-virtualization){: external} | data-virtualization | data-virtualization-lite |
 
 ## Using the catalog
 {: #prov_catalog}
@@ -43,11 +51,11 @@ When you create the deployment from the catalog, you need to specify the followi
 
 1. **Resource group** - If you are organizing your services into resource groups, you can specify the resource group in this field. Otherwise, you can leave it at default.
 
-1. **Head Node** - You can only select the **8 Cores/32GB Memory** option.
+1. **Head Node** - For the Enterprise plan, you can only select the **8 Cores/32GB Memory** option. For the Lite plan, you can only select the **4 Cores/16GB Memory** option
 
-1. **Worker Node Size** - You can only select the **4 Cores/32GB Memory** option.
+1. **Worker Node Size** - For the Enterprise plan, you can only select the **4 Cores/32GB Memory** option. For the Lite plan, you can only select the **4 Cores/16GB Memory** option
 
-1. **Worker Nodes** - Choose the initial number of worker nodes. You can select between 3 and 9 worker nodes.
+1. **Worker Nodes** - Choose the initial number of worker nodes. You can select between 3 and 9 worker nodes if using the Enterprise Plan. If using the Lite plan, only 1 worker node will be available.
 
 1. **Service Endpoints**  - Select the **Public** or **Private** endpoint option. Public endpoints provide a connection to your deployment on the public network and are the default selection. Private endpoints route traffic through the IBM Cloud Private network, avoiding expose to the public internet.
 
