@@ -87,7 +87,7 @@ The following table summarizes the {{site.data.keyword.dv_short}} menu functions
 | Virtualization      | Data source	       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      |        |   |   |   |    |    |
 |        | Virtualize       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      |        |   |   |   |    |    |
 |        | My virtualized data	       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)       |![checkmark](images/checkmark.png)   |   |   |    |    |
-| Monitor dashboard      | Summary       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)  | |   |    |    | 
+| Monitor dashboard      | Summary       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)<sup>1</sup>     | ![checkmark](images/checkmark.png) <sup>1</sup>     | ![checkmark](images/checkmark.png)<sup>1</sup> | |   |    |    | 
 |        | Database->Database partitions       | ![checkmark](images/checkmark.png)<sup>2</sup>       |       |        |   |   |   |    |    |
 |        | Database->Database time spent       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      |  ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)  |   |   |    |    |
 |        | Database->Database usage       | ![checkmark](images/checkmark.png)       |  ![checkmark](images/checkmark.png)      |   ![checkmark](images/checkmark.png)     |   ![checkmark](images/checkmark.png)|   |   |    |    |
@@ -124,14 +124,16 @@ The following table summarizes the {{site.data.keyword.dv_short}} menu functions
 |  Settings      | Event monitor profile       | ![checkmark](images/checkmark.png)      |       |      |   |   |   |    |    |
 |       | Monitoring profile     | ![checkmark](images/checkmark.png)      |       |      |   |   |   |    |    |
 |      | Service settings->General       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)      |   |    |    |   |    |
-|        | Service settings->Governance       | ![checkmark](images/checkmark.png)<sup>1</sup>       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)       |![checkmark](images/checkmark.png)   |   |   |    |    |
-|        | Service settings->Scaling       |         |        |        |   | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)   |    |
-|        | Service settings->Scaling History       |         |        |        |   | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)   | ![checkmark](images/checkmark.png)   |
-|        | Service settings->Access restriction       |         |        |        |   | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)   | ![checkmark](images/checkmark.png)   |
+|        | Service settings->Governance       | ![checkmark](images/checkmark.png)<sup>3</sup>       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)       |![checkmark](images/checkmark.png)   |   |   |    |    |
+|        | Service settings->Scaling       |         |        |        |   | ![checkmark](images/checkmark.png)<sup>4</sup>  | ![checkmark](images/checkmark.png)<sup>4</sup>  | ![checkmark](images/checkmark.png)<sup>4</sup>   |    |
+|        | Service settings->Scaling History       |         |        |        |   | ![checkmark](images/checkmark.png)<sup>4</sup>  | ![checkmark](images/checkmark.png)<sup>4</sup>  | ![checkmark](images/checkmark.png)<sup>4</sup>   | ![checkmark](images/checkmark.png)<sup>4</sup>   |
+|        | Service settings->Access restriction       |         |        |        |   | ![checkmark](images/checkmark.png)<sup>4</sup>  | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)<sup>4</sup>   | ![checkmark](images/checkmark.png)<sup>4</sup>   |
 <!- {: caption="Table 1. {{site.data.keyword.dv_short}} menu functions that each of the {{site.data.keyword.dv_short}} user roles is able to access" caption-side="top"} -->
 
-<sup>1</sup> Only the Manager role can change the Governance setting.</br>
-<sup>2</sup> For {{site.data.keyword.dv_short}}, only a Manager can access this item.
+<sup>1</sup> For Engineer, Steward, and User roles, only Responsiveness and Throughput widgets are available on the Summary page.</br>
+<sup>2</sup> For {{site.data.keyword.dv_short}}, only a Manager can access this item.</br>
+<sup>3</sup> Only the Manager role can change the Governance setting.</br>
+<sup>4</sup> A user is needed. .</br>
 
 
 
