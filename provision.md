@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2021
-lastupdated: "2021-12-02"
+lastupdated: "2021-12-06"
 
 keywords: provision cloud database, provisioning parameters, data virtualization
 
@@ -30,11 +30,12 @@ To deploy an {{site.data.keyword.dv_short}} service, you need to create a {{site
 
 You can provision a deployment by visiting the service's catalog page or by specifying the service ID to the command line or to the API. The deployment type is determined by the service ID, which you must specify when you create a {{site.data.keyword.dv_short}} deployment by using the command line or API.
 
+<!--Updated to include description of Lite Plan and details related to it-->
 You can choose one of the following plans in {{site.data.keyword.dv_short}}.
 
 **Enterprise:** Use this plan to create a dedicated and highly available {{site.data.keyword.dv_short}} instance with flexible scaling of worker nodes. Head nodes have 8 vCPU and 32 GB RAM per node. 4 vCPUs per head node are allocated to service management and monitoring and are not included in the Virtual Processor Core-Hour charge. Worker nodes have 4 vCPU and 32 GB RAM per node. Each month comes with 250 free Virtual Processor Core-Hours.
 
-**Lite:** Use this plan to create a single tenant {{site.data.keyword.dv_short}} instance. The {{site.data.keyword.dv_short}} instance includes one Head node with 4 vCPU and 16 GB RAM and one worker node with 4 vCPU and 16 GB RAM. You cannot take advantage of scaling and high availability. However, all other capabilities are available to use.
+**Lite:** Use this plan to create a single tenant {{site.data.keyword.dv_short}} instance. The {{site.data.keyword.dv_short}} instance includes one Head node with 4 vCPU and 16 GB RAM and one worker node with 4 vCPU and 16 GB RAM. You cannot take advantage of scaling and high availability.
 
 | Deployment Type | Catalog Page | Service ID | Plan IDs |
 |-----------------|--------------|------------|----------|
