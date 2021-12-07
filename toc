@@ -3,7 +3,7 @@
 {:topicgroup: .topicgroup}
 
 {: .toc subcollection="data-virtualization" category="database" audience="service" href="/docs/data-virtualization?topic=data-virtualization-getting-started" product-page="https://www.ibm.com/analytics/data-virtualization" console-page="/catalog/services/data-virtualization" path="data-virtualization"}
-Data Virtualization
+IBM Watson Query
 
     {: .navgroup id="learn"}
     wn.md
