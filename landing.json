@@ -1,36 +1,36 @@
 {
-  "title": "Data Virtualization",
-  "lastupdated": "2021-06-14",
-  "introduction": "Welcome to the Data Virtualization product documentation.",
-  "section_devtools": {
-    "api": "/apidocs/data-virtualization-on-cloud",
-    "sdk": "/docs/data-virtualization?topic=data-virtualization-ibm-sdks"
-  },
-  "section_recommended": [
-    {
-      "title": "FAQs",
-      "description": "Answers to frequently asked questions about the Data Virtualization service.",
-      "href": "/docs/data-virtualization?topic=data-virtualization-faq_dv"
+    "title": "IBM Watson Query",
+    "lastupdated": "2021-06-14",
+    "introduction": "Welcome to the Watson Query product documentation.",
+    "section_devtools": {
+      "api": "/apidocs/data-virtualization-on-cloud",
+      "sdk": "/docs/data-virtualization?topic=data-virtualization-ibm-sdks"
     },
-    {
-      "title": "Provision a service instance",
-      "description": "Create and deploy a Data Virtualization service instance.",
-      "href": "/docs/data-virtualization?topic=data-virtualization-provisioning"
-    }
-  ],
-  "section_updates": {
-    "view_more": "/docs/data-virtualization?topic=data-virtualization-dv-wn",
-    "tiles": [
+    "section_recommended": [
       {
-        "date": "24 June 2021",
-        "title": "Data Virtualization GA",
-        "description": "Coming soon"
+        "title": "FAQs",
+        "description": "Answers to frequently asked questions about the Watson Query service.",
+        "href": "/docs/data-virtualization?topic=data-virtualization-faq_dv"
       },
       {
-        "date": "26 April 2021",
-        "title": "Data Virtualization beta",
-        "description": "The IBM Data Virtualization closed beta is now live."
+        "title": "Provision a service instance",
+        "description": "Create and deploy a Watson Query service instance.",
+        "href": "/docs/data-virtualization?topic=data-virtualization-provisioning"
       }
-    ]
+    ],
+    "section_updates": {
+      "view_more": "/docs/data-virtualization?topic=data-virtualization-dv-wn",
+      "tiles": [
+        {
+          "date": "24 June 2021",
+          "title": "Watson Query GA",
+          "description": "Coming soon"
+        },
+        {
+          "date": "26 April 2021",
+          "title": "Watson Query beta",
+          "description": "The IBM Watson Query closed beta is now live."
+        }
+      ]
+    }
   }
-}
