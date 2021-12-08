@@ -123,7 +123,7 @@ The following table summarizes the {{site.data.keyword.dv_short}} menu functions
 | Connection details      | Connection details       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)  |   |   |    |    |
 |  Settings      | Event monitor profile       | ![checkmark](images/checkmark.png)      |       |      |   |   |   |    |    |
 |       | Monitoring profile     | ![checkmark](images/checkmark.png)      |       |      |   |   |   |    |    |
-|      | Service settings->General       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)      |   |    |    |   |    |
+|      | Service settings->General       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)      |  ![checkmark](images/checkmark.png)  |    |    |   |    |
 |        | Service settings->Governance       | ![checkmark](images/checkmark.png)<sup>3</sup>       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)       |![checkmark](images/checkmark.png)   |   |   |    |    |
 |        | Service settings->Scaling       |         |        |        |   | ![checkmark](images/checkmark.png)<sup>4</sup>  | ![checkmark](images/checkmark.png)<sup>4</sup>  | ![checkmark](images/checkmark.png)<sup>4</sup>   |    |
 |        | Service settings->Scaling History       |         |        |        |   | ![checkmark](images/checkmark.png)<sup>4</sup>  | ![checkmark](images/checkmark.png)<sup>4</sup>  | ![checkmark](images/checkmark.png)<sup>4</sup>   | ![checkmark](images/checkmark.png)<sup>4</sup>   |
