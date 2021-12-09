@@ -139,7 +139,7 @@ Follow these steps to provision {{site.data.keyword.dv_short}} for Cloud Pak for
 ](https://cloud.ibm.com/docs/account?topic=account-upgrading-account).
 1. From the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Billing and usage**, and select **Promotions** to apply your promo code for a $250 promotional credit toward {{site.data.keyword.dv_short}} usage.
 1. From the Cloud Pak for Data as a Service console, go to **Services** > **Services catalog**.
-1. Select **Data Virtualization** and choose a service plan.
+1. Select **Watson Query** and choose a service plan.
 
 ## List of additional parameters
 {: #prov_add_parms}
