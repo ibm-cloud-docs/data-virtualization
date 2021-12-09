@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2021
-lastupdated: "2021-04-26"
+lastupdated: "2021-12-07"
 
 keywords: 
 
@@ -127,13 +127,13 @@ The following table summarizes the {{site.data.keyword.dv_short}} menu functions
 |        | Service settings->Governance       | ![checkmark](images/checkmark.png)<sup>3</sup>       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)       |![checkmark](images/checkmark.png)   |   |   |    |    |
 |        | Service settings->Scaling       |         |        |        |   | ![checkmark](images/checkmark.png)<sup>4</sup>  | ![checkmark](images/checkmark.png)<sup>4</sup>  | ![checkmark](images/checkmark.png)<sup>4</sup>   |    |
 |        | Service settings->Scaling History       |         |        |        |   | ![checkmark](images/checkmark.png)<sup>4</sup>  | ![checkmark](images/checkmark.png)<sup>4</sup>  | ![checkmark](images/checkmark.png)<sup>4</sup>   | ![checkmark](images/checkmark.png)<sup>4</sup>   |
-|        | Service settings->Access restriction       |         |        |        |   | ![checkmark](images/checkmark.png)<sup>4</sup>  | ![checkmark](images/checkmark.png)  | ![checkmark](images/checkmark.png)<sup>4</sup>   | ![checkmark](images/checkmark.png)<sup>4</sup>   |
+|        | Service settings->Access restriction       |         |        |        |   | ![checkmark](images/checkmark.png)<sup>4</sup>  | ![checkmark](images/checkmark.png)<sup>4</sup>  | ![checkmark](images/checkmark.png)<sup>4</sup>   | ![checkmark](images/checkmark.png)<sup>4</sup>   |
 {: caption="Table 1. {{site.data.keyword.dv_short}} menu functions that each of the {{site.data.keyword.dv_short}} user roles is able to access" caption-side="top"}
 
 <sup>1</sup> For Engineer, Steward, and User roles, only Responsiveness and Throughput widgets are available on the Summary page.</br>
 <sup>2</sup> For {{site.data.keyword.dv_short}}, only a Manager can access this item.</br>
 <sup>3</sup> Only the Manager role can change the Governance setting.</br>
-<sup>4</sup> A user is needed.</br>
+<sup>4</sup> A {{site.data.keyword.dv_short}} user is needed.</br>
 
 
 #### {{site.data.keyword.dv_short}} permissions
