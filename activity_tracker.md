@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021, 2021
-lastupdated: "2021-04-26"
+  years: 2021, 2022
+lastupdated: "2022-02-01"
 
 keywords: 
 
@@ -67,17 +67,30 @@ A description of the common fields for an Activity Tracker event is on the [Even
 
 The following table lists the events that get sent to Activity Tracker from {{site.data.keyword.dv_short}} deployments:
 
-| Action | Description |
-|-------|-------|
-| `<service_id>.user.create`| A user was created. A "-failure" flag is included in the message if the attempt to create a user failed. |
-| `<service_id>.backup-scheduled.create`| A scheduled backup was created. If the attempted backup failed, a "-failure" flag is included in the message. |
-| `<service_id>.user.delete`| A user was deleted. A "-failure" flag is included in the message if the attempt to delete a user failed. |
-| `<service_id>.user.modify`| A user was modified. A "-failure" flag is included in the message if the attempt to create a user failed. |
-| `<service_id>.db-update.update`| The service is updated. A "-failure" flag is included in the message if the attempt to update the service failed. |
-| `<service_id>.resources.scale`| A vertical scaling operation was performed. If the scaling operation failed, a "-failure" flag is included in the message. |
-| `<service_id>.resources.workerscale`| A horizontal scaling operation was performed. If the scaling operation failed, a "-failure" flag is included in the message. |
-| `<service_id>.whitelisted-ips-list.update`| The allowlist was modified. A "-failure" flag is included in the message if the attempt to modify the allowlist failed. |
+| Action                           | Procedure                        | Description                        |
+|----------------------------------|----------------------------------|------------------------------------|
+| data-virtualization.constellation.create | DEFINE_CONSTELLATION | Define a Constellation |
+| data-virtualization.data-source-connection.create | SETRDBCX | Define a new data source connection |
+| data-virtualization.data-source-connection.delete | REMOVERDBCX | Remove a data source connection  |
+| data-virtualization.jdbc-url.get| BUILDURLANDDRIVER | Generate the JDBC URL and JDBC Driver string |
+| data-virtualization.connector-config-hash.create| GENERATECONFIGHASH | Generate the configuration |
+| data-virtualization.remote-gaian-node.update| UPDATEREMOTECONNECTOR | Upgrade the remote connectors |
+| data-virtualization.virtualized-table.create| VIRTUALIZETABLE | Virtualize a table  |
+| data-virtualization.virtualized-file.create| VIRTUALIZEFILE | Virtualize a table  from a file |
+| data-virtualization.table.delete| DROPTABLE | Remove a table |
+| data-virtualization.config-data.restore| RESTORECONFIG | Restore config data  |
+| data-virtualization.RCAC-on-catalog-tables.update| TOGGLE_RCAC_ON_CATALOG_TABLES | Enable/disable row access control on Db2 catalog tables  |
+| data-virtualization.config-properties10.update| SETCONFIGPROPERTIES | Set up to 10 configuration properties  |
+| data-virtualization.config-propertiy.update| SETCONFIGPROPERTY | Set a configuration property  |
+| data-virtualization.log-level.update| SETADMINLOGLEVEL | Set the log level  |
+| data-virtualization.performance-metrics.get| GETPERFORMANCE | Get the performance metrics |
+| data-virtualization.query-stats-cache.backup| ARCHIVEQUERYSTATS |  Archive the content of the DVSYS.QUERYSTATS view |
+| data-virtualization.execution-info.get| GETEXECUTIONINFO | Return a String with execution details for a query  |
+| data-virtualization.logged-queries.get| GETLOGGEDQUERIES | Get a resultset mapping query IDs to the query text |
+| data-virtualization.logs-with-marker.backup| ARCHIVELOGS | Archive the current logs  |
+| data-virtualization.ccid.update| UPDATECCID | Update the CCID of all connection |
+| data-virtualization.config.update| TOGGLECONFIGAPIS, TOGGLEWKCPOLICYENFORCEMENT,  TOGGLESTRICTFLAG, SETDEFAULTCATALOGGUID | Toggle the key value in the INSTANCE_INFO table  |
+| data-virtualization.config.delete| DELETEDEFAULTCATALOGGUID, SETCATALOGPUBLISHSERVICE | Delete the DEFAULT_CATALOG_GUID value or the CATALOG_PUBLISH_SERVICE_ID and CATALOG_PUBLISH_SERVICE_API_KEY values|
+| data-virtualization.encrypted-config.update| SETCATALOGPUBLISHSERVICE | Encrypt and set the CATALOG_PUBLISH_SERVICE_ID and CATALOG_PUBLISH_SERVICE_API_KEY values |
+| data-virtualization.CIDs-for-virtual-table.list | RETRIEVECIDSFORVIRTUALTABLES | Retrieve the CID information for Virtual Tables |
 {: caption="Table 2. List of events and event descriptions" caption-side="top"}
-
-The `<service_id>` field indicates the type of Cloud databases deployment. For example, `data-virtualization` or `messages-for-rabbitmq`.
-
