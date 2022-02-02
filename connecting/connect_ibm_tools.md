@@ -10,7 +10,6 @@ subcollection: data-virtualization
 
 ---
 
-<!-- Attribute definitions --> 
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -34,7 +33,7 @@ You can connect IBM command-line interfaces, applications, and tools to your {{s
 ### InfoSphere DataStage
 {: #datastage}
 
-These instructions explain how to define a connection without SSL between IBM® InfoSphere® DataStage® <!--version 9.1 and later -->and a {{site.data.keyword.dv_short}} instance by cataloging the database and defining a connection object, or how to create a connection with SSL by using a digital certificate that is issued by a third party.
+These instructions explain how to define a connection without SSL between IBM® InfoSphere® DataStage® and a {{site.data.keyword.dv_short}} instance by cataloging the database and defining a connection object, or how to create a connection with SSL by using a digital certificate that is issued by a third party.
 {: shortdesc}
 
 #### Prerequisites
@@ -43,19 +42,19 @@ These instructions explain how to define a connection without SSL between IBM® 
 It is advised that you update DataStage to the most recent version so that you can take advantage of external tables to load your data into {{site.data.keyword.dv_short}}.
 {: important}
 
-If you don’t already have a data server client that is installed, download and install the IBM Data Server Client <!--Version 10.5 -->that is appropriate for your client machine’s operating system: [IBM Data Server Client](https://www.ibm.com/marketing/iwm/iwm/web/preLogin.do?source=swg-idsc97){:external}.
+If you don’t already have a data server client that is installed, download and install the IBM Data Server Client that is appropriate for your client machine’s operating system: [IBM Data Server Client](https://www.ibm.com/marketing/iwm/iwm/web/preLogin.do?source=swg-idsc97){: external}.
 
-To make connections with the SSL protocol, download and install the 32-bit GSKit V8. Click the OS tab that is appropriate for your client machine’s operating system: [GSKit V8 - Install, Uninstall and Upgrade instructions](http://www.ibm.com/support/docview.wss?uid=swg21631462){:external}. For the following operating systems, ensure that you add the GSKit installation directory path to the OS-specific path environment variable:
+To make connections with the SSL protocol, download and install the 32-bit GSKit V8. Click the OS tab that is appropriate for your client machine’s operating system: [GSKit V8 - Install, Uninstall and Upgrade instructions](http://www.ibm.com/support/docview.wss?uid=swg21631462){: external}. For the following operating systems, ensure that you add the GSKit installation directory path to the OS-specific path environment variable:
 
 - AIX®: **LIBPATH**
    - `/usr/opt/ibm/gsk8/lib`
 - Linux: **LD_LIBRARY_PATH**
-    - `/usr/local/ibm/gsk8/lib`
+   - `/usr/local/ibm/gsk8/lib`
 - UNIX: **LD_LIBRARY_PATH**
-    - `/opt/ibm/gsk8/lib`
+   - `/opt/ibm/gsk8/lib`
 - Windows: **PATH**
-    - `<installation_directory>\gsk8\bin`
-    - `<installation_directory>\gsk8\lib`
+   - `<installation_directory>\gsk8\bin`
+   - `<installation_directory>\gsk8\lib`
 
 Before attempting to connect to your {{site.data.keyword.dv_short}} instance, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
@@ -164,24 +163,24 @@ Before attempting to connect to your {{site.data.keyword.dv_short}} instance, ve
 
      For details about defining a connection in DataStage, see the following DataStage documentation topics: 
      
-     - [Creating a data connection object manually](https://www.ibm.com/support/knowledgecenter/SSZJPZ_11.3.0/com.ibm.swg.im.iis.ds.design.doc/topics/t_ddesref_Creating_a_Data_Connection_Object_Manually.html){:external}
-     - [Configuring access to Db2 databases](https://www.ibm.com/support/knowledgecenter/en/SSZJPZ_11.7.0/com.ibm.swg.im.iis.conn.common.usage.doc/topics/t_configuring_db2conn.html){:external}
+     - [Creating a data connection object manually](https://www.ibm.com/support/knowledgecenter/SSZJPZ_11.3.0/com.ibm.swg.im.iis.ds.design.doc/topics/t_ddesref_Creating_a_Data_Connection_Object_Manually.html){: external}
+     - [Configuring access to Db2 databases](https://www.ibm.com/support/knowledgecenter/en/SSZJPZ_11.7.0/com.ibm.swg.im.iis.conn.common.usage.doc/topics/t_configuring_db2conn.html){: external}
 
 ### Lift
 {: #tools_lift}
 
 Use Lift to migrate your data into {{site.data.keyword.dv_short}}.
 
-[Lift](https://www.lift-cli.cloud.ibm.com/#docs){:external}
+[Lift](https://www.lift-cli.cloud.ibm.com/#docs){: external}
 
 ### InfoSphere Data Replication
 {: #idr}
 
-You can connect IBM® InfoSphere® Data Replication <!--version 11.3.3.3-36 or later -->to a {{site.data.keyword.dv_short}} instance. <!-- This capability applies to both SMP and MPP environments. --> 
+You can connect IBM® InfoSphere® Data Replication to a {{site.data.keyword.dv_short}} instance.
 {: shortdesc}
 
 #### Overview
-{: ibm_tools_ov}
+{: #ibm_tools_ov}
 
 Ideally, when you connect IBM InfoSphere Data Replication to {{site.data.keyword.dv_short}}, IBM InfoSphere Data Replication is in the same {{site.data.keyword.Bluemix_notm}} Data Center as {{site.data.keyword.dv_short}} or is colocated with {{site.data.keyword.dv_short}}. IBM InfoSphere Data Replication connects from a local server to the remote {{site.data.keyword.dv_short}} instance.
 
@@ -190,7 +189,7 @@ When you use {{site.data.keyword.dv_short}} as a connection target, the performa
 #### Prerequisites
 {: #prereq_5}
 
-If you intend to connect by using the SSL protocol, download and install GSKit V8. See [GSKit V8 - Install, Uninstall and Upgrade instructions](http://www.ibm.com/support/docview.wss?uid=swg21631462){:external}. Click the operating system tab that applies to your client machine’s operating system. If you are installing the GSKit on a Windows computer, ensure that you specify the GSKit installation directory path (`<installation_directory>\gsk8\bin`) for the **`PATH`** environment variable.
+If you intend to connect by using the SSL protocol, download and install GSKit V8. See [GSKit V8 - Install, Uninstall and Upgrade instructions](http://www.ibm.com/support/docview.wss?uid=swg21631462){: external}. Click the operating system tab that applies to your client machine’s operating system. If you are installing the GSKit on a Windows computer, ensure that you specify the GSKit installation directory path (`<installation_directory>\gsk8\bin`) for the **`PATH`** environment variable.
 
 Before attempting to connect to your {{site.data.keyword.dv_short}} instance, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
@@ -330,12 +329,12 @@ If you intend to connect by using the SSL protocol, download the `DigiCertGlobal
 
 Define a subscription and perform data replication. For information, see:
 
-- [Loading data from InfoSphere Data Replication](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.doc/learn_how/loaddata_iidr.html){:external} 
+- [Loading data from InfoSphere Data Replication](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.doc/learn_how/loaddata_iidr.html){: external} 
 
 ### Data Studio
 {: #data_studio}
 
-These instructions explain how to create a connection from IBM® Data Studio <!--version 4.1.x -->to a {{site.data.keyword.dv_short}} instance.
+These instructions explain how to create a connection from IBM® Data Studio to a {{site.data.keyword.dv_short}} instance.
 {: shortdesc}
 
 #### Prerequisites
@@ -375,8 +374,6 @@ Before attempting to connect to your {{site.data.keyword.dv_short}} instance, ve
 #### Procedure
 {: #procedure_7}
 
-<!--The connection procedure was tested on Data Server Manager version 1.1. The same procedure applies to all of the other versions of the Data Server Manager software.
--->
 To create a connection, complete the following steps:
 
 1. Log in to your Data Server Manager web console.
@@ -406,7 +403,7 @@ To create a connection, complete the following steps:
 ### InfoSphere Data Architect
 {: #ida}
 
-These instructions explain how to create a connection from InfoSphere® Data Architect <!--version 9.1.x -->to a {{site.data.keyword.dv_short}} instance.
+These instructions explain how to create a connection from InfoSphere® Data Architect to a {{site.data.keyword.dv_short}} instance.
 {: shortdesc}
 
 #### Prerequisites
@@ -508,7 +505,7 @@ To use CLPPlus, ensure that a software development kit (SDK) or a Java runtime e
 You can now enter CLPPlus commands or SELECT statements and run scripts to work with the data in the database.
 
 #### Examples
-{: examples_start}
+{: #examples_start}
 
 The following examples use a short script that retrieves rows from the sample table `GOSALES.BRANCH`. The script file is named `cities.sql` and is on the local Windows computer in the `C:\temp directory`. The `cities.sql` file contains the following text:
 
@@ -518,7 +515,7 @@ SELECT branch_code, city from GOSALES.BRANCH;
 ```
 
 ##### Example 1 
-{: example_1}
+{: #example_1}
 
 To run the script interactively:
 
@@ -531,7 +528,7 @@ To run the script interactively:
    `start C:\temp\cities.sql`
 
 ##### Example 2
-{: example_2}
+{: #example_2}
 
 Start CLPPlus with your user ID and the alias that you created in the `db2dsdriver.cfg` file and run the script in one step:
 
@@ -578,22 +575,6 @@ BRANCH_CODE CITY
 29 rows were retrieved.
 ```
 
-<!--## Data visualization & BI
-{: #ibm_vis_bi}
-
-### Cognos Analytics
-{: #cognos}
-
-You can run your IBM Cognos® reports against data in the cloud rather than the data in an on-premises database. After you load your data to a {{site.data.keyword.dv_short}} instance, you set up the JDBC driver, and then use the Cognos administration tools to create the database connection. These instructions explain how to connect to the database from Cognos version 10.2.1.
-{: shortdesc}
-
-Watch this video to see how to create a connection.
-
-<iframe class="embed-responsive-item" id="youtubeplayer" title="Creating a connection from Cognos Analytics" type="text/html" width="640" height="390" src="//www.youtube.com/embed/TRUEPVHGi0s?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
-
-For more information, see [Connecting Cognos Analytics](https://www.ibm.com/support/knowledgecenter/en/SSEP7J_11.0.0/com.ibm.swg.ba.cognos.ug_cra.doc/c_create_ds.html#create_ds){:external}
--->
-
 ## Data science
 {: #ibm_sci}
 
@@ -606,6 +587,7 @@ After you create a project in IBM Watson Studio (formerly Data Science Experienc
 IBM Watson projects use {{site.data.keyword.Bluemix_notm}} Object Storage. 
 
 #### To create a new connection in an IBM Watson project:
+{: #create_new_connection_watson}
 
 1. Click **Add to project > Connection**.
     
@@ -620,8 +602,6 @@ IBM Watson projects use {{site.data.keyword.Bluemix_notm}} Object Storage.
 Watch this video to see how to create a connection and add connected data to a project.
 
 ![Create a connection and add connected data to a project](https://www.youtube.com/embed/YV-5zSczhH4?rel=0){: video output="iframe" data-script="none" id="youtubeplayer1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen}
-
-<!-- <iframe class="embed-responsive-item" id="youtubeplayer" title="Create a connection and add connected data to a project" type="text/html" width="640" height="390" src="//www.youtube.com/embed/YV-5zSczhH4?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe> -->
 
 ### SPSS Statistics
 {: #spss_stats}
@@ -672,5 +652,3 @@ Before attempting to connect to your {{site.data.keyword.dv_short}} instance, ve
    - If the connection is successful, click **OK** to return to the ODBC Data Source Administrator window, and then click **OK** to exit the window.
             
    - If the connection is not successful, note and correct any errors before you test the connection again.
-
-

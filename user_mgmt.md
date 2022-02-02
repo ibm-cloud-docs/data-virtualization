@@ -10,7 +10,6 @@ subcollection: data-virtualization
 
 ---
 
-<!-- Attribute definitions --> 
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -49,8 +48,7 @@ Users can use JDBC or any Db2 client to connect to their database. There are two
 IAM authentication is performed as the authentication mechanism. Permissions are not controlled by IAM. Permissions are controlled by database level privileges of the associated user. 
 
 ## {{site.data.keyword.dv_short}} roles
-
-{: @dv_roles}
+{: #dv_roles}
 
 There are four roles in {{site.data.keyword.dv_short}}: Manager (service administrator), Engineer, Steward, and User. Each of these roles can take advantage of different capabilities. These roles apply to a user's access to a {{site.data.keyword.dv_short}} as a service instance, which is also known as **Service access**. 
 
@@ -59,12 +57,14 @@ There are also Platform roles that apply to the user's **Platform access**, whic
 You must assign one of the following {{site.data.keyword.dv_short}} roles for a user to have access to the service:
 
 ### {{site.data.keyword.dv_short}} Manager
+{: #dv_manager}
 
 The {{site.data.keyword.dv_short}} Manager role is automatically assigned to the user who provisions the {{site.data.keyword.dv_short}} service. After the provisioning the service, the {{site.data.keyword.dv_short}} Manager can grant other users access.
 
 The {{site.data.keyword.dv_short}} Manager assigns appropriate {{site.data.keyword.dv_short}} roles to Cloud Pak for Data users.
 
 ### {{site.data.keyword.dv_short}} Engineer
+{: #dv_engineer}
 
 The {{site.data.keyword.dv_short}} Engineer configures data sources, virtualizes data, and manages access to virtual objects. Users with this role can create or view a virtual table and grant any {{site.data.keyword.dv_short}} user access to it. 
 
@@ -73,10 +73,12 @@ By default, every virtual object created in {{site.data.keyword.dv_short}} is pr
 Data source administrators are expected to provide access to a {{site.data.keyword.dv_short}} Engineer to virtualize data.
 
 ### {{site.data.keyword.dv_short}} User
+{: #dv_user}
 
 Users with this role can create views of virtual tables to which they have access.
 
 ### {{site.data.keyword.dv_short}} Steward
+{: #dv_steward}
 
 {{site.data.keyword.dv_short}} Stewards can access data in all user tables and views. Additionally, Stewards hold the Db2® DATAACCESS authority on the database.
 
@@ -146,5 +148,4 @@ The following table summarizes the {{site.data.keyword.dv_short}} menu functions
 | {{site.data.keyword.dv_short}} Engineer | Access connection details, Manage data sources, Create virtual tables and views, Create and manage private schema |
 | {{site.data.keyword.dv_short}} User | Access connection details, Create virtual views over existing virtual tables and views, Create and manage private schema |
 | {{site.data.keyword.dv_short}} Steward | Access connection details, Access data, Create virtual views over existing virtual tables and views, Create and manage private schema |
-<!-- 
-{: caption="Table 2. Permissions associated with each {{site.data.keyword.dv_short}} role." caption-side="top"} -->
+{: caption="Table 2. Permissions associated with each {{site.data.keyword.dv_short}} role." caption-side="top"}

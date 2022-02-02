@@ -10,7 +10,6 @@ subcollection: data-virtualization
 
 ---
 
-<!-- Attribute definitions --> 
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -177,28 +176,11 @@ The following VCAP Services json file can be used to make connections to your En
 
 {{site.data.keyword.dv_short}} supports private connectivity through an [{{site.data.keyword.cloud_notm}} service endpoint](/docs/account?topic=account-service-endpoints-overview). {{site.data.keyword.cloud_notm}} service endpoints securely route network traffic between different {{site.data.keyword.cloud_notm}} services through the {{site.data.keyword.cloud_notm}} private backplane network. When you configure your {{site.data.keyword.dv_short}} instance with {{site.data.keyword.cloud_notm}} service endpoint connectivity, traffic between your cloud database and applications deployed on your {{site.data.keyword.cloud_notm}} account will not traverse any public networks.
 
-<!-- ### How to configure IBM Cloud private endpoint connectivity
-{: #cfg_priv_endpt}
-
-Complete the following steps to enable {{site.data.keyword.cloud_notm}} private endpoint connectivity for your {{site.data.keyword.dv_short}} instance:
-
-Enable your {{site.data.keyword.cloud_notm}} account to use virtual routing and forwarding (VRF) and {{site.data.keyword.cloud_notm}} service endpoints. To enable both of these items, see [Enabling VRF and service endpoints](/docs/account?topic=account-vrf-service-endpoint).
-
-  1. On the console, click **Administration**.
-  2. Click **Access restriction**.
-  3. Select **Private endpoints** or **Public-and-private endpoints** and click **Update** to enable private endpoints.
-
-     ![Configuring private endpionts {{site.data.keyword.cloud_notm}}](images/private_endpoints.png "Graphical view of configuring private end points"){: caption="Figure 2. Configuring private endpoints on {{site.data.keyword.dv_short}}" caption-side="bottom"}
-
-## Connecting to a virtual private network (VPN) endpoint
-{: #priv_endpt_vpn}
-
-If you have an application that is deployed on a private network that is outside of the {{site.data.keyword.cloud_notm}} without access to the public internet and you want to connect it to your database over a virtual private network (VPN) connection, you can make the request at the time that you order the service or by opening an IBM Support case. IBM network engineers will assist your network engineers to set up the VPN tunnel between your private network and the {{site.data.keyword.cloud_notm}}. -->
 
 ### How to connect to a VPN endpoint
 {: #priv_endpt_vpn_steps}
 
-To establish a VPN connection to your cloud database behind a public endpoint, [create an {{site.data.keyword.cloud_notm}} Support case](https://cloud.ibm.com/unifiedsupport/cases/add){:external} that includes the following details:
+To establish a VPN connection to your cloud database behind a public endpoint, [create an {{site.data.keyword.cloud_notm}} Support case](https://cloud.ibm.com/unifiedsupport/cases/add){: external} that includes the following details:
 
 * **Type of support**: Technical 
 * **Category**: Databases 

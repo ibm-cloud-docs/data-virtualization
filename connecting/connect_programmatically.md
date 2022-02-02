@@ -10,7 +10,6 @@ subcollection: data-virtualization
 
 ---
 
-<!-- Attribute definitions --> 
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -38,11 +37,6 @@ Define a connection between a Java™ application and the {{site.data.keyword.dv
 
 Before attempting to connect to your {{site.data.keyword.dv_short}} instance, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
-<!-- Before you can connect to your database, you must perform the following steps:
-
-- [Verify prerequisites](prereqs.html), including installing driver packages, configuring your local environment, and downloading SSL certificates (if needed)
-- Collect [connection information](credentials.html), including database details such as host name and port numbers, and connection credentials such as user ID and password -->
-
 ### Procedure
 {: #proc61}
 
@@ -65,11 +59,6 @@ Define a connection between a .NET application and your {{site.data.keyword.dv_s
 {: #prereq71}
 
 Before attempting to connect to your {{site.data.keyword.dv_short}} instance, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
-
-<!-- Before you can connect to your database, you must perform the following steps:
-
-- [Verify prerequisites](prereqs.html), including installing driver packages, configuring your local environment, and downloading SSL certificates (if needed)
-- Collect [connection information](credentials.html), including database details such as host name and port numbers, and connection credentials such as user ID and password -->
 
 ### Procedure
 {: #proc71}
@@ -179,11 +168,6 @@ Define a connection between a Microsoft Windows ODBC or CLI application and a {{
 
 Before attempting to connect to your {{site.data.keyword.dv_short}} instance, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
-<!-- Before you can connect to your database, you must perform the following steps:
-
-- [Verify prerequisites](prereqs.html), including installing driver packages, configuring your local environment, and downloading SSL certificates (if needed)
-- Collect [connection information](credentials.html), including database details such as host name and port numbers, and connection credentials such as user ID and password -->
-
 ### Procedure
 {: #proc81}
 
@@ -237,11 +221,6 @@ Use the Microsoft ODBC Data Source Administrator tool to define a connection bet
 
 Before attempting to connect to your {{site.data.keyword.dv_short}} instance, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
-<!-- Before you can connect to your database, you must perform the following steps:
-
-- [Verify prerequisites](prereqs.html), including installing driver packages, configuring your local environment, and downloading SSL certificates (if needed)
-- Collect [connection information](credentials.html), including database details such as host name and port numbers, and connection credentials such as user ID and password -->
-
 ### Procedure
 {: #proc91}
 
@@ -268,11 +247,6 @@ Define a connection between a PHP application and a {{site.data.keyword.dv_short
 
 Before attempting to connect to your {{site.data.keyword.dv_short}} instance, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
-<!-- Before you can connect to your database, you must perform the following steps:
-
-- [Verify prerequisites](prereqs.html), including installing driver packages, configuring your local environment, and downloading SSL certificates (if needed)
-- Collect [connection information](credentials.html), including database details such as host name and port numbers, and connection credentials such as user ID and password -->
-
 ### Procedure
 {: #proc101}
 
@@ -281,7 +255,7 @@ Before attempting to connect to your {{site.data.keyword.dv_short}} instance, ve
 
 1. Download the [Db2 driver package](/docs/Db2onCloud?topic=Db2onCloud-drvr_pkg) from the web console, and then install the driver package on the machine where your PHP application will run.
                 
-2. Use the [`odbc_connect` function](http://php.net/manual/en/function.odbc-connect.php){:external} to connect to the BLUDB database.
+2. Use the [`odbc_connect` function](http://php.net/manual/en/function.odbc-connect.php){: external} to connect to the BLUDB database.
     
    PHP code example:
 
@@ -346,7 +320,7 @@ Before attempting to connect to your {{site.data.keyword.dv_short}} instance, ve
         
 3. In your {{site.data.keyword.Bluemix_notm}} dashboard, create a new connection from your Db2 service to your new PHP App. (Creating this Connection in {{site.data.keyword.Bluemix_notm}} makes the `VCAP_SERVICES` environment variable available to your PHP App. The `VCAP_SERVICES` environment variable contains database details for your Db2 service. Using `VCAP_SERVICES` is more convenient than hardcoding the database details in your PHP App.)
         
-4. In your local working directory, update the `index.php` file to connect to the BLUDB database by using the [`db2_connect` function](http://php.net/manual/en/function.db2-connect.php){:external}.
+4. In your local working directory, update the `index.php` file to connect to the BLUDB database by using the [`db2_connect` function](http://php.net/manual/en/function.db2-connect.php){: external}.
         
    Example:
 

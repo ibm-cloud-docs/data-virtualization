@@ -10,7 +10,6 @@ subcollection: data-virtualization
 
 ---
 
-<!-- Attribute definitions --> 
 {:tsSymptoms: .tsSymptoms} 
 {:tsCauses: .tsCauses} 
 {:tsResolve: .tsResolve} 
@@ -27,11 +26,9 @@ subcollection: data-virtualization
 # Help and support
 {: #help_support}
 
-You can determine the status of the IBM® {{site.data.keyword.dv_short}} service in {{site.data.keyword.Bluemix_notm}} by checking the [IBM Cloud: Status](https://cloud.ibm.com/status?selected=status){:external} page. 
+You can determine the status of the IBM® {{site.data.keyword.dv_short}} service in {{site.data.keyword.Bluemix_notm}} by checking the [IBM Cloud: Status](https://cloud.ibm.com/status?selected=status){: external} page. 
 {: tsResolve}
 
-<!--* Status monitoring: test
-  * [All regions](https://cloud.ibm.com/status?selected=status){:external} -->
 
 ## Getting help and support for Db2 on Cloud
 {: #gettinghelp}
@@ -41,8 +38,8 @@ If you have problems or questions when using {{site.data.keyword.dv_short}}, you
 
 You can review [Stack Overflow](https://stackoverflow.com/search?q=ibm-cloud){: external} to see whether other users ran into the same problem. When using the forum to ask a question, tag your question with `ibm-cloud` and `dv` so that it is seen by the {{site.data.keyword.Bluemix}} development teams.
 
-See [Getting help](/docs/get-support?topic=get-support-using-avatar#asking-a-question){:external} for more details about using the forums.
+See [Getting help](/docs/get-support?topic=get-support-using-avatar#asking-a-question){: external} for more details about using the forums.
 
-For information about opening an IBM support case, or about support levels and case severities, see: [Working with support cases](/docs/get-support?topic=get-support-open-case#open-case){:external}.
+For information about opening an IBM support case, or about support levels and case severities, see: [Working with support cases](/docs/get-support?topic=get-support-open-case#open-case){: external}.
 
 

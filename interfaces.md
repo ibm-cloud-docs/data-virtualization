@@ -10,7 +10,6 @@ subcollection: data-virtualization
 
 ---
 
-<!-- Attribute definitions --> 
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -37,10 +36,6 @@ You can work with your warehouse database in the following ways:
 
 The web console provides a graphical interface for everything that you need to use your database, including: load facilities, an SQL editor, driver downloads, and more.
 {: shortdesc}
-
-<!-- ![View of the web console dashboard page](images/uc.png "Web console opens to the dashboard page"){: caption="Figure 1. View of the web console dashboard page" caption-side="bottom"} -->
-
-<!-- Click the link to take a tour of the {{site.data.keyword.dv_short}} for Analytics web console: [General tour](http://ibm.biz/dashdb-general-quick-tour){:external}. -->
 
 You can access your web console in the following ways:
    * From your {{site.data.keyword.Bluemix_notm}} dashboard - You can open the web console from the Service Details page for your {{site.data.keyword.dv_short}} service.
