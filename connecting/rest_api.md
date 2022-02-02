@@ -10,7 +10,6 @@ subcollection: data-virtualization
 
 ---
 
-<!-- Attribute definitions --> 
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}

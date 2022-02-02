@@ -9,8 +9,7 @@ keywords:
 subcollection: data-virtualization
 
 ---
-
-<!-- Attribute definitions --> 
+ 
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -24,7 +23,7 @@ subcollection: data-virtualization
 # Maintenance and notification policies
 {: #maint_note_pol}
 
-The maintenance and notification policies for the {{site.data.keyword.dv_short}} service can be found in the [{{site.data.keyword.Bluemix_notm}} service descriptions](http://www.ibm.com/software/sla/sladb.nsf/sla/bm?OpenDocument){:external}. Additional terms of service specifically for {{site.data.keyword.dv_short}} can be found by looking under the **Chargeable additional SDs** category. 
+The maintenance and notification policies for the {{site.data.keyword.dv_short}} service can be found in the [{{site.data.keyword.Bluemix_notm}} service descriptions](http://www.ibm.com/software/sla/sladb.nsf/sla/bm?OpenDocument){: external}. Additional terms of service specifically for {{site.data.keyword.dv_short}} can be found by looking under the **Chargeable additional SDs** category. 
 
 Being acquainted with our policies can better help you plan and schedule your workloads to be resilient to system maintenance.
 {: shortdesc}

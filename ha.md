@@ -10,7 +10,6 @@ subcollection: data-virtualization
 
 ---
 
-<!-- Attribute definitions --> 
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -27,10 +26,6 @@ subcollection: data-virtualization
 {{site.data.keyword.dv_short}} plans have excellent availability characteristics with a 99.99% SLA. 
 {: shortdesc}
 
-<!--
-## Standard and Enterprise plans
-{: #ha_v2_ha}
--->
 
 High availability disaster recovery (HADR) on the {{site.data.keyword.dv_short}} Enterprise plan is provided by leveraging the support of native HADR replication. In addition to HADR for further redundancy, backups of the service are replicated across regions by default and are taken every 24 hours and saved for a minimum of 14 days. 
 

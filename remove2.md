@@ -12,12 +12,12 @@ keywords: deprovision data-virtualization, deprovisioning parameters, delete
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:external .external}
+{:external: target="_blank" .external}
 {:codeblock: .codeblock}
 {:pre: .pre}
 {:screen: .screen}
 {:tip: .tip}
-{:important .important}
+{:important: .important}
 
 
 # Supported SDKs

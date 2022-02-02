@@ -10,7 +10,6 @@ subcollection: data-virtualization
 
 ---
 
-<!-- Attribute definitions --> 
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -30,7 +29,6 @@ To deploy an {{site.data.keyword.dv_short}} service, you need to create a {{site
 
 You can provision a deployment by visiting the service's catalog page or by specifying the service ID to the command line or to the API. The deployment type is determined by the service ID, which you must specify when you create a {{site.data.keyword.dv_short}} deployment by using the command line or API.
 
-<!--Updated to include description of Lite Plan and details related to it-->
 You can choose one of the following plans in {{site.data.keyword.dv_short}}.
 
 **Enterprise:** Use this plan to create a dedicated and highly available {{site.data.keyword.dv_short}} instance with flexible scaling of worker nodes. Head nodes have 8 vCPU and 32 GB RAM per node. 4 vCPUs per head node are allocated to service management and monitoring and are not included in the Virtual Processor Core-Hour charge. Worker nodes have 4 vCPU and 32 GB RAM per node. Each month comes with 250 free Virtual Processor Core-Hours.
@@ -41,6 +39,7 @@ You can choose one of the following plans in {{site.data.keyword.dv_short}}.
 |-----------------|--------------|------------|----------|
 | {{site.data.keyword.dv_short}} (Enterprise) |[Link](https://cloud.ibm.com/catalog/services/data-virtualization){: external} | data-virtualization | data-virtualization-enterprise |
 | {{site.data.keyword.dv_short}} (Lite) |[Link](https://cloud.ibm.com/catalog/services/data-virtualization){: external} | data-virtualization | data-virtualization-lite |
+{: caption="Table 1: Plans in {{site.data.keyword.dv_short}}" caption-side="top"}
 
 ## Using the catalog
 {: #prov_catalog}
@@ -77,7 +76,7 @@ ibmcloud resource service-instance-create <service-name> <service-id> <service-p
 ```
 {: codeblock}
 
-More general information about this command is available in the [CLI reference for resource groups]().
+More general information about this command is available in the CLI reference for resource groups.
 
 When the command is run, the database deployment begins. The database takes some time to deploy. You can check on its progress on your {{site.data.keyword.cloud_notm}} dashboard or you can run the following command:
 
@@ -91,7 +90,7 @@ This command reports the current state of the service instance.
 ## Additional flags and parameters
 {: #prov_flags_parms}
 
-The `--service-endpoints` flag allows you to specify which types of [service endpoints]() to include in your deployment. Its default is that connections to your deployment can be made from the public network. Possible values are `public`, `private`, `public-and-private`. If the flag is omitted, the default is a `public` endpoint.
+The `--service-endpoints` flag allows you to specify which types of service endpoints to include in your deployment. Its default is that connections to your deployment can be made from the public network. Possible values are `public`, `private`, `public-and-private`. If the flag is omitted, the default is a `public` endpoint.
 
 The following example command specifies a service endpoint:
 ```
@@ -106,9 +105,8 @@ The `service-instance-create` command supports a `-p` flag, which allows [additi
 
 You can provision new deployments by using the Resource Controller API. However, in order to use the Resource Controller API, you need some additional preparation.
 
-1. [Obtain an IAM token from your API token]().
-    
-1. You must know the ID of the resource group to which you would like to deploy. This information is available through the [{{site.data.keyword.cloud_notm}} CLI](). You can find a list of resource groups with `ibmcloud resource groups` and the ID of a resource group with `ibmcloud resource group`.
+1. Obtain an IAM token from your API token.
+1. You must know the ID of the resource group to which you would like to deploy. This information is available through the {{site.data.keyword.cloud_notm}} CLI. You can find a list of resource groups with `ibmcloud resource groups` and the ID of a resource group with `ibmcloud resource group`.
 1. You must know the region to which you would like to deploy.
 
 After you have all of the information, the following create request is a `POST` to the `https://resource-controller.cloud.ibm.com/v2/resource_instances` endpoint:
@@ -129,9 +127,10 @@ curl -X POST \
 
 The parameters `name`, `target`, `resource_group`, and `resource_plan_id` are all required. If needed, you can send [additional parameters](#prov_add_parms) in the request body.
 
-More information on the Resource Controller API is found in its [API Reference]().
+More information on the Resource Controller API is found in its API Reference.
 
 ## Provisioning through Cloud Pak for Data as a Service
+{: #prov_through_cpd}
 
 Follow these steps to provision {{site.data.keyword.dv_short}} for Cloud Pak for Data as a Service.
 
@@ -139,6 +138,7 @@ Follow these steps to provision {{site.data.keyword.dv_short}} for Cloud Pak for
 ](https://cloud.ibm.com/docs/account?topic=account-upgrading-account).
 1. From the Cloud Pak for Data as a Service console, go to **Services** > **Services catalog**.
 1. Select **Watson Query** and choose a service plan.
+
 
 ## List of additional parameters
 {: #prov_add_parms}

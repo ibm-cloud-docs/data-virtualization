@@ -10,7 +10,6 @@ subcollection: data-virtualization
 
 ---
 
-<!-- Attribute definitions --> 
 {:javascript: #javascript .ph data-hd-programlang='javascript'}
 {:java: #java .ph data-hd-programlang='java'}
 {:ruby: #ruby .ph data-hd-programlang='ruby'}

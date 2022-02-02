@@ -28,8 +28,6 @@ To ensure that you have enhanced control and security over your data when you us
 
 _Required: Document any customer data that goes over public routes even with the IBM Cloud service endpoints feature enabled using a connection over private routes. For example, if your service sends customer data to a data-service using a public route or sends customer logs using public routes to LogDNA that should be documented._
 
-<!-- Work with your offering's SMEs to fill out the following sections as applicable to your offering. -->
-
 
 ## Before you begin
 {: #prereq-service-endpoint}

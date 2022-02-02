@@ -12,12 +12,12 @@ keywords: deprovision data-virtualization, deprovisioning parameters, delete
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:external .external}
+{:external: target="_blank" .external}
 {:codeblock: .codeblock}
 {:pre: .pre}
 {:screen: .screen}
 {:tip: .tip}
-{:important .important}
+{:important: .important}
 
 
 # Supported SDKs
@@ -29,4 +29,4 @@ The following {{site.data.keyword.dv_short}} SDKs are supported by {{site.data.k
 * [Java SDK](https://github.com/IBM/data-virtualization-on-cloud-java-sdk/){: external}
 
 For more information, see [Rest APIs](https://{DomainName}/apidocs/data-virtualization-on-cloud){: external}.
-{:tip}
+{: tip}
