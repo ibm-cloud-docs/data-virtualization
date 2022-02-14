@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2021, 2021
+  years: 2021, 2022
 lastupdated: "2021-06-24"
 
 keywords: public isolation for Data Virtualization, compute isolation for Data Virtualization, Data Virtualization architecture, workload isolation in Data Virtualization

@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2021, 2021
+  years: 2021, 2022
 lastupdated: "2021-04-26"
 
 keywords: security compliances, security, compliance, {{site.data.keyword.dv_short}}
