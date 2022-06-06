@@ -340,12 +340,12 @@ The {{site.data.keyword.dv_short}} REST API was enhanced to also accept an IAM a
   ```
   {: codeblock}
 
-For more details about {{site.data.keyword.dv_short}} REST APIs, see[REST APIs](https://cloud.ibm.com/apidocs/data-virtualization){:external}.
+For more details about {{site.data.keyword.dv_short}} REST APIs, see[REST APIs](https://cloud.ibm.com/apidocs/data-virtualization){: external}.
 
 ## IBMid federation
 {: #fed_ibmid}
 
-To use your own identity provider such as LDAP, you must first federate your LDAP server with IBMid. For instructions about federating your LDAP server with IBMid, see: [IBMid Enterprise Federation Adoption Guide](https://ibm.ent.box.com/notes/78040808400?v=IBMid-Federation-Guide){:external}. After IBMid federation is completed and the allowed users are added to the database service instance by the database administrator, these users can log in to the console with their company user ID and password. Alternatively, these users can use an access token or API key that represents their user ID to connect to the database service instance through one of the supported database client interfaces.
+To use your own identity provider such as LDAP, you must first federate your LDAP server with IBMid. For instructions about federating your LDAP server with IBMid, see: [IBMid Enterprise Federation Adoption Guide](https://ibm.ent.box.com/notes/78040808400?v=IBMid-Federation-Guide){: external}. After IBMid federation is completed and the allowed users are added to the database service instance by the database administrator, these users can log in to the console with their company user ID and password. Alternatively, these users can use an access token or API key that represents their user ID to connect to the database service instance through one of the supported database client interfaces.
 
 ## Restrictions
 {: #restrictions}
