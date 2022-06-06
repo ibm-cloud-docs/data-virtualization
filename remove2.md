@@ -29,4 +29,4 @@ The following {{site.data.keyword.watson}} SDKs are supported by {{site.data.key
 * [Java SDK](https://github.com/IBM/data-virtualization-on-cloud-java-sdk/){: external}
 
 For more information, see [Rest APIs](https://{DomainName}/apidocs/data-virtualization-on-cloud){: external} for each service includes information and examples for many of the SDKs, including Java, Node.js, Python, Go, .Net, Ruby, and Swift.
-{:tip}
+{: tip}
