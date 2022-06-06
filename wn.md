@@ -17,7 +17,7 @@ subcollection: data-virtualization
 {: #dv-wn}
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.dv_short}}, ordered by date.
-{:shortdesc}
+{: shortdesc}
 
 ## 24 June 2021
 {: #june-update}
