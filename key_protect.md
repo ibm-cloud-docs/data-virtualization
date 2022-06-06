@@ -56,7 +56,7 @@ Key Protect is a cloud-based security service that provides lifecycle management
 
 1. Log in to {{site.data.keyword.Bluemix_notm}}.
 
-2. In the {{site.data.keyword.Bluemix_notm}} catalog, open the [Key Protect](https://cloud.ibm.com/catalog/key-protect){:external} service page and create an instance of the service.
+2. In the {{site.data.keyword.Bluemix_notm}} catalog, open the [Key Protect](https://cloud.ibm.com/catalog/key-protect){: external} service page and create an instance of the service.
 
    ![Screen capture of Key Protect service catalog page.](images/kp_1.png "Key Protect service catalog page"){: caption="Figure 1. Key Protect service catalog page" caption-side="bottom"}
 
@@ -79,7 +79,7 @@ You can create keys or import existing keys by using the following methods:
      - [Root key](/docs/key-protect?topic=key-protect-create-root-keys#create-root-key-gui)
      - [Standard key](/docs/key-protect?topic=key-protect-create-standard-keys#create-standard-key-gui)
 
-   - [API](https://cloud.ibm.com/apidocs/key-protect){:external}
+   - [API](https://cloud.ibm.com/apidocs/key-protect){: external}
 
      - [Root key](/docs/key-protect?topic=key-protect-create-root-keys#create-root-key-api)
      - [Standard key](/docs/key-protect?topic=key-protect-create-standard-keys#create-standard-key-api)
@@ -131,7 +131,7 @@ After creating the key in the Key Protect service instance, you can proceed with
 ## Rotating the key in Key Protect
 {: #kp_rotate}
 
-If you want to rotate the key in IBM Key Protect, you can do it either from the {{site.data.keyword.Bluemix_notm}} console or by using the [IBM Key Protect API: Invoke an action on a key](https://cloud.ibm.com/apidocs/key-protect#invoke-an-action-on-a-key){:external}. 
+If you want to rotate the key in IBM Key Protect, you can do it either from the {{site.data.keyword.Bluemix_notm}} console or by using the [IBM Key Protect API: Invoke an action on a key](https://cloud.ibm.com/apidocs/key-protect#invoke-an-action-on-a-key){: external}. 
 
 ## Removing the authorization of {{site.data.keyword.dv_short}} on Cloud service to access Key Protect
 {: #kp_rm_auth}
