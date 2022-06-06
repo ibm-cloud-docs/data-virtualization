@@ -45,9 +45,8 @@ subcollection: data-virtualization
 {:javascript: .ph data-hd-programlang='javascript'}
 {:javascript: data-hd-programlang="javascript"}
 {:new_window: target="_blank"}
-{:note .note}
 {:note: .note}
-{:objectc data-hd-programlang="objectc"}
+{:objectc: data-hd-programlang="objectc"}
 {:org_name: data-hd-keyref="org_name"}
 {:php: data-hd-programlang="php"}
 {:pre: .pre}
