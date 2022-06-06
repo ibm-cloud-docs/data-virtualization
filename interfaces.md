@@ -45,7 +45,7 @@ You can access your web console in the following ways:
 {: #int_api}
 
 With {{site.data.keyword.dv_short}} service plans, you can do tasks that are related to file management, loading data, and resource scaling by using the REST API:
-- [REST API](#){: external}
+- [REST API](https://cloud.ibm.com/apidocs/data-virtualization-on-cloud){: external}
 
 
 ## Connect applications or your favorite tools from your local computer
