@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021, 2021
-lastupdated: "2021-04-26"
+  years: 2021, 2022
+lastupdated: "2022-06-06"
 
 keywords: isolation for _servicename_, service endpoints for _servicename_, private network for _servicename_, network isolation in _servicename_, non-public routes for _servicename_, private connection for _servicename_
 
@@ -27,8 +27,6 @@ To ensure that you have enhanced control and security over your data when you us
 {: shortdesc}
 
 _Required: Document any customer data that goes over public routes even with the IBM Cloud service endpoints feature enabled using a connection over private routes. For example, if your service sends customer data to a data-service using a public route or sends customer logs using public routes to LogDNA that should be documented._
-
-<!-- Work with your offering's SMEs to fill out the following sections as applicable to your offering. -->
 
 
 ## Before you begin

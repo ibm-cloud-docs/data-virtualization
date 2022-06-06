@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021, 2021
-lastupdated: "2021-06-24"
+  years: 2021, 2022
+lastupdated: "2022-06-06"
 
 keywords: 
 
@@ -12,7 +12,6 @@ content-type: faq
 
 ---
 
-<!-- Attribute definitions --> 
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -33,7 +32,6 @@ This is a collection of frequently asked questions (FAQ) about the {{site.data.k
 {: shortdesc}
 
 ## How do I generate credentials for my instance?
-
 {: #q_creds}
 {: faq}
 {: support}

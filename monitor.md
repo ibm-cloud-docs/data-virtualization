@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021
-lastupdated: "2021-06-24"
+  years: 2021, 2022
+lastupdated: "2022-06-06"
 
 keywords: monitoring for code engine, performance metrics, monitor, metrics, requests, pods, application, attributes, jobrun, panic mode
 
@@ -125,7 +125,7 @@ To see your {{site.data.keyword.dv_short}} customer metrics dashboards in {{site
 For more information, see [{{site.data.keyword.mon_short}} Getting started tutorial](/docs/monitoring?topic=monitoring-getting-started).
 
 ## Metrics available by Service Plan
-{: metrics-by-plan}
+{: #metrics-by-plan}
 
 | Metric Name |
 |-----------|
@@ -454,10 +454,10 @@ Worker Minimum Heap memory utilization
 {: caption="Table 24: Worker Minimum Heap memory utilization metric metadata" caption-side="top"}
 
 ## Attributes for Segmentation
-{: attributes}
+{: #attributes}
 
 ### Global Attributes
-{: global-attributes}
+{: #global-attributes}
 
 The following attributes are available for segmenting all of the metrics listed above
 
@@ -470,12 +470,14 @@ The following attributes are available for segmenting all of the metrics listed 
 | `Resource group` | `ibm_resource_group_name` | The resource group where the service instance was created |
 | `Scope` | `ibm_scope` | The scope is the account, organization or space GUID associated with this metric |
 | `Service name` | `ibm_service_name` | Name of the service generating this metric |
+{: caption="Table 25: Global attributes for segmenting metris" caption-side="top"}
 
 ### Additional Attributes
-{: additional-attributes}
+{: #additional-attributes}
 
 The following attributes are available for segmenting one or more attributes as described in the reference above.  Please see the individual metrics for segmentation options.
 
 | Attribute | Attribute Name | Attribute Description |
 |-----------|----------------|-----------------------|
 | `Service instance` | `ibm_service_instance` | The service instance segment identifies the instance the metric is associated with |
+{: caption="Table 25: Attributes for segmenting attributes" caption-side="top"}

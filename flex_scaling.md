@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021, 2021
-lastupdated: "2021-06-24"
+  years: 2021, 2022
+lastupdated: "2022-06-06"
 
 keywords: 
 
@@ -10,7 +10,6 @@ subcollection: data-virtualization
 
 ---
 
-<!-- Attribute definitions --> 
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -34,7 +33,6 @@ Storage cannot be scaled down after it has been increased.
 {: important}
 
 ## Enterprise plan
-
 {: #fs_enterprise_plan}
 
 Your Enterprise plan initially deploys with 4 cores, 16 GB of RAM, and 20 GB of disk space. You can then scale your plan up or down with slider bars in the {{site.data.keyword.dv_short}} console by up to 56 virtual cores and 4 TB of storage. 
@@ -60,15 +58,3 @@ To scale cores/memory and storage from within the console, complete the followin
 
 ![Enterprise plan scaling](images/enterprise_scale.png "Enterprise plan scaling"){: caption="Figure 2. Enterprise plan scaling cores/memory and storage" caption-side="bottom"}
 
-<!--These dynamic adjustments typically take less than 20 minutes to complete. You can also scale CPU and RAM without any downtime by following these [guidelines](https://developer.ibm.com/answers/questions/381931/how-can-i-scale-cpu-up-and-down-without-downtime-o.html){:external}.-->
-
-<!--
-## Legacy plans
-{: #fs_legacy_plans}
-
-Independent scaling of RAM, storage, and compute cores. 
-
-Your Flex plan initially deploys with 1 core, 4 GB of RAM and 2 GB of disk space. You can then scale your plan up or down with slider bars.
-
-These dynamic adjustments typically take less than 20 minutes to complete. You can even scale CPU and RAM without any downtime by following these [guidelines](https://developer.ibm.com/answers/questions/381931/how-can-i-scale-cpu-up-and-down-without-downtime-o.html){:external}.
--->

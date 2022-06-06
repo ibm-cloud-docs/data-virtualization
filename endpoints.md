@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021, 2021
-lastupdated: "2021-06-24"
+  years: 2021, 2022
+lastupdated: "2022-06-06"
 
 keywords: 
 
@@ -10,7 +10,6 @@ subcollection: data-virtualization
 
 ---
 
-<!-- Attribute definitions --> 
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -33,7 +32,7 @@ The Enterprise plan offers the choice of Public, Private, or both Public and Pri
 - Private network service endpoint access traverses only the {{site.data.keyword.cloud_notm}} backbone network, not the public internet.
 
 ### Instance creation
-{: ep_inst_create}
+{: #ep_inst_create}
 
 At the time of instance creation, you can select your choice of endpoint from the **Service Endpoints** box on {{site.data.keyword.cloud_notm}}.
 

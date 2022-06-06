@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021
-lastupdated: "2021-06-24"
+  years: 2021, 2022
+lastupdated: "2022-06-06"
 
 subcollection: data-virtualization
 
@@ -12,12 +12,12 @@ keywords: deprovision data-virtualization, deprovisioning parameters, delete
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:external .external}
+{:external: target="_blank" .external}
 {:codeblock: .codeblock}
 {:pre: .pre}
 {:screen: .screen}
 {:tip: .tip}
-{:important .important}
+{:important: .important}
 
 
 # Supported SDKs
@@ -31,4 +31,4 @@ The following {{site.data.keyword.dv_short}} SDKs are supported by {{site.data.k
 * [Python SDK](https://github.com/IBM/data-virtualization-on-cloud-python-sdk){: external}
 
 For more information, see [Rest APIs](https://{DomainName}/apidocs/data-virtualization-on-cloud){: external}.
-{:tip}
+{: tip}

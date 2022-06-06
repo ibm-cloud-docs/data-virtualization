@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021, 2021
-lastupdated: "2021-06-24"
+  years: 2021, 2022
+lastupdated: "2022-06-06"
 
 keywords: 
 
@@ -10,7 +10,6 @@ subcollection: data-virtualization
 
 ---
 
-<!-- Attribute definitions --> 
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -25,8 +24,6 @@ subcollection: data-virtualization
 {: #log_mon}
 
 Monitoring and logging is part of the service. However, it is not directly displayed to the user. Instead, the infrastructure is used by IBM operational staff to address issues.  
-
-<!--For availability of the Activity Tracker, see [roadmap](https://ibm.biz/db2oncloud-roadmap){:external}. -->
 
 You can connect with a Db2 command-line client, such as CLPPlus, to access detailed information and diagnostics.
 

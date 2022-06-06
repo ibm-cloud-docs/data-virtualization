@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021, 2021
-lastupdated: "2021-06-24"
+  years: 2021, 2022
+lastupdated: "2022-06-06"
 
 keywords:
 
@@ -10,7 +10,6 @@ subcollection: data-virtualization
 
 ---
 
-<!-- Attribute definitions --> 
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -44,7 +43,7 @@ The {{site.data.keyword.dv_short}} driver package contains software for connecti
 ## Already installed?
 {: #drvr_alrdy_instld}
 
-To verify that the driver package is already on your computer so that you can skip installing it again, or to determine the version number, you can use the [**db2level**](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.admin.cmd.doc/doc/r0009195.html){:external} command.
+To verify that the driver package is already on your computer so that you can skip installing it again, or to determine the version number, you can use the [**db2level**](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.admin.cmd.doc/doc/r0009195.html){: external} command.
 
 ## Downloading
 {: #drvr_dwnldng}
@@ -72,7 +71,6 @@ You can install the {{site.data.keyword.dv_short}} driver package on Linux or Po
 
 Before attempting to connect to your {{site.data.keyword.dv_short}} instance, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
-<!-- Download the Db2 driver package for your operating system from the web console and install it. -->
 
 **On PowerLinux only**, complete the following steps to install the XL C/C++ compiler runtime package:
 
@@ -122,7 +120,6 @@ You can install the {{site.data.keyword.dv_short}} driver package on Mac OS X by
 
 Before attempting to connect to your {{site.data.keyword.dv_short}} instance, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
-<!-- Download the Db2 driver package for your operating system from the web console and install it. -->
 
 #### Procedure
 {: #drvr_proc41}
@@ -174,7 +171,6 @@ You can install the {{site.data.keyword.dv_short}} driver package on Windows by 
 
 Before attempting to connect to your {{site.data.keyword.dv_short}} instance, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
-<!-- Download the driver package for your operating system from the web console and install it. -->
 
 #### Procedure
 {: #drvr_proc51}
@@ -190,10 +186,6 @@ Before attempting to connect to your {{site.data.keyword.dv_short}} instance, ve
 To be able to connect your local applications or client tools to your {{site.data.keyword.dv_short}} instance, [configure your local environment](#cfg_loc_env).
 
 
-<!-- ## Configuring
-
-To connect local applications or client tools to your {{site.data.keyword.dv_short}} instance, [configure your environment for your Db2 database](driver_pkg_cfg.html). -->
-
 ## Configuring your local environment
 {: #drvr_cfg_loc_env}
 
@@ -205,13 +197,6 @@ To connect local applications and tools to your {{site.data.keyword.dv_short}} i
 
 Before attempting to connect to your {{site.data.keyword.dv_short}} instance, verify that you have the [prerequisites](/docs/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
-<!-- 1. Install the Db2 driver package for your operating system.
-
-   - [Installing on Windows](install_win.html)
-   - [Installing on Linux or PowerLinux](install_linux.html)
-   - [Installing on Mac OS X](install_mac.html)
-2. Decide whether or not you will be using Secure Sockets Layer (SSL) to connect to your database.
-3. Collect database details and connect credentials, including the host name of your server, and your database user ID and password. -->
 
 ### Procedure
 {: #drvr_proc21}

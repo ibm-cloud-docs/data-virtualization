@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021, 2021
-lastupdated: "2021-06-24"
+  years: 2021, 2022
+lastupdated: "2022-06-06"
 
 keywords: 
 
@@ -10,7 +10,6 @@ subcollection: data-virtualization
 
 ---
 
-<!-- Attribute definitions --> 
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -29,19 +28,6 @@ Identity and access management (IAM) enables you to securely authenticate users 
 
 IAM is enabled for all {{site.data.keyword.dv_short}} plans.
 
-<!--
-## Is IAM enabled on your instance?
-{: #enabled}
-
-Over a period of time, the {{site.data.keyword.dv_short}} managed database instances on {{site.data.keyword.Bluemix_notm}} will be enabled to use IAM for access control. To check that IAM is enabled on your instance, run the following query:
-
-```
-SELECT CASE WHEN VALUE = 'IBMIAMauth' THEN 1 ELSE 0 END AS IAM_ENABLED FROM SYSIBMADM.DBMCFG WHERE NAME = 'srvcon_gssplugin_list'
-```
-{:codeblock}
-
-If the returned value of **IAM_ENABLED** is 1, then IAM is enabled on your instance.
--->
 
 ## Features of {{site.data.keyword.Bluemix_notm}} IAM
 {: #features}
@@ -58,7 +44,6 @@ Users with an IBMid must be added to each database service instance by the admin
 
 A service ID identifies a service or application similar to how a user ID identifies a user. The service IDs are IDs that can be used by applications to authenticate with an {{site.data.keyword.Bluemix_notm}} service. A service ID represents a separate entity from the owning IBMid. Therefore, different authorities and permissions can be granted specific to the service ID within the database. Service IDs do not have passwords. An API key must be created for each service ID for the service ID to connect to the database service instance. 
 
-<!-- For more information about service IDs, see: [Introducing {{site.data.keyword.Bluemix_notm}} IAM Service IDs and API Keys](https://www.ibm.com/blogs/bluemix/2017/10/introducing-ibm-cloud-iam-service-ids-api-keys/){:external} and [Increase Information Security for Db2 on IBM Cloud](https://www.ibm.com/cloud/blog/increase-information-security-for-db2-on-ibm-cloud){:external}. -->
 
 ## Roles and actions
 {: #iam_roles_actions}
@@ -84,7 +69,7 @@ The following methods can be used for IAM authentication:
 ### Access token
 {: #iam_accesstoken}
 
-An access token can be obtained from the IAM service directly by the application through the REST API by using an API key. For more information, see: [Getting an {{site.data.keyword.Bluemix_notm}} IAM token by using an API key](/docs/account?topic=account-iamtoken_from_apikey){:external}. The access token has a default validity period of 60 minutes before it expires. If the token has expired, the Db2 server won't allow the connection to be established. The token isn’t checked for expiry after the connection is established. Just as it was before IAM integration, the connection stays connected until the application disconnects or the connection is terminated due to other reasons.
+An access token can be obtained from the IAM service directly by the application through the REST API by using an API key. For more information, see: [Getting an {{site.data.keyword.Bluemix_notm}} IAM token by using an API key](/docs/account?topic=account-iamtoken_from_apikey){: external}. The access token has a default validity period of 60 minutes before it expires. If the token has expired, the Db2 server won't allow the connection to be established. The token isn’t checked for expiry after the connection is established. Just as it was before IAM integration, the connection stays connected until the application disconnects or the connection is terminated due to other reasons.
 
 ```
 curl -k -X POST \
@@ -101,7 +86,7 @@ An access token identifies an IBMid user or a service ID to the database. The {{
 ### API key
 {: #iam_apikey}
 
-Multiple API keys can be created for each IBMid user or service ID. Each API key is typically created for a single application. It allows the application to connect to the database service instance as long as the owning IBMid or service ID is added as a user to the same database service instance. The API key has the same authorities and permissions within the database as the owning IBMid or service ID. If an application should no longer be allowed to connect to the database, the corresponding API key can be removed. This method of authentication requires less changes in the application than using an access token as it requires no direct interaction with the IAM service. For more information about creating and managing API keys, see: [Managing user API keys](/docs/account?topic=account-userapikey){:external}.
+Multiple API keys can be created for each IBMid user or service ID. Each API key is typically created for a single application. It allows the application to connect to the database service instance as long as the owning IBMid or service ID is added as a user to the same database service instance. The API key has the same authorities and permissions within the database as the owning IBMid or service ID. If an application should no longer be allowed to connect to the database, the corresponding API key can be removed. This method of authentication requires less changes in the application than using an access token as it requires no direct interaction with the IAM service. For more information about creating and managing API keys, see: [Managing user API keys](/docs/account?topic=account-userapikey){: external}.
 
 ### IBMid/password
 {: #iam_ibmid_pwd}
@@ -189,7 +174,6 @@ The CLP CONNECT statement can contain one of the following:
     Connect to the {{site.data.keyword.dv_short}} instance `<database_server_name>` with an IBMid/password by running the following command at the CLP command prompt or script:
 
     `CONNECT TO <database_server_name> USER <IBMid> USING <password>`
-<!-- For more details about connecting to a {{site.data.keyword.dv_short}} instance with CLP, see: [CONNECT (type 2) statement](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:external}.  -->
 
 #### CLPPLUS
 {: #iam_clpplus}
@@ -214,7 +198,6 @@ The CLPPLUS CONNECT statement can contain one of the following:
 
     `connect <IBMid>/<password>@<data_source_name>`
 
-<!-- For more details about connecting to DSN aliases with CLPPLUS, see: [DSN aliases in CLPPlus](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.clpplus.doc/doc/c0057148.html){:external}. -->
 
 ### JDBC
 {: #jdbc}

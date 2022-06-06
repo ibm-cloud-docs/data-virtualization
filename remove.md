@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021
-lastupdated: "2021-10-20"
+  years: 2021, 2022
+lastupdated: "2022-06-06"
 
 subcollection: data-virtualization
 
@@ -12,12 +12,12 @@ keywords: deprovision data-virtualization, deprovisioning parameters, delete
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:external .external}
+{:external: target="_blank" .external}
 {:codeblock: .codeblock}
 {:pre: .pre}
 {:screen: .screen}
 {:tip: .tip}
-{:important .important}
+{:important: .important}
 
 
 # Deleting your deployment and removing your data
@@ -27,10 +27,14 @@ keywords: deprovision data-virtualization, deprovisioning parameters, delete
 
 The deployment stays in the "soft-delete" state for up to 3 days before it's fully deleted {{site.data.keyword.cloud_notm}}.  If your instance has not yet been fully deleted, you can re-enable the existing soft-deleted instance.
 
-## Deleting your deployment in the user interface 
+## Deleting your deployment in the user interface
+{: #deprovisioning_ui}
+ 
 To delete your deployment instance from the Resource list section dashboard of the IBM Cloud dashboard, select your deployment. Next, using the menu icon, choose `Delete` from the dropdown list. 
 
 ## Deleting your deployment by using the CLI
+{: #deprovisioning_using_cli}
+
 You can delete your existing {{site.data.keyword.dv_short}} instance through the CLI with the [`ibmcloud resource service-instance-delete`](https://cloud.ibm.com/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instance_delete) command:
 ```
 ibmcloud resource service-instance-delete my-service-instance
@@ -41,6 +45,7 @@ Using the `ibmcloud resource reclamation-delete` command deletes a reclaimed res
 {: .note}
 
 ## Cryptoshredding keys
+{: #cryptoshredding_keys}
 
 {{site.data.keyword.keymanagementserviceshort}} provides for a [force delete](/docs/key-protect?topic=key-protect-delete-keys) of a key that is in use by {{site.data.keyword.cloud}} services, including your {{site.data.keyword.databases-for}} deployments. This action is called cryptoshredding. 
 
@@ -48,6 +53,7 @@ Cryptoshredding is a destructive action. When the key is deleted, your data is u
 {: .important}
 
 ## Removing backups
+{: #removing_backups}
 
 Backups cannot be manually deleted. However, if you delete your deployment, its backups are deleted automatically within 30 days. 
 
