@@ -66,21 +66,22 @@ A description of the common fields for an Activity Tracker event is on the [Even
 
 The following table lists the events that get sent to Activity Tracker from {{site.data.keyword.dv_short}} deployments:
 
-| Action                           | Procedure                        | Description                        |
+| Action                           | Procedure / Function             | Description                        |
 |----------------------------------|----------------------------------|------------------------------------|
 | data-virtualization.ccid.update| UPDATECCID | Update the CCID of all connection |
 | data-virtualization.CIDs-for-virtual-table.list | RETRIEVECIDSFORVIRTUALTABLES | Retrieve the CID information for Virtual Tables |
 | data-virtualization.config.delete| DELETEDEFAULTCATALOGGUID, SETCATALOGPUBLISHSERVICE | Delete the DEFAULT_CATALOG_GUID value or the CATALOG_PUBLISH_SERVICE_ID and CATALOG_PUBLISH_SERVICE_API_KEY values|
-| data-virtualization.config.update| TOGGLECONFIGAPIS, TOGGLEWKCPOLICYENFORCEMENT,  TOGGLESTRICTFLAG, SETDEFAULTCATALOGGUID | Toggle the key value in the INSTANCE_INFO table  |
+| data-virtualization.config.update| TOGGLECONFIGAPIS, TOGGLEWKCPOLICYENFORCEMENT, SETWKCPEPCACHECONFIG, TOGGLESTRICTFLAG, TOGGLEVAULTFORREMOTEAGENT, SETDEFAULTCATALOGGUID | Toggle or update the key value in the INSTANCE_INFO table  |
 | data-virtualization.config-data.restore| RESTORECONFIG | Restore config data  |
 | data-virtualization.config-properties10.update| SETCONFIGPROPERTIES | Set up to 10 configuration properties  |
 | data-virtualization.config-propertiy.update| SETCONFIGPROPERTY | Set a configuration property  |
 | data-virtualization.connector-config-hash.create| GENERATECONFIGHASH | Generate the configuration |
 | data-virtualization.constellation.create | DEFINE_CONSTELLATION | Define a Constellation |
-| data-virtualization.COS-connection-status.get | OBJSTORE_CONNECTIONS | Get the Object Connection details | 
+| data-virtualization.COS-connection-status.get | GETCOSCONNECTIONSTATUS | Get the COS Connection status | 
 | data-virtualization.data-source-connection.create | SETRDBCX | Define a new data source connection |
 | data-virtualization.data-source-connection.delete | REMOVERDBCX | Remove a data source connection  |
 | data-virtualization.encrypted-config.update| SETCATALOGPUBLISHSERVICE | Encrypt and set the CATALOG_PUBLISH_SERVICE_ID and CATALOG_PUBLISH_SERVICE_API_KEY values |
+| data-virtualization.decrypted-config.get | GETCATALOGPUBLISHSERVICEID, GETCATALOGPUBLISHSERVICEAPIKEY | Get the decrypted key value of CATALOG_PUBLISH_SERVICE_ID and CATALOG_PUBLISH_SERVICE_API_KEY | 
 | data-virtualization.execution-info.get| GETEXECUTIONINFO | Return a String with execution details for a query  |
 | data-virtualization.jdbc-url.get| BUILDURLANDDRIVER | Generate the JDBC URL and JDBC Driver string |
 | data-virtualization.logged-queries.get| GETLOGGEDQUERIES | Get a resultset mapping query IDs to the query text |
@@ -91,7 +92,7 @@ The following table lists the events that get sent to Activity Tracker from {{si
 | data-virtualization.performance-metrics.get| GETPERFORMANCE | Get the performance metrics |
 | data-virtualization.query-stats-cache.backup| ARCHIVEQUERYSTATS |  Archive the content of the DVSYS.QUERYSTATS view |
 | data-virtualization.RCAC-on-catalog-tables.update| TOGGLE_RCAC_ON_CATALOG_TABLES | Enable/disable row access control on Db2 catalog tables  |
-| data-virtualization.remote-gaian-node.update| UPDATEREMOTECONNECTOR | Upgrade the remote connectors |
+| data-virtualization.remote-gaian-node.update| UPDATEREMOTECONNECTOR, UPDATEREMOTECACERT | Upgrade the remote connectors or certificate |
 | data-virtualization.table.delete| DROPTABLE | Remove a table |
 | data-virtualization.table-statistics.create | COLLECT_STATISTICS| Gather statistics on a virtualized table | 
 | data-virtualization.virtualized-file.create| VIRTUALIZEFILE | Virtualize a table  from a file |
