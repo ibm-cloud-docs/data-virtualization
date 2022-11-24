@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2021-12-06"
+lastupdated: "2022-11-24"
 
 keywords: provision cloud database, provisioning parameters, data virtualization
 
@@ -71,7 +71,7 @@ To create a {{site.data.keyword.databases-for}} deployment, you use the CLI to r
 
 Run the following command template:
 
-```
+```sh
 ibmcloud resource service-instance-create <service-name> <service-id> <service-plan-id> <region> --service-endpoints <SERVICE_ENDPOINTS_TYPE>
 ```
 {: codeblock}
@@ -80,7 +80,7 @@ More general information about this command is available in the CLI reference fo
 
 When the command is run, the database deployment begins. The database takes some time to deploy. You can check on its progress on your {{site.data.keyword.cloud_notm}} dashboard or you can run the following command:
 
-```
+```sh
 ibmcloud resource service-instance-create <service-name>
 ```
 {: codeblock}
@@ -93,7 +93,7 @@ This command reports the current state of the service instance.
 The `--service-endpoints` flag allows you to specify which types of service endpoints to include in your deployment. Its default is that connections to your deployment can be made from the public network. Possible values are `public`, `private`, `public-and-private`. If the flag is omitted, the default is a `public` endpoint.
 
 The following example command specifies a service endpoint:
-```
+```sh
 ibmcloud resource service-instance-create <service-name> --service-endpoints <endpoint-type>
 ```
 {: codeblock}
@@ -111,7 +111,7 @@ You can provision new deployments by using the Resource Controller API. However,
 
 After you have all of the information, the following create request is a `POST` to the `https://resource-controller.cloud.ibm.com/v2/resource_instances` endpoint:
 
-```
+```sh
 curl -X POST \
   https://resource-controller.cloud.ibm.com/v2/resource_instances \
   -H 'Authorization: Bearer <>' \
@@ -134,8 +134,7 @@ More information on the Resource Controller API is found in its API Reference.
 
 Follow these steps to provision {{site.data.keyword.dv_short}} for Cloud Pak for Data as a Service.
 
-1. If necessary, upgrade your IBM Cloud account to Pay-as-you-go. For more information, see [Upgrading your account
-](https://cloud.ibm.com/docs/account?topic=account-upgrading-account).
+1. If necessary, upgrade your IBM Cloud account to Pay-as-you-go. For more information, see [Upgrading your account](https://cloud.ibm.com/docs/account?topic=account-upgrading-account).
 1. From the Cloud Pak for Data as a Service console, go to **Services** > **Services catalog**.
 1. Select **Watson Query** and choose a service plan.
 

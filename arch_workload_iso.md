@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2021-11-30"
+lastupdated: "2022-11-24"
 
 keywords: public isolation for Watson Query and Watson Query, compute isolation for Data Virtualization, Data Virtualization architecture, workload isolation in Data Virtualization
 
