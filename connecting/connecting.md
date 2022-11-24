@@ -42,14 +42,15 @@ Before attempting to connect to your {{site.data.keyword.dv_short}} instance, ve
 
 - Configure your environment
 
-  - Add entries to the driver configuration file, `db2dsdriver.cfg`, for your database.
-  - Secure Sockets Layer (SSL)
+   - Add entries to the driver configuration file, `db2dsdriver.cfg`, for your database.
+   - Secure Sockets Layer (SSL)
 
-    Connection details, such as which port to use and the connection string, depend on whether you use SSL connections. SSL is the default connection method.
+   Connection details, such as which port to use and the connection string, depend on whether you use SSL connections. SSL is the default connection method.
 
-    To use SSL connections, you need a CA certificate:
-    - If you use the most recent {{site.data.keyword.dv_short}} driver package, the certificate file is bundled with the package and is used for connections.
-    - If you use the IBM Data Server Driver Package, you can download the SSL certificate from the {{site.data.keyword.dv_short}} web console.
+   To use SSL connections, you need a CA certificate:
+
+   - If you use the most recent {{site.data.keyword.dv_short}} driver package, the certificate file is bundled with the package and is used for connections.
+   - If you use the IBM Data Server Driver Package, you can download the SSL certificate from the {{site.data.keyword.dv_short}} web console.
 
 - Confirm that ports are available
 

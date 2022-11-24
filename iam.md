@@ -206,73 +206,73 @@ Type 4 JDBC Driver is supported for IAM authentication.
 
 The following examples show connection snippets for the three methods:
 
-**Access token**
+#### Access token
 
-  ```sh
-  DB2SimpleDataSource dataSource;
+```sh
+DB2SimpleDataSource dataSource;
 
-  dataSource.setDriverType( 4 );
-  dataSource.setDatabaseName( "BLUDB" );
-  dataSource.setServerName( "<host_name_or_IP_address>" );
-  dataSource.setPortNumber( 50001 );
-  dataSource.setSecurityMechanism( com.ibm.db2.jcc.DB2BaseDataSource.PLUGIN_SECURITY );
-  dataSource.setPluginName( "IBMIAMauth" );
-  dataSource.setAccessToken( "<access_token>" );
-  Connection conn = dataSource.getConnection( );
-  ```
-  {: codeblock}
+dataSource.setDriverType( 4 );
+dataSource.setDatabaseName( "BLUDB" );
+dataSource.setServerName( "<host_name_or_IP_address>" );
+dataSource.setPortNumber( 50001 );
+dataSource.setSecurityMechanism( com.ibm.db2.jcc.DB2BaseDataSource.PLUGIN_SECURITY );
+dataSource.setPluginName( "IBMIAMauth" );
+dataSource.setAccessToken( "<access_token>" );
+Connection conn = dataSource.getConnection( );
+```
+{: codeblock}
 
-  or
+or
 
-  ```sh
-  Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:accessToken=<access_token>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
-  ```
-  {: codeblock}
+```sh
+Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:accessToken=<access_token>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
+```
+{: codeblock}
 
-**API key**
+#### API key
 
-  ```sh
-  DB2SimpleDataSource dataSource;
+```sh
+DB2SimpleDataSource dataSource;
 
-  dataSource.setDriverType( 4 );
-  dataSource.setDatabaseName( "BLUDB" );
-  dataSource.setServerName( "<host_name_or_IP_address>" );
-  dataSource.setPortNumber( 50001 );
-  dataSource.setSecurityMechanism( com.ibm.db2.jcc.DB2BaseDataSource.PLUGIN_SECURITY );
-  dataSource.setPluginName( "IBMIAMauth" );
-  dataSource.setApiKey( "<api_key>" );
-  Connection conn = dataSource.getConnection( );
-  ```
-  {: codeblock}
+dataSource.setDriverType( 4 );
+dataSource.setDatabaseName( "BLUDB" );
+dataSource.setServerName( "<host_name_or_IP_address>" );
+dataSource.setPortNumber( 50001 );
+dataSource.setSecurityMechanism( com.ibm.db2.jcc.DB2BaseDataSource.PLUGIN_SECURITY );
+dataSource.setPluginName( "IBMIAMauth" );
+dataSource.setApiKey( "<api_key>" );
+Connection conn = dataSource.getConnection( );
+```
+{: codeblock}
 
-  or
+or
 
-  ```sh
-  Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:apiKey=<api_key>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
-  ```
-  {: codeblock}
+```sh
+Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:apiKey=<api_key>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
+```
+{: codeblock}
 
-**IBMid/password**
+#### IBMid/password
 
-  ```sh
-  DB2SimpleDataSource dataSource;
+```sh
+DB2SimpleDataSource dataSource;
 
-  dataSource.setDriverType( 4 );
-  dataSource.setDatabaseName( "BLUDB" );
-  dataSource.setServerName( "<host_name_or_IP_address>" );
-  dataSource.setPortNumber( 50001 );
-  dataSource.setSecurityMechanism( com.ibm.db2.jcc.DB2BaseDataSource.PLUGIN_SECURITY );
-  dataSource.setPluginName( "IBMIAMauth" );
-  Connection conn = dataSource.getConnection( "<IBMid>", "<password>" );
-  ```
-  {: codeblock}
+dataSource.setDriverType( 4 );
+dataSource.setDatabaseName( "BLUDB" );
+dataSource.setServerName( "<host_name_or_IP_address>" );
+dataSource.setPortNumber( 50001 );
+dataSource.setSecurityMechanism( com.ibm.db2.jcc.DB2BaseDataSource.PLUGIN_SECURITY );
+dataSource.setPluginName( "IBMIAMauth" );
+Connection conn = dataSource.getConnection( "<IBMid>", "<password>" );
+```
+{: codeblock}
 
-  or
+or
 
-  ```sh
-  Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:user=<IBMid>;password=<password>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
-  ```
-  {: codeblock}
+```sh
+Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:user=<IBMid>;password=<password>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
+```
+{: codeblock}
 
 ## Console user experience
 {: #console-ux}
@@ -305,40 +305,40 @@ The {{site.data.keyword.dv_short}} REST API was enhanced to also accept an IAM a
 
 * To add a new IBMid user, run the following example API call:
 
-  ```sh
-  curl --tlsv1.2 "https://<IPaddress>/dbapi/v3/users" -H "Authorization: Bearer <access_token>" -H "accept: application/json" -H "Content-Type: application/json" -d "{"id":"<userid>","ibmid":"<userid>@<email_address_domain>","role":"bluadmin","locked":"no","iam":true}"
-  ```
-  {: codeblock}
+```sh
+curl --tlsv1.2 "https://<IPaddress>/dbapi/v3/users" -H "Authorization: Bearer <access_token>" -H "accept: application/json" -H "Content-Type: application/json" -d "{"id":"<userid>","ibmid":"<userid>@<email_address_domain>","role":"bluadmin","locked":"no","iam":true}"
+```
+{: codeblock}
 
-  The userid value for `"id"` cannot match the full email ID. It can match the first part of the email ID, but that is not necessary. The two different IDs are not linked together in any way. For example, if your `"ibmid"` is `abc@us.ibm.com`, then you could specify `abc` as the ID, or you could specify `def` for example, but you cannot specify `abc@us.ibm.com`.
-  {: note}
+The userid value for `"id"` cannot match the full email ID. It can match the first part of the email ID, but that is not necessary. The two different IDs are not linked together in any way. For example, if your `"ibmid"` is `abc@us.ibm.com`, then you could specify `abc` as the ID, or you could specify `def` for example, but you cannot specify `abc@us.ibm.com`.
+{: note}
 
 * To migrate an existing non-IBMid database user (for example, `abcuser`) and make them an IBMid user, first delete the non-IBMid user ID by running the following example API call:
 
-  ```sh
-  curl --tlsv1.2 -X DELETE "https://<IPaddress>/dbapi/v3/users/abcuser" -H "Authorization: Bearer <access_token>" -H "accept: application/json" -H "Content-Type: application/json"
-  ```
-  {: codeblock}
+```sh
+curl --tlsv1.2 -X DELETE "https://<IPaddress>/dbapi/v3/users/abcuser" -H "Authorization: Bearer <access_token>" -H "accept: application/json" -H "Content-Type: application/json"
+```
+{: codeblock}
 
-  Next, re-add the user with an IBMid that is the same as the previous user ID (`abcuser`) by running the following example API call:
+Next, re-add the user with an IBMid that is the same as the previous user ID (`abcuser`) by running the following example API call:
 
-  ```sh
-  curl --tlsv1.2 "https://<IPaddress>/dbapi/v3/users" -H "Authorization: Bearer <access_token>" -H "accept: application/json" -H "Content-Type: application/json" -d "{"id":"abcuser","ibmid":"abcuser@<email_address_domain>","role":"bluadmin","locked":"no","iam":true}"
-  ```
-  {: codeblock}
+```sh
+curl --tlsv1.2 "https://<IPaddress>/dbapi/v3/users" -H "Authorization: Bearer <access_token>" -H "accept: application/json" -H "Content-Type: application/json" -d "{"id":"abcuser","ibmid":"abcuser@<email_address_domain>","role":"bluadmin","locked":"no","iam":true}"
+```
+{: codeblock}
 
-  Because the user ID (`abcuser`) remains the same for the new IBMid for that user, the granted database permissions for the user remain unchanged. If a list of existing non-IBMid database users needs to be migrated to make them IBMid users, you are required to run the previous pair of API calls for each user.
+Because the user ID (`abcuser`) remains the same for the new IBMid for that user, the granted database permissions for the user remain unchanged. If a list of existing non-IBMid database users needs to be migrated to make them IBMid users, you are required to run the previous pair of API calls for each user.
 
 * To add many new IBMid users at one time, create a batch file that lists the following example API calls, one for each user:
 
-  ```sh
-  curl --tlsv1.2 "https://<IPaddress>/dbapi/v3/users" -H "Authorization: Bearer <access_token>" -H "accept: application/json" -H "Content-Type: application/json" -d "{"id":"<userid1>","ibmid":"<userid1>@<email_address_domain>","role":"bluadmin","locked":"no","iam":true}"
-  curl --tlsv1.2 "https://<IPaddress>/dbapi/v3/users" -H "Authorization: Bearer <access_token>" -H "accept: application/json" -H "Content-Type: application/json" -d "{"id":"<userid2>","ibmid":"<userid2>@<email_address_domain>","role":"bluadmin","locked":"no","iam":true}"
-  .
-  .
-  .
-  ```
-  {: codeblock}
+```sh
+curl --tlsv1.2 "https://<IPaddress>/dbapi/v3/users" -H "Authorization: Bearer <access_token>" -H "accept: application/json" -H "Content-Type: application/json" -d "{"id":"<userid1>","ibmid":"<userid1>@<email_address_domain>","role":"bluadmin","locked":"no","iam":true}"
+curl --tlsv1.2 "https://<IPaddress>/dbapi/v3/users" -H "Authorization: Bearer <access_token>" -H "accept: application/json" -H "Content-Type: application/json" -d "{"id":"<userid2>","ibmid":"<userid2>@<email_address_domain>","role":"bluadmin","locked":"no","iam":true}"
+.
+.
+.
+```
+{: codeblock}
 
 For more details about {{site.data.keyword.dv_short}} REST APIs, see[REST APIs](https://cloud.ibm.com/apidocs/data-virtualization){: external}.
 
