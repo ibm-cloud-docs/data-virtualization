@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2021-04-28"
+lastupdated: "2022-11-24"
 
 keywords: 
 
@@ -71,7 +71,7 @@ The following methods can be used for IAM authentication:
 
 An access token can be obtained from the IAM service directly by the application through the REST API by using an API key. For more information, see: [Getting an {{site.data.keyword.Bluemix_notm}} IAM token by using an API key](/docs/account?topic=account-iamtoken_from_apikey){: external}. The access token has a default validity period of 60 minutes before it expires. If the token has expired, the Db2 server won't allow the connection to be established. The token isn’t checked for expiry after the connection is established. Just as it was before IAM integration, the connection stays connected until the application disconnects or the connection is terminated due to other reasons.
 
-```
+```sh
 curl -k -X POST \
   --header "Content-Type: application/x-www-form-urlencoded" \
   --header "Accept: application/json" \
@@ -108,7 +108,7 @@ The following database client interfaces are supported:
 
 For an ODBC application or a command-line client (CLP, CLPPLUS) to connect to a Db2 server by using IAM authentication, a data source name (DSN) needs to be configured first in a `db2dsdriver.cfg` configuration file by running the following command:
 
-```
+```sh
 db2cli writecfg add -dsn <dsn_alias> -database <database_name> -host <host_name_or_IP_address> -port 50001 -parameter "Authentication=GSSPLUGIN;SecurityTransportMode=SSL"
 ```
 {: codeblock}
@@ -117,7 +117,7 @@ The `db2dsdriver.cfg` configuration file is an XML file, typically located in th
 
 The following example of a `db2dsdriver.cfg` configuration file shows the configurations that are used to establish a connection to a database service instance. The configuration file provides the DSN alias, the database name, the host name (or IP address), and the **Authentication** type and **SecurityTransportMode** parameter values:
 
-```
+```sh
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <configuration>
         <dsncollection>
@@ -138,15 +138,15 @@ The following example of a `db2dsdriver.cfg` configuration file shows the config
 
 The ODBC connection string can contain one of the following:
 
-  - **Access token**
+- **Access token**
 
     `DSN=<dsn>;ACCESSTOKEN=<access_token>`
 
-  - **API key**
+- **API key**
 
     `DSN=<dsn>;APIKEY=<api_key>`
 
-  - **IBMid/password**
+- **IBMid/password**
     
     `DSN=<dsn>;UID=<ibmid>;PWD=<password>`
 
@@ -157,19 +157,19 @@ For ODBC, the **AUTHENTICATION=GSSPLUGIN** can be specified in either the `db2ds
 
 The CLP CONNECT statement can contain one of the following:
 
-  - **Access token**
+- **Access token**
 
     Connect to the {{site.data.keyword.dv_short}} instance `<database_server_name>` and pass the access token by running the following command at the CLP command prompt or script:
 
     `CONNECT TO <database_server_name> ACCESSTOKEN <access_token_string>`
 
-  - **API key**
+- **API key**
 
     Connect to the {{site.data.keyword.dv_short}} instance `<database_server_name>` with an API key by running the following command at the CLP command prompt or script:
 
     `CONNECT TO <database_server_name> APIKEY <api-key-string>`
 
-  - **IBMid/password**
+- **IBMid/password**
 
     Connect to the {{site.data.keyword.dv_short}} instance `<database_server_name>` with an IBMid/password by running the following command at the CLP command prompt or script:
 
@@ -180,19 +180,19 @@ The CLP CONNECT statement can contain one of the following:
 
 The CLPPLUS CONNECT statement can contain one of the following:
 
-  - **Access token**
+- **Access token**
 
     Connect to the DSN alias (`@<data_source_name>`) and pass the access token by running the following command at the CLPPLUS command prompt or script:
 
     `connect @<data_source_name> using(accesstoken <access_token_string>)`
 
-  - **API key**
+- **API key**
 
     Connect to the DSN alias (`@<data_source_name>`) with an API key by running the following command at the CLPPLUS command prompt or script:
 
     `connect @<data_source_name> using(apikey <api-key-string>)`
 
-  - **IBMid/password**
+- **IBMid/password**
 
     Connect to the DSN alias (`@<data_source_name>`) with an IBMid/password by running the following command at the CLPPLUS command prompt or script:
 
@@ -206,9 +206,9 @@ Type 4 JDBC Driver is supported for IAM authentication.
 
 The following examples show connection snippets for the three methods:
 
-- **Access token**
+**Access token**
 
-  ```
+  ```sh
   DB2SimpleDataSource dataSource;
 
   dataSource.setDriverType( 4 );
@@ -224,14 +224,14 @@ The following examples show connection snippets for the three methods:
 
   or
 
-  ```
+  ```sh
   Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:accessToken=<access_token>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
   ```
   {: codeblock}
 
-- **API key**
+**API key**
 
-  ```
+  ```sh
   DB2SimpleDataSource dataSource;
 
   dataSource.setDriverType( 4 );
@@ -247,14 +247,14 @@ The following examples show connection snippets for the three methods:
 
   or
 
-  ```
+  ```sh
   Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:apiKey=<api_key>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
   ```
   {: codeblock}
 
-- **IBMid/password**
+**IBMid/password**
 
-  ```
+  ```sh
   DB2SimpleDataSource dataSource;
 
   dataSource.setDriverType( 4 );
@@ -269,7 +269,7 @@ The following examples show connection snippets for the three methods:
 
   or
 
-  ```
+  ```sh
   Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:user=<IBMid>;password=<password>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
   ```
   {: codeblock}
@@ -305,7 +305,7 @@ The {{site.data.keyword.dv_short}} REST API was enhanced to also accept an IAM a
 
 * To add a new IBMid user, run the following example API call:
 
-  ```
+  ```sh
   curl --tlsv1.2 "https://<IPaddress>/dbapi/v3/users" -H "Authorization: Bearer <access_token>" -H "accept: application/json" -H "Content-Type: application/json" -d "{"id":"<userid>","ibmid":"<userid>@<email_address_domain>","role":"bluadmin","locked":"no","iam":true}"
   ```
   {: codeblock}
@@ -315,14 +315,14 @@ The {{site.data.keyword.dv_short}} REST API was enhanced to also accept an IAM a
 
 * To migrate an existing non-IBMid database user (for example, `abcuser`) and make them an IBMid user, first delete the non-IBMid user ID by running the following example API call:
 
-  ```
+  ```sh
   curl --tlsv1.2 -X DELETE "https://<IPaddress>/dbapi/v3/users/abcuser" -H "Authorization: Bearer <access_token>" -H "accept: application/json" -H "Content-Type: application/json"
   ```
   {: codeblock}
 
   Next, re-add the user with an IBMid that is the same as the previous user ID (`abcuser`) by running the following example API call:
 
-  ```
+  ```sh
   curl --tlsv1.2 "https://<IPaddress>/dbapi/v3/users" -H "Authorization: Bearer <access_token>" -H "accept: application/json" -H "Content-Type: application/json" -d "{"id":"abcuser","ibmid":"abcuser@<email_address_domain>","role":"bluadmin","locked":"no","iam":true}"
   ```
   {: codeblock}
@@ -331,7 +331,7 @@ The {{site.data.keyword.dv_short}} REST API was enhanced to also accept an IAM a
 
 * To add many new IBMid users at one time, create a batch file that lists the following example API calls, one for each user:
 
-  ```
+  ```sh
   curl --tlsv1.2 "https://<IPaddress>/dbapi/v3/users" -H "Authorization: Bearer <access_token>" -H "accept: application/json" -H "Content-Type: application/json" -d "{"id":"<userid1>","ibmid":"<userid1>@<email_address_domain>","role":"bluadmin","locked":"no","iam":true}"
   curl --tlsv1.2 "https://<IPaddress>/dbapi/v3/users" -H "Authorization: Bearer <access_token>" -H "accept: application/json" -H "Content-Type: application/json" -d "{"id":"<userid2>","ibmid":"<userid2>@<email_address_domain>","role":"bluadmin","locked":"no","iam":true}"
   .

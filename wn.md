@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2020-10-31"
+lastupdated: "2022-11-24"
 
 keywords: data virtualization, release notes, data virtualization updates
 
@@ -18,6 +18,11 @@ subcollection: data-virtualization
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.dv_short}}, ordered by date.
 {: shortdesc}
+
+## 24 June 2021
+{: #june-update}
+
+IBM Watson Query is now live!
 
 ## 26 April 2021
 {: #april-update}
