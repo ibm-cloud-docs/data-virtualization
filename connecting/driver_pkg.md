@@ -205,7 +205,8 @@ Before attempting to connect to your {{site.data.keyword.dv_short}} instance, ve
 
    The configuration steps are different depending on whether you want to connect to your database by using SSL:
 
-   **With SSL**
+#### With SSL
+{: #with_ssl}
 
    To connect your applications and tools to your database by using SSL, enter the following commands in a command shell on Linux operating systems, at the Windows command prompt, or in a DB2 command window: 
 
@@ -221,7 +222,8 @@ Before attempting to connect to your {{site.data.keyword.dv_short}} instance, ve
    - `<alias>` is an alias that you choose. The alias cannot be the same as the database name, `BLUDB`. If you want to have spaces in the alias, surround the alias with double quotation marks.
    - `<port>` is the port number assigned to your server.
 
-   **Without SSL**
+#### Without SSL
+{: #without_ssl}
 
    To connect your applications and tools to your database without using SSL, enter the following commands in a command shell on Linux operating systems, at the Windows command prompt, or in a DB2 command window: 
 
