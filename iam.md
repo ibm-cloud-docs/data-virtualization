@@ -207,6 +207,7 @@ Type 4 JDBC Driver is supported for IAM authentication.
 The following examples show connection snippets for the three methods:
 
 #### Access token
+{: #access_token}
 
 ```sh
 DB2SimpleDataSource dataSource;
@@ -230,6 +231,7 @@ Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_addr
 {: codeblock}
 
 #### API key
+{: #api_key}
 
 ```sh
 DB2SimpleDataSource dataSource;
@@ -253,6 +255,7 @@ Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_addr
 {: codeblock}
 
 #### IBMid/password
+{: #ibmid_password}
 
 ```sh
 DB2SimpleDataSource dataSource;

@@ -197,7 +197,8 @@ To establish a VPN connection to your cloud database behind a public endpoint, [
 
    **Optional** (change only if the following default values are not suitable):
 
-   #### IKE/ISAKMP Parameters (Phase I)
+#### IKE/ISAKMP Parameters (Phase I)
+{: #parms_phase_i}
 
    - **Encryption Method**: IKEv1
    - **IKE Encryption / Encryption Algorithm**: AES-256
@@ -205,7 +206,8 @@ To establish a VPN connection to your cloud database behind a public endpoint, [
    - **DH-Group**: Group 5
    - **Security Association Lifetime (seconds)**: 1d (86400 seconds)
 
-   #### IPSec Parameters (Phase II)
+#### IPSec Parameters (Phase II)
+{: #parms_phase_ii}
 
    - **IPSec Encryption / Encryption Algorithm**: AES-256
    - **Authentication Algorithm**: SHA1
