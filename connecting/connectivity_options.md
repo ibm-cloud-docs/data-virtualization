@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-06-06"
+lastupdated: "2022-11-24"
 
 keywords:
 
@@ -101,7 +101,7 @@ The "cli" section contains information that is suited for connecting with `{{sit
 
 The following VCAP Services json file can be used to make connections to your Enterprise plan database instances:
 
-```
+```sh
 {
   "apikey": "<apikey>",
   "connection": {
@@ -182,35 +182,37 @@ The following VCAP Services json file can be used to make connections to your En
 
 To establish a VPN connection to your cloud database behind a public endpoint, [create an {{site.data.keyword.cloud_notm}} Support case](https://cloud.ibm.com/unifiedsupport/cases/add){: external} that includes the following details:
 
-* **Type of support**: Technical 
-* **Category**: Databases 
-* **Offering**: select your {{site.data.keyword.dv_short}} instance 
-* **Subject**: VPN Connection Request 
-* **Description**: provide the following required information
-  * **Customer-side VPN Peer Address** (your VPN endpoint): `<IP Address>`
-  * **Customer-side Encryption Domain** (be specific about what is required – 10.0.0.0/8 is unworkable because 10 addressing is also used within the {{site.data.keyword.cloud_notm}} for back-end services): `<Domain>`
-  * **Customer-side VPN Hardware & Version**: `<Hardware and Version number>`
-  * **Customer-side VPN Contact** (technical contact name and email address): 
-    * `<Name>` 
-    * `<Title>` 
-    * `<Email Address>`
+- **Type of support**: Technical 
+- **Category**: Databases 
+- **Offering**: select your {{site.data.keyword.dv_short}} instance 
+- **Subject**: VPN Connection Request 
+- **Description**: provide the following required information
+   - **Customer-side VPN Peer Address** (your VPN endpoint): `<IP Address>`
+   - **Customer-side Encryption Domain** (be specific about what is required – 10.0.0.0/8 is unworkable because 10 addressing is also used within the {{site.data.keyword.cloud_notm}} for back-end services): `<Domain>`
+   - **Customer-side VPN Hardware & Version**: `<Hardware and Version number>`
+   - **Customer-side VPN Contact** (technical contact name and email address): 
+     - `<Name>` 
+     - `<Title>` 
+     - `<Email Address>`
 
-  **Optional** (change only if the following default values are not suitable):
+   **Optional** (change only if the following default values are not suitable):
 
-  *IKE/ISAKMP Parameters (Phase I)*
+#### IKE/ISAKMP Parameters (Phase I)
+{: #parms_phase_i}
 
-  * **Encryption Method**: IKEv1
-  * **IKE Encryption / Encryption Algorithm**: AES-256
-  * **Authentication Algorithm**: SHA1
-  * **DH-Group**: Group 5
-  * **Security Association Lifetime (seconds)**: 1d (86400 seconds)
+   - **Encryption Method**: IKEv1
+   - **IKE Encryption / Encryption Algorithm**: AES-256
+   - **Authentication Algorithm**: SHA1
+   - **DH-Group**: Group 5
+   - **Security Association Lifetime (seconds)**: 1d (86400 seconds)
 
-  *IPSec Parameters (Phase II)*
+#### IPSec Parameters (Phase II)
+{: #parms_phase_ii}
 
-  * **IPSec Encryption / Encryption Algorithm**: AES-256
-  * **Authentication Algorithm**: SHA1
-  * **DH-Group** (if using PF-Secrecy): Group 5
-  * **Security Association Lifetime (seconds)**: 3600 seconds
+   - **IPSec Encryption / Encryption Algorithm**: AES-256
+   - **Authentication Algorithm**: SHA1
+   - **DH-Group** (if using PF-Secrecy): Group 5
+   - **Security Association Lifetime (seconds)**: 3600 seconds
 
 After receipt of your request, {{site.data.keyword.cloud_notm}} technicians will open the appropriate firewall ports and allowlist the provided IP address. Communication and resolution to the request will be made through the {{site.data.keyword.cloud_notm}} Support case ticket.
 

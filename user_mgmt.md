@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-06-06"
+lastupdated: "2022-11-24"
 
 keywords: 
 
@@ -89,22 +89,22 @@ The following table summarizes the {{site.data.keyword.dv_short}} menu functions
 | Virtualization      | Data source	       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      |        |   |   |   |    |    |
 |        | Virtualize       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      |        |   |   |   |    |    |
 |        | My virtualized data	       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)       |![checkmark](images/checkmark.png)   |   |   |    |    |
-| Monitor dashboard      | Summary       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)<sup>1</sup>     | ![checkmark](images/checkmark.png) <sup>1</sup>     | ![checkmark](images/checkmark.png)<sup>1</sup> | |   |    |    | 
-|        | Database->Database partitions       | ![checkmark](images/checkmark.png)<sup>2</sup>       |       |        |   |   |   |    |    |
+| Monitor dashboard      | Summary       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png) 1     | ![checkmark](images/checkmark.png) 1    | ![checkmark](images/checkmark.png) 1 | |   |    |    | 
+|        | Database->Database partitions       | ![checkmark](images/checkmark.png) 2       |       |        |   |   |   |    |    |
 |        | Database->Database time spent       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      |  ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)  |   |   |    |    |
 |        | Database->Database usage       | ![checkmark](images/checkmark.png)       |  ![checkmark](images/checkmark.png)      |   ![checkmark](images/checkmark.png)     |   ![checkmark](images/checkmark.png)|   |   |    |    |
-|        | Statement-> Individual Executions       | ![checkmark](images/checkmark.png)<sup>2</sup>       |       |        |   |   |   |    |    |
+|        | Statement-> Individual Executions       | ![checkmark](images/checkmark.png) 2       |       |        |   |   |   |    |    |
 |        | Statement-> Inflight Executions       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)       |   ![checkmark](images/checkmark.png)     | ![checkmark](images/checkmark.png)  |   |   |    |    |
-|        | Statement-> Package cache       | ![checkmark](images/checkmark.png) <sup>2</sup>      |        |       |   |   |   |    |    |
+|        | Statement-> Package cache       | ![checkmark](images/checkmark.png)  2      |        |       |   |   |   |    |    |
 |        | Statement-> Stored Procedures       | ![checkmark](images/checkmark.png)       |        |       |   |   |   |    |    |
-|        | Applications-> Top Consumers      | ![checkmark](images/checkmark.png)<sup>2</sup>       |        |        |   |   |   |    |    |
+|        | Applications-> Top Consumers      | ![checkmark](images/checkmark.png) 2       |        |        |   |   |   |    |    |
 |        | Applications-> Connections      | ![checkmark](images/checkmark.png)       |   ![checkmark](images/checkmark.png)     |   ![checkmark](images/checkmark.png)     | ![checkmark](images/checkmark.png)  |   |   |    |    |
-|        | Throughput->Connection summary       | ![checkmark](images/checkmark.png)<sup>2</sup>       |        |        |   |   |   |    |    |
-|        | Throughput->Partition summary       | ![checkmark](images/checkmark.png)<sup>2</sup>       |        |        |   |   |   |    |    |
-|        | Throughput->WLM workload summary       | ![checkmark](images/checkmark.png)<sup>2</sup>       |        |        |   |   |   |    |    |
-|        | Throughput->WLM service class summary       | ![checkmark](images/checkmark.png)<sup>2</sup>       |        |        |   |   |   |    |    |
-|        | Throughput->Operating system time spent       | ![checkmark](images/checkmark.png)<sup>2</sup>       |        |        |   |   |   |    |    |
-|        | Throughput->Partition skew       | ![checkmark](images/checkmark.png)<sup>2</sup>       |        |        |   |   |   |    |    |
+|        | Throughput->Connection summary       | ![checkmark](images/checkmark.png) 2      |        |        |   |   |   |    |    |
+|        | Throughput->Partition summary       | ![checkmark](images/checkmark.png) 2       |        |        |   |   |   |    |    |
+|        | Throughput->WLM workload summary       | ![checkmark](images/checkmark.png) 2       |        |        |   |   |   |    |    |
+|        | Throughput->WLM service class summary       | ![checkmark](images/checkmark.png) 2       |        |        |   |   |   |    |    |
+|        | Throughput->Operating system time spent       | ![checkmark](images/checkmark.png) 2       |        |        |   |   |   |    |    |
+|        | Throughput->Partition skew       | ![checkmark](images/checkmark.png) 2       |        |        |   |   |   |    |    |
 |        | I/O->Buffer pools       | ![checkmark](images/checkmark.png)       |   ![checkmark](images/checkmark.png)     | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)  |   |   |    |    |
 |        | I/O->Prefetchers       | ![checkmark](images/checkmark.png)       |![checkmark](images/checkmark.png)        | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)  |   |   |    |    |
 |        | I/O->Logging performance      | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)       |  ![checkmark](images/checkmark.png)      |  ![checkmark](images/checkmark.png) |   |   |    |    |
@@ -126,21 +126,22 @@ The following table summarizes the {{site.data.keyword.dv_short}} menu functions
 |  Settings      | Event monitor profile       | ![checkmark](images/checkmark.png)      |       |      |   |   |   |    |    |
 |       | Monitoring profile     | ![checkmark](images/checkmark.png)      |       |      |   |   |   |    |    |
 |      | Service settings->General       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)      | ![checkmark](images/checkmark.png)      |  ![checkmark](images/checkmark.png)  |    |    |   |    |
-|        | Service settings->Governance       | ![checkmark](images/checkmark.png)<sup>3</sup>       | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)       |![checkmark](images/checkmark.png)   |   |   |    |    |
-|        | Service settings->Scaling       |         |        |        |   | ![checkmark](images/checkmark.png)<sup>4</sup>  | ![checkmark](images/checkmark.png)<sup>4</sup>  | ![checkmark](images/checkmark.png)<sup>4</sup>   |    |
-|        | Service settings->Scaling History       |         |        |        |   | ![checkmark](images/checkmark.png)<sup>4</sup>  | ![checkmark](images/checkmark.png)<sup>4</sup>  | ![checkmark](images/checkmark.png)<sup>4</sup>   | ![checkmark](images/checkmark.png)<sup>4</sup>   |
-|        | Service settings->Access restriction       |         |        |        |   | ![checkmark](images/checkmark.png)<sup>4</sup>  | ![checkmark](images/checkmark.png)<sup>4</sup>  | ![checkmark](images/checkmark.png)<sup>4</sup>   | ![checkmark](images/checkmark.png)<sup>4</sup>   |
+|        | Service settings->Governance       | ![checkmark](images/checkmark.png) 3      | ![checkmark](images/checkmark.png)       | ![checkmark](images/checkmark.png)       |![checkmark](images/checkmark.png)   |   |   |    |    |
+|        | Service settings->Scaling       |         |        |        |   | ![checkmark](images/checkmark.png) 4 | ![checkmark](images/checkmark.png) 4  | ![checkmark](images/checkmark.png) 4   |    |
+|        | Service settings->Scaling History       |         |        |        |   | ![checkmark](images/checkmark.png) 4  | ![checkmark](images/checkmark.png) 4  | ![checkmark](images/checkmark.png) 4   | ![checkmark](images/checkmark.png) 4  |
+|        | Service settings->Access restriction       |         |        |        |   | ![checkmark](images/checkmark.png) 4  | ![checkmark](images/checkmark.png) 4  | ![checkmark](images/checkmark.png) 4 | ![checkmark](images/checkmark.png) 4  |
 {: caption="Table 1. {{site.data.keyword.dv_short}} menu functions that each of the {{site.data.keyword.dv_short}} user roles is able to access" caption-side="top"}
 
-<sup>1</sup> For Engineer, Steward, and User roles, only Responsiveness and Throughput widgets are available on the Summary page.</br>
-<sup>2</sup> For {{site.data.keyword.dv_short}}, only a Manager can access this item.</br>
-<sup>3</sup> Only the Manager role can change the Governance setting.</br>
-<sup>4</sup> A {{site.data.keyword.dv_short}} user is needed.</br>
+1: For Engineer, Steward, and User roles, only Responsiveness and Throughput widgets are available on the Summary page.</br>
+2: For {{site.data.keyword.dv_short}}, only a Manager can access this item.</br>
+3: Only the Manager role can change the Governance setting.</br>
+4: A {{site.data.keyword.dv_short}} user is needed.</br>
 
 
 
 
 #### {{site.data.keyword.dv_short}} permissions
+{: #dv_roles_permissions}
 
 | Roles | Permissions   |
 |---|-----|

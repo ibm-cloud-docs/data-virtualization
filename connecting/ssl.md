@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-06-06"
+lastupdated: "2022-11-24"
 
 keywords:
 
@@ -40,14 +40,14 @@ The IBM [Global Security Kit (GSkit) ships with Db2 release 9.5 and later](https
 
 1. Download the SSL certificate from the web console into a new directory:
 
-   ```
+   ```sh
    db2inst1@macing1:/home/db2inst1> mkdir SSL
    db2inst1@macing1:/home/db2inst1> cd SSL
    db2inst1@macing1:/home/db2inst1/SSL>
    ```
    
 1. Create keystore in the SSL directory. The following example command pertains to Linux:
-   ```
+   ```sh
    gsk8capicmd_64 -keydb -create -db "mykeystore.kdb" -pw "passw0rd" -stash
    ```
    {: codeblock}
@@ -56,13 +56,13 @@ The IBM [Global Security Kit (GSkit) ships with Db2 release 9.5 and later](https
    {: note}
 
 1. Add SSL certificate to the keystore. The following example command pertains to Linux:
-   ```
+   ```sh
    gsk8capicmd_64 -cert -add -db "mykeystore.kdb" -pw "passw0rd" -label ACIBLUDB_SSL -file /home/db2inst1/SSL/DigiCertGlobalRootCA.crt
    ```
    {: codeblock}
 
 1. Update the Db2 database manager. The following example command pertains to Linux: 
-   ```
+   ```sh
    db2 update dbm cfg using SSL_CLNT_KEYDB /home/db2inst1/SSL/mykeystore.kdb
    db2 update dbm cfg using SSL_CLNT_STASH /home/db2inst1/SSL/mykeystore.sth
    ```
@@ -76,23 +76,23 @@ The hostname, port, user_name, and password of the `<BLUDB_database_server>` can
 
 
 1. Catalog the node and database. The following example commands pertain to Linux:
-   ```
+   ```sh
    db2 catalog tcpip node ACICLD_S remote <hostname_of_BLUDB_database_server> server <port_of_BLUDB_database_server> security SSL
    ```
    {: codeblock}
 
-   ```
+   ```sh
    db2 catalog db BLUDB as ACIBLU_S at node ACICLD_S
    ```
    {: codeblock}
 
 1. Connect to your database with an SSL connection. The following example commands pertain to Linux:
-   ```
+   ```sh
    db2 terminate
    ```
    {: codeblock}
 
-   ```
+   ```sh
    db2 connect to ACIBLU_S user <user_name> using <password>
    ```
    {: codeblock}

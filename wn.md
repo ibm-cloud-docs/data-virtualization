@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-06-06"
+lastupdated: "2022-11-24"
 
 keywords: data virtualization, release notes, data virtualization updates
 

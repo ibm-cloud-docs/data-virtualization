@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-06-06"
+lastupdated: "2022-11-24"
 
 keywords:
 
@@ -31,14 +31,14 @@ The {{site.data.keyword.dv_short}} driver package contains software for connecti
 
 - The driver package contains client interface tools, such as CLPPlus.
 - The driver package also contains the following drivers: 
-  - JDBC
-  - Node.js
-  - Ruby
-  - ODBC
-  - CLI
-  - .Net
-  - OLE DB
-  - And more ...
+   - JDBC
+   - Node.js
+   - Ruby
+   - ODBC
+   - CLI
+   - .Net
+   - OLE DB
+   - And more ...
 
 ## Already installed?
 {: #drvr_alrdy_instld}
@@ -126,34 +126,34 @@ Before attempting to connect to your {{site.data.keyword.dv_short}} instance, ve
 
 - **For a new installation**
 
-  1. Mount the disk image by double-clicking the `macos_dsdriver.dmg` file.
+   1. Mount the disk image by double-clicking the `macos_dsdriver.dmg` file.
    
-     A new **Finder** window opens with the contents of the disk image.
+      A new **Finder** window opens with the contents of the disk image.
 
-     If the **Finder** window does not open, double-click the `macos_dsdriver` icon on your desktop.
-  2. In the **Finder** window, double-click the `installDSDriver.sh` file.
+      If the **Finder** window does not open, double-click the `macos_dsdriver` icon on your desktop.
+   2. In the **Finder** window, double-click the `installDSDriver.sh` file.
 
-     The driver package is installed in the default location: `/Applications/dsdriver`.
+      The driver package is installed in the default location: `/Applications/dsdriver`.
 
 - **For updates to your existing driver package installation**
 
-  1. Back up current configuration files:
+   1. Back up current configuration files:
 
-     a. Go the `Applications/dsdriver/cfg` folder.
+      a. Go the `Applications/dsdriver/cfg` folder.
 
-     b. Copy the following files to a different folder: 
+      b. Copy the following files to a different folder: 
     
-        `db2cli.ini`
+         `db2cli.ini`
 
-        `db2dsdriver.cfg`
-  2. Remove the currently installed driver package by right-clicking the `dsdriver` folder and selecting **Move to Trash**.
-  3. Install the new driver package as described in the preceding **For a new installation** section:
+         `db2dsdriver.cfg`
+   2. Remove the currently installed driver package by right-clicking the `dsdriver` folder and selecting **Move to Trash**.
+   3. Install the new driver package as described in the preceding **For a new installation** section:
      
-     a. Mount the disk image by double-clicking the `macos_dsdriver.dmg` file.
-     b. In the **Finder** window, double-click the `installDSDriver.sh` file.
-  4. Restore the configuration files:
+      a. Mount the disk image by double-clicking the `macos_dsdriver.dmg` file.
+      b. In the **Finder** window, double-click the `installDSDriver.sh` file.
+   4. Restore the configuration files:
 
-     Copy the `db2cli.ini` and `db2dsdriver.cfg` files that you saved from Step 1 to the `/Applications/dsdriver/cfg` folder.
+      Copy the `db2cli.ini` and `db2dsdriver.cfg` files that you saved from Step 1 to the `/Applications/dsdriver/cfg` folder.
 
 #### What's next?
 {: #drvr_wn41}
@@ -205,7 +205,8 @@ Before attempting to connect to your {{site.data.keyword.dv_short}} instance, ve
 
    The configuration steps are different depending on whether you want to connect to your database by using SSL:
 
-   **With SSL**
+#### With SSL
+{: #with_ssl}
 
    To connect your applications and tools to your database by using SSL, enter the following commands in a command shell on Linux operating systems, at the Windows command prompt, or in a DB2 command window: 
 
@@ -221,7 +222,8 @@ Before attempting to connect to your {{site.data.keyword.dv_short}} instance, ve
    - `<alias>` is an alias that you choose. The alias cannot be the same as the database name, `BLUDB`. If you want to have spaces in the alias, surround the alias with double quotation marks.
    - `<port>` is the port number assigned to your server.
 
-   **Without SSL**
+#### Without SSL
+{: #without_ssl}
 
    To connect your applications and tools to your database without using SSL, enter the following commands in a command shell on Linux operating systems, at the Windows command prompt, or in a DB2 command window: 
 

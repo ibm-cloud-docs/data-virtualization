@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-06-06"
+lastupdated: "2022-11-24"
 
 subcollection: data-virtualization
 
@@ -36,7 +36,7 @@ To delete your deployment instance from the Resource list section dashboard of t
 {: #deprovisioning_using_cli}
 
 You can delete your existing {{site.data.keyword.dv_short}} instance through the CLI with the [`ibmcloud resource service-instance-delete`](https://cloud.ibm.com/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instance_delete) command:
-```
+```sh
 ibmcloud resource service-instance-delete my-service-instance
 ```
 {: .pre}
@@ -64,6 +64,6 @@ To discover available soft-deleted instances, use the {{site.data.keyword.cloud_
 
 You can then "undelete", recover, or reclaim an available soft-deleted instance by using the {{site.data.keyword.cloud_notm}} CLI [`ibmcloud resource reclamation-restore`](https://cloud.ibm.com/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_reclamation_restore) command.
 
-```
+```sh
 ibmcloud resource reclamation-restore resource_ID
 ```

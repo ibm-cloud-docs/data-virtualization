@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-06-06"
+lastupdated: "2022-11-24"
 
 subcollection: data-virtualization
 
@@ -27,8 +27,6 @@ The following {{site.data.keyword.dv_short}} SDKs are supported by {{site.data.k
 
 * [Go SDK](https://github.com/IBM/data-virtualization-on-cloud-go-sdk/){: external}
 * [Java SDK](https://github.com/IBM/data-virtualization-on-cloud-java-sdk/){: external}
-* [Node.js SDK](https://github.com/IBM/data-virtualization-on-cloud-node-sdk/){: external}
-* [Python SDK](https://github.com/IBM/data-virtualization-on-cloud-python-sdk){: external}
 
 For more information, see [Rest APIs](https://{DomainName}/apidocs/data-virtualization-on-cloud){: external}.
 {: tip}
