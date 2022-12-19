@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-11-24"
+lastupdated: "2022-12-19"
 
 keywords:
 
@@ -52,122 +52,130 @@ The easiest way to connect to your data is by way of the public host name that w
 2. Click **Service credentials**.
 3. Click **New credential**, then click **Add**.
 4. After the credentials are created, click the down arrow beside the credential names to view the credentials.
-5. In the following JSON document example, note the contents of the hostname, port, password, and username fields. You use these four components to make the public endpoint connection:
+5. In the resulting JSON document, you will see the "apikey", which contains the API key that can be used to connect as the generated user. The JSON also contains db2cli, jdbc, and legacy information to connect to the system using a Db2 driver or client of your choosing.
 
-#### Current plans connection string breakdown
+#### Service credentials breakdown
 {: #pub_endpt_current}
 
-##### {{site.data.keyword.dv_short}} section
-{: #pub_db2oc}
-
-The "{{site.data.keyword.dv_short}}" section contains information that is suited to applications that make connections to {{site.data.keyword.dv_short}}.
-
 | Field Name | Index | Description |
 |----------|--------|-----------|
-| `Type` | | Type of connection - "URI" |
-| `Scheme` | | Scheme for a URI - "db2" |
-| `Path` | | Path for a URI - Database name. The default is `bludb`. |
-| `Authentication` | `Username` | The user name that you use to connect |
-| `Authentication` | `Password` | A password for the user |
-| `Authentication` | `Method` | How authentication takes place; "direct" authentication is handled by the driver |
-| `Hosts` | `0...` | A host name and port to connect to |
-| `Composed` | `0...` | A URI combining Scheme, Authentication, Host, and Path |
-| `Certificate` | `Name` | The allocated name for the self-signed certificate for database deployment |
-| `Certificate` | Base64 | A base64 encoded version of the certificate |
-{: caption="Table 1. Db2 on Cloud / URI connection information" caption-side="top"}
+| `apikey` | Type of connection - "URI" |
+| `connection` | Scheme for a URI - "db2" |
+| `iam_apikey_description` | Path for a URI - Database name. The default is `bludb`. |
+| `iam_apikey_name` | The user name that you use to connect |
+| `iam_role_crn` | A password for the user |
+| `iam_serviceid_crn` | How authentication takes place; "direct" authentication is handled by the driver |
+| `instance_administration_api` | A host name and port to connect to |
+{: caption="Table 1. Service Credentials information" caption-side="top"}
+
+
+##### Connection section
+{: #pub_connection}
+
+The "connection" section contains information that is suited to applications that make connections to `{{site.data.keyword.dv_short}}`.
+
+| Field Name |  Description |
+|----------|-----------|
+| `clpplus` | Information for connecting using clpplus |
+| `db2cli` | Information for connecting db2cli |
+| `jdbc`  | Information for connecting using JDBC |
+| `legacy` | Information for connecting using applications that do not support APIKEY or ACCESSTOKEN connectivity |
+{: caption="Table 2. Connection information" caption-side="top"}
 
 `0...` indicates that there might be one or more of these entries in an array.
 
-##### CLI section
-{: #pub_cli}
+#### Example Service Credential JSON
+{: #pub_example_service_cred}
 
-The "cli" section contains information that is suited for connecting with `{{site.data.keyword.dv_short}}`.
-
-| Field Name | Index | Description |
-|----------|--------|-----------|
-| `Bin` | | The recommended binary to create a connection; in this case it is `{{site.data.keyword.dv_short}}` |
-| `Composed` | | A formatted command to establish a connection to your deployment. The command combines the `Bin` executable, `Environment` variable settings, and uses `Arguments` as command line parameters. |
-| `Environment` | | A list of key/values you set as environment variables |
-| `Arguments` | `0...` | The information that is passed as arguments to the command shown in the Bin field |
-| `Certificate` | Base64 | A self-signed certificate that is used to confirm that an application is connecting to the appropriate server. It is base64 encoded. |
-| `Certificate` | Name | The allocated name for the self-signed certificate |
-| `Type` | | The type of package that uses this connection information; in this case `cli` |
-{: caption="Table 2. psql / cli connection information" caption-side="top"}
-
-`0...` indicates that there might be one or more of these entries in an array.
-
-#### Enterprise plan
-{: #pub_endpt_ent_stand}
-
-The following VCAP Services json file can be used to make connections to your Enterprise plan database instances:
+The following VCAP Services json file can be used to make connections to your {{site.data.keyword.dv_short}} service instances:
 
 ```sh
 {
-  "apikey": "<apikey>",
+  "apikey": "<APIKEY>>",
   "connection": {
-    "cli": {
+    "clpplus": {
       "arguments": [
         [
-          "-u",
-          "ipa8emxc",
-          "-p",
-          "e2haTt1FJ7m3UQXY",
-          "--ssl",
-          "--sslCAFile",
-          "2ac5a4d3-1307-40f5-99a4-043e278fb084",
-          "--authenticationDatabase",
-          "admin",
-          "--host",
-          "a1d53ce7-166c-42d1-af26-7809dexxxxxx.yyyyyy.databases.appdomain.cloud:32447"
+          "CONNECT",
+          "@<DSN>",
+          "using",
+          "(",
+          "apikey",
+          "<APIKEY>",
+          ")"
         ]
       ],
-      "bin": "db2",
-      "certificate": {
-        "certificate_base64": "<certificate_code>",
-        "name": "2ac5a4d3-1307-40f5-99a4-043e278fb084"
-      },
+      "bin": "clpplus",
       "composed": [
-        "db2 -u ipa8emxc -p e2haTt1FJ7m3UQXY --ssl --sslCAFile 2ac5a4d3-1307-40f5-99a4-043e278fb084 --authenticationDatabase admin --host a1d53ce7-166c-42d1-af26-7809dexxxxxx.yyyyyy.databases.appdomain.cloud:32447"
+        "CONNECT @<HOST> using ( apikey <APIKEY> )"
+      ],
+      "environment": {},
+      "type": "clpplus"
+    },
+    "db2cli": {
+      "arguments": [
+        [
+          "writecfg",
+          "add",
+          "-dsn",
+          "<DSN>",
+          "-database",
+          "bludb",
+          "-host",
+          "<HOSTNAME>",
+          "-port",
+          "<PORT>",
+          "-parameter",
+          "\"Authentication=GSSPLUGIN;SecurityTransportMode=SSL\""
+        ]
+      ],
+      "bin": "db2cli",
+      "composed": [
+        "db2cli writecfg add -dsn <DSN> -database bludb -host <HOSTNAME> -port <PORT> -parameter \"Authentication=GSSPLUGIN;SecurityTransportMode=SSL\""
       ],
       "environment": {},
       "type": "cli"
     },
-    "db2": {
-      "authentication": {
-        "method": "direct",
-        "password": "<password>",
-        "username": "<user_name>"
-      },
+    "jdbc": {
+      "environment": {},
+      "jdbc_url_accesstoken": [
+        "jdbc:db2://<HOSTNAME>:<PORT>/bludb:securityMechanism=15;accessToken=<ACCESSTOKEN>;sslConnection=true;"
+      ],
+      "jdbc_url_api_key": [
+        "jdbc:db2://<HOSTNAME>:<PORT>/bludb:securityMechanism=15;apiKey=<APIKEY>;sslConnection=true;"
+      ],
+      "type": "uri"
+    },
+    "legacy": {
       "certificate": {
-        "certificate_base64": "<certificate_code>",
-        "name": "2ac5a4d3-1307-40f5-99a4-043e278fb084"
+        "certificate_base64": "<BASE64_ENCODED_CERT>",
+        "name": "<NAME>"
       },
-      "composed": [
-        "db2://ipa8emxc:e2haTt1FJ7m3UQXY@a1d53ce7-166c-42d1-af26-7809dexxxxxx.yyyyyy.databases.appdomain.cloud:32447/bludb?authSource=admin&replicaSet=replset"
-      ],
       "database": "bludb",
-      "host_ros": [
-        "a1d53ce7-166c-42d1-af26-7809dexxxxxx.yyyyyy.databases.appdomain.cloud:31196"
-      ],
       "hosts": [
         {
-          "hostname": "a1d53ce7-166c-42d1-af26-7809dexxxxxx.yyyyyy.databases.appdomain.cloud",
-          "port": 32447
+          "hostname": "<HOSTNAME>",
+          "port": <PORT>
         }
       ],
-      "jdbc_url": [
-        "jdbc:db2://a1d53ce7-166c-42d1-af26-7809dexxxxxx.yyyyyy.databases.appdomain.cloud:32447/bludb:user=<userid>;password=<your_password>;sslConnection=true;"
+      "legacyuser": [
+        {
+          "password": "<APIKEY>",
+          "username": "IBM_SUBSTTOKEN_APIKEY"
+        }
       ],
-      "path": "/bludb",
-      "query_options": {
-        "authSource": "admin",
-        "replicaSet": "replset"
-      },
-      "replica_set": "replset",
-      "scheme": "db2",
       "type": "uri"
     }
   },
+  "iam_apikey_description": "<IAM_APIKEY_DESCRIPTION",
+  "iam_apikey_name": "<IAM_APIKEY_NAME>",
+  "iam_role_crn": "crn:v1:bluemix:public:data-virtualization::::serviceRole:manager-generated-service-credentials-only",
+  "iam_serviceid_crn": "<SERVICE_ID_CRN>",
+  "instance_administration_api": {
+    "deployment_id": "<CRN>",
+    "instance_id": "<CRN>",
+    "root": "<API ROOT_URL>"
+  }
 }
 ```
 
@@ -175,45 +183,3 @@ The following VCAP Services json file can be used to make connections to your En
 {: #priv_endpt}
 
 {{site.data.keyword.dv_short}} supports private connectivity through an [{{site.data.keyword.cloud_notm}} service endpoint](/docs/account?topic=account-service-endpoints-overview). {{site.data.keyword.cloud_notm}} service endpoints securely route network traffic between different {{site.data.keyword.cloud_notm}} services through the {{site.data.keyword.cloud_notm}} private backplane network. When you configure your {{site.data.keyword.dv_short}} instance with {{site.data.keyword.cloud_notm}} service endpoint connectivity, traffic between your cloud database and applications deployed on your {{site.data.keyword.cloud_notm}} account will not traverse any public networks.
-
-
-### How to connect to a VPN endpoint
-{: #priv_endpt_vpn_steps}
-
-To establish a VPN connection to your cloud database behind a public endpoint, [create an {{site.data.keyword.cloud_notm}} Support case](https://cloud.ibm.com/unifiedsupport/cases/add){: external} that includes the following details:
-
-- **Type of support**: Technical 
-- **Category**: Databases 
-- **Offering**: select your {{site.data.keyword.dv_short}} instance 
-- **Subject**: VPN Connection Request 
-- **Description**: provide the following required information
-   - **Customer-side VPN Peer Address** (your VPN endpoint): `<IP Address>`
-   - **Customer-side Encryption Domain** (be specific about what is required – 10.0.0.0/8 is unworkable because 10 addressing is also used within the {{site.data.keyword.cloud_notm}} for back-end services): `<Domain>`
-   - **Customer-side VPN Hardware & Version**: `<Hardware and Version number>`
-   - **Customer-side VPN Contact** (technical contact name and email address): 
-     - `<Name>` 
-     - `<Title>` 
-     - `<Email Address>`
-
-   **Optional** (change only if the following default values are not suitable):
-
-#### IKE/ISAKMP Parameters (Phase I)
-{: #parms_phase_i}
-
-   - **Encryption Method**: IKEv1
-   - **IKE Encryption / Encryption Algorithm**: AES-256
-   - **Authentication Algorithm**: SHA1
-   - **DH-Group**: Group 5
-   - **Security Association Lifetime (seconds)**: 1d (86400 seconds)
-
-#### IPSec Parameters (Phase II)
-{: #parms_phase_ii}
-
-   - **IPSec Encryption / Encryption Algorithm**: AES-256
-   - **Authentication Algorithm**: SHA1
-   - **DH-Group** (if using PF-Secrecy): Group 5
-   - **Security Association Lifetime (seconds)**: 3600 seconds
-
-After receipt of your request, {{site.data.keyword.cloud_notm}} technicians will open the appropriate firewall ports and allowlist the provided IP address. Communication and resolution to the request will be made through the {{site.data.keyword.cloud_notm}} Support case ticket.
-
-![Public network access to {{site.data.keyword.cloud_notm}} through a VPN](images/public_connection_vpn.png "Graphical view of user to cloud connection"){: caption="Figure 3. Public network access to {{site.data.keyword.cloud_notm}} through a VPN" caption-side="bottom"}
