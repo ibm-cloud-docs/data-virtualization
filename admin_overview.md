@@ -27,7 +27,7 @@ You can manage security, endpoints, users, and access in {{site.data.keyword.dv_
 {: shortdesc}
 
 To learn more, see these resources:
-- [Managing users and roles in Watson Query](https://dataplatform.cloud.ibm.com/docs/content/dvaas/administer-dvaas.html)
+- [Administering users and roles in Watson Query](https://dataplatform.cloud.ibm.com/docs/content/dvaas/administer-dvaas.html)
 - [Managing access to virtual objects in Watson Query](https://dataplatform.cloud.ibm.com/docs/content/dvaas/dv-object-management.html)
 - [Monitoring and exploring Watson Query](https://dataplatform.cloud.ibm.com/docs/content/dvaas/monitor-dv.html)
 - [Activity tracker events for Watson Query](https://dataplatform.cloud.ibm.com/docs/content/wsj/admin/at-events.html?audience=wdp#dv)
