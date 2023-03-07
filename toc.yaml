@@ -19,32 +19,16 @@ toc:
       id: learn
       topics:
       - getting-started.md
-      - arch_workload_iso.md
-      - provision.md
-      - topicgroup:
-          label: Connecting
-          topics:
-          - connecting/connecting.md
-          - connecting/connectivity_options.md
-          - connecting/credentials.md
-          - connecting/ssl.md
-          - connecting/driver_pkg.md
-          - connecting/rest_api.md
-      - topicgroup:
-          label: Security
-          topics:
-          - encryption.md
-          - endpoints.md
-          - iam.md
-          - auditing.md
-          - user_mgmt.md
-          - activity_tracker.md
-          - key_protect_2.md
 
   - navgroup:
       id: howto
       topics:
+      - provision.md
+      - connecting/connecting.md
+      - connecting/rest_api.md
+      - admin_overview.md
       - monitor.md
+      - ha.md
       - remove.md
 
 #  Links to your REST API docs should be included in the Reference navigation group. For details on publishing API docs, see https://test.cloud.ibm.com/docs/api-docs.
@@ -78,15 +62,10 @@ toc:
           - link:
               label: Console
               href: https://{DomainName}/catalog/services/data-virtualization
-      - ha.md
-      - sdks.md
 
   - navgroup:
       id: help
       topics:
-      - wn.md
-      - topicgroup:
-          label: FAQs
-          topics:
-          - faqs.md
+      - faqs.md
+
 

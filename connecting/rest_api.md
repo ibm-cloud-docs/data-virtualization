@@ -20,11 +20,15 @@ subcollection: data-virtualization
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-# REST API
+# APIs and SDKs
 {: #con_rest_api}
 
-{{site.data.keyword.dv_short}} provides REST APIs that you can use to interact with your instance:
+{{site.data.keyword.dv_short}} provides REST APIs that you can use to interact with your instance.
 {: shortdesc}
 
-To access data, view and create database objects, administer, and monitor your {{site.data.keyword.dv_short}} service, use the following API:
-   - [REST APIs](https://cloud.ibm.com/apidocs/data-virtualization-on-cloud){: external}.
+To access data, view and create database objects, administer, and monitor your service, use the [{{site.data.keyword.dv_short}} APIs](https://cloud.ibm.com/apidocs/data-virtualization-on-cloud){: external}.
+
+The following {{site.data.keyword.dv_short}} SDKs are supported by {{site.data.keyword.IBM_notm}}:
+
+* [Go SDK](https://github.com/IBM/data-virtualization-on-cloud-go-sdk/){: external}
+* [Java SDK](https://github.com/IBM/data-virtualization-on-cloud-java-sdk/){: external}
