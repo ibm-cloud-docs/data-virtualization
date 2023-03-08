@@ -23,7 +23,7 @@ subcollection: data-virtualization
 # Administration
 {: #admin}
 
-You can manage security, endpoints, users, and access in {{site.data.keyword.dv_short}}.
+You can manage users, access to virtual objects, security, endpoints, and security in {{site.data.keyword.dv_short}}.
 {: shortdesc}
 
 To learn more, see these resources:

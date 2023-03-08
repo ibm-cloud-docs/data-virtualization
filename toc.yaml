@@ -50,12 +50,13 @@ toc:
           topics:
           - /cli/cli-manage-catalogs-plugin
           - /cli/cli-ibmcloud_commands_account
+          - /cli/watson-query-cli-plugin
       - topicgroup:
           label: Other references
           links:
           - link:
               label: IBM Cloud Pak for Data as a Service documentation
-              href: https://dataplatform.cloud.ibm.com/docs/content/dvaas/dvaas-overview.html?context=analytics
+              href: https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/welcome-main.html
           - link:
               label: Console
               href: https://{DomainName}/catalog/services/data-virtualization

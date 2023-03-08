@@ -27,5 +27,5 @@ subcollection: data-virtualization
 To deploy the {{site.data.keyword.dv_short}} service, you must create a {{site.data.keyword.dv_short}} service instance. 
 {: shortdesc}
 
-To learn more, see [Provisioning {{site.data.keyword.dv_short}}](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/dv-provision.html).
+To learn more, see [Provisioning a service instance for {{site.data.keyword.dv_short}}](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/dv-provision.html).
 

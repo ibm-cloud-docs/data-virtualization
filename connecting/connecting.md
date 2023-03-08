@@ -20,10 +20,10 @@ subcollection: data-virtualization
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-# Connecting
+# Connecting to your service instance
 {: #connect_ov}
 
 You can connect command-line interfaces, IBM® or third-party applications, or apps that you create to your {{site.data.keyword.dv_short}} instance. 
 {: shortdesc}
 
-For more information, see [Connecting to {{site.data.keyword.dv_short}}](https://dataplatform.cloud.ibm.com/docs/content/wsj/dvaas/wq_connecting.html).
+For more information, see [Connecting to your {{site.data.keyword.dv_short}} service instance](https://dataplatform.cloud.ibm.com/docs/content/wsj/dvaas/wq_connecting.html).
