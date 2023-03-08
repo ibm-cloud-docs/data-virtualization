@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021, 2022
-lastupdated: "2022-11-24"
+  years: 2021, 2023
+lastupdated: "2023-03-08"
 
 keywords: provision cloud database, provisioning parameters, data virtualization
 
