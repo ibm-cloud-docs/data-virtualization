@@ -36,16 +36,16 @@ This is a collection of frequently asked questions (FAQ) about the {{site.data.k
 {: faq}
 {: support}
 
-1. Log into [IBM Cloud](https://cloud.ibm.com){: external}.
+1. Log in to [IBM Cloud](https://cloud.ibm.com){: external}.
 2. Open your [**Resource list**](https://cloud.ibm.com/resources){: external}.
-3. Under **Databases**, locate your {{site.data.keyword.dv_short}} instance and click on the service name.  
+3. Under **Databases**, locate your {{site.data.keyword.dv_short}} instance and click the service name.  
    This list includes all instances that were created under a resource group or that were migrated into a resource group.
-4. Click **Service credentials > New credentials > Add** to generate your {{site.data.keyword.dv_short}} Manager credentials.
+4. Click **Service credentials** > **New credentials** > **Add** to generate your {{site.data.keyword.dv_short}} Manager credentials.
 5. Expand **View credentials**, which displays your service connectivity information including your credentials (username and password).
 6. The Manager credentials can be used to connect to both {{site.data.keyword.dv_short}} and the web console.
 
 
-## Now that I've generated credentials, how do I access my {{site.data.keyword.dv_short}} instance?
+## Now that I generated credentials, how do I access my {{site.data.keyword.dv_short}} instance?
 {: #q_access}
 {: faq}
 {: support}

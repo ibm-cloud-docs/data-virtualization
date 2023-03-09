@@ -29,7 +29,7 @@ subcollection: data-virtualization
 # Getting started with {{site.data.keyword.dv_short}}
 {: #getting-started}
 
-Use IBM® {{site.data.keyword.dv_short}} to break data silos across hybrid data sources and build a data fabric solution for easy data management. You can use {{site.data.keyword.dv_short}} just as you would any data source, but without the time and expense of hardware setup or software installation and maintenance.
+Use IBM® {{site.data.keyword.dv_short}} to break data silos across hybrid data sources and build a data fabric solution for data management. You can use {{site.data.keyword.dv_short}} just as you would any data source, but without the time and expense of hardware setup or software installation and maintenance.
 {: shortdesc}
 
 To get started, see [Quick start: Virtualize data](https://dataplatform.cloud.ibm.com/docs/content/dvaas/virtualizing_data.html).
