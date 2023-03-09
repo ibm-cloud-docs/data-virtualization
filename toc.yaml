@@ -46,10 +46,15 @@ toc:
               label: Watson Query REST APIs
               href: https://{DomainName}/apidocs/data-virtualization-on-cloud
       - topicgroup:
-          label: Command reference
+          label: Command references
           topics:
-          - /cli/cli-manage-catalogs-plugin
-          - /cli/cli-ibmcloud_commands_account
+          - include: ../watson-query-cli-plugin/watson-query-cli.md
+          - link:
+             label: Catalogs management CLI plug-in
+             href: /account/account-manage-catalogs-plugin
+          - link:
+             label: Managing accounts, users, and Cloud Foundry orgs (ibmcloud account)
+             href: /account/account-ibmcloud_commands_account
       - topicgroup:
           label: Other references
           links:
