@@ -51,4 +51,4 @@ This is a collection of frequently asked questions (FAQ) about the {{site.data.k
 {: support}
 
 You can access your {{site.data.keyword.dv_short}} instance by using a dedicated **Data virtualization** workspace in IBM Cloud Pak for Data as a Service 
-and the [{{site.data.keyword.dv_short}} Rest APIs](https://{DomainName}/apidocs/data-virtualization-on-cloud){: external}.
+or the [{{site.data.keyword.dv_short}} Rest APIs](https://{DomainName}/apidocs/data-virtualization-on-cloud){: external}.

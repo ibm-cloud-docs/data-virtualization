@@ -20,19 +20,21 @@ subcollection: data-virtualization
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-# Administration
+# Administration and security
 {: #admin}
 
-You can manage users, access to virtual objects, security, endpoints, and security in {{site.data.keyword.dv_short}}.
+You can manage users, access to virtual objects, and security in {{site.data.keyword.dv_short}}.
 {: shortdesc}
 
 To learn more, see these resources:
-- [Administering users and roles in Watson Query](https://dataplatform.cloud.ibm.com/docs/content/dvaas/administer-dvaas.html)
-- [Managing access to virtual objects in Watson Query](https://dataplatform.cloud.ibm.com/docs/content/dvaas/dv-object-management.html)
-- [Monitoring and exploring Watson Query with IBM Db2 Data Management Console](https://dataplatform.cloud.ibm.com/docs/content/dvaas/monitor-dv.html)
-- [Monitoring your Watson Query instance with IBM Cloud Monitoring](https://dataplatform.cloud.ibm.com/docs/content/dvaas/wq_monitor.html)
-- [Monitoring data access with the Db2 audit facility in Watson Query](https://dataplatform.cloud.ibm.com/docs/content/dvaas/dvaas_audit_policy_guidelines.html)
-- [Activity tracker events for Watson Query](https://dataplatform.cloud.ibm.com/docs/content/wsj/admin/at-events.html?audience=wdp#dv)
+- [Administering users and roles in {{site.data.keyword.dv_short}}](https://dataplatform.cloud.ibm.com/docs/content/dvaas/administer-dvaas.html)
+- [Managing access to virtual objects in {{site.data.keyword.dv_short}}](https://dataplatform.cloud.ibm.com/docs/content/dvaas/dv-object-management.html)
 - [Deleting your instance and removing your data](https://dataplatform.cloud.ibm.com/docs/content/dvaas/wq_remove.html)
 - [High availability and disaster recovery](https://dataplatform.cloud.ibm.com/docs/content/dvaas/wq_high_availability.html)
 
+To learn how to monitor {{site.data.keyword.dv_short}}, see these resources:
+- [Monitoring and exploring {{site.data.keyword.dv_short}} with IBM Db2 Data Management Console](https://dataplatform.cloud.ibm.com/docs/content/dvaas/monitor-dv.html)
+- [Monitoring your {{site.data.keyword.dv_short}} instance with IBM Cloud Monitoring](https://dataplatform.cloud.ibm.com/docs/content/dvaas/wq_monitor.html)
+- [Monitoring data access with the IBM Db2 audit facility in {{site.data.keyword.dv_short}}](https://dataplatform.cloud.ibm.com/docs/content/dvaas/dvaas_audit_policy_guidelines.html)
+- [Getting started with IBM Cloud Activity Tracker](https://cloud.ibm.com/docs/activity-tracker?topic=activity-tracker-getting-started)
+- [Activity tracker events for {{site.data.keyword.dv_short}}](https://dataplatform.cloud.ibm.com/docs/content/wsj/admin/at-events.html?audience=wdp#dv)
