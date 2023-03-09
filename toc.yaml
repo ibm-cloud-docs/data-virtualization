@@ -50,7 +50,6 @@ toc:
           topics:
           - /cli/cli-manage-catalogs-plugin
           - /cli/cli-ibmcloud_commands_account
-          - /watson-query-cli-plugin
       - topicgroup:
           label: Other references
           links:
