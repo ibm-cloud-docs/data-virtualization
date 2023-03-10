@@ -32,7 +32,7 @@ subcollection: data-virtualization
 Use IBM® {{site.data.keyword.dv_short}} to break data silos across hybrid data sources and build a data fabric solution for data management. You can use {{site.data.keyword.dv_short}} just as you would any data source, but without the time and expense of hardware setup or software installation and maintenance.
 {: shortdesc}
 
-To get started, see [Data integration tutorial: Virtualize external data](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/df_data_virtualize.html).
+To get started, see [Quick start: Virtualize data](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/get-started-virtualize.html).
 
 
 For information about using {{site.data.keyword.dv_short}} with Cloud Pak for Data as a Service, see [Virtualizing data with {{site.data.keyword.dv_short}}](https://dataplatform.cloud.ibm.com/docs/content/dvaas/virtualizing_data.html).
