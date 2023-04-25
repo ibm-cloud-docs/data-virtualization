@@ -19,33 +19,14 @@ toc:
       id: learn
       topics:
       - getting-started.md
-      - arch_workload_iso.md
-      - provision.md
-      - topicgroup:
-          label: Connecting
-          topics:
-          - connecting/connecting.md
-          - connecting/connectivity_options.md
-          - connecting/credentials.md
-          - connecting/ssl.md
-          - connecting/driver_pkg.md
-          - connecting/rest_api.md
-      - topicgroup:
-          label: Security
-          topics:
-          - encryption.md
-          - endpoints.md
-          - iam.md
-          - auditing.md
-          - user_mgmt.md
-          - activity_tracker.md
-          - key_protect_2.md
 
   - navgroup:
       id: howto
       topics:
-      - monitor.md
-      - remove.md
+      - provision.md
+      - connecting.md
+      - rest_api.md
+      - admin_overview.md
 
 #  Links to your REST API docs should be included in the Reference navigation group. For details on publishing API docs, see https://test.cloud.ibm.com/docs/api-docs.
 #  Links to your command line reference docs should be included in the Reference navigation group.
@@ -65,28 +46,26 @@ toc:
               label: Watson Query REST APIs
               href: https://{DomainName}/apidocs/data-virtualization-on-cloud
       - topicgroup:
-          label: Command reference
+          label: Command references
           topics:
-          - /cli/cli-manage-catalogs-plugin
-          - /cli/cli-ibmcloud_commands_account
+          - include: ../watson-query-cli-plugin/watson-query-cli.md
+          - link:
+             label: Catalogs management CLI plug-in
+             href: /account/account-manage-catalogs-plugin
+          - link:
+             label: Managing accounts, users, and Cloud Foundry orgs (ibmcloud account)
+             href: /account/account-ibmcloud_commands_account
       - topicgroup:
           label: Other references
           links:
           - link:
               label: IBM Cloud Pak for Data as a Service documentation
-              href: https://dataplatform.cloud.ibm.com/docs/content/dvaas/dvaas-overview.html?context=analytics
+              href: https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/welcome-main.html
           - link:
-              label: Console
+              label: Catalog
               href: https://{DomainName}/catalog/services/data-virtualization
-      - ha.md
-      - sdks.md
 
   - navgroup:
       id: help
       topics:
-      - wn.md
-      - topicgroup:
-          label: FAQs
-          topics:
-          - faqs.md
-
+      - faqs.md
