@@ -37,4 +37,4 @@ To learn how to monitor {{site.data.keyword.dv_short}}, see these resources:
 - [Monitoring your {{site.data.keyword.dv_short}} instance with IBM Cloud Monitoring](https://dataplatform.cloud.ibm.com/docs/content/dvaas/wq_monitor.html)
 - [Monitoring data access with the IBM Db2 audit facility in {{site.data.keyword.dv_short}}](https://dataplatform.cloud.ibm.com/docs/content/dvaas/dvaas_audit_policy_guidelines.html)
 - [Getting started with IBM Cloud Activity Tracker](https://cloud.ibm.com/docs/activity-tracker?topic=activity-tracker-getting-started)
-- [Activity tracker events for {{site.data.keyword.dv_short}}](https://dataplatform.cloud.ibm.com/docs/content/wsj/admin/at-events.html?audience=wdp&context=cpdaas#dv)
+- [Activity tracker events for {{site.data.keyword.dv_short}}](https://dataplatform.cloud.ibm.com/docs/content/wsj/admin/at-events.html?context=cpdaas#dv)
