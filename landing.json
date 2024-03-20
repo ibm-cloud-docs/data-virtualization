@@ -9,7 +9,7 @@
     "section_recommended": [
       {
         "title": "Getting started with Watson Query",
-        "description": "Information about to get started setting up and using the Watson Query service.",
+        "description": "Information about setting up and getting started using the Watson Query service.",
         "href": "/docs/data-virtualization?topic=data-virtualization-getting-started"
       },
       {
