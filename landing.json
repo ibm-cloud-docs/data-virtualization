@@ -1,6 +1,6 @@
 {
     "title": "IBM Watson Query",
-    "lastupdated": "2021-06-14",
+    "lastupdated": "2024-03-14",
     "introduction": "Welcome to the Watson Query product documentation.",
     "section_devtools": {
       "api": "/apidocs/data-virtualization-on-cloud",
@@ -8,28 +8,14 @@
     },
     "section_recommended": [
       {
+        "title": "Getting started with Watson Query",
+        "description": "Information about setting up and getting started using the Watson Query service.",
+        "href": "/docs/data-virtualization?topic=data-virtualization-getting-started"
+      },
+      {
         "title": "FAQs",
         "description": "Answers to frequently asked questions about the Watson Query service.",
         "href": "/docs/data-virtualization?topic=data-virtualization-faq_dv"
-      },
-      {
-        "title": "Provision a service instance",
-        "description": "Create and deploy a Watson Query service instance.",
-        "href": "/docs/data-virtualization?topic=data-virtualization-provisioning"
       }
-    ],
-    "section_updates": {
-      "tiles": [
-        {
-          "date": "24 June 2021",
-          "title": "Watson Query GA",
-          "description": "Coming soon"
-        },
-        {
-          "date": "26 April 2021",
-          "title": "Watson Query beta",
-          "description": "The IBM Watson Query closed beta is now live."
-        }
       ]
     }
-  }
