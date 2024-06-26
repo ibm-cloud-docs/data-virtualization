@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2024
-lastupdated: "2024-01-29"
+lastupdated: "2024-06-26"
 
 keywords: provision cloud database, provisioning parameters, data virtualization
 
@@ -24,8 +24,7 @@ subcollection: data-virtualization
 # Provisioning a service instance
 {: #provisioning}
 
-To deploy the {{site.data.keyword.dv_short}} service, you must create a {{site.data.keyword.dv_short}} service instance. 
+To deploy the {{site.data.keyword.dv_short}} service, you must create a {{site.data.keyword.dv_short}} service instance.
 {: shortdesc}
 
 To learn more, see [Provisioning a service instance for {{site.data.keyword.dv_short}}](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/dv-provision.html).
-

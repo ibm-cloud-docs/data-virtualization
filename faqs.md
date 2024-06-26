@@ -2,9 +2,9 @@
 
 copyright:
   years: 2021, 2024
-lastupdated: "2024-01-29"
+lastupdated: "2024-06-26"
 
-keywords: 
+keywords:
 
 subcollection: data-virtualization
 
@@ -50,5 +50,5 @@ This is a collection of frequently asked questions (FAQ) about the {{site.data.k
 {: faq}
 {: support}
 
-You can access your {{site.data.keyword.dv_short}} instance by using a dedicated **Data virtualization** workspace in IBM Cloud Pak for Data as a Service 
+You can access your {{site.data.keyword.dv_short}} instance by using a dedicated **Data virtualization** workspace in IBM Cloud Pak for Data as a Service
 or the [{{site.data.keyword.dv_short}} Rest APIs](https://{DomainName}/apidocs/data-virtualization-on-cloud){: external}.
