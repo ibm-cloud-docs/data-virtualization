@@ -2,9 +2,9 @@
 
 copyright:
   years: 2021, 2024
-lastupdated: "2024-01-29"
+lastupdated: "2024-06-26"
 
-keywords: 
+keywords:
 
 subcollection: data-virtualization
 
@@ -37,7 +37,7 @@ To get started, see [Quick start: Virtualize data](https://dataplatform.cloud.ib
 
 For information about using {{site.data.keyword.dv_short}} with Cloud Pak for Data as a Service, see [Virtualizing data with {{site.data.keyword.dv_short}}](https://dataplatform.cloud.ibm.com/docs/content/dvaas/virtualizing_data.html).
 
-1. After you create the {{site.data.keyword.dv_short}} service on {{site.data.keyword.cloud}}, you must create IAM service credentials by clicking the **Service credentials** tab on your service page and selecting **New credential**. 
-   You can log in to the web console without credentials, but you need the service credentials to use many of the {{site.data.keyword.dv_short}} tools. 
+1. After you create the {{site.data.keyword.dv_short}} service on {{site.data.keyword.cloud}}, you must create IAM service credentials by clicking the **Service credentials** tab on your service page and selecting **New credential**.
+   You can log in to the web console without credentials, but you need the service credentials to use many of the {{site.data.keyword.dv_short}} tools.
 
 2. To retrieve your service credentials, select the **Service credentials** tab from your service page and expand the credentials that you want to view.
