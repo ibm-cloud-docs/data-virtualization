@@ -9,7 +9,7 @@ toc:
     console-page: /catalog/services/data-virtualization
     product-page: https://www.ibm.com/products/watson-query
     path: data-virtualization
-    label: IBM Watson Query
+    label: IBM Data Virtualization
 #  List your getting started tutorial (getting-started.md) as the first item in the Get started nav group.
   entries:
   - navgroup:
@@ -38,12 +38,12 @@ toc:
               label: Enterprise Management
               href: https://{DomainName}/apidocs/enterprise-apis/enterprise
           - link:
-              label: Watson Query REST APIs
+              label: Data Virtualization REST APIs
               href: https://{DomainName}/apidocs/data-virtualization-on-cloud
       - topicgroup:
           label: Command references
           topics:
-          - include: ../watson-query-cli-plugin/watson-query-cli.md
+          - watson-query-cli.md
           - link:
              label: Catalogs management CLI plug-in
              href: /account/account-manage-catalogs-plugin

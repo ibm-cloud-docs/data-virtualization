@@ -1,20 +1,20 @@
 {
     "title": "IBM Watson Query",
     "lastupdated": "2024-03-14",
-    "introduction": "Welcome to the Watson Query product documentation.",
+    "introduction": "Welcome to the Data Virtualization product documentation.",
     "section_devtools": {
       "api": "/apidocs/data-virtualization-on-cloud",
       "sdk": "/docs/data-virtualization?topic=data-virtualization-con_rest_api"
     },
     "section_recommended": [
       {
-        "title": "Getting started with Watson Query",
-        "description": "Information about setting up and getting started using the Watson Query service.",
+        "title": "Getting started with Data Virtualization",
+        "description": "Information about setting up and getting started using the Data Virtualization service.",
         "href": "/docs/data-virtualization?topic=data-virtualization-getting-started"
       },
       {
         "title": "FAQs",
-        "description": "Answers to frequently asked questions about the Watson Query service.",
+        "description": "Answers to frequently asked questions about the Data Virtualization service.",
         "href": "/docs/data-virtualization?topic=data-virtualization-faq_dv"
       }
       ]
