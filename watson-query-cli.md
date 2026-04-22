@@ -6,14 +6,14 @@ lastupdated: "2026-04-22"
 
 subcollection: data-virtualization
 
-keywords: {{site.data.keyword.dv_short}} CLI, {{site.data.keyword.dv_short}} command line , {{site.data.keyword.dv_short}} terminal, {{site.data.keyword.dv_short}} shell, Watson Query, {{site.data.keyword.dv_short}}
+keywords: Data Virtualization CLI, Data Virtualization command line , Data Virtualization terminal, Data Virtualization shell, Watson Query, Data Virtualization
 
 ---
 
 {{site.data.keyword.attribute-definition-list}}
 
 
-# {{site.data.keyword.dv_short}} CLI
+# Data Virtualization CLI
 {: #CLI-name}
 
 The {{site.data.keyword.cloud}} command-line interface (CLI) provides extra capabilities for service offerings. You can use {{site.data.keyword.cloud_notm}} CLI to manage service instance and virtualizations.
@@ -56,7 +56,7 @@ As an alternative to `ibmcloud login`, you can set the environment variable `DAT
 ## Data sources
 {: #watson-query-data-sources-cli}
 
-Connect data sources to the {{site.data.keyword.dv_short}} service.
+Connect data sources to the Data Virtualization service.
 
 ### ibmcloud watson-query datasource-connections
 {: #watson-query-cli-datasource-connections-command}
@@ -111,7 +111,7 @@ ibmcloud watson-query datasource-connections
 ### ibmcloud watson-query datasource-connection-add
 {: #watson-query-cli-datasource-connection-add-command}
 
-Adds a data source connection to the {{site.data.keyword.dv_short}} service.
+Adds a data source connection to the Data Virtualization service.
 
 ```sh
 ibmcloud watson-query datasource-connection-add --datasource-type DATASOURCE-TYPE --name NAME --origin-country ORIGIN-COUNTRY --properties PROPERTIES [--asset-category ASSET-CATEGORY] 
@@ -139,7 +139,7 @@ ibmcloud watson-query datasource-connection-add --datasource-type DATASOURCE-TYP
 #### Examples
 {: #watson-query-datasource-connection-add-cli-examples}
 
-Add data source connections
+Add data source connections.
 
 ```sh
 ibmcloud watson-query datasource-connection-add --datasource-type MongoDB --name mongo1  --origin-country us  --properties  "{\"database\":\"db1\",\"host\":\"databases.example.com\", \"password"\:\"adminpassword\", \"port\":\"31365\", \"ssl\":\"true\", \"username\":\"admin\"}"
@@ -149,7 +149,7 @@ ibmcloud watson-query datasource-connection-add --datasource-type MongoDB --name
 ### ibmcloud watson-query datasource-connection-delete
 {: #watson-query-cli-datasource-connection-delete-command}
 
-Deletes a data source connection from the {{site.data.keyword.dv_short}} service.
+Deletes a data source connection from the Data Virtualization service.
 
 ```sh
 ibmcloud watson-query datasource-connection-delete --connection-id CONNECTION-ID --cid CID 
@@ -163,7 +163,7 @@ ibmcloud watson-query datasource-connection-delete --connection-id CONNECTION-ID
 :   The connection identifier for the platform.. Required.
 
 --cid (string)
-:   The identifier of the connection for the {{site.data.keyword.dv_short}}.. Required.
+:   The identifier of the connection for the Data Virtualization.. Required.
 
 #### Examples
 {: #watson-query-datasource-connection-delete-cli-examples}
@@ -202,7 +202,7 @@ ibmcloud watson-query virtualized-table-user-grant --table-name TABLE-NAME --tab
     The minimum length is `1` character.
 
 --user (string)
-:   The identifier of the authorization, if grant access to all users, the value is PUBLIC, otherwise the value is the {{site.data.keyword.dv_short}} username. Required.
+:   The identifier of the authorization, if grant access to all users, the value is PUBLIC, otherwise the value is the Data Virtualization username. Required.
     The minimum length is `1` character.
 
 #### Examples
@@ -229,7 +229,7 @@ ibmcloud watson-query virtualized-table-user-revoke --user USER --table-name TAB
 {: #watson-query-virtualized-table-user-revoke-cli-options}
 
 --user (string)
-:   The {{site.data.keyword.dv_short}} user name, if the value is PUBLIC, it means revoke access privilege from all {{site.data.keyword.dv_short}} users. Required.
+:   The Data Virtualization user name, if the value is PUBLIC, it means revoke access privilege from all Data Virtualization users. Required.
 
 --table-name (string)
 :   The virtualized table's name. Required.
@@ -274,7 +274,7 @@ ibmcloud watson-query virtualized-table-role-grant --table-name TABLE-NAME --tab
     The minimum length is `1` character.
 
 --role (string)
-:   The identifier of the authorization, if grant access to all users, the value is PUBLIC, othervise the value is the {{site.data.keyword.dv_short}} username. Required.
+:   The identifier of the authorization, if grant access to all users, the value is PUBLIC, othervise the value is the Data Virtualization username. Required.
     The minimum length is `1` character.
 
 #### Examples
@@ -301,7 +301,7 @@ ibmcloud watson-query virtualized-table-role-revoke --role ROLE --table-name TAB
 {: #watson-query-virtualized-table-role-revoke-cli-options}
 
 --role (string)
-:   The {{site.data.keyword.dv_short}} role type. Values can be DV_ADMIN, DV_ENGINEER, DV_STEWARD, or DV_WORKER, which correspond to MANAGER, ENGINEER, STEWARD, and USER roles in the user interface. Required.
+:   The Data Virtualization role type. Values can be DV_ADMIN, DV_ENGINEER, DV_STEWARD, or DV_WORKER, which correspond to MANAGER, ENGINEER, STEWARD, and USER roles in the user interface. Required.
 
 --table-name (string)
 :   The virtualized table's name. Required.
@@ -333,7 +333,7 @@ ibmcloud watson-query tables-for-role --role ROLE
 {: #watson-query-tables-for-role-cli-options}
 
 --role (string)
-:   {{site.data.keyword.dv_short}} has four roles: MANAGER, STEWARD, ENGINEER and USER The value of rolename should be one of them. Required.
+:   Data Virtualization has four roles: MANAGER, STEWARD, ENGINEER and USER The value of rolename should be one of them. Required.
 
 #### Examples
 {: #watson-query-tables-for-role-cli-examples}
@@ -493,7 +493,7 @@ ibmcloud watson-query virtualized-table-delete --virtualized-schema DV_IBMID_270
 ## Primary catalog
 {: #watson-query-primary-catalog-cli}
 
-Manage the primary IBM Knowldge catalog information in the {{site.data.keyword.dv_short}} console.
+Manage the primary IBM Knowldge catalog information in the Data Virtualization console.
 
 ### ibmcloud watson-query primary-catalog
 {: #watson-query-cli-primary-catalog-command}
@@ -555,7 +555,7 @@ ibmcloud watson-query primary-catalog-delete --guid GUID
 {: #watson-query-primary-catalog-delete-cli-options}
 
 --guid (string)
-:   The {{site.data.keyword.dv_short}} user name, if the value is PUBLIC, it means revoke access privilege from all {{site.data.keyword.dv_short}} users. Required.
+:   The Data Virtualization user name, if the value is PUBLIC, it means revoke access privilege from all Data Virtualization users. Required.
 
 ## Publish objects
 {: #watson-query-publish-objects-cli}
