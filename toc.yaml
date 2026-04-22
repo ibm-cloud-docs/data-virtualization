@@ -1,5 +1,3 @@
-#  Anything with a fully qualified URL with `http` or `https` will get an external link icon added to the nav entry
----
 toc:
   properties:
     subcollection: data-virtualization
@@ -10,7 +8,6 @@ toc:
     product-page: https://www.ibm.com/products/watson-query
     path: data-virtualization
     label: IBM Data Virtualization
-#  List your getting started tutorial (getting-started.md) as the first item in the Get started nav group.
   entries:
   - navgroup:
       id: learn
@@ -23,8 +20,6 @@ toc:
       - connecting.md
       - rest_api.md
       - admin_overview.md
-#  Links to your REST API docs should be included in the Reference navigation group.
-#  Links to your command line reference docs should be included in the Reference navigation group.
   - navgroup:
       id: reference
       topics:
@@ -45,11 +40,11 @@ toc:
           topics:
           - watson-query-cli.md
           - link:
-             label: Catalogs management CLI plug-in
-             href: /account/account-manage-catalogs-plugin
+              label: Catalogs management CLI plug-in
+              href: /account/account-manage-catalogs-plugin
           - link:
-             label: Managing accounts, users, and Cloud Foundry orgs (ibmcloud account)
-             href: /account/account-ibmcloud_commands_account
+              label: Managing accounts, users, and Cloud Foundry orgs (ibmcloud account)
+              href: /account/account-ibmcloud_commands_account
       - topicgroup:
           label: Other references
           links:

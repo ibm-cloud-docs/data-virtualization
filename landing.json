@@ -1,21 +1,21 @@
 {
-    "title": "IBM Watson Query",
-    "lastupdated": "2024-03-14",
-    "introduction": "Welcome to the Data Virtualization product documentation.",
-    "section_devtools": {
-      "api": "/apidocs/data-virtualization-on-cloud",
-      "sdk": "/docs/data-virtualization?topic=data-virtualization-con_rest_api"
+  "title": "IBM Data Virtualization",
+  "lastupdated": "2025-04-07",
+  "introduction": "Welcome to the Data Virtualization product documentation.",
+  "section_devtools": {
+    "api": "/apidocs/data-virtualization-on-cloud",
+    "sdk": "/docs/data-virtualization?topic=data-virtualization-con_rest_api"
+  },
+  "section_recommended": [
+    {
+      "title": "Getting started with Data Virtualization",
+      "description": "Information about setting up and getting started using the Data Virtualization service.",
+      "href": "/docs/data-virtualization?topic=data-virtualization-getting-started"
     },
-    "section_recommended": [
-      {
-        "title": "Getting started with Data Virtualization",
-        "description": "Information about setting up and getting started using the Data Virtualization service.",
-        "href": "/docs/data-virtualization?topic=data-virtualization-getting-started"
-      },
-      {
-        "title": "FAQs",
-        "description": "Answers to frequently asked questions about the Data Virtualization service.",
-        "href": "/docs/data-virtualization?topic=data-virtualization-faq_dv"
-      }
-      ]
+    {
+      "title": "FAQs",
+      "description": "Answers to frequently asked questions about the Data Virtualization service.",
+      "href": "/docs/data-virtualization?topic=data-virtualization-faq_dv"
     }
+  ]
+}
