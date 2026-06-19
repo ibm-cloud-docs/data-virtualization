@@ -1,22 +1,60 @@
 {
-  "title": "IBM Data Virtualization",
-  "lastupdated": "2025-04-07",
-  "introduction": "Welcome to the Data Virtualization product documentation.",
   "version": 2,
+  "title": "Data Virtualization",
+  "introduction": "By using Data Virtualization, you can virtualize data across multiple sources without physically moving or copying the data.",
+  "product_page": "https://www.ibm.com/products/watson-query",
+  "console_page": "/catalog/services/data-virtualization",
+  "section_topics": {
+    "links": [
+      {
+        "title": "Getting started with Data Virtualization",
+        "href": "/docs/overview?topic=data-virtualization-getting-started"
+      },
+      {
+        "title": "Provisioning a service instance",
+        "href": "/docs/overview?topic=data-virtualization-provisioning"
+      },
+      {
+        "title": "Connecting to your service instance",
+        "href": "/docs/overview?topic=data-virtualization-connect_ov"
+      },
+      {
+        "title": "APIs and SDKs",
+        "href": "/docs/overview?topic=data-virtualization-con_rest_api"
+      },
+      {
+        "title": "Administration and security",
+        "href": "/docs/overview?topic=data-virtualization-admin"
+      },
+      {
+        "title": "FAQ",
+        "href": "/docs/overview?topic=data-virtualization-faq_dv"
+      }
+    ]
+  },
+  "section_highlights": [
+    {
+      "title": "New and enhanced features in Data Virtualization",
+      "description": "New features introduced in 2025.",
+      "href": "https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/whats-new.html?context=cpdaas&audience=wdp#new-and-enhanced-features-in-data-virtualization",
+      "type": "article"
+    }
+  ],
   "section_devtools": {
     "api": "/apidocs/data-virtualization-on-cloud",
     "sdk": "/docs/data-virtualization?topic=data-virtualization-con_rest_api"
   },
-  "section_recommended": [
-    {
-      "title": "Getting started with Data Virtualization",
-      "description": "Information about setting up and getting started using the Data Virtualization service.",
-      "href": "/docs/data-virtualization?topic=data-virtualization-getting-started"
-    },
-    {
-      "title": "FAQs",
-      "description": "Answers to frequently asked questions about the Data Virtualization service.",
-      "href": "/docs/data-virtualization?topic=data-virtualization-faq_dv"
-    }
-  ]
+  "section_updates": {
+    "view_more": "/docs/overview?topic=data-virtualization-getting-started",
+    "tiles": [
+      {
+        "date": "03 December 2025",
+        "title": "New version of Data Virtualization on Cloud Pak for Data as a Service"
+      },
+      {
+        "date": "17 March 2025",
+        "title": "New version of Data Virtualization on Cloud Pak for Data as a Service"
+      }
+    ]
+  }
 }
