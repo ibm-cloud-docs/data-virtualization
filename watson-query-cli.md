@@ -2,11 +2,13 @@
  
 copyright:
   years: 2024, 2025, 2026
-lastupdated: "2026-04-22"
+lastupdated: "2026-06-19"
 
 subcollection: data-virtualization
 
 keywords: Data Virtualization CLI, Data Virtualization command line , Data Virtualization terminal, Data Virtualization shell, Watson Query, Data Virtualization
+
+content-type: cli-docs
 
 ---
 
